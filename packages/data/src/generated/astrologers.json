@@ -1,0 +1,394 @@
+[
+  {
+    "id": "ammo_cart",
+    "name": "Ammo Cart",
+    "effect": "Until the next Astrologers round, each Ballista deals +1 :damage:, each First Aid Tent heals +1 :health_points:‍, and each Ammo Cart allows re-rolling 1 Attack die for all ranged units.",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "annoying_lizard",
+    "name": "Annoying Lizard",
+    "effect": "Each player must shuffle all Artifact and Spell cards from their hand back into their deck and draw the same number of cards from the top of their deck of Might and Magic.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "battalions_stallion",
+    "name": "Battalion's Stallion",
+    "effect": "Until the next Astrologer's round: Each Hero gains +1 Movement.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "big_cleanup",
+    "name": "Big Cleanup",
+    "effect": "Each player must immediately discard all cards from their hand and draw the same number of cards.",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "blue_sky",
+    "name": "Blue Sky",
+    "effect": "Until the next Astrologers' round, all :spell: from the Air Magic and Water Magic Schools are cast at a +1 :power:.",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "charlie_and_his_circus",
+    "name": "Charlie and his Circus",
+    "effect": "At the beginning of this round and the next one, each player can draw up to 3 cards from any Neutral Units deck(s) and Recruit one of them. The Players must still :pay: the recruitment cost and have the corresponding Dwelling in their Town(s). Shuffle the remaining cards back into their respective deck(s) afterwards.",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "crag_hack",
+    "name": "Crag Hack",
+    "effect": "For the first Combat this round, all :ground_unit: units gain +1 :attack:. The faction controlling Crag Hack can Reinforce Goblins for free once.",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "crazy_wizard",
+    "name": "Crazy Wizard",
+    "effect": "Until the next Astrologers' round: The first Spell card player by each player is returned to the player's hand, instead of being discarded.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "dancing_imp",
+    "name": "Dancing Imp",
+    "effect": "Each player can Remove a Statistic card from their discard pile or hand to gain 1 Empowered Statistic card of the same type.",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "dead_silence",
+    "name": "Dead Silence",
+    "effect": "Nothing changes.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "destruction",
+    "name": "Destruction",
+    "effect": "Each player who has a :permanent: card in play must Remove it and take 5 :gold:.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "disruption",
+    "name": "Disruption",
+    "effect": "Starting from the first player, each player (if possible) can freely rotate 1 tile that has no Hero on it. No tile can be rotated more than once. If it is not possible to rotate even 1 tile, ignore this card and draw another one.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "elementals",
+    "name": "Elementals",
+    "effect": "For each Neutral Unit deck except Azure, discard until you find an Elemental. Place each Elemental face up on top of its deck. When the Elemental is defeated in Combat, put it back on top of its deck. Discard the Elements when this card is replaced.",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "explorers",
+    "name": "Explorers",
+    "effect": "During this round, players do not draw cards at the start of their turns. Instead, each player draws cards up their :hand_limit:. Then, each of them may discard any number of cards. For every 3 cards discarded this way, they can Remove one Statistic card and replace it with an Empowered Statistic card of the same type.",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "fancy_pixie",
+    "name": "Fancy Pixie",
+    "effect": "Each player immediately gains 1 :positive_morale:",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "fluffy_rabbit",
+    "name": "Fluffy Rabbit",
+    "effect": "Each player immediately rolls 1 Treasure die and gains the rolled bonus.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "forty_thieves",
+    "name": "Forty Thieves",
+    "effect": "Until the next Astrologers round, whenever a player is about to draw an Event card, they draw 2 cards instead of 1, choose 1 to resolve, and put the other at the bottom of the Event deck.",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "friendly_beaver",
+    "name": "Friendly Beaver",
+    "effect": "If you draw this card on the first Astrologers' round, discard it and draw another card. Immediately remove all Black cubes from all locations on the map.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "gold_dragon",
+    "name": "Gold Dragon",
+    "effect": "At the beginning of the next Resource round, all players gain 5 :gold:.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "greedy_dragon",
+    "name": "Greedy Dragon",
+    "effect": "At the beginning of the next Resource round, all players gain 1 less :valuables:, down to a minimum of 0.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "grim_warlock",
+    "name": "Grim Warlock",
+    "effect": "Until the next Astrologers' round: The first Spell card played in each player's turn gets +1 :power:.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "groovy_satyr",
+    "name": "Groovy Satyr",
+    "effect": "Until the next Astrologers' round: Whenever you trigger Combat with any Neutral Units, you may choose a Neutral Unit card to discard and draw another card of the same tier instead.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "hero",
+    "name": "Hero",
+    "effect": "Each player can :pay: 4 :gold: to Remove a Statistic card from their hand and replace it with an Empowered Statistic card of the same type. Each player may do so twice, but both exchanges must be made on the same turn. Once a player makes the exchange, they place their faction cube on this card to mark the fact.",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "isras_friends",
+    "name": "Isra's Friends",
+    "effect": "Each player can immediately Reinforce a unit on the \"Few\" side at half the cost.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "judge_dread",
+    "name": "Judge Dread",
+    "effect": "Until the next Astrologers' round, at the start of Combat with Neutral Units, the attacker can discard all of them and draw new Neutral Units.",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "mages",
+    "name": "Mages",
+    "effect": "During this round, using the Spell Book token is free. You can use it even if you do not have a Mage Guild built.",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "magic_tortoise",
+    "name": "Magic Tortoise",
+    "effect": "Until the next Astrologer's round: Each Hero suffers -1 Movement.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "mcgiver",
+    "name": "McGiver",
+    "effect": "At the beginning of the next round, each player can take 1 War Machine of their choice from the War Machines deck at not cost.",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "merry_leprechaun",
+    "name": "Merry Leprechaun",
+    "effect": "At the beginning of the next Resource round, all players gain 1 :valuables:.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "multilingual_bron",
+    "name": "Multilingual Bron",
+    "effect": "Until the next Astrologers' round: Every time you use a unit's special ability that requires a roll, you can reroll it once.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "offense",
+    "name": "Offense",
+    "effect": "Until the next Astrologers' round, every card that provides X :defense: provides X :attack: instead.",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "pirates",
+    "name": "Pirates",
+    "effect": "Until the next Astrologers' round: Every time you win Combat other than Quick Combat, gain 1 :resource_die:.",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "plane_between_planes",
+    "name": "Plane Between Planes",
+    "effect": "Each player can immediately Remove up to 2 cards from their hand or from their discard pile.",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "plastic_tray",
+    "name": "Plastic Tray",
+    "effect": "Until the next Astrologers' round: Units that take Defense roll no Attack dice to get +1 :defense:.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "profuse_growth",
+    "name": "Profuse Growth",
+    "effect": "Until the next Astrologers' round: Your hand limit is increased by 1.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "restart",
+    "name": "Restart",
+    "effect": "Until the next Astrologers' round: If you draw this card on the first Astrologer's round, discard it and draw another. Your hand :hand_limit: is reduced by 2 to a minimum of 4.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "rulebook",
+    "name": "Rulebook",
+    "effect": "During this round: When you trigger Combat with Neutral Units, the enemy's strength corresponds to the game difficulty setting one level lower than it actually is. If you difficulty setting is Easy, ignore this card and draw another one.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "sanctuary",
+    "name": "Sanctuary",
+    "effect": "During this round, Heroes cannot attack one another. If you are playing a Campaign scenario, ignore this card and draw another one.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "scorched_ground",
+    "name": "Scorched Ground",
+    "effect": "Until the next Astrologers round, all :spell: from the Earth Magic and Fire Magic Schools are cast at a +1 :power:.",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "society",
+    "name": "Society",
+    "effect": "Each player gains :negative_morale:.",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "spells",
+    "name": "Spells",
+    "effect": "When you are about to Search the Spell deck, you can perform Search(4) the Spell deck instead.",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "swift_weasel",
+    "name": "Swift Weasel",
+    "effect": "Until the next Astrologer's round: Once per turn, each player can reroll a Treasure die or a Resource die.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "terrible_plague",
+    "name": "Terrible Plague",
+    "effect": "All players flip one of their units from the \"Pack\" to the \"Few\" side, if possible.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "unexpected_reinforcements",
+    "name": "Unexpected Reinforcements",
+    "effect": "Each player can immediately search the Neutral Units deck and Recruit 1 chosen unit associated with their faction for free. Each player still needs to have the corresponding dwelling built in their town.",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "wandering_merchant",
+    "name": "Wandering Merchant",
+    "effect": "Once during this round, each player can buy a War Machine as if they visited a Trading Post, but with a discount of 3 :gold:.",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "whirlpool",
+    "name": "Whirlpool",
+    "effect": "Until the next Astrologers' round, Whirlpools can be used without cost. Additionally, all Heroes can choose their Whirlpool exit tile instead of making a roll. If there is no Sea tile on the map, ignore this card and draw another one.",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "white_raven",
+    "name": "White Raven",
+    "effect": "Each player immediately rolls 1 Resource die and gains the rolled resources.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "wild_debauchery",
+    "name": "Wild Debauchery",
+    "effect": "At the beginning of the next Resource round, all players gain 5 less :gold:.",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "wind",
+    "name": "Wind",
+    "effect": "Until the next Astrologers' round: All Heroes can continue their movement after entering a sea field from a land field. If there is no Sea tile on the map, ignore this card and draw another one.",
+    "content": [
+      "Cove Expansion"
+    ]
+  }
+]

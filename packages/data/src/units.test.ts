@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getVariant, units } from "./index.ts";
+import { getTile, getVariant, tiles, units } from "./index.ts";
 
 describe("unit data imported from the wiki", () => {
   it("has the 7 units of every faction on both sides", () => {
@@ -22,5 +22,31 @@ describe("unit data imported from the wiki", () => {
 
   it("applies the Gold Dragons correction (neutral card is Azure)", () => {
     expect(getVariant("gold_dragons", "neutral")).toMatchObject({ tier: "azure", type: "flying" });
+  });
+});
+
+describe("map tiles", () => {
+  it("imports every tile with 7 fields in printed reading order", () => {
+    expect(tiles).toHaveLength(107);
+    for (const t of tiles) expect(t.fields).toHaveLength(7);
+  });
+
+  it("puts each faction Town in the center of its Starting Tile (p. 30)", () => {
+    for (const t of tiles.filter((x) => x.group === "starting")) {
+      expect(t.fields[3]!.location).toBe("town");
+    }
+    expect(getTile("S3").fields[3]!.faction).toBe("castle");
+  });
+
+  it("reads difficulty, resource and dice from the field labels", () => {
+    const f4 = getTile("F4").fields;
+    expect(f4[0]).toMatchObject({ location: "mine", difficulty: 3, resource: "gold" });
+    expect(f4[2]).toMatchObject({ location: "water_wheel", resource: "gold", amount: 3 });
+    expect(f4[3]!.location).toBe("blocked_field");
+    expect(getTile("S3").fields[2]).toMatchObject({ location: "treasure_symbol", difficulty: 1, dice: 1 });
+  });
+
+  it("restores the Temple missing from the U7 wiki page", () => {
+    expect(getTile("U7").fields[5]!.location).toBe("temple");
   });
 });

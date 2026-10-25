@@ -1,0 +1,7813 @@
+[
+  {
+    "id": "C1",
+    "group": "center",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "dragon_utopia",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Dragon Utopia"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "C2",
+    "group": "center",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "grail",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Grail"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "C3",
+    "group": "center",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "war_machine_factory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "War Machine Factory"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "dragon_utopia",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Dragon Utopia"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      }
+    ],
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "C4",
+    "group": "center",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "scholar",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Scholar"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "grail",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Grail"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "temple",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "C5",
+    "group": "center",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "random_town",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Random Town"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "star_axis",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Star Axis"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "#C1",
+    "group": "center",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "mine",
+        "difficulty": 6,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 7,
+        "faction": "tower",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tower Settlement"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#C2",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "mine",
+        "difficulty": 6,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "cyclops_stockpile",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Cyclops Stockpile"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#C3",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "mine",
+        "difficulty": 6,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "random_town",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Random Town"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#C4",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "derelict_ship",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Derelict Ship"
+      },
+      {
+        "location": "random_town",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Random Town"
+      },
+      {
+        "location": "buoy",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Buoy"
+      },
+      {
+        "location": "mermaid",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: :movement_points: Mermaid"
+      },
+      {
+        "location": "jetsam",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Jetsam"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#C5",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "shipwreck_survivor",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact: Shipwreck Survivor"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      },
+      {
+        "location": "temple_of_the_sea",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Temple of the Sea"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "derelict_ship",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Derelict Ship"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "F1",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "necropolis",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Necropolis Settlement"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F10",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "rampart",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Rampart Settlement"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      }
+    ],
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "F11",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "F12",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "witch_hut",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "war_machine_factory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "War Machine Factory"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "F13",
+    "group": "far",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "scholar",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Scholar"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "fortress",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fortress Settlement"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "F14",
+    "group": "far",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "F15",
+    "group": "far",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "scholar",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Scholar"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "F16",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "inferno",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Inferno Settlement"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "F17",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "star_axis",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Star Axis"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "F18",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "F19",
+    "group": "far",
+    "terrain": "Rough",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "stronghold",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Stronghold Settlement"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "F2",
+    "group": "far",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "dungeon",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Dungeon Settlement"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Artifact"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F20",
+    "group": "far",
+    "terrain": "Rough",
+    "fields": [
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "F21",
+    "group": "far",
+    "terrain": "Rough",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "spell_scroll",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Spell Scroll"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "F22",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "conflux",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Conflux Settlement"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "F23",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "elemental_conflux",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Elemental Conflux"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "faerie_ring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Faerie Ring"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "F24",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "F25",
+    "group": "far",
+    "terrain": "Highlands",
+    "fields": [
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "cove",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Cove Settlement"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "F26",
+    "group": "far",
+    "terrain": "Highlands",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "grave",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Grave"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "F27",
+    "group": "far",
+    "terrain": "Highlands",
+    "fields": [
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "F3",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "castle",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Castle Settlement"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F4",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F5",
+    "group": "far",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F6",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F7",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "treasure_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F8",
+    "group": "far",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "F9",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "#F1",
+    "group": "far",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "settlement",
+        "difficulty": 3,
+        "faction": "tower",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tower Settlement"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F10",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "prison",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Prison"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F11",
+    "group": "far",
+    "terrain": "Rough",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#F12",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#F13",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#F2",
+    "group": "far",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F3",
+    "group": "far",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F4",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "market_of_time",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Market of Time"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F5",
+    "group": "far",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "black_market",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Black Market"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F6",
+    "group": "far",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "library_of_enlightenment",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Library"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F7",
+    "group": "far",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "hill_fort",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Hill Fort"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F8",
+    "group": "far",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "university",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "University"
+      },
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#F9",
+    "group": "far",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 3,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "tavern",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tavern"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 2,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "N1",
+    "group": "near",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "N10",
+    "group": "near",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "magic_spring",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "N11",
+    "group": "near",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "star_axis",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Star Axis"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "N12",
+    "group": "near",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "mystical_garden",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "N13",
+    "group": "near",
+    "terrain": "Rough",
+    "fields": [
+      {
+        "location": "spell_scroll",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Spell Scroll"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "N14",
+    "group": "near",
+    "terrain": "Elemental Fire",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "faerie_ring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Faerie Ring"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N15",
+    "group": "near",
+    "terrain": "Elemental Fire",
+    "fields": [
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "elemental_conflux",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Elemental Conflux"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N16",
+    "group": "near",
+    "terrain": "Elemental Water",
+    "fields": [
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "elemental_conflux",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Elemental Conflux"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N17",
+    "group": "near",
+    "terrain": "Elemental Water",
+    "fields": [
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N18",
+    "group": "near",
+    "terrain": "Elemental Air",
+    "fields": [
+      {
+        "location": "elemental_conflux",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Elemental Conflux"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N19",
+    "group": "near",
+    "terrain": "Elemental Air",
+    "fields": [
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "faerie_ring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Faerie Ring"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N2",
+    "group": "near",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "N20",
+    "group": "near",
+    "terrain": "Elemental Earth",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "elemental_conflux",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Elemental Conflux"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N21",
+    "group": "near",
+    "terrain": "Elemental Earth",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "faerie_ring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Faerie Ring"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "N22",
+    "group": "near",
+    "terrain": "Highlands",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "grave",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Grave"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "N3",
+    "group": "near",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "N4",
+    "group": "near",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "N5",
+    "group": "near",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "N6",
+    "group": "near",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "N7",
+    "group": "near",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "N8",
+    "group": "near",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "war_machine_factory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "War Machine Factory"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "N9",
+    "group": "near",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "scholar",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Scholar"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "#N1",
+    "group": "near",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "stables",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":movement_points: Stables"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#N10",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "shipwreck",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :resource_die: Shipwreck"
+      },
+      {
+        "location": "mermaid",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: :movement_points: Mermaid"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "buoy",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Buoy"
+      },
+      {
+        "location": "sea_chest",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sea Chest"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#N11",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "flotsam",
+        "difficulty": null,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": 2,
+        "dice": null,
+        "label": "+2 :building_materials: Flotsam"
+      },
+      {
+        "location": "sea_chest",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sea Chest"
+      },
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 5,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#N2",
+    "group": "near",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "obelisk",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Obelisk"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#N3",
+    "group": "near",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "fountain_of_youth",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fountain of Youth"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "#N4",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "water_wheel",
+        "difficulty": null,
+        "faction": null,
+        "resource": "gold",
+        "amount": 3,
+        "dice": null,
+        "label": "+3 :gold: Water Wheel"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: → 1"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#N5",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact:"
+      },
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#N6",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#N7",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "windmill",
+        "difficulty": null,
+        "faction": null,
+        "resource": "valuables",
+        "amount": 1,
+        "dice": null,
+        "label": "+1 :valuables: Windmill"
+      },
+      {
+        "location": "redwood_observatory",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Redwood Observatory"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: → 1"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#N8",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      },
+      {
+        "location": "flotsam",
+        "difficulty": null,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": 2,
+        "dice": null,
+        "label": "+2 :building_materials: Flotsam"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "shipwreck_survivor",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact: Shipwreck Survivor"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "#N9",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "shipwreck_survivor",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact: Shipwreck Survivor"
+      },
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "sea_chest",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sea Chest"
+      },
+      {
+        "location": "buoy",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Buoy"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "S1",
+    "group": "starting",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "necropolis",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Necropolis Town"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "S2",
+    "group": "starting",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "dungeon",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Dungeon Town"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "S3",
+    "group": "starting",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "castle",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Castle Town"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "S4",
+    "group": "starting",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "rampart",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Rampart Town"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "S5",
+    "group": "starting",
+    "terrain": "Swamp",
+    "fields": [
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "fortress",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Fortress Town"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "S6",
+    "group": "starting",
+    "terrain": "Dirt",
+    "fields": [
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "inferno",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Inferno Town"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "S7",
+    "group": "starting",
+    "terrain": "Rough",
+    "fields": [
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "stronghold",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Stronghold Town"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "S8",
+    "group": "starting",
+    "terrain": "Grass",
+    "fields": [
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "conflux",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Conflux Town"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "S9",
+    "group": "starting",
+    "terrain": "Highlands",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "cove",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Cove Town"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "#S1",
+    "group": "starting",
+    "terrain": "Snow",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 1,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "town",
+        "difficulty": null,
+        "faction": "tower",
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tower Town"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 1,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "U1",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "spell_scroll",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Spell Scroll"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "U2",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "artifact_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Artifact"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "U3",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "spell_scroll",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Spell Scroll"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "U4",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "treasure_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":treasure_die:"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "spell_scroll",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Spell Scroll"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "U5",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "trading_post",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Trading Post"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "magic_spring",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "spell_scroll",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Spell Scroll"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "U6",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "resource_symbol",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die:"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "artifact_symbol",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Artifact"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "U7",
+    "group": "subterranean",
+    "terrain": "Subterranean",
+    "fields": [
+      {
+        "location": "magic_spring",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Magic Spring"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "cyclops_stockpile",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Cyclops Stockpile"
+      },
+      {
+        "location": "spell_scroll",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Spell Scroll"
+      },
+      {
+        "location": "temple",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Temple"
+      },
+      {
+        "location": "sanctuary",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sanctuary"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "W1",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "gold",
+        "amount": null,
+        "dice": null,
+        "label": ":gold: Mine"
+      },
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "shipwreck_survivor",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact: Shipwreck Survivor"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "W2",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "shipwreck_survivor",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":artifact: Shipwreck Survivor"
+      },
+      {
+        "location": "mystical_garden",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Mystical Garden"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "valuables",
+        "amount": null,
+        "dice": null,
+        "label": ":valuables: Mine"
+      },
+      {
+        "location": "sea_chest",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sea Chest"
+      },
+      {
+        "location": "buoy",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Buoy"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "W3",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "jetsam",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Jetsam"
+      },
+      {
+        "location": "shipwreck",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :resource_die: Shipwreck"
+      },
+      {
+        "location": "shrine_of_magic_incantation",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Incantation"
+      },
+      {
+        "location": "tree_of_knowledge",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Tree of Knowledge"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "flotsam",
+        "difficulty": null,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": 2,
+        "dice": null,
+        "label": "+2 :building_materials: Flotsam"
+      },
+      {
+        "location": "mine",
+        "difficulty": 5,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": null,
+        "dice": null,
+        "label": ":building_materials: Mine"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "W4",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 5,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "sea_chest",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sea Chest"
+      },
+      {
+        "location": "mermaid",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: :movement_points: Mermaid"
+      },
+      {
+        "location": "learning_stone",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":experience: Learning Stone"
+      },
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "W5",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "sea_barrel",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 1,
+        "label": ":resource_die: Sea Barrel"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "derelict_ship",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Derelict Ship"
+      },
+      {
+        "location": "witch_hut",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Witch Hut"
+      },
+      {
+        "location": "buoy",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: Buoy"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "jetsam",
+        "difficulty": 5,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Jetsam"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "W6",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "jetsam",
+        "difficulty": 5,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Jetsam"
+      },
+      {
+        "location": "warriors_tomb",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Warrior's Tomb"
+      },
+      {
+        "location": "mermaid",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: :movement_points: Mermaid"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 5,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "empty_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Empty Field"
+      },
+      {
+        "location": "derelict_ship",
+        "difficulty": 4,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Derelict Ship"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "W7",
+    "group": "sea",
+    "terrain": "Water",
+    "fields": [
+      {
+        "location": "sea_chest",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Sea Chest"
+      },
+      {
+        "location": "shrine_of_magic_gesture",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Shrine of Magic Gesture"
+      },
+      {
+        "location": "flotsam",
+        "difficulty": null,
+        "faction": null,
+        "resource": "buildingMaterials",
+        "amount": 2,
+        "dice": null,
+        "label": "+2 :building_materials: Flotsam"
+      },
+      {
+        "location": "temple_of_the_sea",
+        "difficulty": 7,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Temple of the Sea"
+      },
+      {
+        "location": "pandoras_box",
+        "difficulty": 6,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": 2,
+        "label": "2 :treasure_die: / 2 :resource_die: → 1 Pandora's Box"
+      },
+      {
+        "location": "blocked_field",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": "Blocked Field"
+      },
+      {
+        "location": "mermaid",
+        "difficulty": null,
+        "faction": null,
+        "resource": null,
+        "amount": null,
+        "dice": null,
+        "label": ":positive_morale: :movement_points: Mermaid"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  }
+]

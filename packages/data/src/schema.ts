@@ -72,3 +72,53 @@ export const UnitCard = z.object({
   content: z.array(z.string()),
 });
 export type UnitCard = z.infer<typeof UnitCard>;
+
+export const RESOURCES = ["gold", "buildingMaterials", "valuables"] as const;
+export const Resource = z.enum(RESOURCES);
+export type Resource = z.infer<typeof Resource>;
+
+/** Map Tile groups (rule book p. 31, 34). The Roman numerals give the Neutral Unit difficulty. */
+export const TileGroup = z.enum(["starting", "far", "near", "center", "subterranean", "sea"]);
+export type TileGroup = z.infer<typeof TileGroup>;
+
+/** One of the 7 Fields of a Map Tile (p. 31). */
+export const TileField = z.object({
+  /** Wiki field slug (`mine`, `water_wheel`, `treasure_symbol`, …) or `town` / `settlement` / `random_town`. */
+  location: z.string().min(1),
+  /** Field Difficulty I–VII, when Neutral Units guard it. */
+  difficulty: z.number().int().min(1).max(7).nullable(),
+  /** Town and Settlement style. */
+  faction: Faction.nullable(),
+  /** Resource printed on the field: the Mine's produce, or what a `+N` field gives. */
+  resource: Resource.nullable(),
+  /** Printed amount, e.g. `+3` gold on a Water Wheel. */
+  amount: z.number().int().nullable(),
+  /** Number of dice printed (`2 :treasure_die: → 1`). */
+  dice: z.number().int().positive().nullable(),
+  /** Text as printed on the wiki, glyphs kept as `:name:`. */
+  label: z.string(),
+});
+export type TileField = z.infer<typeof TileField>;
+
+export const MapTile = z.object({
+  /** Printed name: `S3`, `F12`, `#N4`. */
+  id: z.string().min(1),
+  group: TileGroup,
+  terrain: z.string(),
+  /**
+   * Fields in reading order of the printed tile, rows of 2, 3 and 2:
+   * top-left, top-right, left, center, right, bottom-left, bottom-right.
+   */
+  fields: z.array(TileField).length(7),
+  content: z.array(z.string()),
+});
+export type MapTile = z.infer<typeof MapTile>;
+
+/** Astrologers Proclaim card, drawn at the start of every even Round (rule book p. 15). */
+export const AstrologersCard = z.object({
+  id: z.string().regex(/^[a-z0-9_]+$/),
+  name: z.string().min(1),
+  effect: z.string().min(1),
+  content: z.array(z.string()),
+});
+export type AstrologersCard = z.infer<typeof AstrologersCard>;

@@ -509,3 +509,175 @@ input {
     grid-template-columns: 1fr;
   }
 }
+
+/* Home */
+.home {
+  max-width: 640px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mode-card {
+  font: inherit;
+  text-align: left;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.mode-card strong {
+  font-family: Cinzel, serif;
+  color: var(--gold);
+  font-size: 18px;
+}
+.mode-card:hover {
+  border-color: var(--gold);
+}
+main.wide {
+  max-width: none;
+}
+.row-gap {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.player-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 6px 0;
+  flex-wrap: wrap;
+}
+.player-row input {
+  width: 160px;
+}
+
+/* Adventure map */
+.adventure {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 16px;
+  align-items: start;
+}
+.map-wrap {
+  position: sticky;
+  top: 8px;
+}
+.acting-banner {
+  font-family: Cinzel, serif;
+  font-weight: 700;
+  color: var(--gold);
+  background: var(--panel);
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+.map {
+  width: 100%;
+  max-height: calc(100vh - 120px);
+  background: #0e0c09;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+.map .field {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 3;
+}
+.map .field.hover {
+  stroke: rgba(255, 255, 255, 0.55);
+}
+.map .field.can-move {
+  fill: rgba(110, 220, 120, 0.22);
+  stroke: #8fe39a;
+  cursor: pointer;
+}
+.map .field.can-discover {
+  fill: rgba(255, 215, 94, 0.12);
+  stroke: rgba(255, 215, 94, 0.7);
+  cursor: pointer;
+}
+.map .slot polygon {
+  fill: rgba(255, 215, 94, 0.08);
+  stroke: rgba(255, 215, 94, 0.6);
+  stroke-dasharray: 6 4;
+  stroke-width: 2;
+  cursor: pointer;
+}
+.map .slot-label {
+  fill: var(--gold);
+  font-size: 60px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+}
+.hero-token {
+  pointer-events: none;
+}
+.hero-letter {
+  fill: #fff;
+  font: 700 24px "Source Sans 3", sans-serif;
+}
+.adventure-side .panel h3 {
+  margin-bottom: 4px;
+}
+.res-row {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+.small {
+  font-size: 13px;
+}
+.army-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.army-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 2px 8px 2px 2px;
+  font-size: 12px;
+}
+.army-chip img {
+  width: 28px;
+  height: 38px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.player-box.out {
+  opacity: 0.5;
+}
+.astro p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+.pick.off {
+  opacity: 0.55;
+}
+.adventure-combat h2 {
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .adventure {
+    grid-template-columns: 1fr;
+  }
+  .map-wrap {
+    position: static;
+  }
+}
