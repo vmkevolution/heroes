@@ -1,5 +1,19 @@
 import { describe, expect, it } from "vitest";
-import { getTile, getVariant, tiles, units } from "./index.ts";
+import {
+  abilities,
+  artifacts,
+  getHero,
+  getSpell,
+  getTile,
+  getTown,
+  getVariant,
+  heroes,
+  spells,
+  statistics,
+  tiles,
+  towns,
+  units,
+} from "./index.ts";
 
 describe("unit data imported from the wiki", () => {
   it("has the 7 units of every faction on both sides", () => {
@@ -48,5 +62,43 @@ describe("map tiles", () => {
 
   it("restores the Temple missing from the U7 wiki page", () => {
     expect(getTile("U7").fields[5]!.location).toBe("temple");
+  });
+});
+
+describe("Might & Magic cards, Heroes and Towns", () => {
+  it("imports every Spell, Ability, Artifact and Statistic card", () => {
+    expect(spells.length).toBeGreaterThanOrEqual(59);
+    expect(abilities.length).toBeGreaterThanOrEqual(32);
+    expect(artifacts.length).toBeGreaterThanOrEqual(90);
+    expect(statistics.map((s) => s.id)).toEqual(["attack", "defense", "power", "knowledge"]);
+    expect(getSpell("magic_arrow").school).toBeNull(); // any School when cast (p. 26)
+    expect(getSpell("fireball")).toMatchObject({ school: "fire", level: "expert" });
+    expect(artifacts.every((a) => a.effects.length === 2)).toBe(true); // top and bottom effect (p. 27)
+  });
+
+  it("reads Hero Boards: Catherine the Knight (p. 21 example Hero)", () => {
+    expect(getHero("catherine")).toMatchObject({
+      faction: "castle",
+      type: "might",
+      stats: { attack: 2, defense: 2, power: 1, knowledge: 1 },
+      ability: "leadership",
+    });
+    expect(getHero("catherine").specialties.map((s) => s.level)).toEqual([1, 4, 6]);
+    expect(heroes.every((h) => h.specialties.length === 3)).toBe(true);
+  });
+
+  it("reads all 10 Town Boards with 8 Buildings each", () => {
+    expect(towns).toHaveLength(10);
+    expect(getTown("castle").buildings.map((b) => b.slot)).toEqual([
+      "city_hall",
+      "citadel",
+      "mage_guild",
+      "dwelling_bronze",
+      "dwelling_silver",
+      "dwelling_gold",
+      "special_1",
+      "special_2",
+    ]);
+    expect(getTown("castle").spellBookCost).toBe(6);
   });
 });

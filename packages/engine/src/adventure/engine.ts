@@ -5,7 +5,7 @@
  * `state.phase` says what the game waits for. Combat runs inside the adventure state, so a
  * whole game replays from its seed and its list of actions.
  */
-import { FACTIONS, getTile, getVariant, units, type Faction, type Resource, type TileField } from "@heroes/data";
+import { FACTIONS, getArtifact, getTile, getVariant, units, type Faction, type Resource } from "@heroes/data";
 import { nextInt, rollAttackDie, type RngState } from "../rng.ts";
 import { applyCombatAction, createCombat, IllegalAction } from "../combat/engine.ts";
 import { placeInLines, placeNeutrals } from "../combat/setup.ts";
@@ -22,6 +22,44 @@ import {
   SHARED_FLAG,
 } from "./locations.ts";
 import { emptyMarks, MAIN_HERO_MP, SECONDARY_HERO_MP } from "./scenario.ts";
+import {
+  applyRefresh,
+  applySearch,
+  cardSide,
+  discardFromHand,
+  drawCards,
+  flushQueue,
+  gainCard,
+  gainExperience,
+  isRemovable,
+  rewardLevels,
+  mainHero,
+  playCard,
+  queueFirst,
+  refreshExperts,
+  removeFromHand,
+  takeFromDeck,
+} from "./cardplay.ts";
+import { cardInfo } from "./cards.ts";
+import { build, cityHallOptions, cityHallRound, hireHero, recruit, refreshTowns, spellBook, trade } from "./town.ts";
+import {
+  changeMorale,
+  changeProduction,
+  currentPlayer,
+  gain,
+  gainMp,
+  getHero,
+  getPlayer,
+  levelFor,
+  log,
+  MAX_LEVEL,
+  pay,
+  fieldAt,
+  tileHexes,
+  type FieldInfo,
+} from "./core.ts";
+
+export { currentPlayer, fieldAt, getHero, getPlayer, levelFor, tileHexes, type FieldInfo };
 import type {
   AdventureAction,
   AdventureEvent,
@@ -30,6 +68,7 @@ import type {
   Choice,
   CombatContext,
   FieldMarks,
+  Op,
   Foe,
   Hero,
   NeutralFoe,
@@ -44,7 +83,6 @@ import type {
 export { IllegalAction };
 
 const MAX_COMBAT_UNITS = 5;
-const MAX_LEVEL = 7;
 /** Paying to defend a Town or Settlement without a Hero (p. 46). */
 const SIEGE_DEFENSE_COST = 8;
 /** A defeated Main Hero pays the winner (p. 44). */
@@ -55,28 +93,6 @@ const SECONDARY_HERO_COST = 7; // Tavern (p. 78)
 // ---------------------------------------------------------------------------
 // Board queries
 
-export interface FieldInfo {
-  hex: Hex;
-  tile: PlacedTile;
-  index: number;
-  field: TileField;
-}
-
-export function tileHexes(tile: PlacedTile): Hex[] {
-  return Array.from({ length: 7 }, (_, i) => fieldHex(tile.center, tile.rotation, i));
-}
-
-export function fieldAt(state: AdventureState, hex: Hex): FieldInfo | null {
-  for (const tile of state.tiles) {
-    for (let i = 0; i < 7; i++) {
-      if (sameHex(fieldHex(tile.center, tile.rotation, i), hex)) {
-        return { hex, tile, index: i, field: getTile(tile.tileId).fields[i]! };
-      }
-    }
-  }
-  return null;
-}
-
 export function marksAt(state: AdventureState, hex: Hex): FieldMarks {
   return state.marks[hexKey(hex)] ?? emptyMarks();
 }
@@ -86,21 +102,8 @@ function editMarks(state: AdventureState, hex: Hex): FieldMarks {
   return (state.marks[key] ??= emptyMarks());
 }
 
-export function currentPlayer(state: AdventureState): Player {
-  return state.players[state.current]!;
-}
 
-export function getHero(state: AdventureState, id: string): Hero {
-  const h = state.heroes.find((x) => x.id === id);
-  if (!h) throw new IllegalAction(`no hero "${id}"`);
-  return h;
-}
 
-export function getPlayer(state: AdventureState, id: PlayerId): Player {
-  const p = state.players.find((x) => x.id === id);
-  if (!p) throw new IllegalAction(`no player "${id}"`);
-  return p;
-}
 
 export function heroLevel(state: AdventureState, hero: Hero): number {
   // Secondary Heroes count as the Main Hero's Level for Quick Combat (p. 20).
@@ -108,8 +111,6 @@ export function heroLevel(state: AdventureState, hero: Hero): number {
   return levelFor(main?.experience ?? 0);
 }
 
-/** Each Level needs 2 Experience; Level VII is the last (p. 21). */
-export const levelFor = (xp: number) => Math.min(MAX_LEVEL, 1 + Math.floor(xp / 2));
 
 export const totalMp = (h: Hero) => h.mp + h.bonusMp;
 
@@ -184,8 +185,12 @@ export function actingPlayer(state: AdventureState): PlayerId | null {
   const ph = state.phase;
   switch (ph.type) {
     case "turn":
-    case "choice":
       return currentPlayer(state).id;
+    case "choice":
+      return getHero(state, ph.choice.heroId).owner;
+    case "refresh":
+    case "search":
+      return ph.player;
     case "siege-decision":
       return ph.defender;
     case "combat-setup":
@@ -215,6 +220,13 @@ export function sidePlayer(state: AdventureState, ctx: CombatContext, side: Side
 
 export function applyAdventureAction(prev: AdventureState, action: AdventureAction): AdventureState {
   const state = structuredClone(prev);
+  apply(state, action);
+  autoPass(state);
+  flushQueue(state);
+  return state;
+}
+
+function apply(state: AdventureState, action: AdventureAction): AdventureState {
   const ph = state.phase;
   if (ph.type === "over") throw new IllegalAction("the game is over");
 
@@ -225,6 +237,7 @@ export function applyAdventureAction(prev: AdventureState, action: AdventureActi
       }
       const hero = getHero(state, action.heroId);
       spendMp(hero, 1);
+      getPlayer(state, hero.owner).trading = false; // trading lasts while the Hero stays at the Trading Post
       hero.pos = { ...action.to };
       log(state, { type: "move", heroId: hero.id, to: hero.pos });
       enterField(state, hero);
@@ -274,7 +287,13 @@ export function applyAdventureAction(prev: AdventureState, action: AdventureActi
     case "choose": {
       if (ph.type !== "choice") throw new IllegalAction("no choice pending");
       state.phase = { type: "turn" };
-      resolveChoice(state, ph.choice, action.option);
+      if (ph.choice.kind === "options") {
+        const op = ph.choice.options[action.option];
+        if (!op) throw new IllegalAction("pick one of the options");
+        resolveOp(state, getHero(state, ph.choice.heroId), op);
+      } else {
+        resolveChoice(state, ph.choice, action.option);
+      }
       return state;
     }
     case "settlement": {
@@ -357,7 +376,197 @@ export function applyAdventureAction(prev: AdventureState, action: AdventureActi
       endTurn(state);
       return state;
     }
+    case "refresh":
+      applyRefresh(state, action.discard);
+      return state;
+    case "search":
+    case "search-pick":
+      applySearch(state, action);
+      return state;
+    case "play-card": {
+      const result = playCard(state, action);
+      const cph = state.phase;
+      if (cph.type === "combat" && result.combat.length > 0) {
+        for (const a of result.combat) {
+          if (cph.combat.phase.type === "over") break;
+          cph.combat = applyCombatAction(cph.combat, a);
+        }
+        if (cph.combat.phase.type === "over") finishCombat(state, cph.context, cph.combat);
+      }
+      return state;
+    }
+    case "discard-card":
+      discardFromHand(state, action.player, action.handIndex);
+      return state;
+    case "build":
+      build(state, action.slot);
+      return state;
+    case "recruit":
+      recruit(state, action.recruit, action.reinforce);
+      return state;
+    case "hire-hero":
+      hireHero(state, action.at);
+      return state;
+    case "spell-book":
+      spellBook(state);
+      return state;
+    case "trade":
+      trade(state, action.sell, action.buy, action.times);
+      return state;
+    case "adjust": {
+      // Hand-resolved card effects: the players apply what the card says (p. 22).
+      const p = getPlayer(state, action.player);
+      if (action.resources) {
+        for (const [r, n] of Object.entries(action.resources) as [Resource, number][]) {
+          if (p.resources[r] + n < 0) throw new IllegalAction(`not enough ${r}`);
+        }
+        for (const [r, n] of Object.entries(action.resources) as [Resource, number][]) p.resources[r] += n;
+        log(state, { type: "gain", player: p.id, resources: action.resources });
+      }
+      if (action.mp) {
+        const hero = mainHero(state, p.id);
+        if (hero) {
+          if (action.mp > 0) gainMp(state, hero, action.mp);
+          else spendMp(hero, -action.mp);
+        }
+      }
+      if (action.draw) drawCards(state, p, action.draw);
+      if (action.morale) changeMorale(state, p, action.morale);
+      return state;
+    }
   }
+}
+
+/**
+ * Before an attack is rolled both players may play cards (p. 43). A side that cannot play any
+ * (no Main Hero in the fight, or no card in hand) passes at once.
+ */
+function autoPass(state: AdventureState) {
+  for (;;) {
+    const ph = state.phase;
+    if (ph.type !== "combat") return;
+    const cph = ph.combat.phase;
+    if (cph.type !== "reaction") return;
+    const side = (["attacker", "defender"] as const).find((s) => !cph.passed[s] && !canPlayCards(state, ph.context, s));
+    if (!side) return;
+    ph.combat = applyCombatAction(ph.combat, { type: "pass", side });
+    if (ph.combat.phase.type === "over") {
+      finishCombat(state, ph.context, ph.combat);
+      return;
+    }
+  }
+}
+
+function canPlayCards(state: AdventureState, ctx: CombatContext, side: Side): boolean {
+  const owner = sidePlayer(state, ctx, side);
+  if (!owner) return false;
+  const p = getPlayer(state, owner);
+  return cardSide(state, ctx, owner) === side && p.hand.length > 0;
+}
+
+/** Resolves one alternative of an `options` choice. */
+function resolveOp(state: AdventureState, hero: Hero, op: Op) {
+  const p = getPlayer(state, hero.owner);
+  const main = mainHero(state, p.id) ?? hero;
+  switch (op.op) {
+    case "none":
+      return;
+    case "gain":
+      gain(state, p.id, op.resources);
+      return;
+    case "mp":
+      gainMp(state, main, op.n);
+      return;
+    case "draw":
+      drawCards(state, p, op.n);
+      return;
+    case "morale":
+      changeMorale(state, p, +1);
+      return;
+    case "experience":
+      gainExperience(state, main, op.n);
+      return;
+    case "search":
+      if (op.cost) pay(state, p, { gold: op.cost });
+      queueFirst(
+        state,
+        ...Array.from({ length: op.times ?? 1 }, () => ({ kind: "search" as const, player: p.id, deck: op.deck, n: op.n, source: "location" })),
+      );
+      return;
+    case "search-discard":
+      if (op.cost) pay(state, p, { gold: op.cost });
+      queueFirst(state, { kind: "search", player: p.id, deck: op.deck, n: op.n, source: "location", fromDiscard: true });
+      return;
+    case "resource-dice":
+      rollResources(state, hero, op.n, op.chooseOne);
+      return;
+    case "minor-artifact": {
+      // Hard starting bonus: reveal Artifacts until a Minor one, then reshuffle (p. 10).
+      const pile = state.decks.artifact;
+      const at = pile.deck.findIndex((c) => cardInfoLevel(c) === "minor");
+      if (at >= 0) gainCard(state, p, pile.deck.splice(at, 1)[0]!, "starting-bonus");
+      state.rng = shuffle(pile.deck, state.rng);
+      return;
+    }
+    case "trade":
+      p.trading = true;
+      return;
+    case "seq":
+      for (const o of op.ops) resolveOp(state, hero, o);
+      return;
+    case "reinforce": {
+      const u = p.army[op.armyIndex];
+      if (!u || u.variant !== "few") throw new IllegalAction("pick a Few unit");
+      if (op.cost) pay(state, p, { gold: op.cost });
+      u.variant = "pack";
+      log(state, { type: "recruit", player: p.id, unitId: u.unitId, variant: "pack" });
+      return;
+    }
+    case "take": {
+      if (op.cost) pay(state, p, { gold: op.cost });
+      const source =
+        op.from === "artifact-discard" ? state.decks.artifact.discard : op.from === "ability-deck" ? state.decks.ability.deck : p.discard;
+      const at = source.lastIndexOf(op.card);
+      if (at < 0) throw new IllegalAction("that card is gone");
+      source.splice(at, 1);
+      gainCard(state, p, op.card, "location");
+      return;
+    }
+    case "discard-top": {
+      const card = takeFromDeck(state, op.deck);
+      if (card) state.decks[op.deck].discard.push(card);
+      return;
+    }
+    case "remove": {
+      const card = p.hand[op.handIndex];
+      if (!card || !isRemovable(p, card)) throw new IllegalAction("this card cannot be removed");
+      removeFromHand(state, p, op.handIndex);
+      if (op.then === "gold") gain(state, p.id, { gold: 1 });
+      else if (op.then === "experience") gainExperience(state, main, 1);
+      else if (op.then === "search-own-deck") {
+        const deck = cardInfo(card).deck;
+        if (deck) queueFirst(state, { kind: "search", player: p.id, deck, n: 2, source: "location" });
+      } else if (op.then === "market") {
+        queueFirst(state, {
+          kind: "choice",
+          player: p.id,
+          source: "market_of_time",
+          options: (["ability", "spell", "artifact"] as const).map((deck): Op => ({ op: "search", deck, n: 2 })),
+        });
+      } else if (op.then) resolveOp(state, hero, op.then);
+      return;
+    }
+    case "stat": {
+      if (op.cost) pay(state, p, { gold: op.cost });
+      if (op.replaceHandIndex !== undefined) removeFromHand(state, p, op.replaceHandIndex);
+      gainCard(state, p, `${op.empowered ? "stat+" : "stat"}:${op.stat}`, "location");
+      return;
+    }
+  }
+}
+
+function cardInfoLevel(card: string): string | null {
+  return card.startsWith("artifact:") ? getArtifact(card.slice(9)).level : null;
 }
 
 // ---------------------------------------------------------------------------
@@ -380,11 +589,13 @@ function spendMp(hero: Hero, n: number) {
 
 function endTurn(state: AdventureState) {
   for (const h of state.heroes) if (h.owner === currentPlayer(state).id) h.bonusMp = 0;
+  currentPlayer(state).trading = false;
   // Next player still in the game, or a new Round.
   for (let i = state.current + 1; i < state.players.length; i++) {
     if (!state.players[i]!.eliminated) {
       state.current = i;
       log(state, { type: "turn-start", player: state.players[i]!.id });
+      state.queue.push({ kind: "refresh", player: state.players[i]!.id });
       return;
     }
   }
@@ -431,6 +642,16 @@ function startRound(state: AdventureState) {
     h.mp = (h.kind === "main" ? MAIN_HERO_MP : SECONDARY_HERO_MP) + state.effects.extraMp;
     h.bonusMp = 0;
   }
+  refreshTowns(state);
+  refreshExperts(state);
+  // City Hall: "At the beginning of each Resource round, choose…" (Cove: Astrologers' round).
+  for (const p of state.players) {
+    if (p.eliminated || !p.town.buildings.includes("city_hall")) continue;
+    if ((cityHallRound(p.faction) === "resource") !== resourceRound) continue;
+    const options = cityHallOptions(p);
+    if (options.length === 1) resolveOp(state, mainHero(state, p.id) ?? state.heroes[0]!, options[0]!);
+    else state.queue.push({ kind: "choice", player: p.id, source: "city_hall", options });
+  }
   if (resourceRound) {
     for (const p of state.players) {
       if (p.eliminated) continue;
@@ -445,6 +666,7 @@ function startRound(state: AdventureState) {
   }
   state.current = state.players.findIndex((p) => !p.eliminated);
   log(state, { type: "turn-start", player: currentPlayer(state).id });
+  state.queue.push({ kind: "refresh", player: currentPlayer(state).id });
 }
 
 /** Astrologers Proclaim (p. 15). Effects that only touch the map are applied; the rest are shown to players. */
@@ -652,6 +874,16 @@ function flagField(state: AdventureState, hero: Hero, info: FieldInfo, m: FieldM
       }
       break;
     }
+    case "star_axis": {
+      // Replace a Statistic card in hand with its Empowered version (wiki "Star Axis").
+      const player = getPlayer(state, hero.owner);
+      const options: Op[] = [];
+      player.hand.forEach((c, i) => {
+        if (c.startsWith("stat:")) options.push({ op: "stat", stat: c.slice(5) as "attack", empowered: true, replaceHandIndex: i });
+      });
+      offer(state, hero, loc, options);
+      break;
+    }
     default:
       if (NEEDS_DECKS.has(loc)) log(state, { type: "not-automated", location: loc });
   }
@@ -703,10 +935,10 @@ function applyLocation(state: AdventureState, hero: Hero, info: FieldInfo) {
     case "grave":
       changeMorale(state, player, -1);
       gain(state, player.id, { gold: 3 });
-      log(state, { type: "not-automated", location: "grave" });
+      search(state, player, "artifact", 2);
       return;
     case "warriors_tomb":
-      log(state, { type: "not-automated", location: "warriors_tomb" });
+      search(state, player, "artifact", 2, 2);
       changeMorale(state, player, -1);
       changeMorale(state, player, -1);
       return;
@@ -726,13 +958,116 @@ function applyLocation(state: AdventureState, hero: Hero, info: FieldInfo) {
       const [die, rng] = rollAttackDie(state.rng);
       state.rng = rng;
       if (die === 0) gain(state, player.id, { gold: 5 });
-      if (die === 1) log(state, { type: "not-automated", location: "sea_chest" });
+      if (die === 1) search(state, player, "artifact", 1);
       return;
     }
     case "temple_of_the_sea":
       gain(state, player.id, { gold: 10 });
-      log(state, { type: "not-automated", location: "temple_of_the_sea" });
+      search(state, player, "artifact", 2, 2);
       return;
+    case "artifact_symbol":
+      offer(state, hero, f.location, [{ op: "search", deck: "artifact", n: 2 }]);
+      return;
+    case "shipwreck_survivor":
+      search(state, player, "artifact", 2);
+      return;
+    case "derelict_ship":
+      offer(state, hero, f.location, [
+        { op: "seq", ops: [{ op: "search", deck: "artifact", n: 2 }, { op: "gain", resources: { gold: 2 } }] },
+      ]);
+      return;
+    case "shrine_of_magic_incantation":
+      search(state, player, "spell", 2);
+      return;
+    case "shrine_of_magic_gesture":
+      if (player.resources.gold >= 3) offer(state, hero, f.location, [{ op: "search", deck: "spell", n: 2, cost: 3 }]);
+      return;
+    case "magic_spring": {
+      const top = player.discard.slice(-3).reverse();
+      offer(state, hero, f.location, top.map((card): Op => ({ op: "take", card, from: "own-discard" })));
+      return;
+    }
+    case "witch_hut": {
+      const top = state.decks.ability.deck.at(-1);
+      const options: Op[] = player.hand
+        .map((c, i) => ({ c, i }))
+        .filter(({ c }) => c.startsWith("ability") && isRemovable(player, c))
+        .map(({ i }): Op => ({ op: "remove", handIndex: i }));
+      if (top) options.push({ op: "take", card: top, from: "ability-deck" }, { op: "discard-top", deck: "ability" });
+      offer(state, hero, f.location, options, false);
+      return;
+    }
+    case "scholar": {
+      const [die, rng] = rollAttackDie(state.rng);
+      state.rng = rng;
+      if (die === 1) {
+        const options: Op[] = (["attack", "defense", "power", "knowledge"] as const).map((stat): Op => ({ op: "stat", stat }));
+        player.hand.forEach((c, i) => {
+          if (c.startsWith("stat:") || c.startsWith("stat+:")) options.push({ op: "remove", handIndex: i, then: { op: "none" } });
+        });
+        offer(state, hero, f.location, options, false);
+      } else {
+        search(state, player, die === 0 ? "ability" : "spell", 2);
+      }
+      return;
+    }
+    case "faerie_ring":
+      offer(
+        state,
+        hero,
+        f.location,
+        player.hand
+          .map((c, i) => ({ c, i }))
+          .filter(({ c }) => isRemovable(player, c))
+          .map(({ i }): Op => ({ op: "remove", handIndex: i, then: "search-own-deck" })),
+        false,
+      );
+      return;
+    case "market_of_time":
+      offer(
+        state,
+        hero,
+        f.location,
+        player.hand.map((_, i): Op => ({ op: "remove", handIndex: i, then: "market" })),
+        false,
+      );
+      return;
+    case "university":
+      if (player.resources.gold >= 6) offer(state, hero, f.location, [{ op: "search-discard", deck: "ability", n: 4, cost: 6 }]);
+      return;
+    case "trading_post": {
+      const options: Op[] = [{ op: "trade" }];
+      player.hand.forEach((c, i) => {
+        if (isRemovable(player, c)) options.push({ op: "remove", handIndex: i, then: "gold" });
+      });
+      offer(state, hero, f.location, options);
+      return;
+    }
+    case "black_market": {
+      const price = { minor: 5, major: 7, relic: 10 } as const;
+      const top = state.decks.artifact.discard.slice(-4).reverse();
+      offer(
+        state,
+        hero,
+        f.location,
+        top
+          .filter((c) => player.resources.gold >= price[getArtifact(c.slice(9)).level])
+          .map((card): Op => ({ op: "take", card, from: "artifact-discard", cost: price[getArtifact(card.slice(9)).level] })),
+      );
+      return;
+    }
+    case "library_of_enlightenment": {
+      if (player.resources.gold < 3) return;
+      const options: Op[] = [];
+      player.hand.forEach((c, i) => {
+        if (!c.startsWith("stat:")) return;
+        for (const stat of ["attack", "defense", "power", "knowledge"] as const) {
+          if (`stat:${stat}` !== c) options.push({ op: "stat", stat, replaceHandIndex: i, cost: 3 });
+        }
+      });
+      offer(state, hero, f.location, options);
+      return;
+    }
     case "cyclops_stockpile":
       rollResources(state, hero, 4, false);
       return;
@@ -747,12 +1082,35 @@ function applyLocation(state: AdventureState, hero: Hero, info: FieldInfo) {
       }
       return;
     case "hill_fort":
+      offer(state, hero, f.location, hillFortOptions(player));
+      return;
     case "sanctuary":
-      if (f.location === "hill_fort") log(state, { type: "not-automated", location: f.location });
       return;
     default:
       if (NEEDS_DECKS.has(f.location)) log(state, { type: "not-automated", location: f.location });
   }
+}
+
+/** Offers the player the location's alternatives, with "do nothing" last when the effect is optional. */
+function offer(state: AdventureState, hero: Hero, source: string, options: Op[], optional = true) {
+  const list = optional ? [...options, { op: "none" } as Op] : options;
+  if (options.length === 0) return;
+  queueFirst(state, { kind: "choice", player: hero.owner, source, options: list });
+}
+
+function search(state: AdventureState, player: Player, deck: "ability" | "artifact" | "spell", n: number, times = 1) {
+  for (let i = 0; i < times; i++) queueFirst(state, { kind: "search", player: player.id, deck, n, source: "location" });
+}
+
+/** Hill Fort (wiki): reinforce a bronze or silver unit for 3 gold less than its cost. */
+function hillFortOptions(player: Player): Op[] {
+  const options: Op[] = [];
+  player.army.forEach((u, i) => {
+    if (!canReinforceAtSettlement(u)) return;
+    const cost = Math.max(0, (getVariant(u.unitId, "pack").cost?.gold ?? 0) - 3);
+    if (player.resources.gold >= cost) options.push({ op: "reinforce", armyIndex: i, cost });
+  });
+  return options;
 }
 
 function addSecondaryHero(state: AdventureState, player: Player, at: Hex) {
@@ -825,7 +1183,7 @@ function resolveTreasure(state: AdventureState, hero: Hero, face: TreasureFace) 
       gainExperience(state, hero, 1);
       return;
     case "artifact":
-      log(state, { type: "not-automated", location: "artifact_symbol" });
+      search(state, getPlayer(state, hero.owner), "artifact", 2);
       return;
     case "resource":
       rollResources(state, hero, 1, true);
@@ -857,44 +1215,11 @@ function rollResources(state: AdventureState, hero: Hero, dice: number, chooseOn
 // ---------------------------------------------------------------------------
 // Resources, Experience, Morale
 
-function gain(state: AdventureState, player: PlayerId, res: Partial<Resources>) {
-  const p = getPlayer(state, player);
-  for (const [r, n] of Object.entries(res) as [Resource, number][]) p.resources[r] += n;
-  log(state, { type: "gain", player, resources: res });
-}
 
-function pay(state: AdventureState, p: Player, res: Partial<Resources>) {
-  for (const [r, n] of Object.entries(res) as [Resource, number][]) {
-    if (p.resources[r] < n) throw new IllegalAction(`not enough ${r}`);
-  }
-  for (const [r, n] of Object.entries(res) as [Resource, number][]) p.resources[r] -= n;
-  log(state, { type: "pay", player: p.id, resources: res });
-}
 
-function changeProduction(state: AdventureState, player: PlayerId, r: Resource, delta: number) {
-  const p = getPlayer(state, player);
-  p.production[r] = Math.max(0, p.production[r] + delta);
-  log(state, { type: "production", player, resource: r, delta });
-}
 
-function gainExperience(state: AdventureState, hero: Hero, amount: number) {
-  if (hero.kind !== "main") return; // Secondary Heroes never gain Experience (p. 44)
-  hero.experience += amount;
-  log(state, { type: "experience", heroId: hero.id, amount, level: levelFor(hero.experience) });
-}
 
-function gainMp(state: AdventureState, hero: Hero, n: number) {
-  hero.bonusMp += n;
-  log(state, { type: "mp", heroId: hero.id, amount: n });
-}
 
-/** Morale Tokens (p. 19). Necropolis ignores Morale. */
-function changeMorale(state: AdventureState, p: Player, delta: 1 | -1) {
-  if (p.faction === "necropolis") return;
-  if (delta > 0) p.morale = p.morale < 0 ? p.morale + 1 : 1;
-  else p.morale = p.morale > 0 ? 0 : Math.max(-2, p.morale - 1);
-  log(state, { type: "morale", player: p.id, morale: p.morale });
-}
 
 function canReinforceAtSettlement(u: ArmyUnit): boolean {
   if (u.variant !== "few") return false;
@@ -949,11 +1274,12 @@ function setupSide(state: AdventureState, ctx: CombatContext, side: Side, picks:
     attacker: pending.attacker ?? [],
     defender,
     rng: { kind: "seeded", seed },
-    // No Attack or Defense cards yet (they come with the decks), so no reaction window.
-    options: { neutralSide: ctx.foe.kind === "neutral" ? "defender" : null, reactions: false },
+    // Players may play cards before each attack (p. 43); sides that cannot are passed automatically.
+    options: { neutralSide: ctx.foe.kind === "neutral" ? "defender" : null, reactions: true },
   });
   state.phase = { type: "combat", context: ctx, combat };
   if (combat.phase.type === "over") finishCombat(state, ctx, combat);
+  autoPass(state);
 }
 
 /** Army index of a combat unit, from its uid (`a2-griffins` → second pick of the attacker). */
@@ -1010,6 +1336,7 @@ function finishCombat(state: AdventureState, ctx: CombatContext, combat: CombatS
       if (hero.kind === "main" && azure) {
         hero.experience = Math.max(hero.experience, 2 * (MAX_LEVEL - 1)); // Level VII at once (p. 44)
         log(state, { type: "experience", heroId: hero.id, amount: 0, level: MAX_LEVEL });
+        rewardLevels(state, hero);
       } else {
         gainExperience(state, hero, experienceFor(heroLevel(state, hero), ctx.foe.difficulty));
       }
@@ -1129,8 +1456,5 @@ function surrender(state: AdventureState, ctx: CombatContext, combat: CombatStat
 
 const isOver = (state: AdventureState) => state.phase.type === "over";
 
-function log(state: AdventureState, e: AdventureEvent) {
-  state.log.push(structuredClone(e));
-}
 
 export { areAdjacent };

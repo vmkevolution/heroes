@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import { advEn, advFr } from "./i18n-adventure.ts";
+import { cardsEn, cardsFr } from "./i18n-cards.ts";
 
 export type Lang = "fr" | "en";
 
@@ -66,11 +67,13 @@ const fr = {
     flipped: (u: string) => `${u} : retournée sur sa face Few`,
     defeated: (u: string) => `${u} : unité vaincue`,
     retreat: "L'attaquant bat en retraite",
+    effect: (side: string, source: string, unit: string) => `${side} joue ${source} sur ${unit}`,
     over: "Fin du combat",
   },
   statAttack: "Attaque",
   statDefense: "Défense",
   adv: advFr,
+  cards: cardsFr,
 };
 
 const en: typeof fr = {
@@ -136,11 +139,13 @@ const en: typeof fr = {
     flipped: (u) => `${u} flips to its Few side`,
     defeated: (u) => `${u} is defeated`,
     retreat: "The attacker retreats",
+    effect: (side: string, source: string, unit: string) => `${side} plays ${source} on ${unit}`,
     over: "Combat over",
   },
   statAttack: "Attack",
   statDefense: "Defense",
   adv: advEn,
+  cards: cardsEn,
 };
 
 export type Messages = typeof fr;

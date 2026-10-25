@@ -1,0 +1,2306 @@
+[
+  {
+    "id": "adelaide",
+    "name": "Adelaide",
+    "faction": "castle",
+    "heroClass": "Cleric",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "wisdom",
+    "specialtyName": "Frost Ring",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Discard 1 card. Target a space on the Combat board. All units adjacent to this space suffer 1 :damage:.",
+        "image": "hero_specialties-castle-adelaide-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Select 1 Spell or Specialty card from your discard pile and put it back in your hand.",
+        "image": "hero_specialties-castle-adelaide-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Discard 2 cards. Target a space on the Combat board. All units adjacent to this space suffer 2 :damage:.",
+        "image": "hero_specialties-castle-adelaide-7.webp"
+      }
+    ],
+    "image": "heroes-castle-magic-adelaide.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "catherine",
+    "name": "Catherine",
+    "faction": "castle",
+    "heroClass": "Knight",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "leadership",
+    "specialtyName": "Crusaders",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Crusaders unit.",
+        "image": "hero_specialties-castle-catherine-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for the Crusaders unit.",
+        "image": "hero_specialties-castle-catherine-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThis effect doubles for the Crusaders unit.",
+        "image": "hero_specialties-castle-catherine-7.webp"
+      }
+    ],
+    "image": "heroes-castle-might-catherine.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "ingham",
+    "name": "Ingham",
+    "faction": "castle",
+    "heroClass": "Cleric",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "mysticism",
+    "specialtyName": "Zealots",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Zealots unit.",
+        "image": "hero_specialties-castle-ingham-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThe effect doubles for the Zealots unit.",
+        "image": "hero_specialties-castle-ingham-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your Zealots unit ignores its targets' :defense:.\n\n— OR —\n\n:instant: Draw 1 card.",
+        "image": "hero_specialties-castle-ingham-7.webp"
+      }
+    ],
+    "image": "heroes-castle-magic-ingham.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "lord_haart_castle",
+    "name": "Lord Haart",
+    "faction": "castle",
+    "heroClass": "Knight",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "estates",
+    "specialtyName": "Estates",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Gain 2 :gold:.",
+        "image": "hero_specialties-castle-lord_haart-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Gain 3 :gold:.",
+        "image": "hero_specialties-castle-lord_haart-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Gain 5 :gold:.",
+        "image": "hero_specialties-castle-lord_haart-7.webp"
+      }
+    ],
+    "image": "heroes-castle-might-lord_haart.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "tarnum_castle",
+    "name": "Tarnum",
+    "faction": "castle",
+    "heroClass": "Knight",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "artillery",
+    "specialtyName": "Ballista",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":map_effect: Pay 5 :gold: to gain a Ballista.\n\n— OR —\n\n:instant: Activate your Ballista (if you have one).",
+        "image": "hero_specialties-castle-tarnum-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: You can play this card at the start of Combat. For this Combat, you gain an additional Ballista, even if you already have one. Discard the Ballista after this Combat.\n\n— OR —\n\n:instant: Draw 1 card.",
+        "image": "hero_specialties-castle-tarnum-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Choose 2 enemy units. Each of these units suffers 2 :damage:.",
+        "image": "hero_specialties-castle-tarnum-7.webp"
+      }
+    ],
+    "image": "heroes-castle-might-tarnum.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "rion",
+    "name": "Rion",
+    "faction": "castle",
+    "heroClass": "Cleric",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "wisdom",
+    "specialtyName": "Battlefield Medic",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Remove 1 :damage: from one of your units, then draw 1 card.",
+        "image": "hero_specialties-castle-rion-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Remove 1 :damage: or :paralysis: from one of your units, then draw 1 card.",
+        "image": "hero_specialties-castle-rion-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Remove up to 2 :damage: or :paralysis: from one of your units, then draw 2 cards and discard 1 card from your hand.",
+        "image": "hero_specialties-castle-rion-7.webp"
+      }
+    ],
+    "image": "heroes-castle-magic-rion.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "valeska",
+    "name": "Valeska",
+    "faction": "castle",
+    "heroClass": "Knight",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "archery",
+    "specialtyName": "Marksmen",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThe effect doubles for the Marksmen unit.",
+        "image": "hero_specialties-castle-valeska-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Marksmen unit.",
+        "image": "hero_specialties-castle-valeska-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":activation: Activate one of your :ranged_unit: units, even if that unit has already been activated.\n\n— OR —\n\n:instant: Draw 2 cards.\n\nThe effect doubles for the Marksmen unit.",
+        "image": "hero_specialties-castle-valeska-7.webp"
+      }
+    ],
+    "image": "heroes-castle-might-valeska.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "lord_haart_necropolis",
+    "name": "Lord Haart",
+    "faction": "necropolis",
+    "heroClass": "Death Knight",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 2,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "necromancy",
+    "specialtyName": "Dread Knights",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Reduce the :damage: from enemy retaliation by 1.\n\nThis effect doubles for the Dread Knights unit.",
+        "image": "hero_specialties-necropolis-lord_haart-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, when an enemy performs a Retaliation Attack against this unit, roll 2 Attack dice and resolve the lower outcome.",
+        "image": "hero_specialties-necropolis-lord_haart-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Reduce the :damage: from enemy retaliation by 2.\n\nThis effect doubles for the Dread Knights unit.",
+        "image": "hero_specialties-necropolis-lord_haart-7.webp"
+      }
+    ],
+    "image": "heroes-necropolis-might-lord_haart.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "moandor",
+    "name": "Moandor",
+    "faction": "necropolis",
+    "heroClass": "Death Knight",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 2,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "necromancy",
+    "specialtyName": "Liches",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Liches unit.",
+        "image": "hero_specialties-necropolis-moandor-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThe effect doubles for the Liches unit.",
+        "image": "hero_specialties-necropolis-moandor-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your Liches unit deals elemental damage.\n\n:instant: +2 :attack:",
+        "image": "hero_specialties-necropolis-moandor-7.webp"
+      }
+    ],
+    "image": "heroes-necropolis-might-moandor.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "sandro",
+    "name": "Sandro",
+    "faction": "necropolis",
+    "heroClass": "Necromancer",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "sorcery",
+    "specialtyName": "Cloak of the Undead King",
+    "specialties": [
+      {
+        "level": 1,
+        "text": "Put this card on the Pack of Skeletons Unit card; it replaces the card's statistic. When the Cloak of the Undead King card's :health_points: drops to 0. When it does, discard this card.\n\nHorde of Skeletons\n:attack: 3 :defense: 1 :health_points: 2 :initiative: 6",
+        "image": "hero_specialties-necropolis-sandro-1.webp"
+      },
+      {
+        "level": 4,
+        "text": "Put this card on the Pack of Zombies Unit card; it replaces the card's statistic. When the Cloak of the Undead King card's :health_points: drops to 0. When it does, discard this card.\n\nHorde of Zombies\n:attack: 4 :defense: 1 :health_points: 3 :initiative: 5",
+        "image": "hero_specialties-necropolis-sandro-4.webp"
+      },
+      {
+        "level": 6,
+        "text": "Put this card on the Skeletons Unit card; it replaces the card's statistic. When the Cloak of the Undead King card's :health_points: drops to 0. When it does, discard this card.\n\nLegion of Skeletons\n:attack: 4 :defense: 1 :health_points: 2 :initiative: 6",
+        "image": "hero_specialties-necropolis-sandro-7.webp"
+      }
+    ],
+    "image": "heroes-necropolis-magic-sandro.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "septienna",
+    "name": "Septienna",
+    "faction": "necropolis",
+    "heroClass": "Necromancer",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "necromancy",
+    "specialtyName": "Death Ripple",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":activation: Enemy :bronze_tier: units suffer 1 :damage:.\n\n— OR —\n\n:instant: +1 :power:",
+        "image": "hero_specialties-necropolis-septienna-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":activation: Enemy :silver_tier: units suffer 1 :damage:.\n\n— OR —\n\n:instant: +1 :power:",
+        "image": "hero_specialties-necropolis-septienna-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":activation: Enemy :gold_tier: and :azure_tier: units suffer 2 :damage:.\n\n— OR —\n\n:instant: +2 :power:",
+        "image": "hero_specialties-necropolis-septienna-7.webp"
+      }
+    ],
+    "image": "heroes-necropolis-magic-septienna.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "tamika",
+    "name": "Tamika",
+    "faction": "necropolis",
+    "heroClass": "Death Knight",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 2,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "offense",
+    "specialtyName": "Dread Knights",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Dread Knights unit.",
+        "image": "hero_specialties-necropolis-tamika-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for the Dread Knights unit.",
+        "image": "hero_specialties-necropolis-tamika-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThis effect doubles for the Dread Knights unit.",
+        "image": "hero_specialties-necropolis-tamika-7.webp"
+      }
+    ],
+    "image": "heroes-necropolis-might-tamika.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "vidomina",
+    "name": "Vidomina",
+    "faction": "necropolis",
+    "heroClass": "Necromancer",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "necromancy",
+    "specialtyName": "Necromancy",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":map_effect: Play after winning Combat other than Quick Combat. You can Reinforce a :bronze_tier: or :silver_tier: unit of your choice for half the :gold: cost (rounded down).",
+        "image": "hero_specialties-necropolis-vidomina-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Put this card on the \"Pack\" of Skeletons Unit card; it replaces the card's statistic. Keep the card, until the card's :health_points: drops to 0. When it does, discard this card.\n\nHorde of Skeletons\n:attack: 3 :defense: 1 :health_points: 2 :initiative: 6",
+        "image": "hero_specialties-necropolis-vidomina-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":map_effect: Play after winning Combat other than Quick Combat. You can Reinforce any unit of your choice for half the :gold: cost (rounded down).",
+        "image": "hero_specialties-necropolis-vidomina-7.webp"
+      }
+    ],
+    "image": "heroes-necropolis-magic-vidomina.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "alamar",
+    "name": "Alamar",
+    "faction": "dungeon",
+    "heroClass": "Warlock",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 3,
+      "knowledge": 2
+    },
+    "ability": "wisdom",
+    "specialtyName": "Resurrection",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Cancel an attack that would reduce your * unit's :health_points: to 0.\n\n:power: 1 - *:bronze_tier:\n:power: 2 - *:silver_tier:\n:power: 4 - *:gold_tier:",
+        "image": "hero_specialties-dungeon-alamar-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Cancel an attack that would reduce your * unit's :health_points: to 0.\n\n:power: 0 - *:bronze_tier:\n:power: 1 - *:silver_tier:\n:power: 3 - *:gold_tier:",
+        "image": "hero_specialties-dungeon-alamar-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Cancel an attack that would reduce your * unit's :health_points: to 0.\n\n:power: 0 - *:bronze_tier:\n:power: 0 - *:silver_tier:\n:power: 2 - *:gold_tier:",
+        "image": "hero_specialties-dungeon-alamar-7.webp"
+      }
+    ],
+    "image": "heroes-dungeon-magic-alamar.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "deemer",
+    "name": "Deemer",
+    "faction": "dungeon",
+    "heroClass": "Warlock",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 3,
+      "knowledge": 2
+    },
+    "ability": "scouting",
+    "specialtyName": "Meteor Shower",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Select a unit and 1 unit adjacent to it. Deal * to both selected units.\n\n:power: 0 - 1 :damage:\n:power: 2 - 2 :damage:\n:power: 4 - 3 :damage:",
+        "image": "hero_specialties-dungeon-deemer-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: +1 :power:\n\n— OR —\n\n:instant: Shuffle your discard pile back into your deck, then draw 1 card.",
+        "image": "hero_specialties-dungeon-deemer-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Select a unit and 2 units adjacent to it. Deal * to all selected units.\n\n:power: 0 - 1 :damage:\n:power: 2 - 2 :damage:\n:power: 4 - 3 :damage:",
+        "image": "hero_specialties-dungeon-deemer-7.webp"
+      }
+    ],
+    "image": "heroes-dungeon-magic-deemer.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "jeddite",
+    "name": "Jeddite",
+    "faction": "dungeon",
+    "heroClass": "Warlock",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 3,
+      "knowledge": 2
+    },
+    "ability": "sorcery",
+    "specialtyName": "Mysterious Warlock",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Draw up to 3 cards from your deck, take any Spell and Specialty cards to your hand. Discard the remaining cards.",
+        "image": "hero_specialties-dungeon-jeddite-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Cancel an attack that would reduce your * unit's :health_points: to 0.\n\n:power: 0 - *:bronze_tier: Unit\n:power: 1 - *:silver_tier: Unit\n:power: 2 - *:gold_tier: Unit",
+        "image": "hero_specialties-dungeon-jeddite-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Draw up to 4 cards from your deck, take any Spell and Specialty cards to your hand. Discard the remaining cards.",
+        "image": "hero_specialties-dungeon-jeddite-7.webp"
+      }
+    ],
+    "image": "heroes-dungeon-magic-jeddite.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "lorelei",
+    "name": "Lorelei",
+    "faction": "dungeon",
+    "heroClass": "Overlord",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "scouting",
+    "specialtyName": "Harpies",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Harpies unit.",
+        "image": "hero_specialties-dungeon-lorelei-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThe effect doubles for the Harpies unit.",
+        "image": "hero_specialties-dungeon-lorelei-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :attack:.\n\nThe effect doubles for the Harpies unit.",
+        "image": "hero_specialties-dungeon-lorelei-7.webp"
+      }
+    ],
+    "image": "heroes-dungeon-might-lorelei.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "mutare",
+    "name": "Mutare",
+    "faction": "dungeon",
+    "heroClass": "Overlord",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "tactics",
+    "specialtyName": "Dragons",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for a Dragons unit.",
+        "image": "hero_specialties-dungeon-mutare-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for a Dragons unit.",
+        "image": "hero_specialties-dungeon-mutare-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThis effect doubles for a Dragons unit.",
+        "image": "hero_specialties-dungeon-mutare-7.webp"
+      }
+    ],
+    "image": "heroes-dungeon-might-mutare.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "sephinroth",
+    "name": "Sephinroth",
+    "faction": "dungeon",
+    "heroClass": "Warlock",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 3,
+      "knowledge": 2
+    },
+    "ability": "intelligence",
+    "specialtyName": "Valuables",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":map_effect: Pay 2 :gold: to gain 1 :valuables:.\n\n— OR —\n\n:instant: Draw 1 card.",
+        "image": "hero_specialties-dungeon-sephinroth-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":map_effect: Gain 1 :valuables:.\n\n— OR —\n\n:instant: +2 :power:.",
+        "image": "hero_specialties-dungeon-sephinroth-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":map_effect: Gain 2 :valuables:.\n\n— OR —\n\nDraw 2 cards.",
+        "image": "hero_specialties-dungeon-sephinroth-7.webp"
+      }
+    ],
+    "image": "heroes-dungeon-magic-sephinroth.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "tarnum_dungeon",
+    "name": "Tarnum",
+    "faction": "dungeon",
+    "heroClass": "Overlord",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "estates",
+    "specialtyName": "Dragons",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for a Dragons unit.",
+        "image": "hero_specialties-dungeon-tarnum-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Choose a row (straight line of 5 consecutive spaces). Every unit in that row suffers 2 :damage:.",
+        "image": "hero_specialties-dungeon-tarnum-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Remove a Black cube from or place it on a Dragons unit.\n\n— OR —\n\n:instant: Your selected unit gains +2 :attack:.",
+        "image": "hero_specialties-dungeon-tarnum-7.webp"
+      }
+    ],
+    "image": "heroes-dungeon-might-tarnum.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "cyra",
+    "name": "Cyra",
+    "faction": "tower",
+    "heroClass": "Wizard",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 3
+    },
+    "ability": "diplomacy",
+    "specialtyName": "Haste",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 3.",
+        "image": "hero_specialties-tower-cyra-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Your selected unit's gains +1 :attack:.</br></br>The effect doubles if the attacked unit has higher :initiative:.",
+        "image": "hero_specialties-tower-cyra-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 3. This unit gains +1 :defense: against attacks made by units with lower :initiative:.",
+        "image": "hero_specialties-tower-cyra-7.webp"
+      }
+    ],
+    "image": "heroes-tower-magic-cyra.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "dracon",
+    "name": "Dracon",
+    "faction": "tower",
+    "heroClass": "Wizard",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 3
+    },
+    "ability": "wisdom",
+    "specialtyName": "Enchanters",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Magi and Enchanters units.",
+        "image": "hero_specialties-tower-dracon-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":map_effect: If you have a Pack of Magi Unit card, discard it. Then, search the Neutral Unit :gold_tier: deck for the Enchanters card and add it to your Unit deck. You can control only 1 Enchanters unit at a time.\n\n— OR —\n\n:instant: Draw a card.",
+        "image": "hero_specialties-tower-dracon-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 2.\n\nThis effect doubles for the Magi and Enchanters units.",
+        "image": "hero_specialties-tower-dracon-7.webp"
+      }
+    ],
+    "image": "heroes-tower-magic-dracon.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "iona",
+    "name": "Iona",
+    "faction": "tower",
+    "heroClass": "Alchemist",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "intelligence",
+    "specialtyName": "Genies",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for the Genies unit.",
+        "image": "hero_specialties-tower-iona-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Genies unit.",
+        "image": "hero_specialties-tower-iona-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :defense:\n\nThis effect doubles for the Genies unit.",
+        "image": "hero_specialties-tower-iona-7.webp"
+      }
+    ],
+    "image": "heroes-tower-might-iona.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "josephine",
+    "name": "Josephine",
+    "faction": "tower",
+    "heroClass": "Alchemist",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "sorcery",
+    "specialtyName": "Golems",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for the Golems unit.",
+        "image": "hero_specialties-tower-josephine-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Golems unit.",
+        "image": "hero_specialties-tower-josephine-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :attack:\n\nThis effect doubles for the Golems unit.",
+        "image": "hero_specialties-tower-josephine-7.webp"
+      }
+    ],
+    "image": "heroes-tower-might-josephine.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "solmyr",
+    "name": "Solmyr",
+    "faction": "tower",
+    "heroClass": "Wizard",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 3
+    },
+    "ability": "sorcery",
+    "specialtyName": "Chain Lightning",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":activation: Select a unit and another 2 units closest to it. Allocate 1/1/0 :damage:. starting with the first selected unit.",
+        "image": "hero_specialties-tower-solmyr-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Discard up to 3 cards from your Might and Magic deck and return 1 of them to your hand.",
+        "image": "hero_specialties-tower-solmyr-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":activation: Select a unit and another 2 units closest to it. Allocate 2/1/1 :damage:. starting with the first selected unit.",
+        "image": "hero_specialties-tower-solmyr-7.webp"
+      }
+    ],
+    "image": "heroes-tower-magic-solmyr.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "torosar",
+    "name": "Torosar",
+    "faction": "tower",
+    "heroClass": "Wizard",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "mysticism",
+    "specialtyName": "Ballista",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":map_effect: Pay 5 :gold: to gain a Ballista.\n\n— OR —\n\n:instant: Activate your Ballista (if you have one).",
+        "image": "hero_specialties-tower-torosar-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":map_effect: Until the end of the round, gain an additional Ballista during Combat.</br></br>When played, this card counts as a Ballista.",
+        "image": "hero_specialties-tower-torosar-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: For this Combat, gain an additional Ballista. You can activate all your Ballistas now.</br></br>When played, this card counts as a Ballista.",
+        "image": "hero_specialties-tower-torosar-7.webp"
+      }
+    ],
+    "image": "heroes-tower-might-torosar.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "clancy",
+    "name": "Clancy",
+    "faction": "rampart",
+    "heroClass": "Ranger",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 3,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "pathfinding",
+    "specialtyName": "Unicorns",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Unicorns unit.",
+        "image": "hero_specialties-rampart-clancy-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThis effect doubles for the Unicorns unit.",
+        "image": "hero_specialties-rampart-clancy-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit reduces any :damage: it takes from spells by 1 - to a minimum of 0.\n\nThis effect doubles for the Unicorns unit.",
+        "image": "hero_specialties-rampart-clancy-7.webp"
+      }
+    ],
+    "image": "heroes-rampart-might-clancy.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "gelu",
+    "name": "Gelu",
+    "faction": "rampart",
+    "heroClass": "Ranger",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 3,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "archery",
+    "specialtyName": "Sharpshooters",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Elves and Sharpshooters units.",
+        "image": "hero_specialties-rampart-gelu-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":map_effect: If you have a Pack of Elves Unit card, discard it. Then, search the Neutral Unit :silver_tier: deck for the Sharpshooters card and add it to your Unit deck. You can control only 1 Sharpshooters unit at a time.\n\n— OR —\n\n:instant: Draw a card.",
+        "image": "hero_specialties-rampart-gelu-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 2.\n\nThis effect doubles for the Elves and Sharpshooters units.",
+        "image": "hero_specialties-rampart-gelu-7.webp"
+      }
+    ],
+    "image": "heroes-rampart-might-gelu.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "gem",
+    "name": "Gem",
+    "faction": "rampart",
+    "heroClass": "Druid",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 2
+    },
+    "ability": "first_aid",
+    "specialtyName": "First Aid",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Take a First Aid Tent card from the War Machine deck at no cost.\n\n— OR —\n\n:instant: If you already have a First Aid Tent, draw 1 card.",
+        "image": "hero_specialties-rampart-gem-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Remove 2 :damage: from one of your units.",
+        "image": "hero_specialties-rampart-gem-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, double your First Aid Tent's effect.",
+        "image": "hero_specialties-rampart-gem-7.webp"
+      }
+    ],
+    "image": "heroes-rampart-magic-gem.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "ivor",
+    "name": "Ivor",
+    "faction": "rampart",
+    "heroClass": "Ranger",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 3,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "offense",
+    "specialtyName": "Elves",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Set all dice of the next attack roll to \"0\".",
+        "image": "hero_specialties-rampart-ivor-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for a :ranged_unit: unit.",
+        "image": "hero_specialties-rampart-ivor-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 2.\n\n— OR —\n\n:instant: Instead of rolling, set all dice of your roll to the values of your choice.",
+        "image": "hero_specialties-rampart-ivor-7.webp"
+      }
+    ],
+    "image": "heroes-rampart-might-ivor.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "melodia",
+    "name": "Melodia",
+    "faction": "rampart",
+    "heroClass": "Druid",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 2
+    },
+    "ability": "luck",
+    "specialtyName": "Fortune",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Gain :positive_morale: and 1 :gold:.",
+        "image": "hero_specialties-rampart-melodia-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Roll 2 :resource_die: and resolve one of them.</br>Gain 1 :gold:.",
+        "image": "hero_specialties-rampart-melodia-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":map_effect: During this turn, the number of dice you roll and resolve at locations is increased by 1. Gain 1 :gold:.",
+        "image": "hero_specialties-rampart-melodia-7.webp"
+      }
+    ],
+    "image": "heroes-rampart-magic-melodia.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "mephala",
+    "name": "Mephala",
+    "faction": "rampart",
+    "heroClass": "Ranger",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 3,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "leadership",
+    "specialtyName": "Armorer",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: +2 :defense:",
+        "image": "hero_specialties-rampart-mephala-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: +3 :defense:",
+        "image": "hero_specialties-rampart-mephala-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: +4 :defense:",
+        "image": "hero_specialties-rampart-mephala-7.webp"
+      }
+    ],
+    "image": "heroes-rampart-might-mephala.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "tarnum_rampart",
+    "name": "Tarnum",
+    "faction": "rampart",
+    "heroClass": "Ranger",
+    "type": "might",
+    "stats": {
+      "attack": 1,
+      "defense": 3,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "leadership",
+    "specialtyName": "Sharpshooters",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Elves or Sharpshooters unit.",
+        "image": "hero_specialties-rampart-tarnum-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThis effect doubles for the Elves or Sharpshooters unit.",
+        "image": "hero_specialties-rampart-tarnum-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Play this card at the start of Combat. Find a Sharpshooters unit in the :silver_tier: Neutral Unit deck (or its discard pile) and add it to your army for this Combat (discard it afterwards).\n\n— OR —\n\n:instant: Draw a card.",
+        "image": "hero_specialties-rampart-tarnum-7.webp"
+      }
+    ],
+    "image": "heroes-rampart-might-tarnum.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "adrienne",
+    "name": "Adrienne",
+    "faction": "fortress",
+    "heroClass": "Witch",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "wisdom",
+    "specialtyName": "Fire Magic",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: During this Combat, all your spells from the School of Fire Magic are cast with +1 :power:.",
+        "image": "hero_specialties-fortress-adrienne-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Search (3) your deck, then shuffle your cards from the discard pile into the deck.",
+        "image": "hero_specialties-fortress-adrienne-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: During this Combat, all your spells from the School of Fire Magic are cast with +2 :power:.",
+        "image": "hero_specialties-fortress-adrienne-7.webp"
+      }
+    ],
+    "image": "heroes-fortress-magic-adrienne.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "bron",
+    "name": "Bron",
+    "faction": "fortress",
+    "heroClass": "Beastmaster",
+    "type": "might",
+    "stats": {
+      "attack": 0,
+      "defense": 4,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "resistance",
+    "specialtyName": "Basilisks",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Basilisks unit.",
+        "image": "hero_specialties-fortress-bron-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for the Basilisks unit.",
+        "image": "hero_specialties-fortress-bron-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 2.\n\nThis effect doubles for the Basilisks unit.",
+        "image": "hero_specialties-fortress-bron-7.webp"
+      }
+    ],
+    "image": "heroes-fortress-might-bron.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "gerwulf",
+    "name": "Gerwulf",
+    "faction": "fortress",
+    "heroClass": "Beastmaster",
+    "type": "might",
+    "stats": {
+      "attack": 0,
+      "defense": 4,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "armorer",
+    "specialtyName": "Ballista",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":map_effect: Pay 5 :gold: to gain a Ballista.\n\n— OR —\n\n:instant: Activate your Ballista (if you have one).",
+        "image": "hero_specialties-fortress-gerwulf-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":activation: The selected unit suffers 1 :damage:.</br>:instant: Discard your Ballista to inflict 2 :damage: on the selected unit.",
+        "image": "hero_specialties-fortress-gerwulf-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: You can play this card at the start of Combat. For this Combat, you can choose targets for your Ballista (if you have one). </br>:instant: Discard your Ballista to inflict 3 :damage: on the selected unit.",
+        "image": "hero_specialties-fortress-gerwulf-7.webp"
+      }
+    ],
+    "image": "heroes-fortress-might-gerwulf.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "merist",
+    "name": "Merist",
+    "faction": "fortress",
+    "heroClass": "Witch",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 2
+    },
+    "ability": "first_aid",
+    "specialtyName": "Stone Skin",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :defense: and an additional +1 :defense: if it is adjacent to the attacker.",
+        "image": "hero_specialties-fortress-merist-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":activation: All your units gain a Defense token.",
+        "image": "hero_specialties-fortress-merist-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your Defense tokens provide the extra :defense: on a \"0\" or a \"+1\" roll. When this card is played, place a Defense token on all your units.",
+        "image": "hero_specialties-fortress-merist-7.webp"
+      }
+    ],
+    "image": "heroes-fortress-magic-merist.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "tarnum_fortress",
+    "name": "Tarnum",
+    "faction": "fortress",
+    "heroClass": "Beastmaster",
+    "type": "might",
+    "stats": {
+      "attack": 0,
+      "defense": 4,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "armorer",
+    "specialtyName": "Basilisks",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Basilisks unit.",
+        "image": "hero_specialties-fortress-tarnum-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThe effect doubles for the Basilisks unit.",
+        "image": "hero_specialties-fortress-tarnum-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit uses its special ability regardless of the required roll's result.\n\n:instant: Your selected unit gains +2 :attack:.",
+        "image": "hero_specialties-fortress-tarnum-7.webp"
+      }
+    ],
+    "image": "heroes-fortress-might-tarnum.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "tazar",
+    "name": "Tazar",
+    "faction": "fortress",
+    "heroClass": "Beastmaster",
+    "type": "might",
+    "stats": {
+      "attack": 0,
+      "defense": 4,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "armorer",
+    "specialtyName": "War Hero",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: +2 :defense:",
+        "image": "hero_specialties-fortress-tazar-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit gains +1 :defense:.",
+        "image": "hero_specialties-fortress-tazar-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":map_effect: From your hand, Remove 1 card or Discard 3 cards to draw an Artifact card from the top of the Artifact deck.",
+        "image": "hero_specialties-fortress-tazar-7.webp"
+      }
+    ],
+    "image": "heroes-fortress-might-tazar.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "wystan",
+    "name": "Wystan",
+    "faction": "fortress",
+    "heroClass": "Beastmaster",
+    "type": "might",
+    "stats": {
+      "attack": 0,
+      "defense": 4,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "archery",
+    "specialtyName": "Lizardmen",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Lizardmen unit.",
+        "image": "hero_specialties-fortress-wystan-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for the Lizardmen unit.",
+        "image": "hero_specialties-fortress-wystan-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 2.\n\nThis effect doubles for the Lizardmen unit.",
+        "image": "hero_specialties-fortress-wystan-7.webp"
+      }
+    ],
+    "image": "heroes-fortress-might-wystan.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "ash",
+    "name": "Ash",
+    "faction": "inferno",
+    "heroClass": "Heretic",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "eagle_eye",
+    "specialtyName": "Bloodlust",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected :ground_unit: or :flying_unit: unit gains +2 :attack:. Place a Black cube on that unit.",
+        "image": "hero_specialties-inferno-ash-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected :ground_unit: or :flying_unit: unit's :attack: is increased by 2 and its :initiative: is increased by 1. Place a Black cube on that unit.",
+        "image": "hero_specialties-inferno-ash-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected :ground_unit: or :flying_unit: unit gains +3 :attack: and ignores Retaliation Attacks. Place a Black cube on that unit.",
+        "image": "hero_specialties-inferno-ash-7.webp"
+      }
+    ],
+    "image": "heroes-inferno-magic-ash.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "fiona",
+    "name": "Fiona",
+    "faction": "inferno",
+    "heroClass": "Demoniac",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "scouting",
+    "specialtyName": "Cerberi",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Cerberi unit.",
+        "image": "hero_specialties-inferno-fiona-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThis effect doubles for the Cerberi unit.",
+        "image": "hero_specialties-inferno-fiona-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :attack:\n\nThis effect doubles for the Cerberi unit.",
+        "image": "hero_specialties-inferno-fiona-7.webp"
+      }
+    ],
+    "image": "heroes-inferno-might-fiona.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "octavia",
+    "name": "Octavia",
+    "faction": "inferno",
+    "heroClass": "Demoniac",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "scholar",
+    "specialtyName": "Gold",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Play this card after rolling at least 1 :resource_die: to set 1 :resource_die: to \"6 :gold:\".\n\n— OR —\n\n:instant: Draw 1 card.",
+        "image": "hero_specialties-inferno-octavia-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Roll and resolve 1 :resource_die:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :attack:.",
+        "image": "hero_specialties-inferno-octavia-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Roll 2 :resource_die: and resolve one of them.\n\n— OR —\n\n:instant: Draw 2 cards.",
+        "image": "hero_specialties-inferno-octavia-7.webp"
+      }
+    ],
+    "image": "heroes-inferno-might-octavia.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "rashka",
+    "name": "Rashka",
+    "faction": "inferno",
+    "heroClass": "Demoniac",
+    "type": "might",
+    "stats": {
+      "attack": 2,
+      "defense": 2,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "scholar",
+    "specialtyName": "Efreet",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:\n\nThis effect doubles for the Efreet unit.",
+        "image": "hero_specialties-inferno-rashka-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: Until the end of Combat, when your selected unit is attacked by a :ground_unit: or :flying_unit: unit, the attacker takes 1 :damage:.",
+        "image": "hero_specialties-inferno-rashka-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: Until the end of Combat, when your selected unit is attacked by a :ground_unit: or :flying_unit: unit, the attacker takes 1 :damage:.\n\nThis effect doubles for the Efreet unit.",
+        "image": "hero_specialties-inferno-rashka-7.webp"
+      }
+    ],
+    "image": "heroes-inferno-might-rashka.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "xyron",
+    "name": "Xyron",
+    "faction": "inferno",
+    "heroClass": "Heretic",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "wisdom",
+    "specialtyName": "Inferno",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":activation: Discard 2 cards. Then select a space. All units on this and the adjacent spaces take 1 :damage:.",
+        "image": "hero_specialties-inferno-xyron-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":activation: Discard 1 card. Then select a space. All units on this and the adjacent spaces take 1 :damage:.",
+        "image": "hero_specialties-inferno-xyron-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":activation: Select a space. All units on this and the adjacent spaces take 1 :damage:.",
+        "image": "hero_specialties-inferno-xyron-7.webp"
+      }
+    ],
+    "image": "heroes-inferno-magic-xyron.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "zydar",
+    "name": "Zydar",
+    "faction": "inferno",
+    "heroClass": "Heretic",
+    "type": "magic",
+    "stats": {
+      "attack": 1,
+      "defense": 1,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "sorcery",
+    "specialtyName": "Sorcery",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Play this card after casting a :spell:, then draw 1 card.\n\n— OR —\n\n:instant: +1 :power:",
+        "image": "hero_specialties-inferno-zydar-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: The next :spell: you cast does not count toward the limit.\n\n— OR —\n\n:instant: +2 :power:",
+        "image": "hero_specialties-inferno-zydar-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: Until the end of the Combat round, after casting a :spell:, draw 1 card.\n\n:instant: +2 :power:",
+        "image": "hero_specialties-inferno-zydar-7.webp"
+      }
+    ],
+    "image": "heroes-inferno-magic-zydar.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "crag_hack",
+    "name": "Crag Hack",
+    "faction": "stronghold",
+    "heroClass": "Barbarian",
+    "type": "might",
+    "stats": {
+      "attack": 4,
+      "defense": 0,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "offense",
+    "specialtyName": "Offense",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, your selected unit gains +1 :attack:.",
+        "image": "hero_specialties-stronghold-crag_hack-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: Your selected unit gains +1 :attack:. You can discard a card to gain additional +1 :attack:.",
+        "image": "hero_specialties-stronghold-crag_hack-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, every card you play can grant :instant: +1 :attack: instead of its regular effect.",
+        "image": "hero_specialties-stronghold-crag_hack-7.webp"
+      }
+    ],
+    "image": "heroes-stronghold-might-crag_hack.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "dessa",
+    "name": "Dessa",
+    "faction": "stronghold",
+    "heroClass": "Battle Mage",
+    "type": "magic",
+    "stats": {
+      "attack": 2,
+      "defense": 1,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "logistics",
+    "specialtyName": "Logistics",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Extend your Combat against a Neutral Army for another round (without spending any :movement_points:).",
+        "image": "hero_specialties-stronghold-dessa-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":map_effect: Your Main Hero gains 1 :movement_points:.\n\n— OR —\n\n:ongoing: For this Combat, the :initiative: of all your units is increased by 1.",
+        "image": "hero_specialties-stronghold-dessa-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":map_effect: Your Main Hero gains 1 :movement_points: and can move through blocked fields during this turn.\n\n— OR —\n\n:instant: Draw 2 cards.",
+        "image": "hero_specialties-stronghold-dessa-7.webp"
+      }
+    ],
+    "image": "heroes-stronghold-magic-dessa.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "gundula",
+    "name": "Gundula",
+    "faction": "stronghold",
+    "heroClass": "Battle Mage",
+    "type": "magic",
+    "stats": {
+      "attack": 2,
+      "defense": 1,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "wisdom",
+    "specialtyName": "Slow",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, the selected unit's :initiative: is decreased by 2—to a minimum of 1.",
+        "image": "hero_specialties-stronghold-gundula-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Your selected unit's gains +1 :attack:.</br></br>The effect doubles if the unit's :initiative: is higher than the attacked unit's :initiative:.",
+        "image": "hero_specialties-stronghold-gundula-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, the selected unit's :initiative: is decreased by 4—to a minimum of 1.",
+        "image": "hero_specialties-stronghold-gundula-7.webp"
+      }
+    ],
+    "image": "heroes-stronghold-magic-gundula.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "shiva",
+    "name": "Shiva",
+    "faction": "stronghold",
+    "heroClass": "Barbarian",
+    "type": "might",
+    "stats": {
+      "attack": 4,
+      "defense": 0,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "scouting",
+    "specialtyName": "Thunderbirds",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Thunderbirds unit.",
+        "image": "hero_specialties-stronghold-shiva-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit gains +1 :health_points:.\n\nThe effect doubles for the Thunderbirds unit.",
+        "image": "hero_specialties-stronghold-shiva-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit gains +2 :initiative:.\n\nThe effect doubles for the Thunderbirds unit.",
+        "image": "hero_specialties-stronghold-shiva-7.webp"
+      }
+    ],
+    "image": "heroes-stronghold-might-shiva.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "tarnum_stronghold",
+    "name": "Tarnum",
+    "faction": "stronghold",
+    "heroClass": "Barbarian",
+    "type": "might",
+    "stats": {
+      "attack": 4,
+      "defense": 0,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "offense",
+    "specialtyName": "Offense",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Draw 1 card.",
+        "image": "hero_specialties-stronghold-tarnum-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit gains +1 :attack:.",
+        "image": "hero_specialties-stronghold-tarnum-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +3 :attack:.",
+        "image": "hero_specialties-stronghold-tarnum-7.webp"
+      }
+    ],
+    "image": "heroes-stronghold-might-tarnum.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "yog",
+    "name": "Yog",
+    "faction": "stronghold",
+    "heroClass": "Barbarian",
+    "type": "might",
+    "stats": {
+      "attack": 4,
+      "defense": 0,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "offense",
+    "specialtyName": "Cyclopes",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Cyclops unit.",
+        "image": "hero_specialties-stronghold-yog-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThe effect doubles for the Cyclopes unit.",
+        "image": "hero_specialties-stronghold-yog-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThe effect doubles for the Cyclopes unit.",
+        "image": "hero_specialties-stronghold-yog-7.webp"
+      }
+    ],
+    "image": "heroes-stronghold-might-yog.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "ciele",
+    "name": "Ciele",
+    "faction": "conflux",
+    "heroClass": "Elementalist",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 3
+    },
+    "ability": "water_magic",
+    "specialtyName": "Magic Arrow",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Take a Magic Arrow spell from your discard pile and put it into your hand.\n\n— OR —\n\n:instant: +1 :power:",
+        "image": "hero_specialties-conflux-ciele-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Take a Magic Arrow spell from your discard pile and cast it. This spell does not count toward your Spell limit per Combat round.\n\n— OR —\n\n:instant: +1 :power:",
+        "image": "hero_specialties-conflux-ciele-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: The selected unit suffers 2 :damage:.\n\n— OR —\n\n:instant: +2 :power:",
+        "image": "hero_specialties-conflux-ciele-7.webp"
+      }
+    ],
+    "image": "heroes-conflux-magic-ciele.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "erdamon",
+    "name": "Erdamon",
+    "faction": "conflux",
+    "heroClass": "Planeswalker",
+    "type": "might",
+    "stats": {
+      "attack": 3,
+      "defense": 1,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "estates",
+    "specialtyName": "Magma Elementals",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Magma Elementals unit.",
+        "image": "hero_specialties-conflux-erdamon-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThe effect doubles for the Magma Elementals unit.",
+        "image": "hero_specialties-conflux-erdamon-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :attack:.\n\n— OR —\n\n:ongoing: For this Combat, your selected unit's :initiative: is increased by 3.",
+        "image": "hero_specialties-conflux-erdamon-7.webp"
+      }
+    ],
+    "image": "heroes-conflux-might-erdamon.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "luna",
+    "name": "Luna",
+    "faction": "conflux",
+    "heroClass": "Elementalist",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 3
+    },
+    "ability": "basic_fire_magic",
+    "specialtyName": "Fire Wall",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, place this card or a Fire Wall token in an empty space on the Combat board. Deal 1 :damage: to any unit starting its turn here or stopping here and to any :ground_unit: or :ranged_unit: unit passing through.",
+        "image": "hero_specialties-conflux-luna-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Take one card from your discard pile into your hand.\n\n— OR —\n\n:instant: +2 :power:",
+        "image": "hero_specialties-conflux-luna-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, place this card or a Fire Wall token in an empty space on the Combat board. Deal 3 :damage: to any unit starting its turn here or stopping here and to any :ground_unit: or :ranged_unit: unit passing through.",
+        "image": "hero_specialties-conflux-luna-7.webp"
+      }
+    ],
+    "image": "heroes-conflux-magic-luna.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "monere",
+    "name": "Monere",
+    "faction": "conflux",
+    "heroClass": "Planeswalker",
+    "type": "might",
+    "stats": {
+      "attack": 3,
+      "defense": 1,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "logistics",
+    "specialtyName": "Magic Elementals",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Magic Elementals unit.",
+        "image": "hero_specialties-conflux-monere-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThe effect doubles for the Magic Elementals unit.",
+        "image": "hero_specialties-conflux-monere-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :attack:.\n\n— OR —\n\n:instant: +2 :power:",
+        "image": "hero_specialties-conflux-monere-7.webp"
+      }
+    ],
+    "image": "heroes-conflux-magic-monere.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "pasis",
+    "name": "Pasis",
+    "faction": "conflux",
+    "heroClass": "Planeswalker",
+    "type": "might",
+    "stats": {
+      "attack": 3,
+      "defense": 1,
+      "power": 1,
+      "knowledge": 1
+    },
+    "ability": "artillery",
+    "specialtyName": "Elementals",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThe effect doubles for the Elementals unit.",
+        "image": "hero_specialties-conflux-pasis-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Elementals unit.",
+        "image": "hero_specialties-conflux-pasis-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: For this Combat, your selected unit's :health_points: is increased by 1.\n\nThe effect doubles for the Elementals unit.",
+        "image": "hero_specialties-conflux-pasis-7.webp"
+      }
+    ],
+    "image": "heroes-conflux-might-pasis.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "tarnum_conflux",
+    "name": "Tarnum",
+    "faction": "conflux",
+    "heroClass": "Elementalist",
+    "type": "magic",
+    "stats": {
+      "attack": 0,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 3
+    },
+    "ability": "wisdom",
+    "specialtyName": "Enchanters",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Search(1) :spell:. You can Remove this card instead of taking it into your hand.",
+        "image": "hero_specialties-conflux-tarnum-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":map_effect: :pay: 10 :gold:, then find the Enchanters card in the :gold_tier: Neutral Unit deck and add it to your Unit deck. You can control only 1 Enchanters unit at a time.\n\n— OR —\n\n:instant: Draw a card.",
+        "image": "hero_specialties-conflux-tarnum-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Search(1) :spell: twice. If their type allows it, and you have enough :power: available, you can immediately cast one or both of these spells, even if you already cast a spell this round. Place each spell you use this way on the top of the Spell deck or on its discard pile in any order.",
+        "image": "hero_specialties-conflux-tarnum-7.webp"
+      }
+    ],
+    "image": "heroes-conflux-magic-tarnum.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "astra",
+    "name": "Astra",
+    "faction": "cove",
+    "heroClass": "Navigator",
+    "type": "magic",
+    "stats": {
+      "attack": 2,
+      "defense": 0,
+      "power": 1,
+      "knowledge": 2
+    },
+    "ability": "luck",
+    "specialtyName": "Cure",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Remove any effect or :paralysis: from your selected unit, then draw 1 card.",
+        "image": "hero_specialties-cove-astra-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Remove any effect or :paralysis: as well as up to 2 :damage: from your selected unit.",
+        "image": "hero_specialties-cove-astra-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Remove up to 3 :damage: from your selected unit.",
+        "image": "hero_specialties-cove-astra-7.webp"
+      }
+    ],
+    "image": "heroes-cove-magic-astra.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "casmetra",
+    "name": "Casmetra",
+    "faction": "cove",
+    "heroClass": "Navigator",
+    "type": "magic",
+    "stats": {
+      "attack": 2,
+      "defense": 0,
+      "power": 1,
+      "knowledge": 2
+    },
+    "ability": "wisdom",
+    "specialtyName": "Sorceresses",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Sorceresses unit.",
+        "image": "hero_specialties-cove-casmetra-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThe effect doubles for the Sorceresses unit.",
+        "image": "hero_specialties-cove-casmetra-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :attack:.\n\n:ongoing: Place a \"-2\" Weakness token on any one unit for 2 Combat rounds.",
+        "image": "hero_specialties-cove-casmetra-7.webp"
+      }
+    ],
+    "image": "heroes-cove-magic-casmetra.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "cassiopeia",
+    "name": "Cassiopeia",
+    "faction": "cove",
+    "heroClass": "Captain",
+    "type": "might",
+    "stats": {
+      "attack": 3,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "tactics",
+    "specialtyName": "Oceanids",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Your selected unit gains +1 :attack:.\n\n— OR —\n\n:instant: Your selected unit gains +1 :defense:.\n\nThe effect doubles for the Oceanids unit.",
+        "image": "hero_specialties-cove-cassiopeia-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: For this Combat, your selected unit's :initiative: is increased by 1.\n\nThe effect doubles for the Oceanids unit.",
+        "image": "hero_specialties-cove-cassiopeia-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Your selected unit gains +2 :attack:.\n\nThe effect doubles for the Oceanids unit.",
+        "image": "hero_specialties-cove-cassiopeia-7.webp"
+      }
+    ],
+    "image": "heroes-cove-might-cassiopeia.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "jeremy",
+    "name": "Jeremy",
+    "faction": "cove",
+    "heroClass": "Captain",
+    "type": "might",
+    "stats": {
+      "attack": 3,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "offense",
+    "specialtyName": "Cannon",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":map_effect: Pay 7 :gold: to gain a Cannon.\n\n— OR —\n\n:instant: Deal 1 :damage: to an enemy unit.",
+        "image": "hero_specialties-cove-jeremy-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: You can immediately use the Cannon once without spending the :expert:. It does not count against the Cannon's round limit.\n\n— OR —\n\n:instant: Draw 1 card.",
+        "image": "hero_specialties-cove-jeremy-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: You can immediately use the Cannon once without spending the :expert:. It does not count against the Cannon's round limit.\n\n— OR —\n\n:instant: Draw 2 cards.",
+        "image": "hero_specialties-cove-jeremy-7.webp"
+      }
+    ],
+    "image": "heroes-cove-might-jeremy.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "miriam",
+    "name": "Miriam",
+    "faction": "cove",
+    "heroClass": "Captain",
+    "type": "might",
+    "stats": {
+      "attack": 3,
+      "defense": 0,
+      "power": 2,
+      "knowledge": 1
+    },
+    "ability": "logistics",
+    "specialtyName": "Scouting",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":instant: Remove 1 Ability card from your hand to Search(2) the Ability deck. Then, you may Remove this Specialty card.",
+        "image": "hero_specialties-cove-miriam-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":instant: Remove 1 Ability, Artifact, or Spell card from your hand to Search(2) the corresponding deck. Then, you may Remove this Specialty card.",
+        "image": "hero_specialties-cove-miriam-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":instant: Remove 1 Ability, Artifact, or Spell card from your hand to Search(4) the corresponding deck. Then, you may Remove this Specialty card.",
+        "image": "hero_specialties-cove-miriam-7.webp"
+      }
+    ],
+    "image": "heroes-cove-might-miriam.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "zilare",
+    "name": "Zilare",
+    "faction": "cove",
+    "heroClass": "Navigator",
+    "type": "magic",
+    "stats": {
+      "attack": 2,
+      "defense": 0,
+      "power": 1,
+      "knowledge": 2
+    },
+    "ability": "interference",
+    "specialtyName": "Forgetfulness",
+    "specialties": [
+      {
+        "level": 1,
+        "text": ":ongoing: During its next activation, a :ranged_unit: unit of :bronze_tier: or :silver_tier: tier cannot attack.\n\n— OR —\n\n:instant: Draw 1 card.",
+        "image": "hero_specialties-cove-zilare-1.webp"
+      },
+      {
+        "level": 4,
+        "text": ":ongoing: During its next activation, a :ranged_unit: unit of :bronze_tier:, :silver_tier:, or :gold_tier: tier cannot attack.\n\n— OR —\n\n:instant: +2 :power:",
+        "image": "hero_specialties-cove-zilare-4.webp"
+      },
+      {
+        "level": 6,
+        "text": ":ongoing: During its next activation, a :bronze_tier:, :silver_tier:, or :gold_tier: unit cannot attack.\n\n— OR —\n\n:instant: +2 :power:",
+        "image": "hero_specialties-cove-zilare-7.webp"
+      }
+    ],
+    "image": "heroes-cove-magic-zilare.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  }
+]

@@ -1,8 +1,39 @@
-import { astrologers, FACTIONS, getVariant, tiles, units, type Faction, type MapTile, type TileGroup } from "@heroes/data";
+import {
+  abilities,
+  artifacts,
+  astrologers,
+  FACTIONS,
+  getHero,
+  getSpell,
+  getVariant,
+  heroes as heroCards,
+  spells,
+  tiles,
+  units,
+  type BuildingSlot,
+  type Faction,
+  type HeroCard,
+  type MapTile,
+  type TileGroup,
+} from "@heroes/data";
 import type { RngState } from "../rng.ts";
+import { flushQueue } from "./cardplay.ts";
 import { shuffle } from "./dice.ts";
 import { editorCellToHex, fieldHex, hexKey, subHex, type Hex } from "./hex.ts";
-import type { AdventureState, ArmyUnit, Difficulty, FieldMarks, Hero, NeutralDecks, PlacedTile, Player } from "./types.ts";
+import type { DeckName } from "./cards.ts";
+import type {
+  AdventureState,
+  ArmyUnit,
+  Difficulty,
+  FieldMarks,
+  Hero,
+  NeutralDecks,
+  Op,
+  Pile,
+  PlacedTile,
+  Player,
+  Task,
+} from "./types.ts";
 
 /** A tile slot of a Scenario map layout: `S` slots are the players' Starting Tiles, in seat order. */
 export interface LayoutSlot {
@@ -43,6 +74,8 @@ export const LAYOUTS: Record<string, LayoutSlot[]> = {
 export interface PlayerSetup {
   name: string;
   faction: Faction;
+  /** Main Hero (wiki hero id); defaults to the Faction's first Core Game Hero. */
+  hero?: string;
 }
 
 export interface AdventureSetup {
@@ -60,7 +93,50 @@ export const SANDBOX = {
   production: { gold: 10, buildingMaterials: 2, valuables: 1 },
   maxRounds: 14,
   tileSupply: 1,
+  buildings: ["dwelling_bronze", "city_hall"] as BuildingSlot[],
 } as const;
+
+/**
+ * Magic Arrow copies in the game: one per box listing it on the wiki. Players take theirs for
+ * their Starting Decks and the rest go into the Spell Deck (p. 13, step 15).
+ */
+export const MAGIC_ARROWS = getSpell("magic_arrow").content.length;
+
+export function defaultHero(faction: Faction): HeroCard {
+  const own = heroCards.filter((h) => h.faction === faction);
+  return own.find((h) => h.content.includes("Core Game")) ?? own[0]!;
+}
+
+/** Starting Deck (p. 12–13, steps 11–14): Statistic cards, Magic Arrows, Starting Ability and Specialty I. */
+export function startingDeck(hero: HeroCard): string[] {
+  const deck: string[] = [];
+  for (const stat of ["attack", "defense", "power", "knowledge"] as const) {
+    for (let i = 0; i < hero.stats[stat]; i++) deck.push(`stat:${stat}`);
+  }
+  for (let i = 0; i < (hero.type === "magic" ? 2 : 1); i++) deck.push("spell:magic_arrow");
+  deck.push(`ability:${hero.ability}`, `specialty:${hero.id}:0`);
+  return deck;
+}
+
+/** Starting bonus by Difficulty (p. 10). */
+export function startingBonus(difficulty: Difficulty): Op[] {
+  switch (difficulty) {
+    case "easy":
+      return [
+        { op: "resource-dice", n: 2, chooseOne: false },
+        { op: "search", deck: "artifact", n: 2, times: 2 },
+      ];
+    case "normal":
+      return [
+        { op: "resource-dice", n: 2, chooseOne: true },
+        { op: "search", deck: "artifact", n: 2 },
+      ];
+    case "hard":
+      return [{ op: "resource-dice", n: 1, chooseOne: false }, { op: "minor-artifact" }];
+    case "impossible":
+      return [];
+  }
+}
 
 export const MAIN_HERO_MP = 3;
 export const SECONDARY_HERO_MP = 2;
@@ -152,10 +228,23 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
       const town = fieldHex(center, 0, 3);
       marks[hexKey(town)] = { ...emptyMarks(), flag: id, everFlagged: true };
       const army = sandboxArmy(p.faction);
+      const hero = p.hero ? getHero(p.hero) : defaultHero(p.faction);
+      if (hero.faction !== p.faction) throw new Error(`${hero.name} is not a ${p.faction} Hero`);
+      const deck = startingDeck(hero);
+      rng = shuffle(deck, rng);
       players.push({
         id,
         name: p.name,
         faction: p.faction,
+        hero: hero.id,
+        deck,
+        hand: [],
+        discard: [],
+        permanent: null,
+        expertUsed: 0,
+        levelRewarded: 1,
+        town: { buildings: [...SANDBOX.buildings], used: { build: false, population: false, spellBook: false }, mageGuildRound: null },
+        trading: false,
         resources: { ...SANDBOX.resources },
         production: { ...SANDBOX.production },
         army: army.map((u) => ({ ...u })),
@@ -174,12 +263,34 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
   }
   for (const p of players) for (let i = 0; i < SANDBOX.tileSupply; i++) p.tileSupply.push(draw("far"));
 
-  const [decks, rng2] = neutralDecks(setup.content, rng);
+  const [neutralPiles, rng2] = neutralDecks(setup.content, rng);
   rng = rng2;
   const astroDeck = astrologers.filter((c) => inContent(setup.content, c.content)).map((c) => c.id);
   rng = shuffle(astroDeck, rng);
 
-  return {
+  // Ability, Artifact and Spell Decks, each with one card turned up as its Discard Pile (p. 13).
+  const usedArrows = players.reduce((n, p) => n + p.deck.filter((c) => c === "spell:magic_arrow").length, 0);
+  const lists: Record<DeckName, string[]> = {
+    ability: abilities.filter((c) => inContent(setup.content, c.content)).map((c) => `ability:${c.id}`),
+    artifact: artifacts.filter((c) => inContent(setup.content, c.content)).map((c) => `artifact:${c.id}`),
+    spell: spells
+      .filter((c) => c.id !== "magic_arrow" && inContent(setup.content, c.content))
+      .map((c) => `spell:${c.id}`)
+      .concat(Array.from({ length: Math.max(0, MAGIC_ARROWS - usedArrows) }, () => "spell:magic_arrow")),
+  };
+  const decks = {} as Record<DeckName, Pile>;
+  for (const name of ["ability", "artifact", "spell"] as const) {
+    const deck = lists[name];
+    rng = shuffle(deck, rng);
+    decks[name] = { deck, discard: deck.length ? [deck.pop()!] : [] };
+  }
+
+  const queue: Task[] = [];
+  const bonus = startingBonus(setup.difficulty ?? "normal");
+  if (bonus.length) for (const p of players) queue.push({ kind: "choice", player: p.id, source: "starting-bonus", options: bonus });
+  queue.push({ kind: "refresh", player: players[0]!.id });
+
+  const state: AdventureState = {
     scenario: setup.layout,
     round: 1,
     maxRounds: SANDBOX.maxRounds,
@@ -189,7 +300,9 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
     heroes,
     tiles: placed,
     marks,
-    neutralDecks: decks,
+    neutralDecks: neutralPiles,
+    decks,
+    queue,
     astrologers: { deck: astroDeck, current: null, drawn: 0 },
     effects: { extraMp: 0, nextIncome: {} },
     victoryPending: [],
@@ -197,6 +310,8 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
     phase: { type: "turn" },
     log: [{ type: "round-start", round: 1, resourceRound: false }, { type: "turn-start", player: players[0]!.id }],
   };
+  flushQueue(state);
+  return state;
 }
 
 export type { Hex };

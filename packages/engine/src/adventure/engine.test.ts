@@ -20,17 +20,39 @@ import type { AdventureAction, AdventureState } from "./types.ts";
 import type { Hex } from "./hex.ts";
 
 const newGame = (seed = 7) =>
-  setupAdventure({
-    layout: "hunt-2",
-    players: [
-      { name: "Alice", faction: "castle" },
-      { name: "Bob", faction: "necropolis" },
-    ],
-    seed,
-  });
+  settle(
+    setupAdventure({
+      layout: "hunt-2",
+      players: [
+        { name: "Alice", faction: "castle" },
+        { name: "Bob", faction: "necropolis" },
+      ],
+      seed,
+    }),
+  );
+
+/**
+ * Test helper: gets through the bookkeeping steps that are not under test — hand refresh, Searches,
+ * the starting bonus (Search the Artifact Deck) and City Hall (first option).
+ */
+export function settle(state: AdventureState): AdventureState {
+  let s = state;
+  for (let guard = 0; guard < 50; guard++) {
+    const ph = s.phase;
+    if (ph.type === "refresh") s = applyAdventureAction(s, { type: "refresh", discard: [] });
+    else if (ph.type === "search") {
+      s = applyAdventureAction(s, ph.revealed ? { type: "search-pick", index: 0 } : { type: "search", mode: "look" });
+    } else if (ph.type === "choice" && ph.choice.kind === "options" && ph.choice.source === "starting-bonus") {
+      s = applyAdventureAction(s, { type: "choose", option: 1 });
+    } else if (ph.type === "choice" && ph.choice.kind === "options" && ph.choice.source === "city_hall") {
+      s = applyAdventureAction(s, { type: "choose", option: 0 });
+    } else break;
+  }
+  return s;
+}
 
 function play(state: AdventureState, ...actions: AdventureAction[]): AdventureState {
-  return actions.reduce(applyAdventureAction, state);
+  return actions.reduce((s, a) => settle(applyAdventureAction(s, a)), state);
 }
 
 /** Test helper: replaces a layout slot by a known face-up tile and returns its field positions. */
@@ -70,7 +92,7 @@ function autoplay(state: AdventureState, onRoundEnd: "continue" | "retreat" = "c
       else if (step && !ph.moved) action = { type: "move", uid: ph.uid, to: step };
       else action = { type: "end-activation", uid: ph.uid };
     } else break;
-    s = applyAdventureAction(s, { type: "combat", action });
+    s = settle(applyAdventureAction(s, { type: "combat", action }));
   }
   return s;
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "attack",
+    "name": "Attack",
+    "basic": ":instant: +1 :attack:",
+    "expert": ":instant: +2 :attack:",
+    "empowered": ":instant: +2 :attack:",
+    "image": "statistics-attack.webp",
+    "empoweredImage": "statistics-attack-empowered.webp"
+  },
+  {
+    "id": "defense",
+    "name": "Defense",
+    "basic": ":instant: +1 :defense:",
+    "expert": ":instant: +2 :defense:",
+    "empowered": ":instant: +2 :defense:",
+    "image": "statistics-defense.webp",
+    "empoweredImage": "statistics-defense-empowered.webp"
+  },
+  {
+    "id": "power",
+    "name": "Power",
+    "basic": ":instant: +1 :power:",
+    "expert": ":instant: +2 :power:",
+    "empowered": ":instant: +2 :power:",
+    "image": "statistics-power.webp",
+    "empoweredImage": "statistics-power-empowered.webp"
+  },
+  {
+    "id": "knowledge",
+    "name": "Knowledge",
+    "basic": ":instant: Play this card after casting a spell. Instead of discarding the Spell card, take it back to your hand.",
+    "expert": ":instant: Play this card after casting a spell. Instead of discarding the Spell card, take it back to your hand. During this combat round, your spell limit increases by 1.",
+    "empowered": ":instant: Play this card after casting a spell. Instead of discarding the Spell card, take it back to your hand. During this combat round, your spell limit increases by 1.",
+    "image": "statistics-knowledge.webp",
+    "empoweredImage": "statistics-knowledge-empowered.webp"
+  }
+]

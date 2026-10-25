@@ -1,4 +1,5 @@
-import type { Faction, Resource, TileGroup } from "@heroes/data";
+import type { BuildingSlot, Faction, Resource, School, Statistic, TileGroup } from "@heroes/data";
+import type { DeckName } from "./cards.ts";
 import type { RngState } from "../rng.ts";
 import type { CombatState, Placement, Side } from "../combat/types.ts";
 import type { Hex } from "./hex.ts";
@@ -28,10 +29,40 @@ export interface Hero {
   experience: number;
 }
 
+/** A card pile with its own Discard Pile (p. 22). The top of a pile is the end of its array. */
+export interface Pile {
+  deck: string[];
+  discard: string[];
+}
+
+/** Town Board (p. 18, 30). */
+export interface Town {
+  buildings: BuildingSlot[];
+  /** Town Action Tokens flipped to their inactive side this Round. */
+  used: { build: boolean; population: boolean; spellBook: boolean };
+  /** The Spell Book Token cannot be used in the Round the Mage Guild is built (p. 18). */
+  mageGuildRound: number | null;
+}
+
 export interface Player {
   id: PlayerId;
   name: string;
   faction: Faction;
+  /** Main Hero's Hero Board (wiki hero id). */
+  hero: string;
+  /** The Main Hero's Deck of Might & Magic, hand and Discard Pile (p. 22). */
+  deck: string[];
+  hand: string[];
+  discard: string[];
+  /** The one Permanent card in play (p. 22). */
+  permanent: string | null;
+  /** Expert Effects used this Round (p. 24). */
+  expertUsed: number;
+  /** Highest Level whose rewards were given (p. 21). */
+  levelRewarded: number;
+  town: Town;
+  /** Trading is open (Trading Post visit or a City Hall effect) until the Hero moves or the Turn ends. */
+  trading: boolean;
   resources: Resources;
   production: Resources;
   army: ArmyUnit[];
@@ -83,7 +114,29 @@ export type Choice =
   | { kind: "settlement"; heroId: string; hex: Hex; free: boolean }
   | { kind: "mystical-garden"; heroId: string }
   | { kind: "tree-of-knowledge"; heroId: string }
-  | { kind: "discover"; heroId: string; slots: Hex[] };
+  | { kind: "discover"; heroId: string; slots: Hex[] }
+  /** A list of alternatives the engine knows how to resolve (City Hall, locations using cards, …). */
+  | { kind: "options"; heroId: string; source: string; options: Op[] };
+
+/** One resolvable alternative of an `options` choice. */
+export type Op =
+  | { op: "none" }
+  | { op: "gain"; resources: Partial<Resources> }
+  | { op: "mp"; n: number }
+  | { op: "draw"; n: number }
+  | { op: "morale" }
+  | { op: "experience"; n: number }
+  | { op: "search"; deck: DeckName; n: number; cost?: number; times?: number }
+  | { op: "search-discard"; deck: DeckName; n: number; cost?: number }
+  | { op: "resource-dice"; n: number; chooseOne: boolean }
+  | { op: "minor-artifact" }
+  | { op: "trade" }
+  | { op: "reinforce"; armyIndex: number; cost: number }
+  | { op: "seq"; ops: Op[] }
+  | { op: "take"; card: string; from: "artifact-discard" | "own-discard" | "ability-deck"; cost?: number }
+  | { op: "discard-top"; deck: DeckName }
+  | { op: "remove"; handIndex: number; then?: "gold" | "experience" | "search-own-deck" | "market" | Op }
+  | { op: "stat"; stat: Statistic; empowered?: boolean; replaceHandIndex?: number; cost?: number };
 
 export interface NeutralFoe {
   kind: "neutral";
@@ -116,6 +169,8 @@ export interface CombatContext {
   picks: Partial<Record<Side, number[]>>;
   /** Board positions chosen during Combat setup. */
   placements: Partial<Record<Side, Placement[]>>;
+  /** Spells cast for their effect per Combat Round (p. 26), and extra allowance from cards. */
+  spells?: Partial<Record<Side, { round: number; cast: number; limit: number; last: string | null }>>;
 }
 
 export type AdventurePhase =
@@ -126,9 +181,29 @@ export type AdventurePhase =
   /** Players choose up to 5 units and their lines (p. 41). */
   | { type: "combat-setup"; context: CombatContext; side: Side }
   | { type: "combat"; context: CombatContext; combat: CombatState }
+  /** Start of Turn hand refresh (p. 17): discard any cards, then draw up to the Hand Limit. */
+  | { type: "refresh"; player: PlayerId }
+  /** Search (X) (p. 22): look at the top X cards, or take the Discard Pile's top card instead. */
+  | {
+      type: "search";
+      player: PlayerId;
+      deck: DeckName;
+      n: number;
+      /** Cards being looked at; null until the player chooses to look. */
+      revealed: string[] | null;
+      /** Searching a Discard Pile (University, Blood Obelisk): picks come from the pile itself. */
+      fromDiscard: boolean;
+      source: string;
+    }
   | { type: "over"; winners: PlayerId[]; reason: "victory" | "elimination" | "time" };
 
 export type NeutralDecks = Record<string, { deck: string[]; discard: string[] }>;
+
+/** Steps waiting for a player once the current one is done (level-up rewards, City Halls, …). */
+export type Task =
+  | { kind: "search"; player: PlayerId; deck: DeckName; n: number; source: string; fromDiscard?: boolean }
+  | { kind: "refresh"; player: PlayerId }
+  | { kind: "choice"; player: PlayerId; source: string; options: Op[] };
 
 export interface AdventureState {
   scenario: string;
@@ -142,6 +217,9 @@ export interface AdventureState {
   tiles: PlacedTile[];
   marks: Record<string, FieldMarks>;
   neutralDecks: NeutralDecks;
+  /** Ability, Artifact and Spell Decks with their Discard Piles (p. 13). */
+  decks: Record<DeckName, Pile>;
+  queue: Task[];
   astrologers: { deck: string[]; current: string | null; drawn: number };
   /** Lasting effects of the current Astrologers Proclaim card. */
   effects: { extraMp: number; nextIncome: Partial<Resources> };
@@ -179,6 +257,16 @@ export type AdventureEvent =
   | { type: "army-reset"; player: PlayerId }
   | { type: "eliminated"; player: PlayerId }
   | { type: "victory-condition"; player: PlayerId }
+  | { type: "level-up"; player: PlayerId; level: number }
+  | { type: "draw"; player: PlayerId; n: number }
+  | { type: "gain-card"; player: PlayerId; card: string; source: string }
+  | { type: "remove-card"; player: PlayerId; card: string }
+  | { type: "play-card"; player: PlayerId; card: string; option: number; automated: boolean; empower: string[] }
+  | { type: "build"; player: PlayerId; slot: BuildingSlot }
+  | { type: "recruit"; player: PlayerId; unitId: string; variant: string }
+  | { type: "hire-hero"; player: PlayerId; heroId: string }
+  | { type: "trade"; player: PlayerId; sell: Resource; buy: Resource; times: number }
+  | { type: "building-effect"; player: PlayerId; slot: BuildingSlot }
   | { type: "game-over"; winners: PlayerId[] };
 
 export type AdventureAction =
@@ -193,4 +281,31 @@ export type AdventureAction =
   | { type: "combat-setup"; picks: { armyIndex: number; line: "back" | "front" }[] }
   | { type: "combat"; action: import("../combat/types.ts").CombatAction }
   | { type: "surrender"; side: Side }
-  | { type: "end-turn" };
+  | { type: "end-turn" }
+  /** Start of Turn hand refresh: the hand indexes to discard. */
+  | { type: "refresh"; discard: number[] }
+  | { type: "search"; mode: "look" | "discard-pile" }
+  | { type: "search-pick"; index: number }
+  /**
+   * Plays a card from hand (p. 22). In Combat, `player` must have their Main Hero fighting.
+   * `empower` lists other hand cards played for their Power (p. 26); `target` is a combat unit uid.
+   */
+  | {
+      type: "play-card";
+      player: PlayerId;
+      handIndex: number;
+      option: number;
+      target?: string;
+      empower?: { handIndex: number; option: number }[];
+      school?: School;
+    }
+  /** Discards a card from hand with no effect (cards that tell you to discard, p. 22). */
+  | { type: "discard-card"; player: PlayerId; handIndex: number }
+  | { type: "build"; slot: BuildingSlot }
+  /** One use of the Population Token: any number of recruits and reinforcements (p. 36). */
+  | { type: "recruit"; recruit: string[]; reinforce: number[] }
+  | { type: "hire-hero"; at: Hex }
+  | { type: "spell-book" }
+  | { type: "trade"; sell: Resource; buy: Resource; times: number }
+  /** Hand-resolved card effects: players apply what the card says (honour system). */
+  | { type: "adjust"; player: PlayerId; resources?: Partial<Resources>; mp?: number; draw?: number; morale?: 1 | -1 };

@@ -122,3 +122,129 @@ export const AstrologersCard = z.object({
   content: z.array(z.string()),
 });
 export type AstrologersCard = z.infer<typeof AstrologersCard>;
+
+// ---------------------------------------------------------------------------
+// Might & Magic cards (rule book p. 22–28)
+
+const CardId = z.string().regex(/^[a-z0-9_]+$/);
+
+export const SCHOOLS = ["air", "earth", "fire", "water"] as const;
+export const School = z.enum(SCHOOLS);
+export type School = z.infer<typeof School>;
+
+/** Spell card (p. 26). Magic Arrow has no fixed School: it takes the one chosen when cast. */
+export const SpellCard = z.object({
+  id: CardId,
+  name: z.string().min(1),
+  school: School.nullable(),
+  level: z.enum(["basic", "expert"]),
+  /** Effect text, glyphs kept as `:name:`; empower tiers on their own lines (`:power: 1 ➣ 2 :damage:`). */
+  text: z.string().min(1),
+  image: z.string().nullable(),
+  content: z.array(z.string()),
+});
+export type SpellCard = z.infer<typeof SpellCard>;
+
+/** Ability card (p. 24): a Basic and an Expert effect, plus the Naval Battles Empowered version. */
+export const AbilityCard = z.object({
+  id: CardId,
+  name: z.string().min(1),
+  basic: z.string().min(1),
+  expert: z.string().min(1),
+  empowered: z.string().nullable(),
+  /** Necromancy cards are limited to the Necropolis Faction (p. 24). */
+  necropolis: z.boolean(),
+  image: z.string().nullable(),
+  empoweredImage: z.string().nullable(),
+  content: z.array(z.string()),
+});
+export type AbilityCard = z.infer<typeof AbilityCard>;
+
+/** Artifact card (p. 27): a top and a bottom effect. */
+export const ArtifactCard = z.object({
+  id: CardId,
+  name: z.string().min(1),
+  level: z.enum(["minor", "major", "relic"]),
+  effects: z.array(z.string().min(1)).min(1).max(2),
+  image: z.string().nullable(),
+  content: z.array(z.string()),
+});
+export type ArtifactCard = z.infer<typeof ArtifactCard>;
+
+export const STATISTICS = ["attack", "defense", "power", "knowledge"] as const;
+export const Statistic = z.enum(STATISTICS);
+export type Statistic = z.infer<typeof Statistic>;
+
+/** Statistic card (p. 24). */
+export const StatisticCard = z.object({
+  id: Statistic,
+  name: z.string().min(1),
+  basic: z.string().min(1),
+  expert: z.string().min(1),
+  empowered: z.string().min(1),
+  image: z.string().nullable(),
+  empoweredImage: z.string().nullable(),
+});
+export type StatisticCard = z.infer<typeof StatisticCard>;
+
+/** One of a Hero's three Specialty cards, gained at Levels I, IV and VI (p. 21, 27). */
+export const SpecialtyCard = z.object({
+  level: z.number().int().min(1).max(7),
+  text: z.string().min(1),
+  image: z.string().nullable(),
+});
+export type SpecialtyCard = z.infer<typeof SpecialtyCard>;
+
+/** Hero Board (p. 21). */
+export const HeroCard = z.object({
+  id: CardId,
+  name: z.string().min(1),
+  faction: Faction,
+  heroClass: z.string().min(1),
+  type: z.enum(["might", "magic"]),
+  stats: z.object({
+    attack: z.number().int().nonnegative(),
+    defense: z.number().int().nonnegative(),
+    power: z.number().int().nonnegative(),
+    knowledge: z.number().int().nonnegative(),
+  }),
+  /** Starting Ability card id. */
+  ability: CardId,
+  specialtyName: z.string().min(1),
+  specialties: z.array(SpecialtyCard).length(3),
+  image: z.string().nullable(),
+  content: z.array(z.string()),
+});
+export type HeroCard = z.infer<typeof HeroCard>;
+
+/** Town Board slots (p. 30), in the order printed on every Town Board. */
+export const BUILDINGS = [
+  "city_hall",
+  "citadel",
+  "mage_guild",
+  "dwelling_bronze",
+  "dwelling_silver",
+  "dwelling_gold",
+  "special_1",
+  "special_2",
+] as const;
+export const BuildingSlot = z.enum(BUILDINGS);
+export type BuildingSlot = z.infer<typeof BuildingSlot>;
+
+export const TownBuilding = z.object({
+  slot: BuildingSlot,
+  name: z.string().min(1),
+  cost: Cost,
+  effect: z.string().min(1),
+});
+export type TownBuilding = z.infer<typeof TownBuilding>;
+
+export const TownCard = z.object({
+  faction: Faction,
+  name: z.string().min(1),
+  buildings: z.array(TownBuilding).length(8),
+  /** Gold paid to Search (2) the Spell Deck with the Spell Book Token (Mage Guild text). */
+  spellBookCost: z.number().int().nonnegative(),
+  images: z.object({ empty: z.string().nullable(), full: z.string().nullable() }),
+});
+export type TownCard = z.infer<typeof TownCard>;

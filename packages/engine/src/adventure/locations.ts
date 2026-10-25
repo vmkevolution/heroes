@@ -51,29 +51,14 @@ export const GUARDS: Record<Difficulty, Tier[][]> = {
 };
 
 /**
- * Location effects that need the card decks (Abilities, Spells, Artifacts, War Machines),
- * which arrive with the Town and Deck phase. Visiting them still places the Black Cube.
+ * Location effects still resolved by the players: Spell Scrolls and War Machines (expansion
+ * components), and Fields whose effect "depends on the Scenario". Visiting them still places the Black Cube.
  */
 export const NEEDS_DECKS = new Set([
-  "artifact_symbol",
-  "shrine_of_magic_gesture",
-  "shrine_of_magic_incantation",
-  "magic_spring",
-  "witch_hut",
   "spell_scroll",
-  "scholar",
-  "faerie_ring",
-  "market_of_time",
-  "university",
   "elemental_conflux",
-  "shipwreck_survivor",
-  "derelict_ship",
-  "trading_post",
   "war_machine_factory",
-  "black_market",
-  "library_of_enlightenment",
   "grail",
   "dragon_utopia",
   "obelisk",
-  "star_axis",
 ]);
