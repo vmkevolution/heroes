@@ -8,11 +8,16 @@ import { fileURLToPath } from "node:url";
 import { z } from "zod";
 import {
   AbilityTrigger,
+  AstrologersCard,
   type AbilityText,
   type Cost,
   type Faction,
   FACTIONS,
+  MapTile,
   type Origin,
+  type Resource,
+  type TileField,
+  type TileGroup,
   type Tier,
   UnitCard,
   type UnitType,
@@ -202,10 +207,114 @@ function importUnits(): UnitCard[] {
     .map((f) => parseUnitPage(f.replace(/\.md$/, ""), readFileSync(join(dir, f), "utf8")));
 }
 
+const ROMAN: Record<string, number> = { "Ⅰ": 1, "Ⅱ": 2, "Ⅲ": 3, "Ⅳ": 4, "Ⅴ": 5, "Ⅵ": 6, "Ⅶ": 7 };
+const RESOURCE_GLYPHS: Record<string, Resource> = {
+  gold: "gold",
+  building_materials: "buildingMaterials",
+  valuables: "valuables",
+};
+const TILE_GROUPS: Record<string, TileGroup> = {
+  "Starting Tile": "starting",
+  "Far Tile": "far",
+  "Near Tile": "near",
+  "Center Tile": "center",
+  "Subterranean Tile": "subterranean",
+  "Sea Tile": "sea",
+};
+
+/** `- [Ⅴ](../difficulties.md) [:gold: Mine](../fields/mine.md)` → a TileField. */
+export function parseTileField(line: string, ctx: string): TileField {
+  const links = [...line.matchAll(/\[([^\]]*)\]\(([^)]*)\)/g)].map((m) => ({ text: m[1]!, href: m[2]! }));
+  const diffLink = links.find((l) => l.href.includes("difficulties"));
+  const main = links.filter((l) => l !== diffLink).at(-1);
+  if (!main) throw new Error(`${ctx}: no location link in "${line}"`);
+  const difficulty = diffLink ? (ROMAN[diffLink.text.trim()] ?? null) : null;
+  if (diffLink && difficulty === null) throw new Error(`${ctx}: unknown difficulty "${diffLink.text}"`);
+
+  const file = main.href.split("/").at(-1)!.replace(/\.md$/, "").replace(/#.*$/, "");
+  let location = file;
+  let faction: TileField["faction"] = null;
+  if (main.href.includes("towns/")) {
+    if (/Random Town/.test(main.text)) location = "random_town";
+    else {
+      location = /Settlement/.test(main.text) ? "settlement" : "town";
+      faction = (FACTIONS as readonly string[]).includes(file) ? (file as TileField["faction"]) : null;
+      if (!faction) throw new Error(`${ctx}: unknown town style "${main.text}"`);
+    }
+  }
+  const text = main.text;
+  const glyph = [...text.matchAll(/:([a-z_]+):/g)].map((m) => m[1]!).find((g) => g in RESOURCE_GLYPHS);
+  const amount = text.match(/\+(\d+)/)?.[1];
+  const dice = text.match(/(\d+)\s*:(?:treasure|resource)_die:/)?.[1];
+  const dieGlyph = /:(treasure|resource)_die:/.test(text);
+  return {
+    location,
+    difficulty,
+    faction,
+    resource: glyph ? RESOURCE_GLYPHS[glyph]! : null,
+    amount: amount ? Number(amount) : null,
+    dice: dice ? Number(dice) : dieGlyph ? 1 : null,
+    label: text,
+  };
+}
+
+/** Field lines missing from wiki tile pages, checked against the tile pictures: [tile, index, line]. */
+const TILE_CORRECTIONS: [string, number, string][] = [
+  // U7: the bottom-left Temple is not listed.
+  ["U7", 5, "- [:positive_morale: Temple](../fields/temple.md)"],
+];
+
+export function parseTilePage(md: string): MapTile {
+  const id = md.match(/^# (.+)$/m)?.[1]?.trim();
+  if (!id) throw new Error("tile page without a title");
+  const groupLabel = md.match(/^\[([^\]]+ Tile)\]/m)?.[1] ?? "";
+  const group = TILE_GROUPS[groupLabel];
+  if (!group) throw new Error(`${id}: unknown tile group "${groupLabel}"`);
+  const terrain = md.split(/^___\s*$/m)[2]?.trim() ?? "";
+  const section = md.split(/^## Fields\s*$/m)[1]?.split(/^## /m)[0] ?? "";
+  const lines = section.split("\n").filter((l) => l.startsWith("- "));
+  for (const [tile, index, line] of TILE_CORRECTIONS) if (tile === id) lines.splice(index, 0, line);
+  const fields = lines.map((l, i) => parseTileField(l, `${id} field ${i}`));
+  return MapTile.parse({ id, group, terrain, fields, content: parseContent(md) });
+}
+
+function importTiles(): MapTile[] {
+  const dir = join(wiki, "tiles");
+  return readdirSync(dir)
+    .filter((f) => f.endsWith(".md") && f !== "index.md")
+    .sort()
+    .map((f) => parseTilePage(readFileSync(join(dir, f), "utf8")));
+}
+
+function importAstrologers(): AstrologersCard[] {
+  const md = readFileSync(join(wiki, "astrologers_proclaim/index.md"), "utf8");
+  const table = parseTable(md, "Name");
+  if (!table) throw new Error("astrologers: no table");
+  const cards: AstrologersCard[] = [];
+  for (const [nameCell, cells] of table) {
+    if (nameCell === "Name") continue;
+    const id = nameCell.match(/\(([a-z0-9_]+)\.md\)/)?.[1];
+    if (!id) throw new Error(`astrologers: no page link in "${nameCell}"`);
+    cards.push({
+      id,
+      name: cleanText(nameCell).replace(/\u00a0|&nbsp;/g, " "),
+      effect: cleanText((cells[0] ?? "").replace(/<br>/g, "\n")),
+      content: [cleanText(cells[1] ?? "")],
+    });
+  }
+  return cards;
+}
+
 const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
 if (isMain) {
   mkdirSync(outDir, { recursive: true });
   const units = z.array(UnitCard).parse(importUnits());
   writeFileSync(join(outDir, "units.json"), JSON.stringify(units, null, 2) + "\n");
+  const tiles = z.array(MapTile).parse(importTiles());
+  writeFileSync(join(outDir, "tiles.json"), JSON.stringify(tiles, null, 2) + "\n");
+  console.log(`tiles: ${tiles.length}`);
+  const astrologers = z.array(AstrologersCard).parse(importAstrologers());
+  writeFileSync(join(outDir, "astrologers.json"), JSON.stringify(astrologers, null, 2) + "\n");
+  console.log(`astrologers: ${astrologers.length}`);
   console.log(`units: ${units.length} cards, ${units.reduce((n, u) => n + u.variants.length, 0)} variants`);
 }
