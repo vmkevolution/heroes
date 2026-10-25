@@ -1,0 +1,22 @@
+{
+  "name": "heroes",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @heroes/web",
+    "build": "npm run build -w @heroes/web",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json",
+    "import-wiki": "tsx packages/data/scripts/import-wiki.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9",
+    "vitest": "^5.0.5"
+  }
+}

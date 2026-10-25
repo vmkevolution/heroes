@@ -1,0 +1,7310 @@
+[
+  {
+    "id": "air_elementals",
+    "name": "Air Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 8,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Air Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-air_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 8,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Air Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-air_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 7,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Air Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-bronze-air_elemental.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion",
+      "Regular Stretch Goals 2024 (Neutral)"
+    ]
+  },
+  {
+    "id": "arch_devils",
+    "name": "Arch Devils",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 11,
+        "cost": {
+          "gold": 22,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks."
+          }
+        ],
+        "image": "units-inferno-golden-arch_devils-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 7,
+        "defense": 3,
+        "hp": 9,
+        "initiative": 15,
+        "cost": {
+          "gold": 30,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: As a regular movement, the Arch Devils can move to any empty space."
+          }
+        ],
+        "image": "units-inferno-golden-arch_devils-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 10,
+        "cost": {
+          "gold": 23,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: When attacking Archangels, this unit gains +2 :attack:."
+          }
+        ],
+        "image": "units-neutral-golden-arch_devils.webp"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "archangels",
+    "name": "Archangels",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 12,
+        "cost": {
+          "gold": 20,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: When combat begins, draw 1 card."
+          }
+        ],
+        "image": "units-castle-golden-archangels-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 7,
+        "defense": 3,
+        "hp": 10,
+        "initiative": 18,
+        "cost": {
+          "gold": 30,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Once per Combat. Cancel an attack that would reduce another unit's :health_points: to 0."
+          }
+        ],
+        "image": "units-castle-golden-archangels-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 10,
+        "cost": {
+          "gold": 29,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: When attacking Arch Devils, this unit gains +2 :attack:."
+          }
+        ],
+        "image": "units-neutral-golden-archangels.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "arrow_tower",
+    "name": "Arrow Tower",
+    "variants": [
+      {
+        "key": "siege",
+        "label": "Siege",
+        "origin": "siege",
+        "faction": null,
+        "tier": null,
+        "type": "ranged",
+        "attack": 4,
+        "defense": 2,
+        "hp": 3,
+        "initiative": 9,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [],
+            "text": "Place this card near the Combat board. Discard this card immediately when both the Gate card and all the Wall cards are destroyed."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: It can only be attack by :ranged_unit: attacks or card effects."
+          }
+        ],
+        "image": "structures-arrow_tower.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "ayssids",
+    "name": "Ayssids",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 9,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-cove-silver-ayssids-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 11,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack",
+              "retaliation"
+            ],
+            "text": ":unit_attack: If the target is reduced to 0 :health_points:, after resolving the :unit_retaliation: (if applicable), the Ayssids can attack another adjacent unit."
+          }
+        ],
+        "image": "units-cove-silver-ayssids-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 9,
+        "cost": {
+          "gold": 9,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack",
+              "retaliation"
+            ],
+            "text": ":unit_attack: If the target is reduced to 0 :health_points:, after resolving the :unit_retaliation: (if applicable), the Ayssids can attack another adjacent unit."
+          }
+        ],
+        "image": "units-neutral-silver-ayssids.webp"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "azure_dragons",
+    "name": "Azure Dragons",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "flying",
+        "attack": 8,
+        "defense": 3,
+        "hp": 10,
+        "initiative": 19,
+        "cost": {
+          "gold": 45,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If you resolve a \"-1\" on the Attack die, the target gains :paralysis:."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore any :spell: effects and :damage: from Specialty."
+          }
+        ],
+        "image": "units-neutral-azure-azure_dragons.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "basilisks",
+    "name": "Basilisks",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: On \"-1\" outcomes on the Attack die, the attacked unit gains a :paralysis: token."
+          }
+        ],
+        "image": "units-fortress-silver-basilisks-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 7,
+        "cost": {
+          "gold": 9,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: On \"-1\" outcomes on the Attack die, the attacked unit gains a :paralysis: token."
+          }
+        ],
+        "image": "units-fortress-silver-basilisks-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, roll 1 Attack die. On a \"0\" result, :paralysis: the target."
+          }
+        ],
+        "image": "units-neutral-silver-basilisks.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "behemoths",
+    "name": "Behemoths",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 2,
+        "hp": 9,
+        "initiative": 6,
+        "cost": {
+          "gold": 19,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Decrease the target's :defense: by 1 (to a minimum of 0)."
+          }
+        ],
+        "image": "units-stronghold-golden-behemoths-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 7,
+        "defense": 2,
+        "hp": 10,
+        "initiative": 9,
+        "cost": {
+          "gold": 29,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Decrease the target's :defense: by 2 (to a minimum of 0). After the attack, place 1 Corrosion token on the target."
+          }
+        ],
+        "image": "units-stronghold-golden-behemoths-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 1,
+        "hp": 8,
+        "initiative": 9,
+        "cost": {
+          "gold": 26,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Decrease the target's :defense: by 2 (to a minimum of 0). After the attack, place 1 Corrosion token on the target."
+          }
+        ],
+        "image": "units-neutral-golden-behemoths.webp"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "black_dragons",
+    "name": "Black Dragons",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 11,
+        "cost": {
+          "gold": 19,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reduce :damage: taken by this unit from :spell: by 2 to a minimum of 0."
+          }
+        ],
+        "image": "units-dungeon-golden-black_dragons-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 8,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 15,
+        "cost": {
+          "gold": 33,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore any :spell: effects and :damage: from Specialty."
+          }
+        ],
+        "image": "units-dungeon-golden-black_dragons-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 9,
+        "cost": {
+          "gold": 30,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack 2 spaces in a line. The first attack resolves normally, and the second has 2 :attack:."
+          }
+        ],
+        "image": "units-neutral-golden-black_dragons.webp"
+      },
+      {
+        "key": "dragon-utopia",
+        "label": "Dragon Utopia",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 5,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 9,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: As long as this unit is Stacked, its gains +3 :attack:."
+          }
+        ],
+        "image": "creature_banks-dragon_utopia-black_dragons.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Dragon Utopia)"
+    ]
+  },
+  {
+    "id": "boars",
+    "name": "Boars",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-boars.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "centaurs",
+    "name": "Centaurs",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-rampart-bronze-centaurs-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 8,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-rampart-bronze-centaurs-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 7,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-centaurs.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "cerberi",
+    "name": "Cerberi",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 7,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-inferno-bronze-cerberi-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks. Additionally, deals 1 :damage: to another enemy unit adjacent to Cerberi."
+          }
+        ],
+        "image": "units-inferno-bronze-cerberi-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks. Additionally, deals 1 :damage: to another enemy unit adjacent to Cerberi."
+          }
+        ],
+        "image": "units-neutral-bronze-cerberi.webp"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "champions",
+    "name": "Champions",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 7,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "map"
+            ],
+            "text": ":map_effect: If your hero is on a field with Stables, this unit's reinforcement cost is reduced by 6 :gold:."
+          }
+        ],
+        "image": "units-castle-golden-champions-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 9,
+        "cost": {
+          "gold": 20,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If this unit's movement ends in a space other than where it started, you may reroll an Attack die."
+          }
+        ],
+        "image": "units-castle-golden-champions-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 8,
+        "cost": {
+          "gold": 18,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Roll 2 Attack dice and apply both outcomes."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reroll this unit's all \"-1\" rolls."
+          }
+        ],
+        "image": "units-neutral-golden-champions.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "crusaders",
+    "name": "Crusaders",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-castle-silver-crusaders-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: You can reroll every \"0\" on this unit's Attack die."
+          }
+        ],
+        "image": "units-castle-silver-crusaders-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: During any attack, roll 2 Attack dice and resolve the higher outcome."
+          }
+        ],
+        "image": "units-neutral-silver-crusaders.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "crystal_dragons",
+    "name": "Crystal Dragons",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "ground",
+        "attack": 7,
+        "defense": 3,
+        "hp": 9,
+        "initiative": 16,
+        "cost": {
+          "gold": 40,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "map"
+            ],
+            "text": ":map_effect: At the beginning of each Resource round, gain 2 :valuables:."
+          }
+        ],
+        "image": "units-neutral-azure-crystal_dragons.webp"
+      },
+      {
+        "key": "dragon-utopia",
+        "label": "Dragon Utopia",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 6,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 16,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: As long as this unit is Stacked, it is treated as if it had a Defense token on it."
+          }
+        ],
+        "image": "creature_banks-dragon_utopia-crystal_dragons.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Dragon Utopia)"
+    ]
+  },
+  {
+    "id": "cyclopes",
+    "name": "Cyclopes",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "gold",
+        "type": "ranged",
+        "attack": 5,
+        "defense": 0,
+        "hp": 6,
+        "initiative": 6,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: This unit can destroy the Gate or a Wall."
+          }
+        ],
+        "image": "units-stronghold-golden-cyclopes-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "gold",
+        "type": "ranged",
+        "attack": 5,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 8,
+        "cost": {
+          "gold": 17,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: This unit can destroy the Gate, a Wall, or the Arrow Tower."
+          }
+        ],
+        "image": "units-stronghold-golden-cyclopes-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ranged",
+        "attack": 5,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 8,
+        "cost": {
+          "gold": 19,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: This unit can destroy a Wall, the Gate, or the Arrow Tower."
+          }
+        ],
+        "image": "units-neutral-golden-cyclopes.webp"
+      },
+      {
+        "key": "cyclops-stockpile",
+        "label": "Cyclops Stockpile",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ranged",
+        "attack": 5,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 8,
+        "cost": null,
+        "abilities": [],
+        "image": "creature_banks-cyclops_stockpile-cyclopes.webp"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion",
+      "Naval Battles Expansion (Cyclops Stockpile)"
+    ]
+  },
+  {
+    "id": "demons",
+    "name": "Demons",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-inferno-silver-demons-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-inferno-silver-demons-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 0,
+        "hp": 8,
+        "initiative": 6,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-silver-demons.webp"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "dendroids",
+    "name": "Dendroids",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 3,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-rampart-silver-dendroids-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 4,
+        "cost": {
+          "gold": 15,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Enemy units that start activation adjacent to this unit cannot move."
+          }
+        ],
+        "image": "units-rampart-silver-dendroids-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 3,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Enemy units that start activation adjacent to this unit cannot move."
+          }
+        ],
+        "image": "units-neutral-silver-dendroids.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "diamond_golems",
+    "name": "Diamond Golems",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 6,
+        "cost": {
+          "gold": 16,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reduce any :damage: from spells by 3 — to a minimum of 0."
+          }
+        ],
+        "image": "units-neutral-golden-diamond_golems.webp"
+      },
+      {
+        "key": "pyramid",
+        "label": "Pyramid",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit reduces any :damage: it takes from spells by 3 — to a minimum of 0."
+          }
+        ],
+        "image": "creature_banks-pyramid-diamond_golems.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Pyramid)"
+    ]
+  },
+  {
+    "id": "dragon_flies",
+    "name": "Dragon Flies",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 8,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Remove all :ongoing: effects played on the target by the enemy player."
+          }
+        ],
+        "image": "units-fortress-bronze-dragon_flies-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 12,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Remove all :ongoing: effects played on the target by the enemy player. If the target retaliates, it suffers - 1 :attack:."
+          }
+        ],
+        "image": "units-fortress-bronze-dragon_flies-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 8,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Retaliation Attacks against Dragon Flies suffer -1 :attack:."
+          }
+        ],
+        "image": "units-neutral-bronze-dragon_flies.webp"
+      },
+      {
+        "key": "dragon-fly-hive",
+        "label": "Dragon Fly Hive",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 8,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Retaliation Attacks against Dragon Flies suffer -2 :attack:."
+          }
+        ],
+        "image": "creature_banks-dragon_fly_hive-dragon_flies.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion",
+      "Tower Expansion (Neutral)",
+      "Naval Battles Expansion (Crypt and Shipwreck)"
+    ]
+  },
+  {
+    "id": "dread_knights",
+    "name": "Dread Knights",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 7,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: When retaliating after this attack, the enemy rolls 2 Attack dice and resolves the lower result."
+          }
+        ],
+        "image": "units-necropolis-golden-dread_knights-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 9,
+        "cost": {
+          "gold": 20,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If you resolve a \"0\" or a \"+1\" on the Attack die, increase this unit's total attack value by another \"+1\"."
+          }
+        ],
+        "image": "units-necropolis-golden-dread_knights-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 7,
+        "cost": {
+          "gold": 18,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: When this unit is targeted by a Retaliation Attack, it gains +1 :defense:."
+          }
+        ],
+        "image": "units-neutral-golden-dread_knights.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "dwarves",
+    "name": "Dwarves",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 3,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: If this unit is targeted by any Spell or Specialty card, roll 1 Attack die. On a \"+1\" result, ignore the card's effect."
+          }
+        ],
+        "image": "units-rampart-bronze-dwarves-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: If this unit is targeted by any Spell or Specialty card, roll 1 Attack die. On a \"+1\" result, ignore the card's effect."
+          }
+        ],
+        "image": "units-rampart-bronze-dwarves-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 3,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: If this unit is targeted by any Spell or Specialty card, roll 1 Attack die. On a \"+1\" result, ignore the card's effect."
+          }
+        ],
+        "image": "units-neutral-bronze-dwarves.webp"
+      },
+      {
+        "key": "dwarven-treasury",
+        "label": "Dwarven Treasury",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 3,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: As long as this unit is Stacked, it is treated as if it had a Defense token on it."
+          }
+        ],
+        "image": "creature_banks-dwarven_treasury-dwarves.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Tower Expansion (Neutral)",
+      "Naval Battles Expansion (Dwarven Treasury)"
+    ]
+  },
+  {
+    "id": "earth_elementals",
+    "name": "Earth Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 2,
+        "hp": 2,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Earth Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-earth_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 2,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Earth Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-earth_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 4,
+        "cost": {
+          "gold": 16,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Earth Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-golden-earth_elemental.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion",
+      "Regular Stretch Goals 2024 (Neutral)"
+    ]
+  },
+  {
+    "id": "efreet",
+    "name": "Efreet",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 9,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignores any :damage: from Magic Arrows."
+          }
+        ],
+        "image": "units-inferno-golden-efreet-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 13,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignores any :damage: from Magic Arrows or spells from the Fire School of Magic."
+          }
+        ],
+        "image": "units-inferno-golden-efreet-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "flying",
+        "attack": 4,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 13,
+        "cost": {
+          "gold": 20,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignores any :damage: from Magic Arrows or spells from theFire School of Magic."
+          }
+        ],
+        "image": "units-neutral-golden-efreet.webp"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "elves",
+    "name": "Elves",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-rampart-bronze-elves-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 7,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If a target is a non adjacent unit, on a \"-1\" or \"0\" result, attack this target again."
+          }
+        ],
+        "image": "units-rampart-bronze-elves-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If a target is a non adjacent unit, on a \"-1\" or \"0\" result, attack this target again."
+          }
+        ],
+        "image": "units-neutral-bronze-elves.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "enchanters",
+    "name": "Enchanters",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ranged",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 5,
+        "cost": {
+          "gold": 16,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Remove up to 2 :damage: from a friendly unit. Otherwise, Enchanters gain +1 :attack:."
+          }
+        ],
+        "image": "units-neutral-golden-enchanters.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "energy_elementals",
+    "name": "Energy Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 5,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-conflux-silver-energy_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Add +1 :power: to the first Fire Magic spell you cast during this Activation."
+          }
+        ],
+        "image": "units-conflux-silver-energy_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Fire Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-silver-energy_elementals.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "evil_eyes",
+    "name": "Evil Eyes",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-dungeon-bronze-evil_eyes-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 7,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          }
+        ],
+        "image": "units-dungeon-bronze-evil_eyes-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          }
+        ],
+        "image": "units-neutral-bronze-evil_eyes.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "faerie_dragons",
+    "name": "Faerie Dragons",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "flying",
+        "attack": 5,
+        "defense": 2,
+        "hp": 8,
+        "initiative": 15,
+        "cost": {
+          "gold": 35,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: The selected unit suffers 2 :damage:. This is a :spell: that does not count towards your spell limit."
+          }
+        ],
+        "image": "units-neutral-azure-faerie_dragons.webp"
+      },
+      {
+        "key": "dragon-utopia",
+        "label": "Dragon Utopia",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 4,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 15,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: As long as this unit is Stacked, the enemy cannot cast spells."
+          }
+        ],
+        "image": "creature_banks-dragon_utopia-faerie_dragons.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Naval Battles Expansion (Dragon Utopia)"
+    ]
+  },
+  {
+    "id": "familiars",
+    "name": "Familiars",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 5,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-inferno-bronze-familiars-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 7,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Whenever an enemy casts a :spell: from hand, they must discard 1 card from hand."
+          }
+        ],
+        "image": "units-inferno-bronze-familiars-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 7,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Whenever an enemy cast a :spell: from hand, they must discard 1 card from hand."
+          }
+        ],
+        "image": "units-neutral-bronze-familiars.webp"
+      },
+      {
+        "key": "imp-cache",
+        "label": "Imp Cache",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 1,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: As long as this unit is Stacked, whenever the enemy casts a spell, reduce their :power: by 1 (to a minimum of 0)."
+          }
+        ],
+        "image": "creature_banks-imp_cache-familiars.webp"
+      }
+    ],
+    "content": [
+      "Inferno Expansion",
+      "Naval Battles Expansion (Imp Cache)"
+    ]
+  },
+  {
+    "id": "fangarm",
+    "name": "Fangarm",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore all :spell: and Specialty effects other than :damage:."
+          }
+        ],
+        "image": "units-neutral-silver-fangarm.webp"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "fire_elementals",
+    "name": "Fire Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Fire Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-fire_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Fire Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-fire_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Fire Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-silver-fire_elemental.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion",
+      "Regular Stretch Goals 2024 (Neutral)"
+    ]
+  },
+  {
+    "id": "gargoyles",
+    "name": "Gargoyles",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit ignores any :ongoing: Spell effects."
+          }
+        ],
+        "image": "units-tower-bronze-gargoyles-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 9,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit ignores any :ongoing: Spell effects."
+          }
+        ],
+        "image": "units-tower-bronze-gargoyles-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 9,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit ignores :paralysis: effect."
+          }
+        ],
+        "image": "units-neutral-bronze-gargoyles.webp"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "genies",
+    "name": "Genies",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 7,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: Discard 3 cards from your deck and take a :spell: discarded this way to your hand."
+          }
+        ],
+        "image": "units-tower-silver-genies-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 8,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Discard up to 3 cards from your deck and take a :spell: discarded this way to your hand."
+          }
+        ],
+        "image": "units-tower-silver-genies-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 9,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: When attacking Efreet, this unit gains +1 :attack:."
+          }
+        ],
+        "image": "units-neutral-silver-genies.webp"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "ghost_dragons",
+    "name": "Ghost Dragons",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 9,
+        "cost": {
+          "gold": 19,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Discard the enemy's :positive_morale: token."
+          }
+        ],
+        "image": "units-necropolis-golden-ghost_dragons-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 7,
+        "defense": 3,
+        "hp": 9,
+        "initiative": 14,
+        "cost": {
+          "gold": 32,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Discard the enemy's :positive_morale: token."
+          },
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Add +1 to your Attack die result."
+          }
+        ],
+        "image": "units-necropolis-golden-ghost_dragons-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 9,
+        "cost": {
+          "gold": 28,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, roll 1 Attack die; if the result is \"0\", the target must immediately move away 1 space."
+          }
+        ],
+        "image": "units-neutral-golden-ghost_dragons.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "gnolls",
+    "name": "Gnolls",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 4,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-fortress-bronze-gnolls-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-fortress-bronze-gnolls-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 4,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-gnolls.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "goblins",
+    "name": "Goblins",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 1,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 1,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-stronghold-bronze-goblins-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 7,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-stronghold-bronze-goblins-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 1,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-goblins.webp"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "gold_dragons",
+    "name": "Gold Dragons",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 3,
+        "hp": 9,
+        "initiative": 10,
+        "cost": {
+          "gold": 22,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack 2 spaces in a line. The first attack resolves normally, and the second has 2 :attack:,"
+          }
+        ],
+        "image": "units-rampart-golden-gold_dragons-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 3,
+        "hp": 10,
+        "initiative": 16,
+        "cost": {
+          "gold": 30,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack 2 spaces in a line. The first attack resolves normally, and the second has 3 :attack:."
+          }
+        ],
+        "image": "units-rampart-golden-gold_dragons-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "flying",
+        "attack": 6,
+        "defense": 3,
+        "hp": 9,
+        "initiative": 10,
+        "cost": {
+          "gold": 42,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack 2 spaces in a line. The first attack resolves normally, and the second has 3 :attack:."
+          }
+        ],
+        "image": "units-neutral-azure-gold_dragons.webp"
+      },
+      {
+        "key": "dragon-utopia",
+        "label": "Dragon Utopia",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 5,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 10,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack 2 spaces in a line. The first attack resolves normally, and the second has 3 :attack:."
+          }
+        ],
+        "image": "creature_banks-dragon_utopia-gold_dragons.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Tower Expansion (Neutral)",
+      "Naval Battles Expansion (Dragon Utopia)"
+    ]
+  },
+  {
+    "id": "gold_golems",
+    "name": "Gold Golems",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 5,
+        "cost": {
+          "gold": 14,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reduce any :damage: from spells by 2 — to a minimum of 0."
+          }
+        ],
+        "image": "units-neutral-golden-gold_golems.webp"
+      },
+      {
+        "key": "pyramid",
+        "label": "Pyramid",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 4,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit reduces any :damage: it takes from spells by 2 — to a minimum of 0."
+          }
+        ],
+        "image": "creature_banks-pyramid-gold_golems.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Pyramid)"
+    ]
+  },
+  {
+    "id": "gorgons",
+    "name": "Gorgons",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 5,
+        "cost": {
+          "gold": 9,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-fortress-silver-gorgons-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 14,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, roll 2 Attack dice; on a double \"0\", decrease the target unit's :health_points: to 0."
+          }
+        ],
+        "image": "units-fortress-silver-gorgons-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, roll 2 Attack dice. On two \"-1\" results, reduce the attacked unit's :health_points: to 0."
+          }
+        ],
+        "image": "units-neutral-silver-gorgons.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "gremlins",
+    "name": "Gremlins",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 4,
+        "cost": {
+          "gold": 0,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-tower-bronze-gremlins-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 5,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-tower-bronze-gremlins-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 5,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-gremlins.webp"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "griffins",
+    "name": "Griffins",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "retaliation"
+            ],
+            "text": ":unit_retaliation: This unit can perform an unlimited number of Retaliation Attacks."
+          }
+        ],
+        "image": "units-castle-bronze-griffins-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 9,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "retaliation"
+            ],
+            "text": ":unit_retaliation: This unit can perform an unlimited number of Retaliation Attacks."
+          }
+        ],
+        "image": "units-castle-bronze-griffins-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 8,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "retaliation"
+            ],
+            "text": ":unit_retaliation: This unit can perform and unlimited number of Retaliation Attacks."
+          }
+        ],
+        "image": "units-neutral-bronze-griffins.webp"
+      },
+      {
+        "key": "griffin-conservatory",
+        "label": "Griffin Conservatory",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 8,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit can perform an unlimited number of Retaliation Attacks."
+          }
+        ],
+        "image": "creature_banks-griffin_conservatory-griffins.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Griffin Conservatory)"
+    ]
+  },
+  {
+    "id": "halberdiers",
+    "name": "Halberdiers",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 4,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-castle-bronze-halberdiers-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 5,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: When the unit is targeted by any attack, you can discard a card and ignore the Attack die's roll result."
+          }
+        ],
+        "image": "units-castle-bronze-halberdiers-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 4,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Treat allied adjacent units as if they had a Defense token."
+          }
+        ],
+        "image": "units-neutral-bronze-halberdiers.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "halflings",
+    "name": "Halflings",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Roll 2 Attack dice and resolve the higher one. Ignore combat penalties."
+          }
+        ],
+        "image": "units-neutral-bronze-halflings.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "harpies",
+    "name": "Harpies",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the enemy's Retaliation Attack, this unit can return to the space from which it moved to attack."
+          }
+        ],
+        "image": "units-dungeon-bronze-harpies-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 9,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retaliation Attack. This unit can return to the space from which it moved to attack."
+          }
+        ],
+        "image": "units-dungeon-bronze-harpies-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 8,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retaliation Attack. This unit can return to the space from which it moved to attack."
+          }
+        ],
+        "image": "units-neutral-bronze-harpies.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "haspids",
+    "name": "Haspids",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 9,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: +2 :attack: if, during this Combat, this unit was flipped from the Pack to the Few side."
+          }
+        ],
+        "image": "units-cove-golden-haspids-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 7,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 12,
+        "cost": {
+          "gold": 30,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Place 2 faction cubes on the target. At the beginning of its every activation, remove 1 of them to inflict 1 :damage:."
+          }
+        ],
+        "image": "units-cove-golden-haspids-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 9,
+        "cost": {
+          "gold": 25,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Place 1 faction cube on the target. When it activates, remove the cube to inflict 1 :damage:."
+          }
+        ],
+        "image": "units-neutral-golden-haspids.webp"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "hydras",
+    "name": "Hydras",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 5,
+        "cost": {
+          "gold": 20,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retaliation Attack."
+          }
+        ],
+        "image": "units-fortress-golden-hydras-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 7,
+        "defense": 3,
+        "hp": 10,
+        "initiative": 7,
+        "cost": {
+          "gold": 28,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retaliation Attack. This unit attacks up to 2 adjacent enemy units."
+          }
+        ],
+        "image": "units-fortress-golden-hydras-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "ground",
+        "attack": 7,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 5,
+        "cost": {
+          "gold": 40,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore Retaliation Attacks. This unit attacks up to 2 adjacent enemy units."
+          }
+        ],
+        "image": "units-neutral-azure-hydras.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "ice_elementals",
+    "name": "Ice Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-conflux-bronze-ice_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Add +1 :power: to the first Water Magic spell you cast during this Activation."
+          }
+        ],
+        "image": "units-conflux-bronze-ice_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Water Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-bronze-ice_elementals.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "iron_golems",
+    "name": "Iron Golems",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 4,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit reduces any :damage: it takes from spells by 1 - to a minimum of 0."
+          }
+        ],
+        "image": "units-tower-bronze-iron_golems-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit reduces any :damage: it takes from spells by 2 - to a minimum of 0."
+          }
+        ],
+        "image": "units-tower-bronze-iron_golems-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 3,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reduce any :damage: from spells by 2 - to a minimum of 0."
+          }
+        ],
+        "image": "units-neutral-bronze-iron_golems.webp"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "leprechaun",
+    "name": "Leprechaun",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Roll 2 Attack dice and resolve the higher one."
+          }
+        ],
+        "image": "units-neutral-bronze-leprechaun.webp"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "liches",
+    "name": "Liches",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-necropolis-silver-liches-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 7,
+        "cost": {
+          "gold": 14,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Choose a unit adjacent to the target and attack it. For the purpose of this attack, your :attack: is 2."
+          }
+        ],
+        "image": "units-necropolis-silver-liches-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 6,
+        "initiative": 7,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Choose a unit adjacent to the target and attack it. For the purpose of this attack, your :attack: is 2."
+          }
+        ],
+        "image": "units-neutral-silver-liches.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "lizardmen",
+    "name": "Lizardmen",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 4,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-fortress-bronze-lizardmen-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-fortress-bronze-lizardmen-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-lizardmen.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "magi",
+    "name": "Magi",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore combat penalties."
+          }
+        ],
+        "image": "units-tower-silver-magi-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 4,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack",
+              "activation"
+            ],
+            "text": ":unit_attack: Ignore combat penalties. :activation: Add +1 :power: to the first spell you cast this round."
+          }
+        ],
+        "image": "units-tower-silver-magi-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore combat penalties. After this unit's attack, the enemy discards a random card or a card with :power:."
+          }
+        ],
+        "image": "units-neutral-silver-magi.webp"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "magic_elementals",
+    "name": "Magic Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 7,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks. Attack all adjacent units."
+          }
+        ],
+        "image": "units-conflux-golden-magic_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 9,
+        "cost": {
+          "gold": 19,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack",
+              "passive"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks. Attack all adjacent enemy units. :unit_passive: Ignore any :spell: effects and :damage: from Specialty."
+          }
+        ],
+        "image": "units-conflux-golden-magic_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 7,
+        "cost": {
+          "gold": 19,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-golden-magic_elementals.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "magma_elementals",
+    "name": "Magma Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 4,
+        "cost": {
+          "gold": 9,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-conflux-silver-magma_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Add +1 :power: to the first Earth Magic spell you cast during this Activation."
+          }
+        ],
+        "image": "units-conflux-silver-magma_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 4,
+        "cost": {
+          "gold": 14,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Earth Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-silver-magma_elementals.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "magogs",
+    "name": "Magogs",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 4,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-inferno-bronze-magogs-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: When Magogs attack a target that is not adjacent to them, they also deal 1 :damage: to a unit adjacent to the target."
+          }
+        ],
+        "image": "units-inferno-bronze-magogs-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: When Magogs attack a target that is non adjacent to them, they also deal 1 :damage: to a unit adjacent to the target."
+          }
+        ],
+        "image": "units-neutral-bronze-magogs.webp"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "manticores",
+    "name": "Manticores",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 7,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-dungeon-golden-manticores-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 11,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: For this attack, ignore the :defense: value from the target unit's card."
+          }
+        ],
+        "image": "units-dungeon-golden-manticores-pack.webp"
+      },
+      {
+        "key": "few-alternate",
+        "label": "Few (Alternate)",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 8,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Place 1 faction cube on the target. When it activates, remove the cube to inflict 1 :damage:."
+          }
+        ],
+        "image": "units-dungeon-golden-manticores-few.webp"
+      },
+      {
+        "key": "pack-alternate",
+        "label": "Pack (Alternate)",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 4,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 11,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: After each attack, place 1 faction cube on the target. When it activates, remove the cube to inflict 1 :damage:."
+          }
+        ],
+        "image": "units-dungeon-golden-manticores-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 8,
+        "cost": {
+          "gold": 18,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: On a \"0\" or a \"+1\" outcomes on the enemy's Attack die, gain +1 :defense:."
+          }
+        ],
+        "image": "units-neutral-golden-manticores.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Regular Stretch Goals 2024 - Alternate version"
+    ]
+  },
+  {
+    "id": "marksmen",
+    "name": "Marksmen",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 4,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-castle-bronze-marksmen-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 6,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If a target is a non-adjacent unit, attack this target again."
+          }
+        ],
+        "image": "units-castle-bronze-marksmen-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If a target is a non-adjacent unit, attack this target again."
+          }
+        ],
+        "image": "units-neutral-bronze-marksmen.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "medusas",
+    "name": "Medusas",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: After the Retaliation Attack, roll an Attack die, on a \"0\" the target is :paralysis:."
+          }
+        ],
+        "image": "units-dungeon-silver-medusas-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 4,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          },
+          {
+            "triggers": [
+              "retaliation"
+            ],
+            "text": ":unit_retaliation: The target gains :paralysis:."
+          }
+        ],
+        "image": "units-dungeon-silver-medusas-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          },
+          {
+            "triggers": [
+              "retaliation"
+            ],
+            "text": ":unit_retaliation: The target is :paralysis:."
+          }
+        ],
+        "image": "units-neutral-silver-medusas.webp"
+      },
+      {
+        "key": "medusa-stores",
+        "label": "Medusa Stores",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retalation Attack. If this unit is Stacked, the target gains :paralysis:."
+          }
+        ],
+        "image": "creature_banks-medusa_stores-medusas.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Medusa Stores)"
+    ]
+  },
+  {
+    "id": "minotaurs",
+    "name": "Minotaurs",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If you resolve a \"-1\" on the Attack die, draw a card,"
+          }
+        ],
+        "image": "units-dungeon-silver-minotaurs-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 8,
+        "cost": {
+          "gold": 14,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: If you resolve a \"-1\" on the Attack die, draw a card,"
+          }
+        ],
+        "image": "units-dungeon-silver-minotaurs-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 7,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Reroll this unit's \"-1\" outcome on the Attack die."
+          }
+        ],
+        "image": "units-neutral-silver-minotaurs.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "mummies",
+    "name": "Mummies",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack",
+              "passive"
+            ],
+            "text": ":unit_attack: Ignore the result on the Attack die. :unit_passive: Whenever this unit is attacked, set your opponent's Attack die to \"-1\"."
+          }
+        ],
+        "image": "units-neutral-silver-mummies.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "nagas",
+    "name": "Nagas",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 6,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore Retaliation Attacks."
+          }
+        ],
+        "image": "units-tower-golden-nagas-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 8,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore Retaliation Attacks."
+          }
+        ],
+        "image": "units-tower-golden-nagas-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 6,
+        "cost": {
+          "gold": 16,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore Retaliation Attacks."
+          }
+        ],
+        "image": "units-neutral-golden-nagas.webp"
+      },
+      {
+        "key": "naga-bank",
+        "label": "Naga Bank",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 6,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore Retaliation Attacks."
+          }
+        ],
+        "image": "creature_banks-naga_bank-nagas.webp"
+      }
+    ],
+    "content": [
+      "Tower Expansion",
+      "Naval Battles Expansion (Naga Bank)"
+    ]
+  },
+  {
+    "id": "nix",
+    "name": "Nix",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 6,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-cove-golden-nix-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 2,
+        "hp": 8,
+        "initiative": 7,
+        "cost": {
+          "gold": 20,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit cannot take more than 4 :damage: from a single attack."
+          }
+        ],
+        "image": "units-cove-golden-nix-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 6,
+        "cost": {
+          "gold": 20,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit cannot take more than 5 :damage: from a single attack."
+          }
+        ],
+        "image": "units-neutral-golden-nix.webp"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "nomads",
+    "name": "Nomads",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 7,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "map"
+            ],
+            "text": ":map_effect: At the end of your turn, move your Hero's model to an adjacent empty field."
+          }
+        ],
+        "image": "units-neutral-silver-nomads.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "oceanids",
+    "name": "Oceanids",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-cove-bronze-oceanids-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 8,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore all effects and :damage: from :spell:."
+          }
+        ],
+        "image": "units-cove-bronze-oceanids-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore all effects and :damage: from :spell:."
+          }
+        ],
+        "image": "units-neutral-bronze-oceanids.webp"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "ogres",
+    "name": "Ogres",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 4,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: Place a +1 :attack: token on a chosen :ground_unit: or :flying_unit: unit for 2 Combat rounds."
+          }
+        ],
+        "image": "units-stronghold-silver-ogres-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 6,
+        "initiative": 5,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: Place a +2 :attack: token on a chosen :ground_unit: or :flying_unit: unit for 2 Combat rounds."
+          }
+        ],
+        "image": "units-stronghold-silver-ogres-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 4,
+        "initiative": 4,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: Place a +2 :attack: token on a chosen :ground_unit: or :flying_unit: unit for 2 Combat rounds."
+          }
+        ],
+        "image": "units-neutral-silver-ogres.webp"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "orcs",
+    "name": "Orcs",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 4,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-stronghold-bronze-orcs-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 5,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-stronghold-bronze-orcs-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 4,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-orcs.webp"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "peasants",
+    "name": "Peasants",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 1,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 3,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "map"
+            ],
+            "text": ":map_effect: At the beginning of each Resource round, gain 3 :gold:."
+          }
+        ],
+        "image": "units-neutral-bronze-peasants.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "pegasi",
+    "name": "Pegasi",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-rampart-silver-pegasi-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 4,
+        "defense": 0,
+        "hp": 6,
+        "initiative": 12,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: The :power: of all enemy spells is reduced by 1 (to a minimum of 0)."
+          }
+        ],
+        "image": "units-rampart-silver-pegasi-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 14,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Whenever an enemy casts a :spell:, they must discard an additional card with :power:."
+          }
+        ],
+        "image": "units-neutral-silver-pegasi.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "phoenixes",
+    "name": "Phoenixes",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 12,
+        "cost": {
+          "gold": 21,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Once per Combat. When this unit's HP drops to 0, set it to 1 instead."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Fire Magic spells."
+          }
+        ],
+        "image": "units-conflux-golden-phoenixes-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 7,
+        "defense": 2,
+        "hp": 8,
+        "initiative": 18,
+        "cost": {
+          "gold": 29,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack 2 spaces in a line. The first attack resolves normally, and the second has 2 :attack:."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Fire Magic :spell:."
+          }
+        ],
+        "image": "units-conflux-golden-phoenixes-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "flying",
+        "attack": 6,
+        "defense": 2,
+        "hp": 7,
+        "initiative": 12,
+        "cost": {
+          "gold": 32,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Once per Combat. When this unit's HP drops to 0, set it to 1 instead."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Fire Magic :spell:."
+          }
+        ],
+        "image": "units-neutral-azure-phoenixes.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "pit_lords",
+    "name": "Pit Lords",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 6,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-inferno-silver-pit_lords-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "inferno",
+        "tier": "silver",
+        "type": "ground",
+        "attack": 5,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 7,
+        "cost": {
+          "gold": 15,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: If one of your units has been removed from the board during this Combat, Summon or Reinforce Demons."
+          }
+        ],
+        "image": "units-inferno-silver-pit_lords-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 7,
+        "cost": {
+          "gold": 15,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-silver-pit_lords.webp"
+      }
+    ],
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "rogues",
+    "name": "Rogues",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "map"
+            ],
+            "text": ":map_effect: Once during your turn, look at the top card from any deck, then put it back on the top or on the bottom of that deck."
+          }
+        ],
+        "image": "units-neutral-bronze-rogues.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "rust_dragons",
+    "name": "Rust Dragons",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "flying",
+        "attack": 7,
+        "defense": 3,
+        "hp": 10,
+        "initiative": 17,
+        "cost": {
+          "gold": 38,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: On \"-1\" results on the Attack die, decrease the attacked unit's :defense: by 2 - to a minimum of 0."
+          }
+        ],
+        "image": "units-neutral-azure-rust_dragons.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "satyrs",
+    "name": "Satyrs",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 7,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "map"
+            ],
+            "text": ":map_effect: Once per turn. Roll an Attack die. On a \"+1\", gain :positive_morale:."
+          }
+        ],
+        "image": "units-neutral-silver-satyrs.webp"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "sea_dogs",
+    "name": "Sea Dogs",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          }
+        ],
+        "image": "units-cove-bronze-sea_dogs-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks."
+          },
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          }
+        ],
+        "image": "units-cove-bronze-sea_dogs-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          }
+        ],
+        "image": "units-neutral-bronze-sea_dogs.webp"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "seamen",
+    "name": "Seamen",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-cove-bronze-seamen-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Once per Combat, when this unit removes a unit from Combat, gain 2 :gold:."
+          }
+        ],
+        "image": "units-cove-bronze-seamen-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-neutral-bronze-seamen.webp"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "sharpshooters",
+    "name": "Sharpshooters",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 6,
+        "initiative": 9,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the combat penalties."
+          }
+        ],
+        "image": "units-neutral-silver-sharpshooters.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "skeletons",
+    "name": "Skeletons",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 4,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-necropolis-bronze-skeletons-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 5,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-necropolis-bronze-skeletons-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 4,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: After defeating Skeletons, if you control a :necropolis: Hero, immediately Reinforce 1 of your :bronze_tier: units."
+          }
+        ],
+        "image": "units-neutral-bronze-skeletons.webp"
+      },
+      {
+        "key": "crypt",
+        "label": "Crypt",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 1,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 4,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Once per Combat. When this unit's :health_points: drops to 0, set it to 1 instead."
+          }
+        ],
+        "image": "creature_banks-crypt-skeletons.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Crypt)"
+    ]
+  },
+  {
+    "id": "sorceresses",
+    "name": "Sorceresses",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "other"
+            ],
+            "text": ":unit_other: Place a \"-2\" Weakness token on any one unit for 2 Combat rounds."
+          }
+        ],
+        "image": "units-cove-silver-sorceresses-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "cove",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 4,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 7,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, place a \"-1\" Weakness token on the target for 2 Combat rounds."
+          }
+        ],
+        "image": "units-cove-silver-sorceresses-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 6,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, place a \"-1\" Weakness token on the target for 2 Combat rounds."
+          }
+        ],
+        "image": "units-neutral-silver-sorceresses.webp"
+      }
+    ],
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "sprites",
+    "name": "Sprites",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 7,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-conflux-bronze-sprites-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 9,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignores Retaliation Attacks."
+          }
+        ],
+        "image": "units-conflux-bronze-sprites-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 7,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retaliation Attacks."
+          }
+        ],
+        "image": "units-neutral-bronze-sprites.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "steel_golems",
+    "name": "Steel Golems",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 3,
+        "defense": 2,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reduce :damage: taken by this unit from :spell: or Specialty by 2 — to a minimum of 0."
+          }
+        ],
+        "image": "units-neutral-silver-steel_golems.webp"
+      }
+    ],
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "storm_elementals",
+    "name": "Storm Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 7,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-conflux-bronze-storm_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "conflux",
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Add +1 :power: to the first Air Magic spell you cast during this Activation."
+          }
+        ],
+        "image": "units-conflux-bronze-storm_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ranged",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 7,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Air Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-bronze-storm_elementals.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "thunderbirds",
+    "name": "Thunderbirds",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 9,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-stronghold-silver-thunderbirds-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 6,
+        "initiative": 11,
+        "cost": {
+          "gold": 14,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Right after this unit's attack and before any Retaliation, roll 1 Attack die, on a \"0\" or \"+1\", deal 1 :damage: to the target."
+          }
+        ],
+        "image": "units-stronghold-silver-thunderbirds-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 6,
+        "initiative": 9,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Right after this unit's attack and before any Retaliation, roll 1 Attack die, on a \"0\" or \"+1\", deal 1 :damage: to the target."
+          }
+        ],
+        "image": "units-neutral-silver-thunderbirds.webp"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "titans",
+    "name": "Titans",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 7,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore any :ongoing: effects on this unit."
+          }
+        ],
+        "image": "units-tower-golden-titans-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "tower",
+        "tier": "gold",
+        "type": "ranged",
+        "attack": 6,
+        "defense": 3,
+        "hp": 8,
+        "initiative": 11,
+        "cost": {
+          "gold": 32,
+          "valuables": 2,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore any :ongoing: effects on this unit and combat penalties against adjacent units."
+          }
+        ],
+        "image": "units-tower-golden-titans-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "azure",
+        "type": "ranged",
+        "attack": 6,
+        "defense": 2,
+        "hp": 10,
+        "initiative": 10,
+        "cost": {
+          "gold": 39,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          },
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: When attacking Black Dragons, this unit gains +2 :attack:."
+          }
+        ],
+        "image": "units-neutral-azure-titans.webp"
+      }
+    ],
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "troglodytes",
+    "name": "Troglodytes",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 4,
+        "cost": {
+          "gold": 2,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-dungeon-bronze-troglodytes-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "dungeon",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 1,
+        "hp": 2,
+        "initiative": 5,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit ignores :paralysis: effect."
+          }
+        ],
+        "image": "units-dungeon-bronze-troglodytes-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 6,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: This unit ignores :paralysis: effects."
+          }
+        ],
+        "image": "units-neutral-bronze-troglodytes.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "trolls",
+    "name": "Trolls",
+    "variants": [
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 4,
+        "defense": 0,
+        "hp": 7,
+        "initiative": 7,
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Remove up to 3 :damage: from this unit."
+          }
+        ],
+        "image": "units-neutral-golden-trolls.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "unicorns",
+    "name": "Unicorns",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 1,
+        "hp": 8,
+        "initiative": 7,
+        "cost": {
+          "gold": 11,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reduce any :damage: from :spell: dealt to this unit by 1 (to a minimum of 0),"
+          }
+        ],
+        "image": "units-rampart-golden-unicorns-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "rampart",
+        "tier": "gold",
+        "type": "ground",
+        "attack": 6,
+        "defense": 1,
+        "hp": 8,
+        "initiative": 9,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Reduce any :damage: from :spell: dealt to this and adjacent friendly unit(s) by 1 (to a minimum of 0),"
+          }
+        ],
+        "image": "units-rampart-golden-unicorns-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "ground",
+        "attack": 5,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 7,
+        "cost": {
+          "gold": 18,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "retaliation"
+            ],
+            "text": ":unit_retaliation: The target is :paralysis:."
+          }
+        ],
+        "image": "units-neutral-golden-unicorns.webp"
+      }
+    ],
+    "content": [
+      "Rampart Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "vampires",
+    "name": "Vampires",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 6,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retaliation Attack."
+          }
+        ],
+        "image": "units-necropolis-silver-vampires-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "silver",
+        "type": "flying",
+        "attack": 5,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 9,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore the Retaliation Attack. Then remove up to 2 :damage: from this unit."
+          }
+        ],
+        "image": "units-necropolis-silver-vampires-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 8,
+        "cost": {
+          "gold": 9,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Ignore Enemy's Retaliation Attack. Then remove up to 2 :damage: from this unit."
+          }
+        ],
+        "image": "units-neutral-silver-vampires.webp"
+      },
+      {
+        "key": "crypt",
+        "label": "Crypt",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 6,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, remove all :damage: from this unit."
+          }
+        ],
+        "image": "creature_banks-crypt-vampires.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Crypt)"
+    ]
+  },
+  {
+    "id": "water_elementals",
+    "name": "Water Elementals",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 6,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Water Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-water_elementals-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "summoned",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 6,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Water Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-summoned-bronze-water_elementals-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 4,
+        "initiative": 5,
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow and Water Magic :spell:. This unit deals elemental damage."
+          }
+        ],
+        "image": "units-neutral-silver-water_elemental.webp"
+      },
+      {
+        "key": "derelict-ship",
+        "label": "Derelict Ship",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 6,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Immune to Magic Arrow."
+          }
+        ],
+        "image": "creature_banks-derelict_ship-water_elementals.webp"
+      }
+    ],
+    "content": [
+      "Conflux Expansion",
+      "Regular Stretch Goals 2024 (Neutral)",
+      "Naval Battles Expansion (Derelict Ship)"
+    ]
+  },
+  {
+    "id": "wolf_raiders",
+    "name": "Wolf Raiders",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 7,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-stronghold-bronze-wolf_raiders-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "stronghold",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 8,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack this target again. The second attack happens after the target retaliates (if possible)."
+          }
+        ],
+        "image": "units-stronghold-bronze-wolf_raiders-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 7,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Attack this target again. The second attack happens after the target retaliates (if possible)."
+          }
+        ],
+        "image": "units-neutral-bronze-wolf_raiders.webp"
+      }
+    ],
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "wraiths",
+    "name": "Wraiths",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 5,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Remove up to 1 :damage: from this unit."
+          }
+        ],
+        "image": "units-necropolis-bronze-wraiths-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 7,
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Remove up to 1 :damage: from this unit, then discard 1 random card from the enemy's hand."
+          }
+        ],
+        "image": "units-necropolis-bronze-wraiths-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 7,
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "activation"
+            ],
+            "text": ":activation: Remove up to 2 :damage: from this unit."
+          }
+        ],
+        "image": "units-neutral-bronze-wraiths.webp"
+      },
+      {
+        "key": "crypt",
+        "label": "Crypt",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Whenever this unit attacks, the enemy must discard 1 card from hand (if possible)."
+          }
+        ],
+        "image": "creature_banks-crypt-wraiths.webp"
+      },
+      {
+        "key": "shipwreck",
+        "label": "Shipwreck",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "flying",
+        "attack": 2,
+        "defense": 0,
+        "hp": 3,
+        "initiative": 5,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Whenever this unit attacks, the enemy must discard 1 card from hand (if possible)."
+          }
+        ],
+        "image": "creature_banks-shipwreck-wraiths.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Crypt and Shipwreck)"
+    ]
+  },
+  {
+    "id": "wyverns",
+    "name": "Wyverns",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 5,
+        "defense": 1,
+        "hp": 8,
+        "initiative": 7,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Place 1 faction cube on the target. At the beginning of its every activation, remove it to inflict 1 :damage:."
+          }
+        ],
+        "image": "units-fortress-golden-wyverns-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "fortress",
+        "tier": "gold",
+        "type": "flying",
+        "attack": 6,
+        "defense": 1,
+        "hp": 8,
+        "initiative": 11,
+        "cost": {
+          "gold": 18,
+          "valuables": 1,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: Place 2 faction cubes on the target. At the beginning of its every activation, remove 1 of them to inflict 1 :damage:."
+          }
+        ],
+        "image": "units-fortress-golden-wyverns-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "gold",
+        "type": "flying",
+        "attack": 4,
+        "defense": 1,
+        "hp": 7,
+        "initiative": 8,
+        "cost": {
+          "gold": 17,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "attack"
+            ],
+            "text": ":unit_attack: After the attack, roll 1 Attack die. On a \"0\" result, deal 1 :damage: to the target unit."
+          }
+        ],
+        "image": "units-neutral-golden-wyverns.webp"
+      }
+    ],
+    "content": [
+      "Fortress Expansion",
+      "Tower Expansion (Neutral)"
+    ]
+  },
+  {
+    "id": "zealots",
+    "name": "Zealots",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 5,
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [],
+        "image": "units-castle-silver-zealots-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "castle",
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 4,
+        "defense": 1,
+        "hp": 5,
+        "initiative": 7,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          }
+        ],
+        "image": "units-castle-silver-zealots-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "silver",
+        "type": "ranged",
+        "attack": 3,
+        "defense": 0,
+        "hp": 5,
+        "initiative": 5,
+        "cost": {
+          "gold": 12,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: Ignore the combat penalty against adjacent units."
+          }
+        ],
+        "image": "units-neutral-silver-zealots.webp"
+      }
+    ],
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "zombies",
+    "name": "Zombies",
+    "variants": [
+      {
+        "key": "few",
+        "label": "Few",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 3,
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: If the attacker resolves a \"+1\" on Attack die, gain +1 :defense:."
+          }
+        ],
+        "image": "units-necropolis-bronze-zombies-few.webp"
+      },
+      {
+        "key": "pack",
+        "label": "Pack",
+        "origin": "faction",
+        "faction": "necropolis",
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 1,
+        "hp": 3,
+        "initiative": 4,
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: If the attacker resolves a \"0\" or a +1\" on Attack die, gain +1 :defense:."
+          }
+        ],
+        "image": "units-necropolis-bronze-zombies-pack.webp"
+      },
+      {
+        "key": "neutral",
+        "label": "Neutral",
+        "origin": "neutral",
+        "faction": null,
+        "tier": "bronze",
+        "type": "ground",
+        "attack": 2,
+        "defense": 0,
+        "hp": 4,
+        "initiative": 3,
+        "cost": {
+          "gold": 5,
+          "valuables": 0,
+          "buildingMaterials": 0
+        },
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: If the attacker resolves a \"0\" or a \"+1\" on an Attack die, gain +1 :defense:"
+          }
+        ],
+        "image": "units-neutral-bronze-zombies.webp"
+      },
+      {
+        "key": "crypt",
+        "label": "Crypt",
+        "origin": "creature-bank",
+        "faction": null,
+        "tier": null,
+        "type": "ground",
+        "attack": 1,
+        "defense": 0,
+        "hp": 2,
+        "initiative": 3,
+        "cost": null,
+        "abilities": [
+          {
+            "triggers": [
+              "passive"
+            ],
+            "text": ":unit_passive: If the attacker resolves a \"+1\" on Attack die against this unit, gain +1 :defense:."
+          }
+        ],
+        "image": "creature_banks-crypt-zombies.webp"
+      }
+    ],
+    "content": [
+      "Core Game",
+      "Naval Battles Expansion (Crypt)"
+    ]
+  }
+]
