@@ -20,6 +20,7 @@ import {
 import {
   other,
   type ActivationResume,
+  type CardEffect,
   type CombatAction,
   type CombatEvent,
   type CombatSetup,
@@ -37,9 +38,16 @@ const MAX_UNITS = 5;
 /** Ground and Flying units move up to 3 spaces, Ranged units 1 (p. 38). */
 const MOVE_RANGE = { ground: 3, flying: 3, ranged: 1 } as const;
 
-export function statsOf(u: Pick<CombatUnit, "unitId" | "variant">): UnitStats {
+export function statsOf(u: Pick<CombatUnit, "unitId" | "variant"> & Pick<Partial<CombatUnit>, "buffs">): UnitStats {
   const v = getVariant(u.unitId, u.variant);
-  return { type: v.type, attack: v.attack, defense: v.defense, hp: v.hp, initiative: v.initiative };
+  const b = u.buffs ?? {};
+  return {
+    type: v.type,
+    attack: Math.max(0, v.attack + (b.attack ?? 0)),
+    defense: Math.max(0, v.defense + (b.defense ?? 0)),
+    hp: Math.max(1, v.hp + (b.hp ?? 0)),
+    initiative: v.initiative + (b.initiative ?? 0),
+  };
 }
 
 export function getUnitByUid(state: CombatState, uid: string): CombatUnit {
@@ -215,6 +223,11 @@ export function applyCombatAction(prev: CombatState, action: CombatAction): Comb
       if (ph.passed.attacker && ph.passed.defender) resolveAttack(state, ph.attack, ph.then);
       return state;
     }
+    case "effect": {
+      if (ph.type === "over") throw new IllegalAction("the Combat is over");
+      applyCardEffect(state, action.side, action.effect, action.source);
+      return state;
+    }
     case "continue": {
       if (ph.type !== "round-end" || state.options.neutralSide === null) throw new IllegalAction("nothing to continue");
       startRound(state);
@@ -243,6 +256,39 @@ export function dealEffectDamage(prev: CombatState, uid: string, amount: number)
 
 // ---------------------------------------------------------------------------
 // Internals (mutate the cloned draft)
+
+function applyCardEffect(state: CombatState, side: Side, effect: CardEffect, source: string) {
+  const unit = getUnitByUid(state, effect.uid);
+  log(state, { type: "effect", side, effect, source });
+  switch (effect.kind) {
+    case "damage":
+      applyDamage(state, unit, effect.amount);
+      break;
+    case "heal":
+      unit.damage = Math.max(0, unit.damage - effect.amount);
+      break;
+    case "buff":
+      unit.buffs = { ...unit.buffs, [effect.stat]: (unit.buffs?.[effect.stat] ?? 0) + effect.amount };
+      break;
+    case "paralyze":
+      unit.paralyzed = true;
+      break;
+    case "defend":
+      unit.defending = true;
+      break;
+  }
+  if (checkOver(state)) return;
+  // A unit taken off the board by the effect cannot finish what it was doing.
+  const ph = state.phase;
+  if (ph.type === "activation" && !state.units.some((u) => u.uid === ph.uid)) advance(state);
+  if (ph.type === "reaction") {
+    const gone = (uid: string) => !state.units.some((u) => u.uid === uid);
+    if (gone(ph.attack.attackerUid) || gone(ph.attack.targetUid)) {
+      if (gone(ph.then.uid)) advance(state);
+      else endActivation(state, ph.then.uid);
+    }
+  }
+}
 
 function log(state: CombatState, e: CombatEvent) {
   state.log.push(structuredClone(e));

@@ -31,7 +31,19 @@ export interface CombatUnit {
   defending: boolean;
   /** Paralysis Token (p. 42). */
   paralyzed: boolean;
+  /** Changes from cards that last until the end of the Combat (e.g. Haste, p. 26). */
+  buffs?: Partial<Record<BuffStat, number>>;
 }
+
+export type BuffStat = "attack" | "defense" | "hp" | "initiative";
+
+/** A card effect resolved on the board outside of an attack (Spells, Abilities, Artifacts). */
+export type CardEffect =
+  | { kind: "damage"; uid: string; amount: number }
+  | { kind: "heal"; uid: string; amount: number }
+  | { kind: "buff"; uid: string; stat: BuffStat; amount: number }
+  | { kind: "paralyze"; uid: string }
+  | { kind: "defend"; uid: string };
 
 /** Stats as resolved from the unit card, before temporary modifiers. */
 export interface UnitStats {
@@ -104,6 +116,7 @@ export type CombatEvent =
     }
   | { type: "damage"; uid: string; amount: number; flipped: boolean; defeated: boolean }
   | { type: "end-activation"; uid: string }
+  | { type: "effect"; side: Side; effect: CardEffect; source: string }
   | { type: "retreat" }
   | { type: "over"; winner: Side | null };
 
@@ -114,6 +127,8 @@ export type CombatAction =
   | { type: "end-activation"; uid: string }
   | { type: "modify"; side: Side; stat: "attack" | "defense"; amount: number; source: string }
   | { type: "pass"; side: Side }
+  /** A card resolved directly on the board; the adventure layer checks who may play it and when. */
+  | { type: "effect"; side: Side; effect: CardEffect; source: string }
   | { type: "continue" }
   | { type: "retreat" };
 

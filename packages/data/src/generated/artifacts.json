@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "ambassadors_sash",
+    "name": "Ambassador's Sash",
+    "level": "major",
+    "effects": [
+      ":map_effect: For every Dwelling you have, draw 1 corresponding Neutral Unit card. You can Recruit one of these units.",
+      ":instant: Reroll a die."
+    ],
+    "image": "artifacts_major-ambassadors_sash.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "angel_wings",
+    "name": "Angel Wings",
+    "level": "relic",
+    "effects": [
+      ":map_effect: Chosen Hero gain +1 :movement_points: and can move through any fields without resolving them. The last visited field must be resolved normally.",
+      ":instant: Draw a card."
+    ],
+    "image": "artifacts_relic-angel_wings.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "armor_of_wonder",
+    "name": "Armor of Wonder",
+    "level": "minor",
+    "effects": [
+      ":instant: Draw 1 card and gain +1 :attack:.",
+      ":instant: Draw 1 card and gain +1 :defense:."
+    ],
+    "image": "artifacts_minor-armor_of_wonder.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "arms_of_legion",
+    "name": "Arms of Legion",
+    "level": "major",
+    "effects": [
+      ":instant: Reduce the Recruitment or Reinforcement cost of a unit by 5 :gold: - to a minimum of 0.",
+      ":instant: Gain 2 :building_materials:."
+    ],
+    "image": "artifacts_major-arms_of_legion.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "blackshard_of_the_dead_knight",
+    "name": "Blackshard of the Dead Knight",
+    "level": "minor",
+    "effects": [
+      ":instant: +2 :attack: and discard 1 card. If the discarded card was a spell, draw 1 card.",
+      ":instant: +1 :attack:"
+    ],
+    "image": "artifacts_minor-blackshard_of_the_dead_knight.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "boots_of_polarity",
+    "name": "Boots of Polarity",
+    "level": "relic",
+    "effects": [
+      ":instant: Play this card after an enemy casts a spell. Roll 2 Attack dice and choose one. On a \"+1\", ignore the :spell: effect.",
+      ":activation: Remove 1 :ongoing: effect."
+    ],
+    "image": "artifacts_relic-boots_of_polarity.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "boots_of_speed",
+    "name": "Boots of Speed",
+    "level": "minor",
+    "effects": [
+      ":instant: Your hero gains +1 :movement_points:.",
+      ":ongoing: For this Combat, your selected unit gains +1 :initiative:."
+    ],
+    "image": "artifacts_minor-boots_of_speed.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "bowstring_of_the_unicorns_mane",
+    "name": "Bowstring of the Unicorn's Mane",
+    "level": "minor",
+    "effects": [
+      ":instant: Play this card before a unit activates. Activate one of your :ranged_unit: units that has not been activated this round.",
+      ":instant: Use this after a :ranged_unit: unit's Attack die roll. Ignore 1 Attack die."
+    ],
+    "image": "artifacts_minor-bowstring_of_the_unicorns_mane.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "breastplate_of_brimstone",
+    "name": "Breastplate of Brimstone",
+    "level": "major",
+    "effects": [
+      ":instant: Search(2) :spell:.",
+      ":instant: +1 :power:, then discard up to 3 cards from your hand to gain +1 :power: per card discarded."
+    ],
+    "image": "artifacts_major-breastplate_of_brimstone.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "breastplate_of_petrified_wood",
+    "name": "Breastplate of Petrified Wood",
+    "level": "minor",
+    "effects": [
+      ":instant: Draw 1 card.",
+      ":instant: +1 :power:"
+    ],
+    "image": "artifacts_minor-breastplate_of_petrified_wood.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "buckler_of_the_gnoll_king",
+    "name": "Buckler of the Gnoll King",
+    "level": "minor",
+    "effects": [
+      ":instant: +2 :defense:\n:ongoing: Until the end of the Combat, this unit suffers -1 :attack: (to a minimum of 0).",
+      ":instant: +1 :defense:"
+    ],
+    "image": "artifacts_minor-buckler_of_the_gnoll_king.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "cape_of_velocity",
+    "name": "Cape of Velocity",
+    "level": "major",
+    "effects": [
+      ":ongoing: Until the end of the Combat, this unit gains +2 :initiative:.",
+      ":instant: Gain 2 :gold:."
+    ],
+    "image": "artifacts_major-cape_of_velocity.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "cards_of_prophecy",
+    "name": "Cards of Prophecy",
+    "level": "major",
+    "effects": [
+      ":instant: Reroll any die.",
+      ":instant: Set a :resource_die: or :treasure_die: on the side of your choice."
+    ],
+    "image": "artifacts_major-cards_of_prophecy.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "celestial_necklace_of_bliss",
+    "name": "Celestial Necklace of Bliss",
+    "level": "relic",
+    "effects": [
+      ":instant: Discard X cards from hand to gain +X :attack:.",
+      ":instant: Remove this card, then gain +4 :attack:."
+    ],
+    "image": "artifacts_relic-celestial_necklace_of_bliss.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "centaurs_axe",
+    "name": "Centaur's Axe",
+    "level": "minor",
+    "effects": [
+      ":instant: Triple the Attack die's outcome.",
+      ":instant: +1 :attack:"
+    ],
+    "image": "artifacts_minor-centaurs_axe.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "charm_of_mana",
+    "name": "Charm of Mana",
+    "level": "minor",
+    "effects": [
+      ":instant: Discard 2 cards, then draw 3 cards.",
+      ":instant: Draw 2 cards, then discard 1 card."
+    ],
+    "image": "artifacts_minor-charm_of_mana.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "crest_of_valor",
+    "name": "Crest of Valor",
+    "level": "minor",
+    "effects": [
+      ":instant: Gain a :positive_morale: token.",
+      ":map_effect: Ignore :negative_morale: effect from a field."
+    ],
+    "image": "artifacts_minor-crest_of_valor.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "crown_of_dragontooth",
+    "name": "Crown of Dragontooth",
+    "level": "relic",
+    "effects": [
+      ":instant: Select 2 Spell cards from your discard pile and put them back in your hand.",
+      ":instant: Remove 1 :spell: from hand, then Search(2) :spell:."
+    ],
+    "image": "artifacts_relic-crown_of_dragontooth.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "crown_of_the_five_seas",
+    "name": "Crown of the Five Seas",
+    "level": "major",
+    "effects": [
+      ":instant: Select 1 Spell card from your discard pile and put it back into your hand.",
+      ":instant: If this Hero is on a Sea tile, you may look at the top 3 cards of your discard pile and take 1 of them into your hand."
+    ],
+    "image": "artifacts_major-crown_of_the_five_seas.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "diplomats_ring",
+    "name": "Diplomat's Ring",
+    "level": "major",
+    "effects": [
+      ":instant: Reroll any die or any roll.",
+      ":map_effect: For every Dwelling you have, draw 1 corresponding Neutral Unit card. You can Recruit one of these units."
+    ],
+    "image": "artifacts_major-diplomats_ring.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "dragon_scale_armor",
+    "name": "Dragon Scale Armor",
+    "level": "relic",
+    "effects": [
+      ":instant: +2 :attack:",
+      ":instant: +2 :defense:"
+    ],
+    "image": "artifacts_relic-dragon_scale_armor.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "dragon_scale_shield",
+    "name": "Dragon Scale Shield",
+    "level": "major",
+    "effects": [
+      ":instant: +2 :attack:",
+      ":instant: +2 :defense:"
+    ],
+    "image": "artifacts_major-dragon_scale_shield.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "dragon_wing_tabard",
+    "name": "Dragon Wing Tabard",
+    "level": "minor",
+    "effects": [
+      ":instant: Discard 1 random card from the enemy's hand.",
+      ":instant: +1 :power:"
+    ],
+    "image": "artifacts_minor-dragon_wing_tabard.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "endless_bag_of_gold",
+    "name": "Endless Bag of Gold",
+    "level": "major",
+    "effects": [
+      ":instant: Gain 3 :gold:.",
+      ":instant: Remove this card, then gain 6 :gold:."
+    ],
+    "image": "artifacts_major-endless_bag_of_gold.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "endless_purse_of_gold",
+    "name": "Endless Purse of Gold",
+    "level": "major",
+    "effects": [
+      ":instant: Gain 3 :gold:.",
+      ":instant: Remove this card and discard 2 cards from your hand, then gain 8 :gold:."
+    ],
+    "image": "artifacts_major-endless_purse_of_gold.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "endless_sack_of_gold",
+    "name": "Endless Sack of Gold",
+    "level": "relic",
+    "effects": [
+      ":instant: Gain 5 :gold:.",
+      ":instant: Remove this card, then gain 8 :gold:."
+    ],
+    "image": "artifacts_relic-endless_sack_of_gold.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "equestrians_gloves",
+    "name": "Equestrian's Gloves",
+    "level": "minor",
+    "effects": [
+      ":ongoing: For this Combat, your selected unit gains +1 :initiative:.",
+      ":instant: Your Hero gains +1 :movement_points:."
+    ],
+    "image": "artifacts_minor-equestrians_gloves.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "everflowing_crystal_cloak",
+    "name": "Everflowing Crystal Cloak",
+    "level": "major",
+    "effects": [
+      ":instant: Discard 3 cards to gain 2 :valuables:.",
+      ":instant: Gain 1 :valuables:."
+    ],
+    "image": "artifacts_major-everflowing_crystal_cloak.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "everpouring_vial_of_mercury",
+    "name": "Everpouring Vial of Mercury",
+    "level": "major",
+    "effects": [
+      ":instant: Gain 1 :valuables:.",
+      ":instant: Remove this card, then gain 2 :valuables:."
+    ],
+    "image": "artifacts_major-everpouring_vial_of_mercury.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "eversmoking_ring_of_sulfur",
+    "name": "Eversmoking Ring of Sulfur",
+    "level": "minor",
+    "effects": [
+      ":permanent: At the beginning of each Resources round, gain 1 :valuables:.",
+      ":instant: Remove this card, then gain 2 :valuables:."
+    ],
+    "image": "artifacts_minor-eversmoking_ring_of_sulfur.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "glyph_of_gallantry",
+    "name": "Glyph of Gallantry",
+    "level": "minor",
+    "effects": [
+      ":instant: Gain a :positive_morale: token.",
+      ":instant: +1 :defense:"
+    ],
+    "image": "artifacts_minor-glyph_of_gallantry.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "golden_bow",
+    "name": "Golden Bow",
+    "level": "major",
+    "effects": [
+      ":ongoing: During this Combat, your :ranged_unit: units ignore the combat penalty.",
+      ":instant: A :ranged_unit: unit of your choice gains +2 :attack:."
+    ],
+    "image": "artifacts_major-golden_bow.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "greater_gnolls_flail",
+    "name": "Greater Gnoll's Flail",
+    "level": "minor",
+    "effects": [
+      ":instant: +2 :attack:\n:ongoing: Until the end of the Combat, this unit suffers -1 :defense: (to a minimum of 0).",
+      ":instant: +1 :attack:"
+    ],
+    "image": "artifacts_minor-greater_gnolls_flail.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "head_of_legion",
+    "name": "Head of Legion",
+    "level": "major",
+    "effects": [
+      ":instant: Reduce the Recruitment or Reinforcement cost of a unit by 6 :gold: - to a minimum of 0.",
+      ":instant: Gain 3 :gold:."
+    ],
+    "image": "artifacts_major-head_of_legion.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "helm_of_heavenly_enlightenment",
+    "name": "Helm of Heavenly Enlightenment",
+    "level": "relic",
+    "effects": [
+      ":instant: Gain :expert:.",
+      ":instant: Draw 2 cards."
+    ],
+    "image": "artifacts_relic-helm_of_heavenly_enlightenment.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "helm_of_the_alabaster_unicorn",
+    "name": "Helm of the Alabaster Unicorn",
+    "level": "minor",
+    "effects": [
+      ":instant: Return 1 :spell: of your choice from your discard pile to your hand.",
+      ":instant: Cast a spell from the top of the :spell: deck discard pile and Remove this card."
+    ],
+    "image": "artifacts_minor-helm_of_the_alabaster_unicorn.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "hourglass_of_the_evil_hour",
+    "name": "Hourglass of the Evil Hour",
+    "level": "minor",
+    "effects": [
+      ":instant: If the enemy has :positive_morale:, they gain :negative_morale:.",
+      ":instant: Roll the Attack die. On a \"0\" result, you gain :positive_morale:."
+    ],
+    "image": "artifacts_minor-hourglass_of_the_evil_hour.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "inexhaustible_cart_of_lumber",
+    "name": "Inexhaustible Cart of Lumber",
+    "level": "minor",
+    "effects": [
+      ":instant: Gain 2 :building_materials:.",
+      ":instant: Remove this card, then gain 4 :building_materials:."
+    ],
+    "image": "artifacts_minor-inexhaustible_cart_of_lumber.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "inexhaustible_cart_of_ore",
+    "name": "Inexhaustible Cart of Ore",
+    "level": "minor",
+    "effects": [
+      ":permanent: At the beginning of each Resources round, gain 1 :building_materials:.",
+      ":instant: Remove this card, then gain 3 :building_materials:."
+    ],
+    "image": "artifacts_minor-inexhaustible_cart_of_ore.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "legs_of_legion",
+    "name": "Legs of Legion",
+    "level": "minor",
+    "effects": [
+      ":instant: Reduce the Recruitment or Reinforcement cost of a unit by 4 :gold: - to a minimum of 0.",
+      ":instant: Gain 2 :gold:."
+    ],
+    "image": "artifacts_minor-legs_of_legion.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "lions_shield_of_courage",
+    "name": "Lion's Shield of Courage",
+    "level": "relic",
+    "effects": [
+      ":instant: Discard X cards from hand to gain +X :defense:.",
+      ":instant: Remove this card, then gain +4 :defense:."
+    ],
+    "image": "artifacts_relic-lions_shield_of_courage.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "loins_of_legion",
+    "name": "Loins of Legion",
+    "level": "minor",
+    "effects": [
+      ":instant: Reduce the Recruitment or Reinforcement cost of a unit by 5 :gold: - to a minimum of 0.",
+      ":instant: Gain 2 :gold:."
+    ],
+    "image": "artifacts_minor-loins_of_legion.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "mystic_orb_of_mana",
+    "name": "Mystic Orb of Mana",
+    "level": "major",
+    "effects": [
+      ":instant: Search(4) your discard pile.",
+      ":instant: Only if your discard pile is empty. Draw 2 cards."
+    ],
+    "image": "artifacts_major-mystic_orb_of_mana.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "necklace_of_dragonteeth",
+    "name": "Necklace of Dragonteeth",
+    "level": "major",
+    "effects": [
+      ":instant: +2 :power:.",
+      ":ongoing: During this Combat, you can cast 2 :spell: per Combat round."
+    ],
+    "image": "artifacts_major-necklace_of_dragonteeth.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "necklace_of_swiftness",
+    "name": "Necklace of Swiftness",
+    "level": "minor",
+    "effects": [
+      ":ongoing: During this Combat, the :initiative: of all your :ground_unit: units is increased by 1.",
+      ":activation: Move one of your units 1 space."
+    ],
+    "image": "artifacts_minor-necklace_of_swiftness.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "ogres_club_of_havoc",
+    "name": "Ogre's Club of Havoc",
+    "level": "major",
+    "effects": [
+      ":instant: Discard 1 card to gain +2 :attack:.",
+      ":instant: +1 :attack:"
+    ],
+    "image": "artifacts_major-ogres_club_of_havoc.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "orb_of_driving_rain",
+    "name": "Orb of Driving Rain",
+    "level": "major",
+    "effects": [
+      ":ongoing: When casting a :spell: from the School of Water Magic, double the :power: used for this spell.",
+      ":instant: When casting a Water Magic :spell:, Remove this card to gain +5 :power:."
+    ],
+    "image": "artifacts_major-orb_of_driving_rain.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "orb_of_inhibition",
+    "name": "Orb of Inhibition",
+    "level": "relic",
+    "effects": [
+      ":ongoing: During this Combat, all :spell: and Specialty cards deal 0 :damage:. Remove this card instead of discarding it.",
+      ":ongoing: During this Combat round, units cannot use their special abilities."
+    ],
+    "image": "artifacts_relic-orb_of_inhibition.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "orb_of_silt",
+    "name": "Orb of Silt",
+    "level": "major",
+    "effects": [
+      ":ongoing: When casting a :spell: from the School of Earth Magic, double the :power: used for this spell.",
+      ":instant: When casting a Earth Magic :spell:, Remove this card to gain +5 :power:."
+    ],
+    "image": "artifacts_major-orb_of_silt.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "orb_of_tempestuous_fire",
+    "name": "Orb of Tempestuous Fire",
+    "level": "major",
+    "effects": [
+      ":ongoing: When casting a :spell: from the School of Fire Magic, double the :power: used for this spell.",
+      ":instant: When casting a Fire Magic :spell:, Remove this card to gain +5 :power:."
+    ],
+    "image": "artifacts_major-orb_of_tempestuous_fire.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "orb_of_the_firmament",
+    "name": "Orb of the Firmament",
+    "level": "major",
+    "effects": [
+      ":ongoing: When casting a :spell: from the School of Air Magic, double the :power: used for this spell.",
+      ":instant: When casting a Air Magic :spell:, Remove this card to gain +5 :power:."
+    ],
+    "image": "artifacts_major-orb_of_the_firmament.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "orb_of_vulnerability",
+    "name": "Orb of Vulnerability",
+    "level": "relic",
+    "effects": [
+      ":ongoing: During this Combat, negate all units' special abilities related to :spell:.",
+      ":instant: +2 :power:"
+    ],
+    "image": "artifacts_relic-orb_of_vulnerability.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "pendant_of_courage",
+    "name": "Pendant of Courage",
+    "level": "major",
+    "effects": [
+      ":instant: Play this card immediately after you perform a Search action and perform that action again.",
+      ":instant: Gain 1 :expert:."
+    ],
+    "image": "artifacts_major-pendant_of_courage.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "pendant_of_negativity",
+    "name": "Pendant of Negativity",
+    "level": "major",
+    "effects": [
+      ":instant: Ignore the effect of a spell from the School of Air Magic",
+      ":ongoing: Ignore the effect of a spell from the School of Air Magic cast on this unit."
+    ],
+    "image": "artifacts_major-pendant_of_negativity.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "pendant_of_second_sight",
+    "name": "Pendant of Second Sight",
+    "level": "major",
+    "effects": [
+      ":ongoing: Selected unit cannot gain :paralysis: during this Combat.",
+      ":instant: Remove 1 :paralysis: token."
+    ],
+    "image": "artifacts_major-pendant_of_second_sight.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "plate_of_the_dying_light",
+    "name": "Plate of the Dying Light",
+    "level": "relic",
+    "effects": [
+      ":instant: +1 :defense:. This effect can be used to reduce :damage: from :spell:.",
+      ":instant: +4 :defense:. This effect can be used to reduce :damage: from :spell:. Then Remove this card."
+    ],
+    "image": "artifacts_relic-plate_of_dying_light.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "quiet_eye_of_the_dragon",
+    "name": "Quiet Eye of the Dragon",
+    "level": "minor",
+    "effects": [
+      ":ongoing: For this Combat, your selected unit gains +1 :attack:.",
+      ":instant: +1 :defense:"
+    ],
+    "image": "artifacts_minor-quiet_eye_of_the_dragon.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "recanters_cloak",
+    "name": "Recanter's Cloak",
+    "level": "major",
+    "effects": [
+      ":ongoing: During this Combat, no Hero can use spells with Power \"0\".",
+      ":ongoing: During this Combat, no Hero can use Spells. Remove this card after Combat."
+    ],
+    "image": "artifacts_major-recanters_cloak.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "red_dragon_flame_tongue",
+    "name": "Red Dragon Flame Tongue",
+    "level": "minor",
+    "effects": [
+      ":instant: +1 :defense:",
+      ":instant: +1 :attack:"
+    ],
+    "image": "artifacts_minor-red_dragon_flame_tongue.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "rib_cage",
+    "name": "Rib Cage",
+    "level": "minor",
+    "effects": [
+      ":instant: Select 1 Spell card from you discard pile and put it back into your hand. Then, shuffle your discard pile back into your deck of Might and Magic.",
+      ":instant: +1 :power:"
+    ],
+    "image": "artifacts_minor-rib_cage.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "ring_of_the_wayfarer",
+    "name": "Ring of the Wayfarer",
+    "level": "minor",
+    "effects": [
+      ":ongoing: For this Combat, your selected unit gains +1 :initiative:.",
+      ":instant: At start of Combat with Neutral Units put :paralysis: token on any unit except :azure_tier:."
+    ],
+    "image": "artifacts_minor-ring_of_the_wayfarer.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "royal_armor_of_nix",
+    "name": "Royal Armor of Nix",
+    "level": "major",
+    "effects": [
+      ":instant: +2 :power:",
+      ":map_effect: If this Hero is on a Sea tile, Search(2) :spell:**."
+    ],
+    "image": "artifacts_major-royal_armor_of_nix.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "sandals_of_the_saint",
+    "name": "Sandals of the Saint",
+    "level": "relic",
+    "effects": [
+      ":instant: Discard X cards from hand to gain +X :power:.",
+      ":instant: Remove this card, then gain +4 :power:."
+    ],
+    "image": "artifacts_relic-sandals_of_the_saint.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "scales_of_the_greater_basilisk",
+    "name": "Scales of the Greater Basilisk",
+    "level": "minor",
+    "effects": [
+      ":instant: +3 :spell:",
+      ":instant: +1 :spell:, then draw a card."
+    ],
+    "image": "artifacts_minor-scales_of_the_greater_basilisk.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "sentinels_shield",
+    "name": "Sentinel's Shield",
+    "level": "relic",
+    "effects": [
+      ":instant: Discard 1 card to gain +3 :defense:.",
+      ":instant: +2 :defense:"
+    ],
+    "image": "artifacts_relic-sentinels_shield.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "shackles_of_war",
+    "name": "Shackles of War",
+    "level": "major",
+    "effects": [
+      ":instant: If played at the start of Combat, the Enemy Hero can neither Retreat nor Surrender.",
+      ":instant: Draw 2 cards, choose 1 card and discard the other."
+    ],
+    "image": "artifacts_major-shackles_of_war.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "shamans_puppet",
+    "name": "Shaman's Puppet",
+    "level": "minor",
+    "effects": [
+      ":ongoing: Choose a unit. Until the end of its activation, for its every attack, the unit rolls 2 dice and resolves the lower result.",
+      ":instant: Remove any effect or :paralysis: from the selected unit."
+    ],
+    "image": "artifacts_minor-shamans_puppet.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "shield_of_naval_glory",
+    "name": "Shield of Naval Glory",
+    "level": "major",
+    "effects": [
+      ":instant: +2 :defense:",
+      ":map_effect: If this Hero is on a Sea tile, they gain +1 :movement_points:, and draw 1 card."
+    ],
+    "image": "artifacts_major-shield_of_naval_glory.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "shield_of_the_damned",
+    "name": "Shield of the Damned",
+    "level": "major",
+    "effects": [
+      ":instant: Target unit gains +3 :defense: and suffers 1 :damage:. It cannot be used on an enemy unit.",
+      ":instant: Target unit gains +5 :defense: and suffers 2 :damage:. It cannot be used on an enemy unit."
+    ],
+    "image": "artifacts_major-shield_of_the_damned.webp",
+    "content": [
+      "Inferno Expansion"
+    ]
+  },
+  {
+    "id": "shield_of_the_dwarven_lords",
+    "name": "Shield of the Dwarven Lords",
+    "level": "minor",
+    "effects": [
+      ":instant: Use this after the Attack die roll. Ignore the Attack die and any additional effects it triggered.",
+      ":instant: +1 :defense:"
+    ],
+    "image": "artifacts_minor-shield_of_the_dwarven_lords.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "shield_of_the_yawning_dead",
+    "name": "Shield of the Yawning Dead",
+    "level": "minor",
+    "effects": [
+      ":instant: Discard 1 card to gain +2 :defense:.",
+      ":instant: +1 :defense:"
+    ],
+    "image": "artifacts_minor-shield_of_the_yawning_dead.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "skull_helmet",
+    "name": "Skull Helmet",
+    "level": "minor",
+    "effects": [
+      ":instant: Take 1 non-Artifact card from your discard pile to hand.",
+      ":instant: If the enemy has :positive_morale:, they gain :negative_morale:."
+    ],
+    "image": "artifacts_minor-skull_helmet.webp",
+    "content": [
+      "Regular Stretch Goals 2024"
+    ]
+  },
+  {
+    "id": "speculum",
+    "name": "Speculum",
+    "level": "minor",
+    "effects": [
+      ":instant: Discover any Map tile adjacent to the Map tile your Hero is currently on..",
+      ":instant: Remove this card, then draw 1 card."
+    ],
+    "image": "artifacts_minor-speculum.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "spellbinders_hat",
+    "name": "Spellbinder's Hat",
+    "level": "relic",
+    "effects": [
+      ":instant: Remove 1 card from your hand, then Search(2) the card's deck.",
+      ":instant: Remove this card and another one from your hand or discard pile."
+    ],
+    "image": "artifacts_relic-spellbinders_hat.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "spirit_of_oppression",
+    "name": "Spirit of Oppression",
+    "level": "minor",
+    "effects": [
+      ":ongoing: During this Combat, neither player can use the :positive_morale: token or reroll Attack dice.",
+      ":instant: +1 :power:"
+    ],
+    "image": "artifacts_minor-spirit_of_oppression.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "surcoat_of_counterpoise",
+    "name": "Surcoat of Counterpoise",
+    "level": "major",
+    "effects": [
+      ":instant: Play this card immediately after an enemy casts a :spell:. If it was cast with 1:power: or less, ignore the :spell: effect.",
+      ":instant: Remove this card, then Search(1):artifact:."
+    ],
+    "image": "artifacts_major-surcoat_of_counterpoise.webp",
+    "content": [
+      "Tower Expansion"
+    ]
+  },
+  {
+    "id": "sword_of_hellfire",
+    "name": "Sword of Hellfire",
+    "level": "major",
+    "effects": [
+      ":instant: +3 :attack:. This unit suffers 1 :damage:. This effect cannot be used on an enemy unit.",
+      ":instant: +4 :attack:. This unit suffers 2 :damage:. This effect cannot be used on an enemy unit."
+    ],
+    "image": "artifacts_major-sword_of_hellfire.webp",
+    "content": [
+      "Fortress Expansion"
+    ]
+  },
+  {
+    "id": "sword_of_judgement",
+    "name": "Sword of Judgement",
+    "level": "relic",
+    "effects": [
+      ":instant: Discard X cards from hand to gain +X :attack:.",
+      ":instant: Discard X cards from hand to gain +X :defense:."
+    ],
+    "image": "artifacts_relic-sword_of_judgement.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "targ_of_the_rampaging_ogre",
+    "name": "Targ of the Rampaging Ogre",
+    "level": "major",
+    "effects": [
+      ":instant: Discard 2 cards to gain +2 :defense:. Then, instead of discarding, put this card back into your hand.",
+      ":instant: +1 :defense:"
+    ],
+    "image": "artifacts_major-targ_of_the_rampaging_ogre.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "thunder_helmet",
+    "name": "Thunder Helmet",
+    "level": "relic",
+    "effects": [
+      ":instant: Select 1 Spell card from your discard pile and put it back into your hand.",
+      ":ongoing: For this Combat, whenever you play a Spell card, draw 1 card from your M&M deck. After the Combat, Remove this card."
+    ],
+    "image": "artifacts_relic-thunder_helmet.webp",
+    "content": [
+      "Stronghold Expansion"
+    ]
+  },
+  {
+    "id": "titans_cuirass",
+    "name": "Titan's Cuirass",
+    "level": "relic",
+    "effects": [
+      ":instant: Discard 1 card to gain +4 :power:.",
+      ":instant: +2 :power:."
+    ],
+    "image": "artifacts_relic-titans_cuirass.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "titans_gladius",
+    "name": "Titan's Gladius",
+    "level": "relic",
+    "effects": [
+      ":instant: Discard 1 card to gain +3 :attack:.",
+      ":instant: +2 :attack:"
+    ],
+    "image": "artifacts_relic-titans_gladius.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "tome_of_air",
+    "name": "Tome of Air",
+    "level": "relic",
+    "effects": [
+      ":instant: Find the first Air Magic :spell: in the Spell deck. Take the :spell: into your hand or discard it. Then, reshuffle the deck.",
+      ":instant: When playing an Air Magic :spell:, resolve its effect without paying the :power: cost."
+    ],
+    "image": "artifacts_relic-tome_of_air.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "tome_of_earth",
+    "name": "Tome of Earth",
+    "level": "relic",
+    "effects": [
+      ":instant: Find the first Earth Magic :spell: in the Spell deck. Take the :spell: into your hand or discard it. Then, reshuffle the deck.",
+      ":instant: When playing an Earth Magic :spell:, resolve its effect without paying the :power: cost."
+    ],
+    "image": "artifacts_relic-tome_of_earth.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "tome_of_fire",
+    "name": "Tome of Fire",
+    "level": "relic",
+    "effects": [
+      ":instant: Find the first Fire Magic :spell: in the Spell deck. Take the :spell: into your hand or discard it. Then, reshuffle the deck.",
+      ":instant: When playing a Fire Magic :spell:, resolve its effect without paying the :power: cost."
+    ],
+    "image": "artifacts_relic-tome_of_fire.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "tome_of_water",
+    "name": "Tome of Water",
+    "level": "relic",
+    "effects": [
+      ":instant: Find the first Water Magic :spell: in the Spell deck. Take the :spell: into your hand or discard it. Then, reshuffle the deck.",
+      ":instant: When playing a Water Magic :spell:, resolve its effect without paying the :power: cost."
+    ],
+    "image": "artifacts_relic-tome_of_water.webp",
+    "content": [
+      "Conflux Expansion"
+    ]
+  },
+  {
+    "id": "torso_of_legion",
+    "name": "Torso of Legion",
+    "level": "minor",
+    "effects": [
+      ":instant: Reduce the cost of Recruitment or reduce the cost of Reinforcing a unit by 6 :gold: (to a minimum of 0).",
+      ":instant: Gain 1 :valuables: or 2 :building_materials:."
+    ],
+    "image": "artifacts_minor-torso_of_legion.webp",
+    "content": [
+      "Rampart Expansion"
+    ]
+  },
+  {
+    "id": "trident_of_dominion",
+    "name": "Trident of Dominion",
+    "level": "major",
+    "effects": [
+      ":instant: +2 :attack:",
+      ":map_effect: If this Hero is on a Sea tile, draw 2 cards."
+    ],
+    "image": "artifacts_major-trident_of_dominion.webp",
+    "content": [
+      "Cove Expansion"
+    ]
+  },
+  {
+    "id": "tunic_of_the_cyclops_king",
+    "name": "Tunic of the Cyclops King",
+    "level": "major",
+    "effects": [
+      ":instant: Draw 1 card and gain +1 :power:.",
+      ":instant: +2 :power:"
+    ],
+    "image": "artifacts_major-tunic_of_the_cyclops_king.webp",
+    "content": [
+      "Core Game"
+    ]
+  },
+  {
+    "id": "vial_of_lifeblood",
+    "name": "Vial of Lifeblood",
+    "level": "major",
+    "effects": [
+      ":instant: Remove up to 3 :damage: from one of your units.",
+      ":ongoing: For this Combat, your selected unit gains +1 :health_points:."
+    ],
+    "image": "artifacts_major-vial_of_lifeblood.webp",
+    "content": [
+      "Core Game"
+    ]
+  }
+]

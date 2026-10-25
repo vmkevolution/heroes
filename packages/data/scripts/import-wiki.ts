@@ -7,8 +7,17 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
 import {
+  AbilityCard,
   AbilityTrigger,
+  ArtifactCard,
   AstrologersCard,
+  BUILDINGS,
+  HeroCard,
+  SpellCard,
+  StatisticCard,
+  TownCard,
+  type School,
+  type Statistic,
   type AbilityText,
   type Cost,
   type Faction,
@@ -305,6 +314,206 @@ function importAstrologers(): AstrologersCard[] {
   return cards;
 }
 
+// ---------------------------------------------------------------------------
+// Might & Magic cards, Heroes and Town Boards
+
+/** Card text: `<br>` become line breaks, links and bold are dropped, glyphs stay as `:name:`. */
+export function cardText(cell: string): string {
+  return cell
+    .replace(/<br\s*\/?>/g, "\n")
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/\*\*([^*]*)\*\*/g, "$1")
+    .replace(/\\\*/g, "*")
+    .replace(/&nbsp;| /g, " ")
+    .replace(/️/g, "")
+    .split("\n")
+    .map((l) => l.replace(/[ \t]+/g, " ").trim())
+    .join("\n")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+/** Splits `A — OR — B` card text into its alternative effects. */
+export function splitOr(text: string): string[] {
+  return text
+    .split(/\n*— OR —\n*/)
+    .map((t) => t.trim())
+    .filter(Boolean);
+}
+
+/** Page slug of the first link in a cell (`anti-magic`). */
+function linkSlug(cell: string, ctx: string): string {
+  const slug = cell.match(/\((?:[a-z_./]*\/)?([a-z0-9_-]+)\.md(?:#[^)]*)?\)/)?.[1];
+  if (!slug) throw new Error(`${ctx}: no page link in "${cell}"`);
+  return slug;
+}
+
+/** Card id derived from the page slug (`anti-magic` → `anti_magic`). */
+function linkId(cell: string, ctx: string): string {
+  return linkSlug(cell, ctx).replace(/-/g, "_");
+}
+
+function contentCell(cell: string | undefined): string[] {
+  return (cell ?? "")
+    .split(/<br\s*\/?>/)
+    .map(cleanText)
+    .filter(Boolean);
+}
+
+function readWiki(path: string): string {
+  return readFileSync(join(wiki, path), "utf8");
+}
+
+/** All rows of every table whose header starts with `| firstCell |`. */
+function parseTables(md: string, firstCell: string): string[][] {
+  const rows: string[][] = [];
+  const lines = md.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    if (!lines[i]!.startsWith(`| ${firstCell} |`)) continue;
+    for (i += 2; i < lines.length && lines[i]!.startsWith("|"); i++) {
+      rows.push(lines[i]!.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim()));
+    }
+  }
+  return rows;
+}
+
+function importSpells(): SpellCard[] {
+  const md = readWiki("spells/index.md");
+  const spells = new Map<string, SpellCard>();
+  for (const section of md.split(/^### School of /m).slice(1)) {
+    const school = section.match(/^(Air|Earth|Fire|Water)/)?.[1]?.toLowerCase() as School | undefined;
+    if (!school) continue;
+    for (const [name, level, effect, content] of parseTables(section, "Name")) {
+      const id = linkId(name!, "spell");
+      if (spells.has(id)) {
+        spells.get(id)!.school = null; // Magic Arrow is listed under every School (p. 26)
+        continue;
+      }
+      const page = readWiki(`spells/${linkSlug(name!, "spell")}.md`);
+      spells.set(id, {
+        id,
+        name: cleanText(name!),
+        school,
+        level: cleanText(level!).toLowerCase() as "basic" | "expert",
+        text: cardText(effect!),
+        image: singleImage(page),
+        content: contentCell(content),
+      });
+    }
+  }
+  return [...spells.values()].sort((a, b) => a.id.localeCompare(b.id));
+}
+
+function importAbilities(): AbilityCard[] {
+  const md = readWiki("abilities/index.md");
+  const [regular, empowered] = md.split(/^## Empowered Abilities/m);
+  const emp = new Map(parseTables(empowered ?? "", "Name").map((r) => [linkId(r[0]!, "ability"), cardText(r[1]!)]));
+  return parseTables(regular!, "Name").map(([name, basic, expert, content]) => {
+    const id = linkId(name!, "ability");
+    const images = parseTabImages(readWiki(`abilities/${linkSlug(name!, "ability")}.md`));
+    return {
+      id,
+      name: cleanText(name!),
+      basic: cardText(basic!),
+      expert: cardText(expert!),
+      empowered: emp.get(id) ?? null,
+      necropolis: id === "necromancy",
+      image: images.get("Regular") ?? null,
+      empoweredImage: images.get("Empowered") ?? null,
+      content: contentCell(content),
+    };
+  });
+}
+
+function importArtifacts(): ArtifactCard[] {
+  const md = readWiki("artifacts/index.md");
+  return parseTables(md.split(/^## List of Artifacts/m)[1]!, "Name").map(([name, level, effect, content]) => {
+    const id = linkId(name!, "artifact");
+    return {
+      id,
+      name: cleanText(name!),
+      level: cleanText(level!).toLowerCase() as "minor" | "major" | "relic",
+      effects: splitOr(cardText(effect!)),
+      image: singleImage(readWiki(`artifacts/${linkSlug(name!, "artifact")}.md`)),
+      content: contentCell(content),
+    };
+  });
+}
+
+function importStatistics(): StatisticCard[] {
+  return (["attack", "defense", "power", "knowledge"] as Statistic[]).map((id) => {
+    const md = readWiki(`statistics/${id}.md`);
+    const table = parseTable(md, "Type");
+    const regular = table?.get("Regular");
+    const emp = table?.get("Empowered");
+    if (!regular || !emp) throw new Error(`statistic ${id}: missing rows`);
+    const images = parseTabImages(md);
+    return {
+      id,
+      name: md.match(/^# (.+)$/m)![1]!.trim(),
+      basic: cardText(regular[0]!),
+      expert: cardText(regular[1]!),
+      empowered: cardText(emp[0]!),
+      image: images.get("Regular") ?? null,
+      empoweredImage: images.get("Empowered") ?? null,
+    };
+  });
+}
+
+function importHeroes(): HeroCard[] {
+  const index = readWiki("heroes/index.md");
+  return parseTables(index, "Name").map(([name, town, heroClass, ability, specialty, content]) => {
+    const id = linkId(name!, "hero");
+    const md = readWiki(`heroes/${linkSlug(name!, "hero")}.md`);
+    const stat = (s: string) => Number(md.match(new RegExp(`:${s}:\\]\\([^)]*\\)(?:&nbsp;|\\s)*(\\d+)`))?.[1]);
+    const images = [...parseTabImages(md).values()];
+    const rows = parseTables(md, "Level");
+    if (rows.length !== 3) throw new Error(`hero ${id}: expected 3 Specialty rows, got ${rows.length}`);
+    return {
+      id,
+      name: cleanText(name!),
+      faction: cleanText(town!).toLowerCase() as HeroCard["faction"],
+      heroClass: cleanText(heroClass!).replace(/^:(might|magic):\s*/, ""),
+      type: heroClass!.includes(":magic:") ? ("magic" as const) : ("might" as const),
+      stats: { attack: stat("attack"), defense: stat("defense"), power: stat("power"), knowledge: stat("knowledge") },
+      ability: linkId(ability!, `hero ${id} ability`),
+      specialtyName: cleanText(specialty!),
+      specialties: rows.map(([lvl, text], i) => ({
+        level: ROMAN[cleanText(lvl!)] ?? 0,
+        text: cardText(text!),
+        image: images[i] ?? null,
+      })),
+      image: singleImage(md),
+      content: contentCell(content),
+    };
+  });
+}
+
+function importTowns(): TownCard[] {
+  return FACTIONS.map((faction) => {
+    const md = readWiki(`towns/${faction}.md`);
+    const rows = parseTables(md, "Name").filter((r) => r.length === 3);
+    if (rows.length !== 8) throw new Error(`town ${faction}: expected 8 buildings, got ${rows.length}`);
+    const buildings = rows.map(([name, cost, effect], i) => ({
+      slot: BUILDINGS[i]!,
+      name: cleanText(name!),
+      cost: parseCost(cost)!,
+      effect: cardText(effect!),
+    }));
+    const guild = buildings[2]!.effect;
+    const spellBookCost = Number(guild.match(/:pay: (\d+) :gold:/)?.[1]);
+    if (!Number.isFinite(spellBookCost)) throw new Error(`town ${faction}: no Spell Book cost in "${guild}"`);
+    const images = parseTabImages(md);
+    return {
+      faction,
+      name: md.match(/^# (.+)$/m)![1]!.trim(),
+      buildings,
+      spellBookCost,
+      images: { empty: images.get("Empty") ?? null, full: images.get("Fully Built") ?? null },
+    };
+  });
+}
+
 const isMain = process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1];
 if (isMain) {
   mkdirSync(outDir, { recursive: true });
@@ -316,5 +525,15 @@ if (isMain) {
   const astrologers = z.array(AstrologersCard).parse(importAstrologers());
   writeFileSync(join(outDir, "astrologers.json"), JSON.stringify(astrologers, null, 2) + "\n");
   console.log(`astrologers: ${astrologers.length}`);
+  const write = (file: string, data: unknown[]) => {
+    writeFileSync(join(outDir, file), JSON.stringify(data, null, 2) + "\n");
+    console.log(`${file}: ${data.length}`);
+  };
+  write("spells.json", z.array(SpellCard).parse(importSpells()));
+  write("abilities.json", z.array(AbilityCard).parse(importAbilities()));
+  write("artifacts.json", z.array(ArtifactCard).parse(importArtifacts()));
+  write("statistics.json", z.array(StatisticCard).parse(importStatistics()));
+  write("heroes.json", z.array(HeroCard).parse(importHeroes()));
+  write("towns.json", z.array(TownCard).parse(importTowns()));
   console.log(`units: ${units.length} cards, ${units.reduce((n, u) => n + u.variants.length, 0)} variants`);
 }

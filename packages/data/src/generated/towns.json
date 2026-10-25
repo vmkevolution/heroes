@@ -1,0 +1,912 @@
+[
+  {
+    "faction": "castle",
+    "name": "Castle",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: 5 :gold:\n\n— OR —\n\n:instant: +1:movement_points:"
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 5
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 6 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Towers",
+        "cost": {
+          "gold": 5,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Holy Grounds",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Glory of Erathia",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 9
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Brotherhood of the Sword",
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, gain a :positive_morale:."
+      },
+      {
+        "slot": "special_2",
+        "name": "Blacksmith",
+        "cost": {
+          "gold": 4,
+          "valuables": 0,
+          "buildingMaterials": 3
+        },
+        "effect": "During your turn, choose one:\n\n1. Remove an :artifact: card from your hand to gain 4 :gold:.\n\n2. :pay: 6 :gold: to Search(2) :artifact:."
+      }
+    ],
+    "spellBookCost": 6,
+    "images": {
+      "empty": "towns-castle-empty.webp",
+      "full": "towns-castle-full.webp"
+    }
+  },
+  {
+    "faction": "dungeon",
+    "name": "Dungeon",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: 5 :gold:\n\n— OR —\n\n:instant: 1 :valuables:"
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 5
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Warrens",
+        "cost": {
+          "gold": 5,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Inner Labyrinths",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Ancient Lairs",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 9
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Portal of Summoning",
+        "cost": {
+          "gold": 7,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "At the beginning of your turn, you can draw 1 Neutral Unit card from decks corresponding to the Dwellings in your Town and :pay: the Recruitment cost to Recruit this unit."
+      },
+      {
+        "slot": "special_2",
+        "name": "Mana Vortex",
+        "cost": {
+          "gold": 6,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of your turn, discard 1 card from your hand to shuffle your discard pile back into your deck of Might and Magic. Then Search(3) from it."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-dungeon-empty.webp",
+      "full": "towns-dungeon-full.webp"
+    }
+  },
+  {
+    "faction": "necropolis",
+    "name": "Necropolis",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: 4 :gold:\n\n— OR —\n\n:instant:Reinforce 1 :bronze_tier: for free."
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 5
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Old Cemetery",
+        "cost": {
+          "gold": 5,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Mausoleum Domain",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Vaults of Darkness",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 9
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Necromancy Amplifier",
+        "cost": {
+          "gold": 7,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "At the beginning of your turn, choose one:\n\n1. Search the Ability card deck for a Necromancy card and put it in your hand.\n\n2. Take 1 Specialty card from your discard pile to your hand."
+      },
+      {
+        "slot": "special_2",
+        "name": "Cover of Darkness",
+        "cost": {
+          "gold": 6,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "During your turn, choose one:\n\n1. Discard up to 2 Might and Magic cards to draw that many cards.\n\n2. At the beginning of Combat with an Enemy Hero, discard 1 random card from the enemy's hand."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-necropolis-empty.webp",
+      "full": "towns-necropolis-full.webp"
+    }
+  },
+  {
+    "faction": "tower",
+    "name": "Tower",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: 4 :gold:\n\n— OR —\n\n:instant: Draw a card from your deck."
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 5
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Alchemical Workshop",
+        "cost": {
+          "gold": 5,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Enchanted Towers",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Golden Temples",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 9
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Artifact Merchants",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 6
+        },
+        "effect": "During your turn, choose one:\n\n1. :pay: 7 :gold: to Search(2) :artifact:.\n\n2. Remove an Artifact card from your hand to gain 2 :gold:."
+      },
+      {
+        "slot": "special_2",
+        "name": "Wall of Knowledge",
+        "cost": {
+          "gold": 6,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Astrologer's round, you can take 1 Knowledge or 1 Power Statistic card from your discard pile to your hand."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-tower-empty.webp",
+      "full": "towns-tower-full.webp"
+    }
+  },
+  {
+    "faction": "rampart",
+    "name": "Rampart",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 6
+        },
+        "effect": "At the beginning of each Resource round, gain :instant: 7 :gold:."
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 5
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Housing Estate",
+        "cost": {
+          "gold": 5,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Spring upon Arches",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Cliff behind the Glade",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 9
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Mystic Pond",
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, roll 1 Resource die and gain the rolled resources."
+      },
+      {
+        "slot": "special_2",
+        "name": "Saplings",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "At the beginning of each Astrologer's round, instantly Reinforce 1 of your :bronze_tier: or :silver_tier: units for half of the :gold: cost."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-rampart-empty.webp",
+      "full": "towns-rampart-full.webp"
+    }
+  },
+  {
+    "faction": "fortress",
+    "name": "Fortress",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: 5 :gold:\n\n— OR —\n\nExchange resources like in the Trading Post."
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 5
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Den",
+        "cost": {
+          "gold": 5,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Swamp Lairs",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Nest upon the Pond",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 9
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Blood Obelisk",
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 6
+        },
+        "effect": "At the beginning of each Resource round or instantly, after your Town has been sieged, you can Search(4) your discard pile."
+      },
+      {
+        "slot": "special_2",
+        "name": "Cage of Warlords",
+        "cost": {
+          "gold": 6,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "When built and at the beginning of each Resource round, place a faction cube here (to a maximum of 2). During any Combat, a player can remove them to gain +1:attack: or +1:defense: per 1 cube."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-fortress-empty.webp",
+      "full": "towns-fortress-full.webp"
+    }
+  },
+  {
+    "faction": "inferno",
+    "name": "Inferno",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 13,
+          "valuables": 0,
+          "buildingMaterials": 5
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: 6 :gold:\n\n— OR —\n\n:instant: 3 :building_materials:"
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 9,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Crucible of Sins",
+        "cost": {
+          "gold": 5,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Gates of Abyss",
+        "cost": {
+          "gold": 9,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Hellfire Palace",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 9
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Castle Gate",
+        "cost": {
+          "gold": 7,
+          "valuables": 0,
+          "buildingMaterials": 5
+        },
+        "effect": "During your turn, choose one:\n\n1. :pay: 3 :gold: to discard 1 random card from your opponent's hand.\n\n2. If your Hero is in a Town or Settlement, move them to another Town or Settlement under your control."
+      },
+      {
+        "slot": "special_2",
+        "name": "Brimstone Stormclouds",
+        "cost": {
+          "gold": 6,
+          "valuables": 2,
+          "buildingMaterials": 3
+        },
+        "effect": "When built and at the beginning of each Astrologer's round, place your faction cube here (to a maximum of 3). During any Combat, you can remove them to gain +1:power: per 1 cube. Only one cube can be used per 1 :spell:."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-inferno-empty.webp",
+      "full": "towns-inferno-full.webp"
+    }
+  },
+  {
+    "faction": "stronghold",
+    "name": "Stronghold",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: Draw 2 cards from M&M Deck.\n\n— OR —\n\n:instant: 2 :building_materials:"
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 6 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Barracks Tower",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Fort under the Nest",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Mountain Caves",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 8
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Hall of Valhalla",
+        "cost": {
+          "gold": 8,
+          "valuables": 0,
+          "buildingMaterials": 3
+        },
+        "effect": "Once per round, one of your units gains +1 :attack: to a single attack."
+      },
+      {
+        "slot": "special_2",
+        "name": "Freelancer's Guild",
+        "cost": {
+          "gold": 2,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "Each time you win against Neutral Units, gain 1 :gold:. When Reinforcing or Recruiting you can use :building_materials: and :valuables: like :gold:."
+      }
+    ],
+    "spellBookCost": 6,
+    "images": {
+      "empty": "towns-stronghold-empty.webp",
+      "full": "towns-stronghold-full.webp"
+    }
+  },
+  {
+    "faction": "conflux",
+    "name": "Conflux",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 3
+        },
+        "effect": "At the beginning of each Resource round, choose:\n:instant: 4 :gold: for this round.\n\n— OR —\n\n:instant: Search(3) :spell:"
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Altars of Air and Water",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Altars of Fire and Earth",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Magical Pyre",
+        "cost": {
+          "gold": 9,
+          "valuables": 4,
+          "buildingMaterials": 8
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Magic University",
+        "cost": {
+          "gold": 6,
+          "valuables": 0,
+          "buildingMaterials": 3
+        },
+        "effect": "Once per round, instead of Searching the :spell: deck, choose a School of Magic and discard cards from the top of the Spell deck until you find a spell from the chosen school. Take the spell into your hand."
+      },
+      {
+        "slot": "special_2",
+        "name": "Garden of Life",
+        "cost": {
+          "gold": 2,
+          "valuables": 1,
+          "buildingMaterials": 1
+        },
+        "effect": "At the beginning of each round, Recruit or Reinforce Sprites for free."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-conflux-empty.webp",
+      "full": "towns-conflux-full.webp"
+    }
+  },
+  {
+    "faction": "cove",
+    "name": "Cove",
+    "buildings": [
+      {
+        "slot": "city_hall",
+        "name": "City Hall",
+        "cost": {
+          "gold": 10,
+          "valuables": 0,
+          "buildingMaterials": 4
+        },
+        "effect": "At the beginning of each Astrologers' round, choose:\n:instant: 4 :gold:\n\n— OR —\n\n:instant: Remove 1 :artifact: from your hand to gain 1 :experience:."
+      },
+      {
+        "slot": "citadel",
+        "name": "Citadel",
+        "cost": {
+          "gold": 8,
+          "valuables": 1,
+          "buildingMaterials": 4
+        },
+        "effect": "Unlocks Reinforcing units. When under siege, add 3 Walls, 1 Gate, and 1 Arrow Tower cards to the Combat board."
+      },
+      {
+        "slot": "mage_guild",
+        "name": "Mage Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "When built:\nSearch(2) :spell: twice.\n\nAfter built:\nOnce per your turn :pay: 5 :gold: to Search(2) :spell:."
+      },
+      {
+        "slot": "dwelling_bronze",
+        "name": "Bay",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 3
+        },
+        "effect": "Unlocks Recruiting of :bronze_tier: units."
+      },
+      {
+        "slot": "dwelling_silver",
+        "name": "Nests Towering the Seas",
+        "cost": {
+          "gold": 8,
+          "valuables": 3,
+          "buildingMaterials": 6
+        },
+        "effect": "Unlocks Recruiting of :silver_tier: units."
+      },
+      {
+        "slot": "dwelling_gold",
+        "name": "Redoubled Vortex",
+        "cost": {
+          "gold": 10,
+          "valuables": 4,
+          "buildingMaterials": 8
+        },
+        "effect": "Unlocks Recruiting of :gold_tier: units."
+      },
+      {
+        "slot": "special_1",
+        "name": "Thieves' Guild",
+        "cost": {
+          "gold": 4,
+          "valuables": 1,
+          "buildingMaterials": 2
+        },
+        "effect": "Once during your turn, choose any one deck in the game (including another player's M&M deck), look at its top 2 cards, and put one of them on its discard pile and the other back on top of the deck."
+      },
+      {
+        "slot": "special_2",
+        "name": "Pub",
+        "cost": {
+          "gold": 3,
+          "valuables": 0,
+          "buildingMaterials": 2
+        },
+        "effect": "Once during Astrologers' round, while Reinforcing a unit, reduce the reinforcement cost by 3 :gold: (to a minimum of 0)."
+      }
+    ],
+    "spellBookCost": 5,
+    "images": {
+      "empty": "towns-cove-empty.webp",
+      "full": "towns-cove-full.webp"
+    }
+  }
+]
