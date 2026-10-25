@@ -48,3 +48,5 @@ export {
   recruitable,
   TRADE_RATES,
 } from "./adventure/town.ts";
+export * from "./adventure/net.ts";
+export { botAction, combatBotAction } from "./adventure/bot.ts";

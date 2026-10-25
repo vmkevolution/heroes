@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { FACTIONS, heroes, type Faction } from "@heroes/data";
 import { defaultHero } from "@heroes/engine";
-import { setupAdventure, type AdventureState, type Difficulty } from "@heroes/engine";
+import type { AdventureSetup, Difficulty } from "@heroes/engine";
 import { useI18n } from "../i18n.tsx";
 
 const DIFFICULTIES: Difficulty[] = ["easy", "normal", "hard", "impossible"];
 
-export function AdventureSetupScreen({ onStart }: { onStart: (state: AdventureState) => void }) {
+export function AdventureSetupScreen({ onStart }: { onStart: (setup: AdventureSetup, online: boolean) => void }) {
   const { t } = useI18n();
   const a = t.adv;
   const [count, setCount] = useState<2 | 3>(2);
@@ -18,15 +18,17 @@ export function AdventureSetupScreen({ onStart }: { onStart: (state: AdventureSt
   const [difficulty, setDifficulty] = useState<Difficulty>("normal");
   const chosen = players.slice(0, count);
   const duplicate = new Set(chosen.map((p) => p.faction)).size !== chosen.length;
+  const invalid = duplicate || chosen.some((p) => !p.name.trim());
 
-  const start = () =>
+  const start = (online: boolean) =>
     onStart(
-      setupAdventure({
+      {
         layout: count === 2 ? "hunt-2" : "hunt-3",
         players: chosen,
         seed: Math.floor(Math.random() * 2 ** 31),
         difficulty,
-      }),
+      },
+      online,
     );
 
   return (
@@ -105,8 +107,11 @@ export function AdventureSetupScreen({ onStart }: { onStart: (state: AdventureSt
       </section>
 
       <div className="start-row">
-        <button className="btn primary big" disabled={duplicate || chosen.some((p) => !p.name.trim())} onClick={start}>
+        <button className="btn primary big" disabled={invalid} onClick={() => start(false)}>
           {a.start}
+        </button>
+        <button className="btn big" disabled={invalid} onClick={() => start(true)} title={t.net.onlineHint}>
+          {t.net.hostStart}
         </button>
       </div>
     </div>
