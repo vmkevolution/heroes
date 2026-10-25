@@ -1,0 +1,379 @@
+# French translations for Homm package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Homm package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Homm 3BG-mission-book\n"
+"POT-Creation-Date: 2026-09-30 11:56+0000\n"
+"PO-Revision-Date: 2025-07-02 00:02+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. type: multicols*
+#: coops/sentinels.tex:5 coops/titans_stronghold.tex:5
+#: coops/emerald_island.tex:5 coops/wandering_dragons.tex:5
+#: coops/close_to_enemies.tex:5 coops/stand_united.tex:5
+#: coops/the_ambushed_accord.tex:5 clash/bloody_grail.tex:5
+#: clash/trial_by_combat.tex:5 clash/astral_run.tex:5 clash/chain_link.tex:5
+#: clash/force_of_will.tex:5 clash/the_fractured_kingdoms.tex:5
+#: clash/arcane_artillery.tex:5 clash/dragoncurse_castle.tex:5
+#: clash/the_hunt.tex:5 campaigns/castle_greek_gift.tex:6
+#: campaigns/castle_greek_gift.tex:86 campaigns/castle_greek_gift.tex:139
+#: campaigns/castle_sicilian_dragon.tex:5
+#: campaigns/castle_sicilian_dragon.tex:144
+#: campaigns/castle_two_knights_defense.tex:5
+#: campaigns/castle_two_knights_defense.tex:91
+#: campaigns/castle_two_knights_defense.tex:129
+#: campaigns/inferno_devilish_plan.tex:6
+#: campaigns/inferno_devilish_plan.tex:204
+#: campaigns/inferno_steadwicks_fall.tex:5
+#: campaigns/inferno_deal_with_the_devil.tex:5 sections/credits.tex:10
+#: sections/random_scenario.tex:5 sections/random_scenario.tex:275
+#: sections/introduction.tex:5
+#, no-wrap
+msgid ""
+"{2}\n"
+"\n"
+msgstr ""
+"{2}\n"
+"\n"
+
+#. type: multicols*
+#: coops/sentinels.tex:26 coops/titans_stronghold.tex:28
+#: coops/wandering_dragons.tex:23 clash/trial_by_combat.tex:19
+#: clash/the_hunt.tex:23
+#, no-wrap
+msgid ""
+"\\textbf{Starting Income:} 10 \\svg{gold}, 2 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+msgstr ""
+"\\textbf{Revenus de Départ :} 10 \\svg{gold}, 2 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+
+#. type: multicols*
+#: coops/wandering_dragons.tex:36 coops/the_ambushed_accord.tex:40
+#: clash/trial_by_combat.tex:30
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Map Setup}}\n"
+"Take the following Map Tiles and arrange them as shown in the Scenario map layout ($P$ stands for the number of players):\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation du Plateau}}\n"
+"Prenez les tuiles suivantes et disposez-les comme indiqué sur le schéma du scénario ($J$ représente le nombre de joueurs):\n"
+"\n"
+
+#.  !TeX spellcheck = en_US
+#. type: Plain text
+#: clash/trial_by_combat.tex:3
+msgid ""
+"\\addscenariosection{1}{King of the Hill Scenario}{Trial by Combat}{\\images/"
+"crusader.png}"
+msgstr ""
+"\\addscenariosection{1}{Scénario Roi de la Colline}{Epreuve de Force}"
+"{\\images/crusader.png}"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:7 clash/astral_run.tex:7
+#, no-wrap
+msgid ""
+"\\textbf{Author:} Laamakala\n"
+"\n"
+msgstr ""
+"\\textbf{Auteur :} Laamakala\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:9
+#, no-wrap
+msgid ""
+"\\textit{There is no honor — only victory or death. The weak will fall, the strong will fight, and only one will rule.}\n"
+"\n"
+msgstr ""
+"\\textit{Il n'y a pas d'honneur — seulement la victoire ou la mort. Le faible chutera, le fort se battra et un seul règnera.}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:12
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Scenario Length}}\n"
+"This Scenario plays out over 8-10 Rounds.\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Durée du Scénario}}\n"
+"Ce Scénario se joue en 8-10 Manches.\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:15
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Player Setup}}\n"
+"\\textbf{Player Count:} 2 -- 4\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation des Joueurs}}\n"
+"\\textbf{Nombre de Joueurs :} 2 -- 4\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:17 clash/force_of_will.tex:22
+#, no-wrap
+msgid ""
+"\\textbf{Starting Resources:} 15 \\svg{gold}, 2 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+msgstr ""
+"\\textbf{Ressources de Départ :} 15 \\svg{gold}, 2 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:25
+#, no-wrap
+msgid ""
+"\\textbf{Starting Units:}\n"
+"\\begin{itemize}\n"
+"  \\item A ``Few'' of the cheapest \\svg{silver} Units\n"
+"  \\item A chosen Neutral \\svg{bronze} Unit matching the player's Faction\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Unités de Départ :}\n"
+"\\begin{itemize}\n"
+"  \\item Une Unité «Quelques» \\svg{silver}\\ avec le coût de Recrutement le plus faible.\n"
+"  \\item Une Unité Neutre \\svg{bronze} de sa Faction.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:27
+#, no-wrap
+msgid ""
+"\\textbf{Town Buildings:} \\svg{bronze} Dwelling, Mage Guild\n"
+"\n"
+msgstr ""
+"\\textbf{Bâtiments de Départ:} Demeure \\svg{bronze}, Guilde des Mages\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:38
+#, no-wrap
+msgid ""
+"\\begin{itemize}\n"
+"  \\item P × Starting (I) Map Tile\n"
+"  \\item 2P × Far (II--III) Map Tiles\n"
+"  \\item P × Near (IV--V) Map Tiles with Obelisk adjacent to Center Map Tile\n"
+"  \\item P × Near (IV--V) Map Tiles without Obelisk\n"
+"  \\item 1 × Center Map Tile. The center Field is ``The Hill''\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\begin{itemize}\n"
+"  \\item J × Tuiles de Départ (I)\n"
+"  \\item 2J × Tuiles Lointaines (II--III)\n"
+"  \\item 2J × Tuiles Proches (IV--V) dont la moitié avec Obélisque adjacente à la Tuile Centre\n"
+"  \\item 1 × Tuile Centre (VI--VII). La Case centrale est «La Colline»\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:41
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Victory Condition}}\n"
+"When any player first flags ``The Hill'', each player, including the one who flagged it, gets two more full turns. After all players have completed their turns, the game ends, and the player who controls ``The Hill'' at that time wins. However, if ``The Hill'' has not been flagged by the start of Round 9, the first player to flag it during or after Round 9 immediately wins the game.\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Conditions de Victoire}}\n"
+"Quand un Joueur Revendique «La Colline», chaque Joueur, y compris celui sur «La Colline», a deux tours complets en plus. Puis, la partie s'arrête et le Joueur contrôlant «La Colline» gagne. Cependant, si «La Colline» n'a pas été revendiquée au début de la Manche 9, le premier Joueur à la Revendiquer, pendant ou après la Manche 9, gagne immédiatement.\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:63
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Timed Events}}\n"
+"\\textbf{\\nth{1} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item All Heroes gain +1 \\svg{movement}.\n"
+"\\end{itemize}\n"
+"\\textbf{\\nth{2} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Players may gain 10 \\svg{gold}, 4 \\svg{building_materials} or 2 \\svg{valuables}.\n"
+"\\end{itemize}\n"
+"\\textbf{\\nth{4} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Remove all Black Cubes from every Windmill, Water Wheel, Mystical Garden, Camp Fire and Pandora's Box.\n"
+"\\end{itemize}\n"
+"\\textbf{\\nth{7} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Repeat the Timed Event of Round 4.\n"
+"\\end{itemize}\n"
+"\\textbf{\\nth{8} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item All Heroes gain +1 \\svg{movement}.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{évènements programmés}}\n"
+"\\textbf{Manche 1:}\n"
+"\\begin{itemize}\n"
+"  \\item Les Héros gagnent +1 \\svg{movement}.\n"
+"\\end{itemize}\n"
+"\\textbf{Manche 2:}\n"
+"\\begin{itemize}\n"
+"  \\item Au choix 10 \\svg{gold}, 4 \\svg{building_materials} ou 2 \\svg{valuables}.\n"
+"\\end{itemize}\n"
+"\\textbf{Manche 4:}\n"
+"\\begin{itemize}\n"
+"  \\item Retirez les Cubes Noirs des Moulins à Vent, Moulins à Eau, Jardins Mystiques, Feux de Camp et Boîtes de Pandore.\n"
+"\\end{itemize}\n"
+"\\textbf{Manche 7:}\n"
+"\\begin{itemize}\n"
+"  \\item Répétez les évènement de la Manche 4.\n"
+"\\end{itemize}\n"
+"\\textbf{Manche 8:}\n"
+"\\begin{itemize}\n"
+"  \\item Les Héros gagnent +1 \\svg{movement}.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:74
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Additional Rules}}\n"
+"\\begin{itemize}\n"
+"  \\item All players gain income every Round.\n"
+"  \\item The blocked Field on the Center Map Tile is a Magic Spring and does not count as blocked.\n"
+"  \\item All Fields on the Center Map Tile are visitable once per Faction.\n"
+"  \\item Players do not lose \\svg{gold} for losing or retreating from any Combat.\n"
+"  \\item After winning Combat against another player’s Main Hero or Level VII Neutrals, you may recruit or reinforce one of your Units that was defeated (reduced to 0 hitpoints) during the battle, at no cost.\n"
+"  \\item \\textbf{Obelisk:} You may spawn your defeated Main Hero on an Obelisk you have flagged. \\textit{Flaggable for all players.}\n"
+"  \\item \\textit{Optional:} At the beginning of each Round, roll two Attack Dice separately and apply the effect from the table below.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Règles Additionnelles}}\n"
+"\\begin{itemize}\n"
+"  \\item Les revenus se gagnent à chaque Manche.\n"
+"  \\item La Case Bloquée sur la Tuile Centre est une Source Enchantée et ne compte pas comme Bloquée.\n"
+"  \\item Chaque Case de la Tuile Centre est visitable une fois par Faction.\n"
+"  \\item Les Joueurs ne perdent pas \\svg{gold} en perdant ou en fuyant un Combat.\n"
+"  \\item Après une victoire contre un Héros Principal ou contre un Combat Niveau VII, vous pouvez Recruter ou Améliorer une Unité qui a été battue (points de vie réduits à 0) durant ce combat, sans coût.\n"
+"  \\item \\textbf{Obélisque:} Vous pouvez placer votre Héros Principal vaincu sur un Obélisque que vous avez revendiqué. \\textit{Revendicable par tous les Joueurs.}\n"
+"  \\item \\textit{Optionnelle:} Au début de chaque Manche, lancez deux dés d'Attaque séparés et appliquez les effets de la table ci-dessous.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:103
+#, no-wrap
+msgid ""
+"\\vspace*{\\fill}\n"
+"\\hommtablemulticol[]{32}{\n"
+"  \\centering\n"
+"  \\medskip\n"
+"  \\textbf{Battlefield Conditions}\\\\\n"
+"  \\medskip\n"
+"\n"
+"  \\begin{tabularx}{0.95\\linewidth}{p{0.15\\linewidth}XXXX}\\\\\n"
+"  \\darkcell[1.4]{-1/-1}\n"
+"    & \\lightcell[1.4]{Dense Fog – All \\svg{unit_ranged-yellow} Units gain disadvantage.}\\\\\n"
+"  \\darkcell[1.4]{-1/0}\n"
+"    & \\lightcell[1.4]{Raining Ash – All \\svg{unit_flying-yellow} Units gain -2 \\svg{initiative-yellow}.}\\\\\n"
+"  \\darkcell[1.4]{-1/+1}\n"
+"    & \\lightcell[1.4]{Scorching Earth – All \\svg{silver} and \\svg{golden} Units start Combat with 1 \\svg{damage-yellow}.}\\\\\n"
+"  \\darkcell[1.4]{0/-1}\n"
+"    & \\lightcell[1.4]{Sinking Mud – All \\svg{unit_ground-yellow} Units move one space less.}\\\\\n"
+"  \\darkcell[1.0]{0/0}\n"
+"    & \\lightcell[1.0]{Clear Skies – No effect.}\\\\\n"
+"  \\darkcell[1.4]{0/+1}\n"
+"    & \\lightcell[1.4]{Rocky Terrain – All \\svg{unit_ground-yellow} Units gain \\svg{defense-yellow} Token.}\\\\\n"
+"  \\darkcell[1.8]{+1/-1}\n"
+"    & \\lightcell[1.8]{Fey Trickery – Players Activate their Units in ascending order of Unit Initiative.}\\\\\n"
+"  \\darkcell[1.4]{+1/0}\n"
+"    & \\lightcell[1.4]{Tail Wind – \\svg{unit_flying-yellow} Units gain +1 Movement.}\\\\\n"
+"  \\darkcell[1.4]{+1/+1}\n"
+"    & \\lightcell[1.4]{Perfect Conditions – All \\svg{unit_ranged-yellow} Units gain advantage.}\\\\\n"
+"  \\end{tabularx}\n"
+"}\n"
+"\n"
+msgstr ""
+"\\vspace*{\\fill}\n"
+"\\hommtablemulticol[]{33}{\n"
+"  \\centering\n"
+"  \\medskip\n"
+"  \\textbf{Conditions du Terrain}\\\\\n"
+"  \\medskip\n"
+"\n"
+"  \\begin{tabularx}{0.95\\linewidth}{p{0.15\\linewidth}XXXX}\\\\\n"
+"  \\darkcell[1.4]{-1/-1}\n"
+"    & \\lightcell[1.4]{Brouillard Dense – Chaque Unité \\svg{unit_ranged-yellow} gagne un désavantage.}\\\\\n"
+"  \\darkcell[1.4]{-1/0}\n"
+"    & \\lightcell[1.4]{Pluie de Cendres – Chaque Unité \\svg{unit_flying-yellow} gagne -2 \\svg{initiative-yellow}.}\\\\\n"
+"  \\darkcell[1.8]{-1/+1}\n"
+"    & \\lightcell[1.8]{Terre Brulante – Chaque Unité \\svg{silver} et \\svg{golden} commence le Combat avec 1 \\svg{damage-yellow}.}\\\\\n"
+"  \\darkcell[1.8]{0/-1}\n"
+"    & \\lightcell[1.8]{Coulée de Boue – Chaque Unité \\svg{unit_ground-yellow} se déplace d'une case en moins.}\\\\\n"
+"  \\darkcell[1.0]{0/0}\n"
+"    & \\lightcell[1.0]{Ciel Dégagé – Aucun Effet.}\\\\\n"
+"  \\darkcell[1.4]{0/+1}\n"
+"    & \\lightcell[1.4]{Terrain Rocheux – Chaque Unité \\svg{unit_ground-yellow} gagne un Jeton \\svg{defense-yellow}.}\\\\\n"
+"  \\darkcell[1.8]{+1/-1}\n"
+"    & \\lightcell[1.8]{Illusion Féérique – Les Joueurs Activent leurs Unités dans l'ordre croissant d'Initiative.}\\\\\n"
+"  \\darkcell[1.4]{+1/0}\n"
+"    & \\lightcell[1.4]{Vent Arrière – Chaque Unité \\svg{unit_flying-yellow} gagne +1 Movement.}\\\\\n"
+"  \\darkcell[1.4]{+1/+1}\n"
+"    & \\lightcell[1.4]{Conditions Parfaites – Chaque Unité \\svg{unit_ranged-yellow} gagne un avantage.}\\\\\n"
+"  \\end{tabularx}\n"
+"}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:108
+#, no-wrap
+msgid ""
+"\\begin{itemize}\n"
+"  \\item After winning a Neutral Combat, you may sacrifice 2 \\svg{bronze} Units to gain 1 \\svg{silver} Unit you defeated.\n"
+"  \\item When a Main Hero is defeated, at the start of that player's next turn, they may Empower any Statistic Card from their M\\&M Deck, and Search (2) the \\svg{silver} Neutral Deck.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\begin{itemize}\n"
+"  \\item Après avoir gagné un Combat Neutre, vous pouvez sacrifier 2 Unités \\svg{bronze} pour gagner 1 Unité \\svg{silver} que vous avez vaincue.\n"
+"  \\item Quand un Héros Principal est battu, au prochain tour de ce Joueur, il peut Renforcer une Carte Statistique de son Deck, et Fouiller (2) le Deck Neutre \\svg{silver}.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols*
+#: clash/trial_by_combat.tex:117
+#, no-wrap
+msgid ""
+"\\begin{center}\n"
+"  \\vfill\n"
+"  \\includegraphics[width=1.0\\linewidth]{\\maps/trial_by_combat-2.4p.png}\n"
+"  \\captionof{figure}{\\textbf{2/4-PLAYER SCENARIO}}\n"
+"  \\vfill\n"
+"  \\includegraphics[width=1.0\\linewidth]{\\maps/trial_by_combat-3p.png}\n"
+"  \\captionof{figure}{\\textbf{3-PLAYER SCENARIO}}\n"
+"\\end{center}\n"
+"\n"
+msgstr ""
+"\\begin{center}\n"
+"  \\vfill\n"
+"  \\includegraphics[width=1.0\\linewidth]{\\maps/trial_by_combat-2.4p.png}\n"
+"  \\captionof{figure}{\\textbf{Scénario 2/4 Joueurs}}\n"
+"  \\vfill\n"
+"  \\includegraphics[width=1.0\\linewidth]{\\maps/trial_by_combat-3p.png}\n"
+"  \\captionof{figure}{\\textbf{Scénario 3 Joueurs}}\n"
+"\\end{center}\n"
+"\n"

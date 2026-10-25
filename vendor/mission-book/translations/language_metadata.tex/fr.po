@@ -1,0 +1,100 @@
+# French translations for Homm package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Homm package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Homm 3BG-mission-book\n"
+"POT-Creation-Date: 2026-03-30 20:30+0000\n"
+"PO-Revision-Date: 2025-10-13 21:50+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. type: Plain text
+#: sections/language_metadata.tex:2
+msgid ""
+"\\providecommand{\\documenttitle}{Heroes of Might \\& Magic III Fan-Made "
+"Mission Book}"
+msgstr ""
+"\\providecommand{\\documenttitle}{Heroes of Might \\& Magic III Fan-Made "
+"Livre de Missions}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:4
+msgid "\\providecommand{\\pageshorthand}{p.}"
+msgstr "\\providecommand{\\pageshorthand}{p.}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:6
+msgid "\\def\\coopspath{coops}"
+msgstr "\\def\\coopspath{coops/translated/fr}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:8
+msgid "\\def\\coopstitle{Cooperative Scenarios}"
+msgstr "\\def\\coopstitle{Scénarios Coopératif}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:10
+msgid "\\def\\clashpath{clash}"
+msgstr "\\def\\clashpath{clash/translated/fr}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:12
+msgid "\\def\\clashtitle{Clash Scenarios}"
+msgstr "\\def\\clashtitle{Scénario d'affrontement}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:14
+msgid "\\def\\campaignspath{campaigns}"
+msgstr "\\def\\campaignspath{campaigns/translated/fr}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:16
+msgid "\\def\\campaignstitle{Campaigns}"
+msgstr "\\def\\campaignstitle{Campagne}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:18
+#, fuzzy
+#| msgid "\\def\\clashpath{clash}"
+msgid "\\def\\alliancespath{alliances}"
+msgstr "\\def\\clashpath{clash/translated/fr}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:20
+#, fuzzy
+#| msgid "\\def\\clashtitle{Clash Scenarios}"
+msgid "\\def\\alliancestitle{Alliances}"
+msgstr "\\def\\clashtitle{Scénario d'affrontement}"
+
+#. type: Plain text
+#: sections/language_metadata.tex:22
+msgid "\\def\\lang_header_adjustment{0px}"
+msgstr "\\def\\lang_header_adjustment{0px}"
+
+#. type: newcommand{#4}
+#: sections/language_metadata.tex:24
+msgid "Community rating: \\svg{azure} Overwhelmingly positive"
+msgstr "Évaluation de la communauté: \\svg{azure} Très positives"
+
+#. type: newcommand{#4}
+#: sections/language_metadata.tex:26
+msgid "Community rating: \\svg{golden} Very positive"
+msgstr "Évaluation de la communauté: \\svg{golden} Plutôt positives"
+
+#. type: newcommand{#4}
+#: sections/language_metadata.tex:28
+msgid "Community rating: \\svg{silver} Mostly positive"
+msgstr "Évaluation de la communauté: \\svg{silver} Majoritairement positives"
+
+#. type: newcommand{#4}
+#: sections/language_metadata.tex:29
+msgid "Community rating: \\svg{bronze} Mixed"
+msgstr "Évaluation de la communauté: \\svg{bronze} Mitigées"

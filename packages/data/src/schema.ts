@@ -248,3 +248,49 @@ export const TownCard = z.object({
   images: z.object({ empty: z.string().nullable(), full: z.string().nullable() }),
 });
 export type TownCard = z.infer<typeof TownCard>;
+
+/** A map drawn with the community map editor (fan Mission Book `map-files/*.map`). */
+export const MapLayout = z.object({
+  /** File name with `-` turned into `_`. */
+  id: z.string().min(1),
+  tiles: z.array(
+    z.object({
+      /** Editor grid cell of the tile's center. */
+      row: z.number().int(),
+      col: z.number().int(),
+      group: TileGroup,
+      /** A fixed tile (`F12`, `#F4`); null draws a random tile of the group. */
+      tile: z.string().nullable(),
+      rotation: z.number().int().min(0).max(5),
+    }),
+  ),
+  /** Starting tiles, one per player seat. */
+  seats: z.number().int().nonnegative(),
+  /** False when the map uses tile kinds the game data lacks (subterranean, water). */
+  supported: z.boolean(),
+});
+export type MapLayout = z.infer<typeof MapLayout>;
+
+const Localized = <T extends z.ZodTypeAny>(t: T) => z.object({ en: t, fr: t });
+const TextSection = z.object({ title: z.string(), body: z.string() });
+const TimedEvent = z.object({ rounds: z.array(z.number().int().positive()), text: z.string() });
+
+/** A Scenario of the fan Mission Book, with its text in English and French. */
+export const Scenario = z.object({
+  id: z.string().min(1),
+  kind: z.enum(["clash", "cooperative", "campaign"]),
+  title: Localized(z.string()),
+  /** "Clash Scenario", "Castle Campaign – The Queen's Gambit", … */
+  series: Localized(z.string()),
+  maxRounds: z.number().int().positive().nullable(),
+  playerCounts: z.array(z.number().int().positive()),
+  resources: z.record(z.string(), z.number().int()).nullable(),
+  income: z.record(z.string(), z.number().int()).nullable(),
+  /** Map ids (see MapLayout) shown in the Scenario, usually one per player count. */
+  maps: z.array(z.string()),
+  timedEvents: Localized(z.array(TimedEvent)),
+  text: Localized(z.array(TextSection)),
+  /** French paragraphs that could not be matched (left in English). */
+  untranslated: z.number().int().nonnegative(),
+});
+export type Scenario = z.infer<typeof Scenario>;

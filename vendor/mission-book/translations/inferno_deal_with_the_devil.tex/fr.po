@@ -1,0 +1,945 @@
+# French translations for Homm package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Homm package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Homm 3BG-mission-book\n"
+"POT-Creation-Date: 2026-09-30 11:56+0000\n"
+"PO-Revision-Date: 2025-03-26 01:04+0100\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. type: multicols*
+#: coops/sentinels.tex:5 coops/titans_stronghold.tex:5
+#: coops/emerald_island.tex:5 coops/wandering_dragons.tex:5
+#: coops/close_to_enemies.tex:5 coops/stand_united.tex:5
+#: coops/the_ambushed_accord.tex:5 clash/bloody_grail.tex:5
+#: clash/trial_by_combat.tex:5 clash/astral_run.tex:5 clash/chain_link.tex:5
+#: clash/force_of_will.tex:5 clash/the_fractured_kingdoms.tex:5
+#: clash/arcane_artillery.tex:5 clash/dragoncurse_castle.tex:5
+#: clash/the_hunt.tex:5 campaigns/castle_greek_gift.tex:6
+#: campaigns/castle_greek_gift.tex:86 campaigns/castle_greek_gift.tex:139
+#: campaigns/castle_sicilian_dragon.tex:5
+#: campaigns/castle_sicilian_dragon.tex:144
+#: campaigns/castle_two_knights_defense.tex:5
+#: campaigns/castle_two_knights_defense.tex:91
+#: campaigns/castle_two_knights_defense.tex:129
+#: campaigns/inferno_devilish_plan.tex:6
+#: campaigns/inferno_devilish_plan.tex:204
+#: campaigns/inferno_steadwicks_fall.tex:5
+#: campaigns/inferno_deal_with_the_devil.tex:5 sections/credits.tex:10
+#: sections/random_scenario.tex:5 sections/random_scenario.tex:275
+#: sections/introduction.tex:5
+#, no-wrap
+msgid ""
+"{2}\n"
+"\n"
+msgstr ""
+"{2}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:16 coops/titans_stronghold.tex:18
+#: coops/close_to_enemies.tex:16 coops/stand_united.tex:13
+#: clash/dragoncurse_castle.tex:17 campaigns/inferno_devilish_plan.tex:20
+#: campaigns/inferno_steadwicks_fall.tex:16
+#: campaigns/inferno_deal_with_the_devil.tex:20
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Scenario Length}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Durée du Scénario}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:20 coops/titans_stronghold.tex:22
+#: coops/emerald_island.tex:18 coops/close_to_enemies.tex:20
+#: coops/stand_united.tex:17 coops/the_ambushed_accord.tex:17
+#: clash/dragoncurse_castle.tex:21 campaigns/inferno_devilish_plan.tex:24
+#: campaigns/inferno_steadwicks_fall.tex:20
+#: campaigns/inferno_deal_with_the_devil.tex:24
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Player Setup}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation des Joueurs}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:42 coops/titans_stronghold.tex:44
+#: coops/emerald_island.tex:36 coops/close_to_enemies.tex:35
+#: coops/stand_united.tex:33 clash/astral_run.tex:30 clash/chain_link.tex:30
+#: clash/the_hunt.tex:35 campaigns/inferno_devilish_plan.tex:90
+#: campaigns/inferno_steadwicks_fall.tex:92
+#: campaigns/inferno_deal_with_the_devil.tex:52
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Map Setup}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation du Plateau}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:52 coops/titans_stronghold.tex:59
+#: coops/emerald_island.tex:45 coops/close_to_enemies.tex:68
+#: coops/stand_united.tex:52 campaigns/castle_greek_gift.tex:73
+#: campaigns/castle_sicilian_dragon.tex:81
+#: campaigns/castle_two_knights_defense.tex:77
+#: campaigns/inferno_devilish_plan.tex:123
+#: campaigns/inferno_steadwicks_fall.tex:133
+#: campaigns/inferno_deal_with_the_devil.tex:83
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Victory Conditions}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Conditions de Victoire}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:56 coops/titans_stronghold.tex:63
+#: coops/emerald_island.tex:49 coops/close_to_enemies.tex:74
+#: coops/stand_united.tex:56 campaigns/inferno_devilish_plan.tex:127
+#: campaigns/inferno_steadwicks_fall.tex:137
+#: campaigns/inferno_deal_with_the_devil.tex:87
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Defeat Conditions}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Conditions de Défaite}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:62 coops/titans_stronghold.tex:71
+#: coops/emerald_island.tex:53 clash/force_of_will.tex:62
+#: clash/the_fractured_kingdoms.tex:41 clash/arcane_artillery.tex:65
+#: clash/dragoncurse_castle.tex:59 clash/the_hunt.tex:62
+#: campaigns/castle_greek_gift.tex:88 campaigns/castle_sicilian_dragon.tex:95
+#: campaigns/castle_two_knights_defense.tex:93
+#: campaigns/inferno_devilish_plan.tex:142
+#: campaigns/inferno_steadwicks_fall.tex:146
+#: campaigns/inferno_deal_with_the_devil.tex:97
+#: sections/random_scenario.tex:277
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Timed Events}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Évènements programmés}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:85 coops/emerald_island.tex:60
+#: coops/close_to_enemies.tex:110 coops/stand_united.tex:74
+#: clash/force_of_will.tex:74 clash/arcane_artillery.tex:79
+#: clash/the_hunt.tex:69 campaigns/inferno_devilish_plan.tex:176
+#: campaigns/inferno_steadwicks_fall.tex:194
+#: campaigns/inferno_deal_with_the_devil.tex:148
+#: sections/random_scenario.tex:298
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Additional Rules}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Règles Additionnelles}}\n"
+"\n"
+
+#. type: multicols
+#: coops/wandering_dragons.tex:25 coops/the_ambushed_accord.tex:25
+#: clash/astral_run.tex:21 clash/chain_link.tex:21
+#: campaigns/inferno_devilish_plan.tex:34
+#: campaigns/inferno_steadwicks_fall.tex:30
+#: campaigns/inferno_deal_with_the_devil.tex:34
+#, no-wrap
+msgid ""
+"\\textbf{Starting Units:}\n"
+"\n"
+msgstr ""
+"\\textbf{Unités de Départ:}\n"
+"\n"
+
+#. type: multicols
+#: coops/close_to_enemies.tex:60 campaigns/inferno_devilish_plan.tex:50
+#: campaigns/inferno_steadwicks_fall.tex:48
+#: campaigns/inferno_deal_with_the_devil.tex:46
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{AI Hero Setup}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation du Héros IA}}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:23 clash/bloody_grail.tex:21 clash/astral_run.tex:19
+#: clash/chain_link.tex:19 clash/the_fractured_kingdoms.tex:19
+#: campaigns/castle_greek_gift.tex:28 campaigns/castle_sicilian_dragon.tex:26
+#: campaigns/castle_two_knights_defense.tex:25
+#: campaigns/inferno_devilish_plan.tex:32
+#: campaigns/inferno_deal_with_the_devil.tex:32
+#, no-wrap
+msgid ""
+"\\textbf{Starting Income:} 10 \\svg{gold}, 0 \\svg{building_materials}, 0 \\svg{valuables}\n"
+"\n"
+msgstr ""
+"\\textbf{Revenus de Départ :} 10 \\svg{gold}, 0 \\svg{building_materials}, 0 \\svg{valuables}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_devilish_plan.tex:8
+#: campaigns/inferno_steadwicks_fall.tex:7
+#: campaigns/inferno_deal_with_the_devil.tex:7
+#, no-wrap
+msgid ""
+"\\textbf{Author:} Tm335\n"
+"\n"
+msgstr ""
+"\\textbf{Auteur :} Tm335\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_devilish_plan.tex:26
+#: campaigns/inferno_steadwicks_fall.tex:22
+#: campaigns/inferno_deal_with_the_devil.tex:26
+#, no-wrap
+msgid ""
+"\\textbf{Faction:} Inferno\n"
+"\n"
+msgstr ""
+"\\textbf{Faction :} Hadès\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_devilish_plan.tex:28
+#: campaigns/inferno_steadwicks_fall.tex:24
+#: campaigns/inferno_deal_with_the_devil.tex:28
+#, no-wrap
+msgid ""
+"\\textbf{Faction Hero:} Choose any\n"
+"\n"
+msgstr ""
+"\\textbf{Héros de Faction:} Au choix\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_devilish_plan.tex:30
+#: campaigns/inferno_deal_with_the_devil.tex:30
+#, no-wrap
+msgid ""
+"\\textbf{Starting Resources:} 15 \\svg{gold}, 3 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+msgstr ""
+"\\textbf{Ressources de Départ :} 15 \\svg{gold}, 3 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_devilish_plan.tex:116
+#: campaigns/inferno_steadwicks_fall.tex:119
+#: campaigns/inferno_deal_with_the_devil.tex:75
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Heroes Placement}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Placement des Héros}}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_devilish_plan.tex:178
+#: campaigns/inferno_steadwicks_fall.tex:196
+#: campaigns/inferno_deal_with_the_devil.tex:150
+#, no-wrap
+msgid ""
+"During this ``Inferno'' Campaign Scenario, the following rules apply:\n"
+"\n"
+msgstr ""
+"Pendant ce Scénario de la Campagne «Hadès», les règles suivantes s'appliquent:\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_steadwicks_fall.tex:94
+#: campaigns/inferno_deal_with_the_devil.tex:54
+#, no-wrap
+msgid ""
+"Take the following Map Tiles and set them up as shown in the Scenario map layout:\n"
+"\n"
+msgstr ""
+"Prenez les Tuiles suivantes et disposez-les comme indiqué sur le schéma du Scénario:\n"
+"\n"
+
+#.  !TeX spellcheck = en_US
+#. type: Plain text
+#: campaigns/inferno_deal_with_the_devil.tex:3
+msgid ""
+"\\addscenariosection[subsection]{1}{Inferno Campaign $-$ Dungeons and Devils}"
+"{3. Deal With the Devil}{\\images/firewall.png}"
+msgstr ""
+"\\addscenariosection[subsection]{1}{Campagne Hadès $-$ Donjons et Diables}"
+"{3. Pacte avec le Diable}{\\images/firewall.png}"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:9
+#, no-wrap
+msgid ""
+"\\textbf{Source:} \\href{https://discord.com/channels/740870068178649108/1253923753981902939/1253923753981902939}{Archon Studios Discord}\n"
+"\n"
+msgstr ""
+"\\textbf{Source:} \\href{https://discord.com/channels/740870068178649108/1253923753981902939/1253923753981902939}{Archon Studios Discord}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:18
+#, no-wrap
+msgid ""
+"\\textit{Queen Catherine has liberated Steadwick.\n"
+"A Kreegan envoy has been sent to the royal court asking for one million gold ransom in return for the captive we hold, King Roland Ironfist of Erathia.\n"
+"They were unwilling to pay.\n"
+"It appears they are going to attempt to rescue Roland.\n"
+"We are deep within Eeofol.\n"
+"We are Clan Kreelah.\n"
+"They will never take our captive, and they will never take Kleesive.\n"
+"Prepare for battle!}\n"
+"\n"
+msgstr ""
+"\\textit{La Reine Catherine a libéré Steadwick.\n"
+"Un envoyé Kreegan a été envoyé à la court royale demandant une rançon d'un million d'or contre notre prisonnier, le Roi Roland Ironfist d'Erathia.\n"
+"Ils ont refusé de payer.\n"
+"Il semble qu'ils préparent une tentative de sauvetage de Roland.\n"
+"Nous sommes loin en Eeofol.\n"
+"Nous sommes le Clan Kreelah.\n"
+"Ils ne prendront pas notre prisonnier et ils ne prendront jamais Kleesive.\n"
+"Préparez vous au Combat!}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:22
+#, no-wrap
+msgid ""
+"This Scenario plays out over 14 Rounds.\n"
+"\n"
+msgstr ""
+"Ce Scénario se joue en 14 Manches.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:40
+#, no-wrap
+msgid ""
+"\\begin{itemize}\n"
+"  \\item A ``Few'' Magogs\n"
+"  \\item A ``Pack'' of Familiars\n"
+"  \\item A ``Pack'' of Cerebri\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\begin{itemize}\n"
+"  \\item Un «Quelques» de Magogs\n"
+"  \\item Un «Groupe» de Familiers\n"
+"  \\item Un «Groupe» de Cerbères\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:42
+#, no-wrap
+msgid ""
+"\\textbf{Town Buildings:} \\svg{bronze} Dwelling, \\svg{silver} Dwelling, City Hall, Citadel\n"
+"\n"
+msgstr ""
+"\\textbf{Bâtiments de Départ:} Demeures \\svg{bronze} et \\svg{silver}, Salle du Conseil, Citadelle\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:44
+#, no-wrap
+msgid ""
+"\\textbf{Bonus:} Gain a War Machine of your choice.\n"
+"\n"
+msgstr ""
+"\\textbf{Bonus:} Gagnez une Machine de Guerre de votre choix.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:48
+#, no-wrap
+msgid ""
+"\\textbf{Faction:} Castle, Rampart\n"
+"\n"
+msgstr ""
+"\\textbf{Faction:} Château, Rempart\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:50
+#, no-wrap
+msgid ""
+"Refer to the \\pagelink{Steadwick's Fall AI}{table below the map layout} for detailed information about Units and AI Decks.\n"
+"\n"
+msgstr ""
+"Se Référer à la \\pagelink{Steadwick's Fall AI}{Table sous le schéma du Plateau} pour des informations détaillées sur les Unités et les Decks IA.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:61
+#, no-wrap
+msgid ""
+"\\textbf{3 × Starting (I) Map Tile}\n"
+"\\begin{itemize}\n"
+"  \\item 1 × Inferno (S6)\n"
+"  \\item 1 × Castle (S3)\n"
+"  \\item 1 × Rampart (S4)\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{3 × Tuile de Départ (I)}\n"
+"\\begin{itemize}\n"
+"  \\item 1 × Hadès (S6)\n"
+"  \\item 1 × Château (S3)\n"
+"  \\item 1 × Rempart (S4)\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:68
+#, no-wrap
+msgid ""
+"\\textbf{7 × Far (II--III) Map Tile}\n"
+"\\begin{itemize}\n"
+"  \\item 3 × Inferno (F16, F17, F18)\n"
+"  \\item 3 × Castle (F3, \\#F4, F6)\n"
+"  \\item 1 × Rampart (F12)\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{7 × Tuiles Lointaines (II--III)}\n"
+"\\begin{itemize}\n"
+"  \\item 3 × Hadès (F16, F17, F18)\n"
+"  \\item 3 × Château (F3, \\#F4, F6)\n"
+"  \\item 1 × Rempart (F12)\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:73
+#, no-wrap
+msgid ""
+"\\textbf{1 × Near (IV--V) Map Tile}\n"
+"\\begin{itemize}\n"
+"  \\item 1 × Inferno (N12)\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{1 × Tuile Proche (IV--V)}\n"
+"\\begin{itemize}\n"
+"  \\item 1 × Hadès (N12)\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:77
+#, no-wrap
+msgid ""
+"The Enemy Charging Rampart Hero \\#1 starts on the center Field of the S4 Starting Map Tile.\n"
+"\n"
+msgstr ""
+"Le Héros Ennemi Rempart Attaquant \\#1 commence sur la Case centrale de la Tuile de Départ S4.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:79
+#, no-wrap
+msgid ""
+"The Enemy Charging Castle Hero \\#1 starts on the center Field of S3 Starting Map Tile.\n"
+"\n"
+msgstr ""
+"Le Héros Ennemi Château Attaquant \\#1 commence sur la Case centrale de la Tuile de Départ S3.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:81
+#, no-wrap
+msgid ""
+"Place your Hero on the center Field of the S6 Inferno Starting Map Tile.\n"
+"\n"
+msgstr ""
+"Placez votre Héros sur la Case centrale de la Tuile de Départ S6.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:85
+#, no-wrap
+msgid ""
+"Defend your main fortress, Kleesive, from all Charging Enemy Heros, and from the Final Charging Army.\n"
+"\n"
+msgstr ""
+"Défendez votre forteresse principale, Kleesive, de chaque Héros Ennemi Attaquant et de l'Armée Attaquante Finale.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:89
+#, no-wrap
+msgid ""
+"You lose if any of the following occur:\n"
+"\n"
+msgstr ""
+"Vous perdez dans les cas suivants:\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:95
+#, no-wrap
+msgid ""
+"\\begin{itemize}\n"
+"  \\item You lose one Combat encounter with your Main Hero.\n"
+"    Surrender is not an option.\n"
+"  \\item Clan Kreelah fails to defend Klessive against the Enemy Charging Heros attempting to rescue your captive King Roland.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\begin{itemize}\n"
+"  \\item Vous perdez un Combat avec votre Héros Principal.\n"
+"    Se Rendre n'est pas une option.\n"
+"  \\item Le Clan Kreelah échoue à défendre Klessive contre les Héros Ennemis Attaquants tentant de secourir notre prisonnier King Roland.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:102
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{1} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Read ``Refusal'' section.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 1:}\n"
+"\\begin{itemize}\n"
+"  \\item Lisez la section «Le Refus».\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:107
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{2} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Read ``Enemy at the gates'' section.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 2:}\n"
+"\\begin{itemize}\n"
+"  \\item Lisez la section «Ennemi à nos portes».\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:112
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{3} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Read ``Scout Report'' section.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 3:}\n"
+"\\begin{itemize}\n"
+"  \\item Lisez la section «Rapport d'Éclaireur».\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:117
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{4} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item The first armies will attack this Round and next Round. Prepare your defenses!\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 4:}\n"
+"\\begin{itemize}\n"
+"  \\item Les premières armées attaqueront cette Manche et celle d'après. Préparez votre défense!\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:123
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{7} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item The Enemy Castle Charging Hero \\#2 appears on the Settlement Field of the F3 Tile or on the center Field of S3 Starting Map Tile (your choice).\n"
+"  \\item The Enemy Rampart Charging Hero \\#2 appears on the center Field of the S4 Starting Map Tile.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 7:}\n"
+"\\begin{itemize}\n"
+"  \\item Le Héros Ennemi Château Attaquant \\#2 apparaît sur l'Enclave de la Tuile F3 ou la Case Centrale de la Tuile de Départ S3 (au choix).\n"
+"  \\item Le Héros Ennemi Rempart Attaquant \\#2 apparaît sur la Case centrale de la Tuile de Départ S4.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:128
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{10} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item The second armies will attack this Round and next Round. Prepare your defenses!\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 10:}\n"
+"\\begin{itemize}\n"
+"  \\item Les secondes armées attaqueront cette Manche et celle d'après. Préparez votre défense!\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:135
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{12} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item The Final Charging Enemy Army appears on the Settlement Field of the F3 Tile.\n"
+"    This army has 4 \\svg{movement} per Turn.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 12:}\n"
+"\\begin{itemize}\n"
+"  \\item L'Armée Finale Ennemie Attaquante apparaît sur l'Enclave de la Tuile F3.\n"
+"    Cette armée a 4 \\svg{movement} par Tour.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:141
+#, no-wrap
+msgid ""
+"\\textbf{\\nth{14} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item The Final Charging Army will attack this Round.\n"
+"    We must hold Kleesive at all costs!\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Manche 14:}\n"
+"\\begin{itemize}\n"
+"  \\item L'Armée Finale Ennemie Attaquante attaquera cette Manche.\n"
+"    Nous devons tenir Kleesive à tout prix!\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:146
+#, no-wrap
+msgid ""
+"\\textbf{When you complete the Scenario:}\n"
+"\\begin{itemize}\n"
+"  \\item Read: ``Congratulations! You have defended Kleesive and are victorious!''\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Quand vous complétez le Scénario:}\n"
+"\\begin{itemize}\n"
+"  \\item Lisez: «Félicitations! Vous avez défendu Kleesive et êtes victorieux!»\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:179
+#, no-wrap
+msgid ""
+"\\begin{itemize}\n"
+"  \\item Your Main Hero can only travel in Inferno Map Tiles. You cannot enter any other Map Tile type.\n"
+"  \\item You cannot recruit a Secondary Hero.\n"
+"  \\item You cannot attack Enemy Charging Heroes. You can only defend against them while inside of Kleesive.\n"
+"  \\item Gain 3 \\svg{gold} when you defeat a Charging Hero's Army.\n"
+"  \\item If an Enemy Charging Hero enters a Map Tile or Field that your Main Hero is on (exception is if you are in\n"
+"    your Inferno city Kleesive), or if a charging Hero attacks Kleesive and you are not present in your city\n"
+"    of Kleesive, you are immediately transported back to Kleesive, you lose any remaining Movement Points\n"
+"    you have, lose 3 \\svg{gold}, gain \\svg{morale_negative}, and randomly discard 1 Card from your hand.\n"
+"  \\item Enemy Charging Heroes move only 2 \\svg{movement}. The Final Charging Army moves 4 \\svg{movement}. They take the shortest\n"
+"    route to Kleesive. If you own a Mine in a Map Tile they enter, they will capture the Mine (but will not\n"
+"    ``backtrack'' to do so), and then continue along the shortest route to Kleesive. They ignore everything\n"
+"    else. They also make use of Stables 1 \\svg{movement} bonus.\n"
+"  \\item Enemy Charging Heros always move amongst each to not ``block'' each other's paths (thus slowing each\n"
+"    other down). The Enemy Charging Hero that can get closest to Kleesive will move before any others.\n"
+"  \\item Castle and Rampart already have all Mines controlled in their territory (non-Inferno Map Tiles). Place enemy\n"
+"    Cubes on all of their Mines.\n"
+"  \\item Your Walls, Gates, and Arrow Tower in Kleesive are rebuilt after each battle.\n"
+"  \\columnbreak\n"
+"  \\item Enemy \\svg{unit_flying} Units will fly over Walls and Gates to attack your Units whenever possible.\n"
+"  \\item Enemy \\svg{unit_ranged} Units will always attack the Arrow Tower once there are no other \\svg{unit_ranged} Units to attack.\n"
+"  \\item Enemy Units will always attack your Units if possible. Only when that is not possible, then the Gate,\n"
+"    and then Walls will be attacked.\n"
+"  \\item During Combat with AI, treat Artifacts in Skill Decks just like Abilities.\n"
+"    The ``Sword of Hellfire'' will be used in attacks and retaliation attacks.\n"
+"    It is not used when attacking Walls or Gates, and remains in effect on the Unit.\n"
+"    ``Shield of the Damned'' takes effect when any Charging Army Unit takes attack or retaliation damage.\n"
+"    If the AI Skill Card advises to ``do it again'', the Artifacts are not played again immediately, but instead are played as soon as the next Unit is able to use them.\n"
+"\n"
+msgstr ""
+"\\begin{itemize}\n"
+"  \\item Votre Héros Principal ne peut se déplacer que sur les Tuiles Hadès. Vous ne pouvez pas entrer sur les autres Tuiles.\n"
+"  \\item Vous ne pouvez pas recruter de Héros Secondaire.\n"
+"  \\item Vous ne pouvez pas attaquer de Héros Ennemis. Vous ne pouvez que vous en défendre en étant dans Kleesive.\n"
+"  \\item Gagnez 3 \\svg{gold} en vainquant un Héros Ennemi.\n"
+"  \\item Si un Héros Ennemi entre sur une Tuile ou une Case où se trouve votre Héros Principal (sauf si vous êtes dans\n"
+"    votre Ville Hadès de Kleesive), ou si un Héros Ennemi attaque Kleesive et vous n'êtes pas dans la Ville\n"
+"    de Kleesive, vous êtes immédiatement déplacé à Kleesive, vous perdez le reste de vos Points de Mouvement,\n"
+"    perdez 3 \\svg{gold}, gagnez \\svg{morale_negative}, et défaussez au choix une Carte de votre main.\n"
+"  \\item Les Héros Ennemis n'ont que 2 \\svg{movement}. L'Armée Finale se déplace de 4 \\svg{movement}. Elle prends la route la plus\n"
+"    courte vers Kleesive. Si vous possédez une Mine sur une Tuile où elle entre, elle capturera la Mine (mais elle ne va pas\n"
+"    «dévier» pour cela) et continue la route la plus courte vers Kleesive. Elle ignore tout le\n"
+"    reste. Elle utilise aussi les Étables pour le 1 \\svg{movement} bonus.\n"
+"  \\item Les Héros Ennemi se déplace toujours pour ne pas se «bloquer» le chemin (ainsi se ralentissant\n"
+"    chacun). Le Héros Ennemi le plus proche de Kleesive se déplacera avant les autres.\n"
+"  \\item Château et Rempart contrôlent déjà les Mines de leurs territoires (Tuiles non-Hadès). Placez des Cubes\n"
+"    Ennemis sur chacune de leurs Mines.\n"
+"  \\item Vos Murs, Porte et Tourelle a Kleesive sont reconstruits après chaque combat.\n"
+"  \\item Les Unités Ennemies \\svg{unit_flying} voleront au dessus des Murs et Porte pour attaquer vos Unités si possible.\n"
+"  \\item Les Unités Ennemies \\svg{unit_ranged} attaqueront toujours la Tourelle quand il n'y aura plus d'autres Unités \\svg{unit_ranged} à attaquer.\n"
+"  \\item Les Unités Ennemies attaqueront toujours vos Unités si possible. Si cela n'est pas possible, elles attaquent la Porte,\n"
+"    puis les Murs.\n"
+"  \\item Durant une Combat avec l'IA, considérez les Artefact comme des Compétences pour les Cartes Capacités.\n"
+"    La «Lame Ardente» s'utilisera en attaque et en riposte.\n"
+"    Elle se s'utilise pas en attaquant les Murs ou Porte et reste en effet sur l'Unité.\n"
+"    L'«Écu des Ténèbres» prend effet quand une Unité Ennemie subit des dégâts d'une attaque ou d'une riposte.\n"
+"    Si la Carte IA Capacité informe de «répétez l'action», l'Artefact n'est pas joué immédiatement à nouveau, à la place est joué pour la prochaine Unité pouvant l'utiliser.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:181
+#, no-wrap
+msgid ""
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\end{itemize}\n"
+"\n"
+
+#. type: tikzpicture
+#: campaigns/inferno_deal_with_the_devil.tex:194
+#, no-wrap
+msgid ""
+"[remember picture, overlay]\n"
+"  \\node(bg)[anchor=center, yshift=27em, opacity=0.17] at (current page.south) {\n"
+"    \\includegraphics[width=0.85\\paperwidth, keepaspectratio]{\\art/inferno.png}\n"
+"  };\n"
+"  \\node(map)[anchor=center] at (9, -9) {\n"
+"    \\includegraphics[width=\\textwidth]{\\maps/inferno_deal_with_the_devil.png}\n"
+"  };\n"
+"\n"
+msgstr ""
+"[remember picture, overlay]\n"
+"  \\node(bg)[anchor=center, yshift=27em, opacity=0.17] at (current page.south) {\n"
+"    \\includegraphics[width=0.85\\paperwidth, keepaspectratio]{\\art/inferno.png}\n"
+"  };\n"
+"  \\node(map)[anchor=center] at (9, -9) {\n"
+"    \\includegraphics[width=\\textwidth]{\\maps/inferno_deal_with_the_devil.png}\n"
+"  };\n"
+"\n"
+
+#. type: tikzpicture
+#: campaigns/inferno_deal_with_the_devil.tex:208
+#, no-wrap
+msgid ""
+"  \\node at (1.5, -3.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{S4}}}}};\n"
+"  \\node at (7, -3.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{\\#F4}}}}};\n"
+"  \\node at (12.6, -5.4) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F17}}}}};\n"
+"  \\node at (15, -6.5) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{Kleesive}}}}};\n"
+"  \\node at (15, -7.3) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{S6}}}}};\n"
+"  \\node at (15.9, -13.8) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{N12}}}}};\n"
+"  \\node at (12.4, -15.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F16}}}}};\n"
+"  \\node at (9.3, -12.6) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F18}}}}};\n"
+"  \\node at (6, -15.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F12}}}}};\n"
+"  \\node at (2, -16.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{S3}}}}};\n"
+"  \\node at (0.1, -10.3) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F3}}}}};\n"
+"  \\node at (4.3, -7.3) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F6}}}}};\n"
+"\n"
+msgstr ""
+"  \\node at (1.5, -3.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{S4}}}}};\n"
+"  \\node at (7, -3.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{\\#F4}}}}};\n"
+"  \\node at (12.6, -5.4) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F17}}}}};\n"
+"  \\node at (15, -6.5) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{Kleesive}}}}};\n"
+"  \\node at (15, -7.3) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{S6}}}}};\n"
+"  \\node at (15.9, -13.8) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{N12}}}}};\n"
+"  \\node at (12.4, -15.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F16}}}}};\n"
+"  \\node at (9.3, -12.6) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F18}}}}};\n"
+"  \\node at (6, -15.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F12}}}}};\n"
+"  \\node at (2, -16.0) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{S3}}}}};\n"
+"  \\node at (0.1, -10.3) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F3}}}}};\n"
+"  \\node at (4.3, -7.3) {\\large{{\\textbf{\\textcolor{darkcandyapplered}{F6}}}}};\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:216
+#, no-wrap
+msgid ""
+"{2}\n"
+"\\subsection*{\\MakeUppercase{The Story}}\n"
+"\n"
+msgstr ""
+"{2}\n"
+"\\subsection*{\\MakeUppercase{L'Histoire}}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:218
+#, no-wrap
+msgid ""
+"\\textbf{Refusal}\n"
+"\n"
+msgstr ""
+"\\textbf{Le Refus}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:223
+#, no-wrap
+msgid ""
+"Queen Catherine Ironfist refuses our ransom demand, and they are amassing armies for a rescue operation.\n"
+"Clan Kreelah, prepare our defenses!\n"
+"Protect Kleesive at all costs.\n"
+"We have the advantage.\n"
+"\n"
+msgstr ""
+"La Reine Catherine Ironfist refuse notre demande de rançon et elle amasse une armée pour une opération de sauvetage.\n"
+"Clan Kreelah, préparez nos défenses!\n"
+"Protégez Kleesive à tout prix.\n"
+"Nous avons l'avantage.\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:225
+#, no-wrap
+msgid ""
+"\\textbf{Enemy at the gates}\n"
+"\n"
+msgstr ""
+"\\textbf{Ennemi à nos portes}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:229
+#, no-wrap
+msgid ""
+"Castle and AvLee armies will be at our gates soon.\n"
+"They must come through the volcanic corridor to our east.\n"
+"We cannot meet them in battle on the field, we must defend from within Kleesive, where their magic is diminished on this cursed ground.  % no-check-caps\n"
+"\n"
+msgstr ""
+"Les armées du Château et d'AvLee seront à nos portes bientôt.\n"
+"Ils doivent passer par le corridor volcanique à l'est.\n"
+"Nous ne pouvons pas les combattre sur le terrain, nous devons défendre depuis Kleesive, où leurs magies est réduite sur le terrain maudit.  % no-check-caps\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:231
+#, no-wrap
+msgid ""
+"\\textbf{Scout Report}\n"
+"\n"
+msgstr ""
+"\\textbf{Rapport d'Éclaireur}\n"
+"\n"
+
+#. type: multicols
+#: campaigns/inferno_deal_with_the_devil.tex:234
+#, no-wrap
+msgid ""
+"Our scouts have reported that the enemy has acquired 2 very powerful major artifacts with the help of local seers.\n"
+"They are fools to think these will help them overcome our Kreegan fortress.\n"
+"\n"
+msgstr ""
+"Nos éclaireurs ont rapporté que l'ennemi a acquis 2 très puissants artefacts majeures avec l'aide de prophètes locaux.\n"
+"Ils sont fous de penser que cela les aidera à vaincre notre forteresse Kreegan.\n"
+"\n"
+
+#. type: table*
+#: campaigns/inferno_deal_with_the_devil.tex:268
+#, no-wrap
+msgid ""
+"[!hb]\n"
+"  \\pagetarget{Steadwick's Fall AI}{}\n"
+"  \\hommtable[]{37.5}{\n"
+"    \\centering\n"
+"    \\medskip\n"
+"    \\textbf{AI Hero Setup}\\\\\n"
+"    \\medskip\n"
+"    \\begin{tabularx}{0.95\\linewidth}{>{\\centering}p{0.12\\linewidth}>{\\raggedright\\arraybackslash}p{0.25\\linewidth}>{\\centering\\arraybackslash}X>{\\centering\\arraybackslash}p{0.28\\linewidth}}\n"
+"      \\darkcell{Enemy} & \\darkcell{Units} & \\darkcell{AI Deck} & \\darkcell{Artifacts/Abilities} \\\\\n"
+"      \\darkcellleft[2.8]{Rampart Charging Army \\#1}\n"
+"      & \\lightcellleft[2.8]{``Few'' Unicorns\\\\``Pack'' of Pegasi\\\\``Pack'' of Elves\\\\``Pack'' of Dwarves\\\\``Few'' Centaurs}\n"
+"      & \\makebox[129pt][r]{\\multirow{4}{*}[12.65ex]{\\lightcellleft[11.75]{3~×~Might \\svg[12]{might-yellow} Card\\\\2~×~Skill \\svg{skill-yellow} Card \\\\\\phantom{.}\\\\ \\textit{Armies use the same Deck. Reshuffle after every Combat.}}}}\n"
+"      & \\makebox[147pt][r]{\\multirow{4}{*}[12.65ex]{\\lightcellleft[11.75]{1~×~Shield~of~the Damned \\textit{(Top effect)}\\\\1~×~Sword~of~Hellfire \\textit{(Top effect)}\\\\\\phantom{.}\\\\ \\textit{Armies use the same Deck.~Reshuffle after every Combat.}}}} \\\\\n"
+"      \\darkcellleft[2.8]{Castle Charging Army \\#1}\n"
+"      & \\lightcellleft[2.8]{``Few'' Champions\\\\``Pack'' of Zealots\\\\``Pack'' of Griffins\\\\``Pack'' of Elves\\\\``Pack'' of Marksmen}\n"
+"      &\n"
+"      & \\\\\n"
+"      \\darkcellleft[2.8]{Rampart Charging Army \\#2}\n"
+"      & \\lightcellleft[2.8]{``Pack'' of Unicorns\\\\``Pack'' of Dendroids\\\\``Few'' Pegasi\\\\``Pack'' of Elves\\\\``Pack'' of Dwarves}\n"
+"      &\n"
+"      & \\\\\n"
+"      \\darkcellleft[2.8]{Castle Charging Army \\#2}\n"
+"      & \\lightcellleft[2.8]{``Pack'' of Champions\\\\``Pack'' of Zealots\\\\``Few'' Crusaders\\\\``Few'' Griffins\\\\``Pack'' of Halberdiers}\n"
+"      &\n"
+"      & \\\\\n"
+"      \\darkcellleft[4.4]{Final Charging Army}\n"
+"      & \\lightcellleft[4.4]{``Few'' Archangels\\\\``Pack'' of Unicorns\\\\``Pack'' of Champions\\\\``Pack'' of Zealots\\\\``Pack'' of Griffins\\\\Ballista War Machine}\n"
+"      & \\lightcellleft[4.4]{3~×~Might \\svg[12]{might-yellow} Card\\\\3~×~Skill \\svg{skill-yellow} Card}\n"
+"    & \\lightcellleft[4.4]{1~×~Shield~of~the Damned \\textit{(Top effect)}\\\\1~×~Sword~of~Hellfire \\textit{(Top effect)}\\\\1~×~Ballistics \\textit{(Basic effect)}\\\\1~×~First~Aid \\textit{(Expert effect)}} \\\\ \\end{tabularx}\n"
+"  }\n"
+"\\vspace*{-5em}"
+msgstr ""
+"[!hb]\n"
+"  \\pagetarget{Steadwick's Fall AI}{}\n"
+"  \\hommtable[]{37.5}{\n"
+"    \\centering\n"
+"    \\medskip\n"
+"    \\textbf{Préparation Héros IA}\\\\\n"
+"    \\medskip\n"
+"    \\begin{tabularx}{0.95\\linewidth}{>{\\centering}p{0.12\\linewidth}>{\\raggedright\\arraybackslash}p{0.27\\linewidth}>{\\centering\\arraybackslash}X>{\\centering\\arraybackslash}p{0.27\\linewidth}}\n"
+"      \\darkcell{Ennemi} & \\darkcell{Unités} & \\darkcell{Deck IA} & \\darkcell{Artefacts/Compétences} \\\\\n"
+"      \\darkcellleft[2.8]{Armée Rempart Attaquante \\#1}\n"
+"      & \\lightcellleft[2.8]{«Quelques» Licornes\\\\«Groupe» Pégases\\\\«Groupe» Elfes\\\\«Groupe» Nains\\\\«Quelques» Centaures}\n"
+"      & \\makebox[124pt][r]{\\multirow{4}{*}[12.65ex]{\\lightcellleft[11.75]{3~×~Cartes Force \\svg[12]{might-yellow}\\\\2~×~Cartes Capacité~\\svg{skill-yellow} \\\\\\phantom{.}\\\\ \\textit{Les Armées utilisent le~même Deck. Remélangez après chaque Combat.}}}}\n"
+"      & \\makebox[143pt][r]{\\multirow{4}{*}[12.65ex]{\\lightcellleft[11.75]{1~×~Écu des Ténèbres \\textit{(Effet Haut)}\\\\1~×~Lame Ardente \\textit{(Effet Haut)}\\\\\\phantom{.}\\\\ \\textit{Les Armées utilisent le~même Deck. Remélangez après chaque Combat.}}}} \\\\\n"
+"      \\darkcellleft[2.8]{Armée Château Attaquante \\#1}\n"
+"      & \\lightcellleft[2.8]{«Quelques» Champions\\\\«Groupe» Zélotes\\\\«Groupe» Griffons\\\\«Groupe» Elfes\\\\«Groupe» Arbalétriers}\n"
+"      &\n"
+"      & \\\\\n"
+"      \\darkcellleft[2.8]{Armée Rempart Attaquante \\#2}\n"
+"      & \\lightcellleft[2.8]{«Groupe» Licornes\\\\«Groupe» Sylvaniens\\\\«Quelques» Pégases\\\\«Groupe» Elfes\\\\«Groupe» Nains}\n"
+"      &\n"
+"      & \\\\\n"
+"      \\darkcellleft[2.8]{Armée Château Attaquante \\#2}\n"
+"      & \\lightcellleft[2.8]{«Groupe» Champions\\\\«Groupe» Zélotes\\\\«Quelques» Paladins\\\\«Quelques» Griffons\\\\«Groupe» Hallebardiers}\n"
+"      &\n"
+"      & \\\\\n"
+"      \\darkcellleft[4.4]{Armée Finale Attaquante}\n"
+"      & \\lightcellleft[4.4]{«Quelques» Archanges\\\\«Groupe» Licornes\\\\«Groupe» Champions\\\\«Groupe» Zélotes\\\\«Groupe» Griffons\\\\Machine de Guerre Baliste}\n"
+"      & \\lightcellleft[4.4]{3~×~Cartes Force \\svg[12]{might-yellow}\\\\3~×~Cartes Capacité~\\svg{skill-yellow}}\n"
+"    & \\lightcellleft[4.4]{1~×~Écu des Ténèbres \\textit{(Effet Haut)}\\\\1~×~Lame Ardente \\textit{(Effet Haut)}\\\\1~×~Balistique \\textit{(Effet Basique)}\\\\1~×~Médecine \\textit{(Effet Expert)}} \\\\ \\end{tabularx}\n"
+"  }\n"
+"\\vspace*{-5em}"

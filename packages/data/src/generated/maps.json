@@ -1,0 +1,6869 @@
+[
+ {
+  "id": "arcane_artillery_2p",
+  "tiles": [
+   {
+    "row": 1,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 2,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 4,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "arcane_artillery_3p",
+  "tiles": [
+   {
+    "row": 1,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 2,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 2,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 4,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "arcane_artillery_4p",
+  "tiles": [
+   {
+    "row": 3,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "arcane_artillery_5p",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 5,
+  "supported": true
+ },
+ {
+  "id": "arcane_artillery_6p",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "astral_run",
+  "tiles": [
+   {
+    "row": 10,
+    "col": 10,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 15,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 18,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 17,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 15,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 19,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 14,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "astral_run_short",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 15,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 17,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "blood_ore",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 2,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 1,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "bloody_grail_2p",
+  "tiles": [
+   {
+    "row": 7,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "bloody_grail_4p",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 2,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "brothers_in_arms",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 2,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 11,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 16,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 16,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "chain_link",
+  "tiles": [
+   {
+    "row": 7,
+    "col": 2,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_1_example",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": "S5",
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "far",
+    "tile": "F13",
+    "rotation": 0
+   }
+  ],
+  "seats": 1,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_1",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 1,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_2_example",
+  "tiles": [
+   {
+    "row": 9,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": "#S1",
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "starting",
+    "tile": "S4",
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "far",
+    "tile": "F10",
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": "#F1",
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_2",
+  "tiles": [
+   {
+    "row": 9,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_3_example",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": "#S1",
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "starting",
+    "tile": "S4",
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "starting",
+    "tile": "S2",
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 14,
+    "group": "far",
+    "tile": "F2",
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "far",
+    "tile": "F10",
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "far",
+    "tile": "#F1",
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_3",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 5,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_4_example",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 18,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 15,
+    "group": "far",
+    "tile": "F10",
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "starting",
+    "tile": "S4",
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "starting",
+    "tile": "S3",
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": "S1",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 8,
+    "group": "far",
+    "tile": "F1",
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 14,
+    "group": "far",
+    "tile": "F2",
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "starting",
+    "tile": "S2",
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "far",
+    "tile": "F3",
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_4",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 18,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_5_example",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 8,
+    "group": "starting",
+    "tile": "#S1",
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 5,
+    "group": "starting",
+    "tile": "S5",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 10,
+    "group": "starting",
+    "tile": "S2",
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 15,
+    "group": "starting",
+    "tile": "S6",
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 13,
+    "group": "starting",
+    "tile": "S3",
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "far",
+    "tile": "#F1",
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 11,
+    "group": "far",
+    "tile": "F2",
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 15,
+    "group": "far",
+    "tile": "F3",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 3,
+    "group": "far",
+    "tile": "F13",
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 18,
+    "group": "far",
+    "tile": "F16",
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 20,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 17,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 5,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_5",
+  "tiles": [
+   {
+    "row": 14,
+    "col": 17,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 16,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 19,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 18,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 21,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 5,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_6_example",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 6,
+    "group": "starting",
+    "tile": "#S1",
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 11,
+    "group": "starting",
+    "tile": "S5",
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "starting",
+    "tile": "S2",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "starting",
+    "tile": "S6",
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "starting",
+    "tile": "S3",
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 4,
+    "group": "far",
+    "tile": "#F1",
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 5,
+    "group": "far",
+    "tile": "F2",
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 10,
+    "group": "far",
+    "tile": "F3",
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 13,
+    "group": "far",
+    "tile": "F13",
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 14,
+    "group": "far",
+    "tile": "F16",
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 8,
+    "group": "starting",
+    "tile": "S1",
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 8,
+    "group": "far",
+    "tile": "F1",
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "close_to_enemies_6",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "controlled_chaos",
+  "tiles": [
+   {
+    "row": 1,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 2,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 1,
+  "supported": true
+ },
+ {
+  "id": "controlled_chaos_center",
+  "tiles": [
+   {
+    "row": 4,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 1,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 0,
+  "supported": true
+ },
+ {
+  "id": "dragnarok",
+  "tiles": [
+   {
+    "row": 6,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 1,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 14,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "dragon_valley_2p",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "center",
+    "tile": "C1",
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 10,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 8,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "dragon_valley_3p",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "center",
+    "tile": "C1",
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 12,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 5,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "dragon_valley_4p_short",
+  "tiles": [
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "dragon_valley_4p",
+  "tiles": [
+   {
+    "row": 3,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 15,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 9,
+    "group": "center",
+    "tile": "C1",
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 17,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 11,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 10,
+    "group": "center",
+    "tile": "C3",
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 2,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 8,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "dragoncurse_castle",
+  "tiles": [
+   {
+    "row": 6,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "emerald_1",
+  "tiles": [
+   {
+    "row": 6,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 1,
+  "supported": true
+ },
+ {
+  "id": "emerald_2",
+  "tiles": [
+   {
+    "row": 6,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "emerald_3",
+  "tiles": [
+   {
+    "row": 16,
+    "col": 17,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "emerald_4",
+  "tiles": [
+   {
+    "row": 6,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 18,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "force_of_will_2p",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 5,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "force_of_will_3p",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 5,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "inferno_deal_with_the_devil",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 3,
+    "group": "starting",
+    "tile": "S4",
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "far",
+    "tile": "#F4",
+    "rotation": 2
+   },
+   {
+    "row": 4,
+    "col": 8,
+    "group": "far",
+    "tile": "F17",
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 10,
+    "group": "starting",
+    "tile": "S6",
+    "rotation": 2
+   },
+   {
+    "row": 7,
+    "col": 7,
+    "group": "far",
+    "tile": "F18",
+    "rotation": 1
+   },
+   {
+    "row": 6,
+    "col": 5,
+    "group": "far",
+    "tile": "F6",
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 2,
+    "group": "far",
+    "tile": "F3",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "far",
+    "tile": "F12",
+    "rotation": 5
+   },
+   {
+    "row": 10,
+    "col": 2,
+    "group": "starting",
+    "tile": "S3",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "inferno_devilish_plan",
+  "tiles": [
+   {
+    "row": 5,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 6,
+    "group": "starting",
+    "tile": "S4",
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "center",
+    "tile": "C1",
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 5,
+    "group": "starting",
+    "tile": "S6",
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "inferno_steadwicks_fall",
+  "tiles": [
+   {
+    "row": 3,
+    "col": 2,
+    "group": "starting",
+    "tile": "S3",
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 11,
+    "group": "far",
+    "tile": "F10",
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 11,
+    "group": "starting",
+    "tile": "S6",
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 12,
+    "group": "far",
+    "tile": "F2",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "far",
+    "tile": "F3",
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 2,
+    "group": "far",
+    "tile": "#F1",
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "king_of_the_hill_v2_2p",
+  "tiles": [
+   {
+    "row": 6,
+    "col": 2,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 11,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "king_of_the_hill_v2_3p",
+  "tiles": [
+   {
+    "row": 12,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 12,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 4,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 14,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "king_of_the_hill_6",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "mystical_foreland",
+  "tiles": [
+   {
+    "row": 11,
+    "col": 8,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 13,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 2,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 15,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 15,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 17,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 19,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 21,
+    "col": 5,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 19,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": false
+ },
+ {
+  "id": "obelisk",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 5,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "race_for_the_dragon_isle",
+  "tiles": [
+   {
+    "row": 7,
+    "col": 7,
+    "group": "far",
+    "tile": "#F10",
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 4,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "rise_from_exile_6p",
+  "tiles": [
+   {
+    "row": 10,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 19,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 14,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 1,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "rise_from_exile_short",
+  "tiles": [
+   {
+    "row": 10,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 14,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "rise_from_exile",
+  "tiles": [
+   {
+    "row": 10,
+    "col": 11,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 18,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 16,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 15,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 17,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "secret_bomb_stash_2p",
+  "tiles": [
+   {
+    "row": 17,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "secret_bomb_stash_3p",
+  "tiles": [
+   {
+    "row": 4,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "secret_bomb_stash_4p",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "secret_bomb_stash_6p",
+  "tiles": [
+   {
+    "row": 4,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "sentinels",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 16,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "shattered_alliance",
+  "tiles": [
+   {
+    "row": 4,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 7,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 10,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 8,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 8,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 1,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "shattered_alliance_alt",
+  "tiles": [
+   {
+    "row": 7,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 2,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 3,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 14,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 6,
+  "supported": true
+ },
+ {
+  "id": "the_hunt_2",
+  "tiles": [
+   {
+    "row": 10,
+    "col": 11,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "the_hunt_3",
+  "tiles": [
+   {
+    "row": 10,
+    "col": 11,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 6,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "titans_1",
+  "tiles": [
+   {
+    "row": 3,
+    "col": 13,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 10,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 10,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 1,
+  "supported": true
+ },
+ {
+  "id": "titans_2",
+  "tiles": [
+   {
+    "row": 7,
+    "col": 12,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 2,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "titans_3",
+  "tiles": [
+   {
+    "row": 7,
+    "col": 12,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 9,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 11,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 18,
+    "col": 9,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 2,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 14,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 16,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 16,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 18,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 19,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "trial_by_combat_2.4p",
+  "tiles": [
+   {
+    "row": 8,
+    "col": 5,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 15,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 12,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 13,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 15,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 10,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 16,
+    "col": 9,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 19,
+    "col": 8,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 17,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 13,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 4,
+  "supported": true
+ },
+ {
+  "id": "trial_by_combat_3p",
+  "tiles": [
+   {
+    "row": 2,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 2,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 4,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 7,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 11,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 2,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 12,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 14,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 10,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 13,
+    "col": 8,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 15,
+    "col": 6,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ },
+ {
+  "id": "wandering_dragons_2p",
+  "tiles": [
+   {
+    "row": 1,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 2,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 1,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 3,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 3,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 11,
+    "col": 5,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 14,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 17,
+    "col": 5,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 2,
+  "supported": true
+ },
+ {
+  "id": "wandering_dragons_3p",
+  "tiles": [
+   {
+    "row": 15,
+    "col": 4,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 12,
+    "col": 5,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 9,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 10,
+    "col": 7,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 7,
+    "col": 6,
+    "group": "center",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 8,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 8,
+    "col": 9,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 11,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 5,
+    "col": 13,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 1,
+    "col": 1,
+    "group": "starting",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 3,
+    "col": 3,
+    "group": "far",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 6,
+    "col": 4,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   },
+   {
+    "row": 4,
+    "col": 6,
+    "group": "near",
+    "tile": null,
+    "rotation": 0
+   }
+  ],
+  "seats": 3,
+  "supported": true
+ }
+]

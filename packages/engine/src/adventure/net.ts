@@ -53,6 +53,7 @@ export function mayAct(state: AdventureState, action: AdventureAction, seats: re
     case "play-card":
     case "discard-card":
     case "adjust":
+    case "declare-victory":
       return seats.includes(action.player);
     case "surrender":
       return ph.type === "combat" && seats.includes(sideController(state, action.side)!);

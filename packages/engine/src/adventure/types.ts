@@ -207,7 +207,10 @@ export type Task =
   | { kind: "choice"; player: PlayerId; source: string; options: Op[] };
 
 export interface AdventureState {
+  /** Map layout id. */
   scenario: string;
+  /** Mission Book Scenario played, if any (its texts and timed events are shown to players). */
+  scenarioId?: string | null;
   round: number;
   maxRounds: number;
   difficulty: Difficulty;
@@ -311,6 +314,8 @@ export type AdventureAction =
   | { type: "hire-hero"; at: Hex }
   | { type: "spell-book" }
   | { type: "trade"; sell: Resource; buy: Resource; times: number }
+  /** A Scenario victory condition the engine does not check, met by `player` (game ends with the Round, p. 11). */
+  | { type: "declare-victory"; player: PlayerId }
   /** AI Hero moves and AI cards (p. 49–50): only the engine sends these. */
   | { type: "ai-move"; heroId: string; to: Hex }
   | { type: "ai-card" }

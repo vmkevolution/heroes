@@ -4,7 +4,10 @@ import {
   astrologers,
   FACTIONS,
   getHero,
+  getScenario,
+  getTile,
   getSpell,
+  maps,
   getVariant,
   heroes as heroCards,
   spells,
@@ -33,6 +36,7 @@ import type {
   Op,
   Pile,
   PlacedTile,
+  Resources,
   Player,
   Task,
 } from "./types.ts";
@@ -42,6 +46,9 @@ export interface LayoutSlot {
   group: TileGroup;
   row: number;
   col: number;
+  /** A tile the Scenario fixes (`F12`, `#F4`); otherwise one is drawn from the group. */
+  tile?: string | null;
+  rotation?: number;
 }
 
 /**
@@ -85,7 +92,10 @@ export interface PlayerSetup {
 }
 
 export interface AdventureSetup {
-  layout: keyof typeof LAYOUTS;
+  /** A layout of LAYOUTS: "hunt-2", "hunt-3", or any playable Mission Book map id. */
+  layout: string;
+  /** Mission Book Scenario whose length, resources and income apply (The Hunt's otherwise). */
+  scenario?: string;
   players: PlayerSetup[];
   seed: number;
   difficulty?: Difficulty;
@@ -149,6 +159,35 @@ export function startingBonus(difficulty: Difficulty): Op[] {
   }
 }
 
+/** The layouts above plus every Mission Book map the game data supports. */
+export function layoutOf(id: string): LayoutSlot[] | null {
+  if (LAYOUTS[id]) return LAYOUTS[id]!;
+  const m = maps.find((x) => x.id === id);
+  if (!m?.supported || m.seats === 0) return null;
+  return m.tiles.map((t) => ({ group: t.group, row: t.row, col: t.col, tile: t.tile, rotation: t.rotation }));
+}
+
+/** Factions the map's Starting Tiles impose on each seat (null: free choice). */
+export function seatFactions(id: string): (Faction | null)[] {
+  return (layoutOf(id) ?? []).filter((s) => s.group === "starting").map((s) => (s.tile ? getTile(s.tile).fields[3]!.faction : null));
+}
+
+export const playableMaps = () => maps.filter((m) => m.supported && m.seats > 0).map((m) => m.id);
+
+/** Scenario numbers, falling back to the sandbox (The Hunt) for what the Scenario does not give. */
+export function scenarioRules(id: string | undefined) {
+  const sc = id ? getScenario(id) : null;
+  const res = (r: Record<string, number> | null | undefined, d: Resources): Resources =>
+    r ? { gold: r.gold ?? 0, buildingMaterials: r.buildingMaterials ?? 0, valuables: r.valuables ?? 0 } : { ...d };
+  return {
+    maxRounds: sc?.maxRounds ?? SANDBOX.maxRounds,
+    resources: res(sc?.resources, SANDBOX.resources),
+    production: res(sc?.income, SANDBOX.production),
+    buildings: [...SANDBOX.buildings],
+    tileSupply: SANDBOX.tileSupply,
+  };
+}
+
 export const MAIN_HERO_MP = 3;
 export const SECONDARY_HERO_MP = 2;
 
@@ -194,8 +233,9 @@ export function emptyMarks(): FieldMarks {
 }
 
 export function setupAdventure(setup: AdventureSetup): AdventureState {
-  const layout = LAYOUTS[setup.layout];
+  const layout = layoutOf(setup.layout);
   if (!layout) throw new Error(`unknown layout ${setup.layout}`);
+  const rules = scenarioRules(setup.scenario);
   const starts = layout.filter((s) => s.group === "starting");
   if (setup.players.length !== starts.length) {
     throw new Error(`layout ${setup.layout} needs ${starts.length} players`);
@@ -208,8 +248,9 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
   // Random tiles for every other slot, drawn per group (p. 31); expansions-only tile types stay out.
   const pools: Partial<Record<TileGroup, string[]>> = {};
   for (const group of ["far", "near", "center"] as const) {
+    const fixed = new Set(layout.map((s) => s.tile).filter(Boolean));
     const pool = tiles
-      .filter((t) => t.group === group && inContent(setup.content, t.content))
+      .filter((t) => t.group === group && inContent(setup.content, t.content) && !fixed.has(t.id))
       .filter((t) => !t.fields.some((f) => f.location === "random_town") || FACTIONS.length > setup.players.length)
       .map((t) => t.id);
     rng = shuffle(pool, rng);
@@ -235,9 +276,12 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
     if (slot.group === "starting") {
       const p = setup.players[seat]!;
       const id = `p${seat + 1}`;
-      const tile = startingTileOf(p.faction);
-      placed.push({ tileId: tile.id, group: "starting", center, rotation: 0, faceUp: true });
-      const town = fieldHex(center, 0, 3);
+      const tile = slot.tile ? getTile(slot.tile) : startingTileOf(p.faction);
+      const townFaction = tile.fields[3]!.faction;
+      if (townFaction && townFaction !== p.faction) throw new Error(`seat ${seat + 1} plays ${townFaction} on this map`);
+      const rotation = slot.rotation ?? 0;
+      placed.push({ tileId: tile.id, group: "starting", center, rotation, faceUp: true });
+      const town = fieldHex(center, rotation, 3);
       marks[hexKey(town)] = { ...emptyMarks(), flag: id, everFlagged: true };
       const army = sandboxArmy(p.faction);
       const hero = p.hero ? getHero(p.hero) : defaultHero(p.faction);
@@ -255,10 +299,10 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
         permanent: null,
         expertUsed: 0,
         levelRewarded: 1,
-        town: { buildings: [...SANDBOX.buildings], used: { build: false, population: false, spellBook: false }, mageGuildRound: null },
+        town: { buildings: [...rules.buildings], used: { build: false, population: false, spellBook: false }, mageGuildRound: null },
         trading: false,
-        resources: { ...SANDBOX.resources },
-        production: { ...SANDBOX.production },
+        resources: { ...rules.resources },
+        production: { ...rules.production },
         army: army.map((u) => ({ ...u })),
         startingArmy: army,
         morale: 0,
@@ -285,10 +329,13 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
       }
       seat += 1;
     } else {
-      placed.push({ tileId: draw(slot.group), group: slot.group, center, rotation: 0, faceUp: false });
+      placed.push({ tileId: slot.tile ?? draw(slot.group), group: slot.group, center, rotation: slot.rotation ?? 0, faceUp: false });
     }
   }
-  for (const p of players) for (let i = 0; i < SANDBOX.tileSupply; i++) p.tileSupply.push(draw("far"));
+  const computers = players.filter((_, i) => setup.players[i]!.computer).map((p) => p.id);
+  // AI Heroes take their Turns after the players (p. 49), whatever seat they hold on the map.
+  players.sort((x, y) => Number(x.id in aiHeroes) - Number(y.id in aiHeroes));
+  for (const p of players) for (let i = 0; i < rules.tileSupply; i++) p.tileSupply.push(draw("far"));
 
   const [neutralPiles, rng2] = neutralDecks(setup.content, rng);
   rng = rng2;
@@ -321,8 +368,9 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
 
   const state: AdventureState = {
     scenario: setup.layout,
+    scenarioId: setup.scenario ?? null,
     round: 1,
-    maxRounds: SANDBOX.maxRounds,
+    maxRounds: rules.maxRounds,
     difficulty: setup.difficulty ?? "normal",
     players,
     current: 0,
@@ -337,7 +385,7 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
     victoryPending: [],
     ai: {
       neutrals: setup.neutralAI ?? setup.players.filter((p) => !p.computer && !p.aiHero).length < 2,
-      players: players.filter((_, i) => setup.players[i]!.computer).map((p) => p.id),
+      players: computers,
       heroes: aiHeroes,
     },
     rng,

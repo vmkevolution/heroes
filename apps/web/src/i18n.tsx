@@ -3,6 +3,7 @@ import { advEn, advFr } from "./i18n-adventure.ts";
 import { cardsEn, cardsFr } from "./i18n-cards.ts";
 import { netEn, netFr } from "./i18n-net.ts";
 import { aiEn, aiFr } from "./i18n-ai.ts";
+import { scEn, scFr, townEn, townFr } from "./i18n-scenario.ts";
 
 export type Lang = "fr" | "en";
 
@@ -78,6 +79,8 @@ const fr = {
   cards: cardsFr,
   net: netFr,
   ai: aiFr,
+  sc: scFr,
+  town: townFr,
 };
 
 const en: typeof fr = {
@@ -152,6 +155,8 @@ const en: typeof fr = {
   cards: cardsEn,
   net: netEn,
   ai: aiEn,
+  sc: scEn,
+  town: townEn,
 };
 
 export type Messages = typeof fr;
