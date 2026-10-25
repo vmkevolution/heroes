@@ -1,8 +1,8 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { astrologers, getVariant, type Resource } from "@heroes/data";
 import {
   actingPlayer,
-  applyAdventureAction,
+  playersToAct,
   AUTOMATED_ASTROLOGERS,
   canReinforceAtSettlement,
   canRevisit,
@@ -27,6 +27,7 @@ import {
   type Hex,
   type PlacedTile,
   type Player,
+  type PlayerId,
   type Side,
 } from "@heroes/engine";
 import { useI18n, type Messages } from "../i18n.tsx";
@@ -57,10 +58,23 @@ const backImage = (group: string) => `${import.meta.env.BASE_URL}tiles/back-${BA
 
 type Pending = { kind: "discover" | "place"; center: Hex; tileId: string; rotation: number; tileIndex?: number };
 
-export function AdventureScreen({ initial }: { initial: AdventureState }) {
+/**
+ * The adventure board. The game itself lives in the session (hotseat, host or guest): `onAction`
+ * returns an error message or null, and `local` says which players sit at this screen.
+ */
+export function AdventureScreen({
+  state,
+  onAction,
+  local,
+  session,
+}: {
+  state: AdventureState;
+  onAction: (action: AdventureAction) => string | null;
+  local: (player: PlayerId) => boolean;
+  session?: ReactNode;
+}) {
   const { t } = useI18n();
   const a = t.adv;
-  const [state, setState] = useState(initial);
   const [selected, setSelected] = useState<string | null>(null);
   const [hover, setHover] = useState<Hex | null>(null);
   const [pending, setPending] = useState<Pending | null>(null);
@@ -76,15 +90,14 @@ export function AdventureScreen({ initial }: { initial: AdventureState }) {
   };
 
   const act = (action: AdventureAction) => {
-    try {
-      setState(applyAdventureAction(state, action));
-      setError(null);
+    const err = onAction(action);
+    setError(err);
+    if (!err) {
       setPending(null);
       setPlacing(null);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e));
     }
   };
+  const myMove = playersToAct(state).some(local);
 
   const me = currentPlayer(state);
   const myHeroes = state.heroes.filter((h) => h.owner === me.id);
@@ -142,7 +155,7 @@ export function AdventureScreen({ initial }: { initial: AdventureState }) {
   }, [state.tiles, slots]);
 
   if (ph.type === "combat") {
-    return <CombatPanel state={state} act={act} error={error} playerName={playerName} />;
+    return <CombatPanel state={state} act={act} error={error} playerName={playerName} local={local} session={session} />;
   }
 
   const acting = actingPlayer(state);
@@ -237,8 +250,15 @@ export function AdventureScreen({ initial }: { initial: AdventureState }) {
       </div>
 
       <aside className="side adventure-side">
+        {session}
         {error && <p className="error">{error}</p>}
-        <PhaseBox state={state} act={act} heroName={heroName} playerName={playerName} />
+        {myMove || ph.type === "over" ? (
+          <PhaseBox state={state} act={act} heroName={heroName} playerName={playerName} />
+        ) : (
+          <div className="panel phase waiting">
+            <p>{t.net.waitingFor(playersToAct(state).map(playerName).join(", "))}</p>
+          </div>
+        )}
 
         {pending && (
           <div className="panel">
@@ -270,7 +290,7 @@ export function AdventureScreen({ initial }: { initial: AdventureState }) {
           </div>
         )}
 
-        {inTurn && hero && (
+        {inTurn && myMove && hero && (
           <div className="panel" style={{ borderLeft: `4px solid ${playerColor(me.id)}` }}>
             <h3>{a.turnOf(me.name)}</h3>
             {myHeroes.length > 1 && (
@@ -306,7 +326,7 @@ export function AdventureScreen({ initial }: { initial: AdventureState }) {
           </div>
         )}
 
-        {inTurn && (
+        {inTurn && myMove && (
           <>
             <TradePanel player={me} act={act} />
             <HandPanel state={state} player={me} act={act} context={{ combat: null, side: null, unitNames: new Map() }} />
@@ -651,11 +671,15 @@ function CombatPanel({
   act,
   error,
   playerName,
+  local,
+  session,
 }: {
   state: AdventureState;
   act: (a: AdventureAction) => void;
   error: string | null;
   playerName: (id: string | null) => string;
+  local: (player: PlayerId) => boolean;
+  session?: ReactNode;
 }) {
   const { t } = useI18n();
   const a = t.adv;
@@ -685,7 +709,9 @@ function CombatPanel({
       <h2>
         {sideNames.attacker} {a.vs} {sideNames.defender}
       </h2>
+      {session}
       {error && <p className="error">{error}</p>}
+      {!playersToAct(state).some(local) && <p className="muted">{t.net.waitingFor(playersToAct(state).map(playerName).join(", "))}</p>}
       <CombatView
         state={combat}
         onAction={(action) => act({ type: "combat", action })}
@@ -703,7 +729,7 @@ function CombatPanel({
             )}
             {(["attacker", "defender"] as const).map((side) => {
               const owner = sidePlayer(state, ph.context, side);
-              if (!owner || cardSide(state, ph.context, owner) !== side) return null;
+              if (!owner || !local(owner) || cardSide(state, ph.context, owner) !== side) return null;
               return (
                 <HandPanel
                   key={side}

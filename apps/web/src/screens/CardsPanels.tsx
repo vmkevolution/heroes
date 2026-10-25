@@ -342,6 +342,7 @@ export function RefreshBox({ state, act }: { state: AdventureState; act: (a: Adv
           />
         ))}
       </div>
+      {tooMany && <p className="warn small">{t.cards.refreshTooMany(p.hand.length - discard.length - limit)}</p>}
       <button className="btn primary" disabled={tooMany} onClick={() => act({ type: "refresh", discard })}>
         {t.cards.refreshDo(discard.length)}
       </button>

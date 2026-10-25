@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroes/data": "*",
     "@heroes/engine": "*",
+    "peerjs": "^1.5.4",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
