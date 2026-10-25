@@ -61,6 +61,8 @@ function SessionPanel({ session, onHost }: { session: Session; onHost: (record: 
       ? n.seatYou
       : id === ""
         ? n.seatFree
+        : id === "ai"
+          ? t.ai.kinds.computer
         : id === "host"
           ? n.hostName(session.names.host || "?")
           : (session.names[id] ?? "?");

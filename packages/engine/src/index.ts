@@ -49,4 +49,6 @@ export {
   TRADE_RATES,
 } from "./adventure/town.ts";
 export * from "./adventure/net.ts";
-export { botAction, combatBotAction } from "./adventure/bot.ts";
+export { armyPower, automatedAction, botAction, combatBotAction } from "./adventure/bot.ts";
+export { AI_CARDS, aiMod, defaultAiHero, isAiHero, type AiHeroSetup, type AiHeroState, type AiCardId } from "./adventure/aihero.ts";
+export * from "./combat/ai.ts";

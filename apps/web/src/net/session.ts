@@ -14,8 +14,8 @@ export type SessionMode =
   | { kind: "guest"; room: string; name: string };
 
 /**
- * Who sits where: player id → peer id ("host" or a guest link id), or "" for a free seat. Free seats are
- * played on the host's screen until a guest takes them.
+ * Who sits where: player id → peer id ("host" or a guest link id), "ai" for computer players, or ""
+ * for a free seat. Free seats are played on the host's screen until a guest takes them.
  */
 export type Seats = Record<PlayerId, string>;
 
@@ -79,7 +79,11 @@ export function useSession(mode: SessionMode, notYourTurn: string): Session {
     ref.current = {
       state,
       record,
-      seats: state ? Object.fromEntries(state.players.map((p, i) => [p.id, i === 0 ? "host" : ""])) : {},
+      seats: state
+        ? Object.fromEntries(
+            state.players.map((p, i) => [p.id, state.ai.players.includes(p.id) || p.id in state.ai.heroes ? "ai" : i === 0 ? "host" : ""]),
+          )
+        : {},
       names: mode.kind === "guest" ? {} : { host: mode.kind === "host" ? mode.name : "" },
       me: mode.kind === "guest" ? "" : "host",
       status: mode.kind === "guest" ? "connecting" : "ready",
@@ -196,7 +200,10 @@ export function useSession(mode: SessionMode, notYourTurn: string): Session {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const local = (p: PlayerId) => seatsOf(s.me).includes(p) || mode.kind === "local";
+  const local = (p: PlayerId) => {
+    const ai = s.state !== null && (s.state.ai.players.includes(p) || p in s.state.ai.heroes);
+    return !ai && (mode.kind === "local" || seatsOf(s.me).includes(p));
+  };
 
   const act = (action: AdventureAction): string | null => {
     if (!s.state) return null;

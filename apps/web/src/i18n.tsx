@@ -2,6 +2,7 @@ import { createContext, useContext, useState, type ReactNode } from "react";
 import { advEn, advFr } from "./i18n-adventure.ts";
 import { cardsEn, cardsFr } from "./i18n-cards.ts";
 import { netEn, netFr } from "./i18n-net.ts";
+import { aiEn, aiFr } from "./i18n-ai.ts";
 
 export type Lang = "fr" | "en";
 
@@ -76,6 +77,7 @@ const fr = {
   adv: advFr,
   cards: cardsFr,
   net: netFr,
+  ai: aiFr,
 };
 
 const en: typeof fr = {
@@ -149,6 +151,7 @@ const en: typeof fr = {
   adv: advEn,
   cards: cardsEn,
   net: netEn,
+  ai: aiEn,
 };
 
 export type Messages = typeof fr;

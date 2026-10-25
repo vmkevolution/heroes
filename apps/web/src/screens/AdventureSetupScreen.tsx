@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FACTIONS, heroes, type Faction } from "@heroes/data";
-import { defaultHero } from "@heroes/engine";
+import { defaultAiHero, defaultHero } from "@heroes/engine";
 import type { AdventureSetup, Difficulty } from "@heroes/engine";
 import { useI18n } from "../i18n.tsx";
 
@@ -10,21 +10,33 @@ export function AdventureSetupScreen({ onStart }: { onStart: (setup: AdventureSe
   const { t } = useI18n();
   const a = t.adv;
   const [count, setCount] = useState<2 | 3>(2);
-  const [players, setPlayers] = useState<{ name: string; faction: Faction; hero: string }[]>([
-    { name: "Joueur 1", faction: "castle", hero: defaultHero("castle").id },
-    { name: "Joueur 2", faction: "necropolis", hero: defaultHero("necropolis").id },
-    { name: "Joueur 3", faction: "dungeon", hero: defaultHero("dungeon").id },
+  type Kind = "human" | "computer" | "aiHero";
+  const [players, setPlayers] = useState<{ name: string; faction: Faction; hero: string; kind: Kind }[]>([
+    { name: "Joueur 1", faction: "castle", hero: defaultHero("castle").id, kind: "human" },
+    { name: "Joueur 2", faction: "necropolis", hero: defaultHero("necropolis").id, kind: "human" },
+    { name: "Joueur 3", faction: "dungeon", hero: defaultHero("dungeon").id, kind: "human" },
   ]);
+  const [neutralAI, setNeutralAI] = useState<boolean | null>(null);
   const [difficulty, setDifficulty] = useState<Difficulty>("normal");
   const chosen = players.slice(0, count);
+  const humans = chosen.filter((p) => p.kind === "human").length;
+  const neutrals = neutralAI ?? humans < 2;
   const duplicate = new Set(chosen.map((p) => p.faction)).size !== chosen.length;
-  const invalid = duplicate || chosen.some((p) => !p.name.trim());
+  const invalid = duplicate || chosen.some((p) => !p.name.trim()) || humans === 0 || chosen[0]!.kind !== "human";
 
   const start = (online: boolean) =>
     onStart(
       {
         layout: count === 2 ? "hunt-2" : "hunt-3",
-        players: chosen,
+        // AI Heroes take their Turns after the players (p. 49).
+        players: [...chosen.filter((p) => p.kind !== "aiHero"), ...chosen.filter((p) => p.kind === "aiHero")].map((p) => ({
+          name: p.name,
+          faction: p.faction,
+          hero: p.hero,
+          computer: p.kind === "computer" || undefined,
+          aiHero: p.kind === "aiHero" ? defaultAiHero(p.faction) : undefined,
+        })),
+        neutralAI: neutrals,
         seed: Math.floor(Math.random() * 2 ** 31),
         difficulty,
       },
@@ -62,6 +74,20 @@ export function AdventureSetupScreen({ onStart }: { onStart: (setup: AdventureSe
             <strong>
               {a.player} {i + 1}
             </strong>
+            <label>
+              {t.ai.seatKind}{" "}
+              <select
+                value={p.kind}
+                disabled={i === 0}
+                onChange={(e) => setPlayers(players.map((x, j) => (j === i ? { ...x, kind: e.target.value as Kind } : x)))}
+              >
+                {(["human", "computer", "aiHero"] as const).map((k) => (
+                  <option key={k} value={k}>
+                    {t.ai.kinds[k]}
+                  </option>
+                ))}
+              </select>
+            </label>
             <label>
               {a.name}{" "}
               <input
@@ -104,6 +130,11 @@ export function AdventureSetupScreen({ onStart }: { onStart: (setup: AdventureSe
           </div>
         ))}
         {duplicate && <p className="error">{a.duplicateFaction}</p>}
+        <p className="muted small">{t.ai.kindHint}</p>
+        <label className="chk" title={t.ai.neutralAIHint}>
+          <input type="checkbox" checked={neutrals} onChange={(e) => setNeutralAI(e.target.checked)} /> {t.ai.neutralAI}
+        </label>
+        <p className="muted small">{t.ai.neutralAIHint}</p>
       </section>
 
       <div className="start-row">
