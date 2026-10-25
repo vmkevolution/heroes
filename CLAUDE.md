@@ -16,4 +16,4 @@ Browser version of *Heroes of Might & Magic III: The Board Game*. Rules follow t
 
 ## Commands
 
-`npm test`, `npm run typecheck`, `npm run build`, `npm run dev`, `npm run import-wiki`.
+`npm test`, `npm run typecheck`, `npm run build`, `npm run build:offline` (copy that opens from file://), `npm run dev`, `npm run import-wiki`, `npm run import-mission-book`.

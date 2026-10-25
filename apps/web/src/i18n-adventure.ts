@@ -61,7 +61,7 @@ const titleCase = (slug: string) => slug.replace(/_/g, " ").replace(/\b\w/g, (c)
 export const advFr = {
   home: "Choisissez un mode",
   modeAdventure: "Partie sur la carte",
-  modeAdventureHint: "Escarmouche à 2 ou 3 joueurs sur le même écran : carte, héros, mines, combats.",
+  modeAdventureHint: "Escarmouche, scénarios et campagnes du Mission Book, de 1 à 6 joueurs : sur le même écran, contre l'ordinateur ou en ligne.",
   modeCombat: "Combat libre",
   modeCombatHint: "Un combat seul, pour tester les règles de combat.",
   back: "Retour",
@@ -201,7 +201,7 @@ export const advEn: typeof advFr = {
   ...advFr,
   home: "Choose a mode",
   modeAdventure: "Map game",
-  modeAdventureHint: "2 or 3 player skirmish on one screen: map, heroes, mines, combat.",
+  modeAdventureHint: "Skirmish, Mission Book scenarios and campaigns, 1 to 6 players: on one screen, against the computer or online.",
   modeCombat: "Free combat",
   modeCombatHint: "A single combat, to test the combat rules.",
   back: "Back",

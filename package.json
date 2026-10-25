@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "npm run dev -w @heroes/web",
     "build": "npm run build -w @heroes/web",
+    "build:offline": "npm run build:offline -w @heroes/web",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
     "import-wiki": "tsx packages/data/scripts/import-wiki.ts",
