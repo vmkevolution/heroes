@@ -18,6 +18,8 @@ import {
 } from "@heroes/data";
 import type { RngState } from "../rng.ts";
 import { flushQueue } from "./cardplay.ts";
+import { runAutomation } from "./bot.ts";
+import { buildAiDeck, type AiHeroSetup, type AiHeroState } from "./aihero.ts";
 import { shuffle } from "./dice.ts";
 import { editorCellToHex, fieldHex, hexKey, subHex, type Hex } from "./hex.ts";
 import type { DeckName } from "./cards.ts";
@@ -76,6 +78,10 @@ export interface PlayerSetup {
   faction: Faction;
   /** Main Hero (wiki hero id); defaults to the Faction's first Core Game Hero. */
   hero?: string;
+  /** Played by the computer. */
+  computer?: boolean;
+  /** An AI Hero of a Campaign or Cooperative Scenario (p. 49), with its AI Deck. */
+  aiHero?: AiHeroSetup;
 }
 
 export interface AdventureSetup {
@@ -83,6 +89,11 @@ export interface AdventureSetup {
   players: PlayerSetup[];
   seed: number;
   difficulty?: Difficulty;
+  /**
+   * Neutral Units follow the AI rules (p. 48). In Clash games the enemy player normally controls them
+   * (p. 41); by default the AI takes over when fewer than two humans play.
+   */
+  neutralAI?: boolean;
   /** Boxes whose tiles and neutral units are in play (wiki "Comes With" names). All by default. */
   content?: string[];
 }
@@ -218,6 +229,7 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
   const heroes: Hero[] = [];
   const marks: Record<string, FieldMarks> = {};
   let seat = 0;
+  const aiHeroes: Record<string, AiHeroState> = {};
   for (const slot of layout) {
     const center = subHex(editorCellToHex(slot.row, slot.col), origin);
     if (slot.group === "starting") {
@@ -256,6 +268,21 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
         eliminated: false,
       });
       heroes.push({ id: `${id}-main`, owner: id, kind: "main", pos: town, lastVisited: town, mp: MAIN_HERO_MP, bonusMp: 0, experience: 0 });
+      if (p.aiHero) {
+        // AI Heroes have no Town Board, Resources or Hero Board (p. 49).
+        const me = players[players.length - 1]!;
+        me.deck = [];
+        me.town.buildings = [];
+        me.resources = { gold: 0, buildingMaterials: 0, valuables: 0 };
+        me.production = { gold: 0, buildingMaterials: 0, valuables: 0 };
+        if (p.aiHero.army) {
+          me.army = p.aiHero.army.map((u) => ({ ...u }));
+          me.startingArmy = p.aiHero.army.map((u) => ({ ...u }));
+        }
+        const [ai, r] = buildAiDeck(p.aiHero, rng);
+        rng = r;
+        aiHeroes[id] = ai;
+      }
       seat += 1;
     } else {
       placed.push({ tileId: draw(slot.group), group: slot.group, center, rotation: 0, faceUp: false });
@@ -287,7 +314,9 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
 
   const queue: Task[] = [];
   const bonus = startingBonus(setup.difficulty ?? "normal");
-  if (bonus.length) for (const p of players) queue.push({ kind: "choice", player: p.id, source: "starting-bonus", options: bonus });
+  if (bonus.length) {
+    for (const p of players) if (!aiHeroes[p.id]) queue.push({ kind: "choice", player: p.id, source: "starting-bonus", options: bonus });
+  }
   queue.push({ kind: "refresh", player: players[0]!.id });
 
   const state: AdventureState = {
@@ -306,11 +335,17 @@ export function setupAdventure(setup: AdventureSetup): AdventureState {
     astrologers: { deck: astroDeck, current: null, drawn: 0 },
     effects: { extraMp: 0, nextIncome: {} },
     victoryPending: [],
+    ai: {
+      neutrals: setup.neutralAI ?? setup.players.filter((p) => !p.computer && !p.aiHero).length < 2,
+      players: players.filter((_, i) => setup.players[i]!.computer).map((p) => p.id),
+      heroes: aiHeroes,
+    },
     rng,
     phase: { type: "turn" },
     log: [{ type: "round-start", round: 1, resourceRound: false }, { type: "turn-start", player: players[0]!.id }],
   };
   flushQueue(state);
+  runAutomation(state);
   return state;
 }
 

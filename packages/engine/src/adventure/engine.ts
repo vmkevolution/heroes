@@ -41,6 +41,8 @@ import {
   takeFromDeck,
 } from "./cardplay.ts";
 import { cardInfo } from "./cards.ts";
+import { runAutomation } from "./bot.ts";
+import { aiReactionBonus, isAiHero, resetAiDecks, resolveAiCard } from "./aihero.ts";
 import { build, cityHallOptions, cityHallRound, hireHero, recruit, refreshTowns, spellBook, trade } from "./town.ts";
 import {
   changeMorale,
@@ -219,11 +221,23 @@ export function sidePlayer(state: AdventureState, ctx: CombatContext, side: Side
 // Actions
 
 export function applyAdventureAction(prev: AdventureState, action: AdventureAction): AdventureState {
+  const state = stepAdventure(prev, action);
+  runAutomation(state);
+  return state;
+}
+
+/** One action without the moves the engine then makes for the AI (used by the AI to test its options). */
+export function stepAdventure(prev: AdventureState, action: AdventureAction): AdventureState {
   const state = structuredClone(prev);
+  applyInPlace(state, action);
+  return state;
+}
+
+/** Applies an action to a state being built (no clone). */
+export function applyInPlace(state: AdventureState, action: AdventureAction) {
   apply(state, action);
   autoPass(state);
   flushQueue(state);
-  return state;
 }
 
 function apply(state: AdventureState, action: AdventureAction): AdventureState {
@@ -241,6 +255,40 @@ function apply(state: AdventureState, action: AdventureAction): AdventureState {
       hero.pos = { ...action.to };
       log(state, { type: "move", heroId: hero.id, to: hero.pos });
       enterField(state, hero);
+      return state;
+    }
+    case "ai-move": {
+      const hero = getHero(state, action.heroId);
+      if (!isAiHero(state, hero.owner) || ph.type !== "turn" || currentPlayer(state).id !== hero.owner) throw new IllegalAction("only AI Heroes");
+      const info = fieldAt(state, action.to);
+      if (!areAdjacent(hero.pos, action.to) || !info?.tile.faceUp || categoryOf(info.field.location) === "blocked") {
+        throw new IllegalAction("the AI Hero cannot move there");
+      }
+      spendMp(hero, 1);
+      hero.pos = { ...action.to };
+      log(state, { type: "move", heroId: hero.id, to: hero.pos });
+      aiEnterField(state, hero);
+      return state;
+    }
+    case "ai-card": {
+      if (ph.type !== "combat" || ph.combat.phase.type !== "activation") throw new IllegalAction("no AI unit activating");
+      const uid = ph.combat.phase.uid;
+      const unit = ph.combat.units.find((u) => u.uid === uid)!;
+      const owner = sidePlayer(state, ph.context, unit.side);
+      if (!owner || !isAiHero(state, owner)) throw new IllegalAction("only AI Heroes draw AI cards");
+      const ai = state.ai.heroes[owner]!;
+      const key = `${ph.combat.round}:${uid}`;
+      if (ai.drawnFor === key) throw new IllegalAction("this activation already drew its AI card");
+      ai.drawnFor = key;
+      const r = resolveAiCard(state, owner, ph.combat, uid);
+      if (r.card) log(state, { type: "ai-card", player: owner, card: r.card, spell: r.spell, skill: r.skill });
+      for (const effect of r.effects) {
+        ph.combat = applyCombatAction(ph.combat, { type: "effect", side: unit.side, effect, source: r.spell ?? "AI" });
+        if (ph.combat.phase.type === "over") {
+          finishCombat(state, ph.context, ph.combat);
+          break;
+        }
+      }
       return state;
     }
     case "revisit": {
@@ -360,6 +408,9 @@ function apply(state: AdventureState, action: AdventureAction): AdventureState {
     }
     case "surrender": {
       if (ph.type !== "combat" || ph.context.foe.kind === "neutral") throw new IllegalAction("nobody to surrender to");
+      if ((["attacker", "defender"] as const).some((s) => isAiHero(state, sidePlayer(state, ph.context, s)))) {
+        throw new IllegalAction("AI Heroes cannot surrender and you cannot surrender to them (p. 49)");
+      }
       const cph = ph.combat.phase;
       if (cph.type !== "activation" || ph.combat.units.find((u) => u.uid === cph.uid)?.side !== action.side) {
         throw new IllegalAction("surrender instead of activating one of your units (p. 44)");
@@ -449,6 +500,11 @@ function autoPass(state: AdventureState) {
     if (cph.type !== "reaction") return;
     const side = (["attacker", "defender"] as const).find((s) => !cph.passed[s] && !canPlayCards(state, ph.context, s));
     if (!side) return;
+    const owner = sidePlayer(state, ph.context, side);
+    if (owner && isAiHero(state, owner)) {
+      const bonus = aiReactionBonus(state, owner, ph.combat, side);
+      if (bonus) ph.combat = applyCombatAction(ph.combat, { type: "modify", side, stat: bonus.stat, amount: bonus.amount, source: "AI" });
+    }
     ph.combat = applyCombatAction(ph.combat, { type: "pass", side });
     if (ph.combat.phase.type === "over") {
       finishCombat(state, ph.context, ph.combat);
@@ -614,7 +670,7 @@ function controlsBase(state: AdventureState, player: PlayerId): boolean {
 function endRound(state: AdventureState) {
   // Elimination after 3 full Rounds without a Town or Settlement (p. 11).
   for (const p of state.players) {
-    if (p.eliminated) continue;
+    if (p.eliminated || isAiHero(state, p.id)) continue;
     p.roundsWithoutBase = controlsBase(state, p.id) ? 0 : p.roundsWithoutBase + 1;
     if (p.roundsWithoutBase >= 3) eliminate(state, p);
   }
@@ -756,6 +812,42 @@ function enterField(state: AdventureState, hero: Hero) {
     }
   }
   visit(state, hero);
+}
+
+/**
+ * AI Heroes automatically win Combat against Neutral Units, flag or visit every Field they move
+ * through and gain nothing from them (p. 49). Player Heroes and Towns are fought as usual.
+ */
+function aiEnterField(state: AdventureState, hero: Hero) {
+  const info = fieldAt(state, hero.pos)!;
+  const m = marksAt(state, hero.pos);
+  const loc = info.field.location;
+  const enemy = state.heroes.find((h) => h.owner !== hero.owner && sameHex(h.pos, hero.pos));
+  const ownedBase = (loc === "town" || loc === "settlement" || loc === "random_town") && m.flag && m.flag !== hero.owner;
+  if (enemy || ownedBase) {
+    enterField(state, hero);
+    return;
+  }
+  hero.lastVisited = { ...hero.pos };
+  const marks = editMarks(state, hero.pos);
+  if (isGuarded(state, info, m)) {
+    marks.cleared = true;
+    log(state, { type: "quick-combat", heroId: hero.id, hex: hero.pos });
+  }
+  const cat = categoryOf(loc);
+  if (cat === "visitable") marks.blackCube = true;
+  if (cat === "flaggable" && marks.flag !== hero.owner) {
+    const previous = marks.flag;
+    if (previous) {
+      if (loc === "mine" && info.field.resource) changeProduction(state, previous, info.field.resource, -MINE_OUTPUT[info.field.resource]);
+      if (loc === "settlement" && marks.settlementResource) changeProduction(state, previous, marks.settlementResource, -SETTLEMENT_OUTPUT[marks.settlementResource]);
+      if (loc === "random_town") changeProduction(state, previous, "gold", -RANDOM_TOWN_GOLD);
+    }
+    marks.flag = hero.owner;
+    marks.everFlagged = true;
+    marks.settlementResource = null;
+    log(state, { type: "flag", player: hero.owner, hex: hero.pos, location: loc, from: previous });
+  }
 }
 
 function isGuarded(state: AdventureState, info: FieldInfo, m: FieldMarks): boolean {
@@ -1234,6 +1326,9 @@ export { canReinforceAtSettlement };
 
 function beginCombat(state: AdventureState, hero: Hero, foe: Foe) {
   log(state, { type: "combat-start", heroId: hero.id, foe });
+  // The AI Deck and AI Spell Deck are shuffled with their discard piles before each Combat (p. 50).
+  const sides = [hero.owner, foe.kind === "hero" ? getHero(state, foe.heroId).owner : foe.kind === "siege" ? foe.defender : null];
+  for (const p of sides) if (p && isAiHero(state, p)) resetAiDecks(state, p);
   state.phase = { type: "combat-setup", context: { attackerHero: hero.id, foe, picks: {}, placements: {} }, side: "attacker" };
 }
 
@@ -1362,13 +1457,13 @@ function finishCombat(state: AdventureState, ctx: CombatContext, combat: CombatS
   });
   const defHero = ctx.foe.kind === "hero" ? getHero(state, ctx.foe.heroId) : null;
   if (winnerSide === "attacker") {
-    if (defHero && hero.kind === "main" && defHero.kind === "main") {
+    if (defHero && hero.kind === "main" && defHero.kind === "main" && !isAiHero(state, defHero.owner) && !isAiHero(state, hero.owner)) {
       gainExperience(state, hero, experienceFor(heroLevel(state, hero), heroLevel(state, defHero)));
     }
     if (defHero) defeatHero(state, defHero, attacker);
     if (!isOver(state) && state.heroes.includes(hero)) visit(state, hero);
   } else {
-    if (winnerSide === "defender" && defHero && defHero.kind === "main" && hero.kind === "main") {
+    if (winnerSide === "defender" && defHero && defHero.kind === "main" && hero.kind === "main" && !isAiHero(state, hero.owner) && !isAiHero(state, defHero.owner)) {
       gainExperience(state, defHero, experienceFor(heroLevel(state, defHero), heroLevel(state, hero)));
     }
     defeatHero(state, hero, winnerSide === "defender" ? defender : null);
@@ -1385,6 +1480,13 @@ function finishCombat(state: AdventureState, ctx: CombatContext, combat: CombatS
  */
 function defeatHero(state: AdventureState, hero: Hero, by: Player | null) {
   const owner = getPlayer(state, hero.owner);
+  if (isAiHero(state, owner.id)) {
+    // AI Heroes fight until they run out of units (p. 49): a beaten AI Hero is out of the game.
+    log(state, { type: "hero-defeated", heroId: hero.id, movedTo: null });
+    eliminate(state, owner);
+    return;
+  }
+  if (by && isAiHero(state, by.id)) by = null;
   if (by) {
     by.factionCubes.push(owner.id);
     if (hero.kind === "main") {

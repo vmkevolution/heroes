@@ -3,6 +3,7 @@ import type { DeckName } from "./cards.ts";
 import type { RngState } from "../rng.ts";
 import type { CombatState, Placement, Side } from "../combat/types.ts";
 import type { Hex } from "./hex.ts";
+import type { AiHeroState } from "./aihero.ts";
 
 export type PlayerId = string;
 export type Resources = Record<Resource, number>;
@@ -225,6 +226,8 @@ export interface AdventureState {
   effects: { extraMp: number; nextIncome: Partial<Resources> };
   /** A victory condition was met: the game ends at the end of this Round (p. 11). */
   victoryPending: PlayerId[];
+  /** Who the engine plays: Neutral Units (p. 48) and computer-controlled players. */
+  ai: { neutrals: boolean; players: PlayerId[]; heroes: Record<PlayerId, AiHeroState> };
   rng: RngState;
   phase: AdventurePhase;
   log: AdventureEvent[];
@@ -267,6 +270,7 @@ export type AdventureEvent =
   | { type: "hire-hero"; player: PlayerId; heroId: string }
   | { type: "trade"; player: PlayerId; sell: Resource; buy: Resource; times: number }
   | { type: "building-effect"; player: PlayerId; slot: BuildingSlot }
+  | { type: "ai-card"; player: PlayerId; card: string; spell: string | null; skill: string | null }
   | { type: "game-over"; winners: PlayerId[] };
 
 export type AdventureAction =
@@ -307,5 +311,8 @@ export type AdventureAction =
   | { type: "hire-hero"; at: Hex }
   | { type: "spell-book" }
   | { type: "trade"; sell: Resource; buy: Resource; times: number }
+  /** AI Hero moves and AI cards (p. 49–50): only the engine sends these. */
+  | { type: "ai-move"; heroId: string; to: Hex }
+  | { type: "ai-card" }
   /** Hand-resolved card effects: players apply what the card says (honour system). */
   | { type: "adjust"; player: PlayerId; resources?: Partial<Resources>; mp?: number; draw?: number; morale?: 1 | -1 };

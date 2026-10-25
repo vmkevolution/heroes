@@ -21,11 +21,19 @@ export function replay(record: GameRecord): AdventureState {
   return record.actions.reduce(applyAdventureAction, setupAdventure(record.setup));
 }
 
-/** The player who controls a combat side. Neutral Units are moved by the player fighting them. */
+/**
+ * The player who controls a combat side. Without the Neutral AI, the enemy player sitting to the
+ * fighting player's right controls the Neutral Units (p. 41): here, the next player in turn order.
+ */
 export function sideController(state: AdventureState, side: Side): PlayerId | null {
   if (state.phase.type !== "combat") return null;
   const ctx = state.phase.context;
-  return sidePlayer(state, ctx, side) ?? sidePlayer(state, ctx, side === "attacker" ? "defender" : "attacker");
+  const owner = sidePlayer(state, ctx, side);
+  if (owner || state.ai.neutrals) return owner;
+  const fighter = sidePlayer(state, ctx, side === "attacker" ? "defender" : "attacker")!;
+  const live = state.players.filter((p) => !p.eliminated || p.id === fighter);
+  const i = live.findIndex((p) => p.id === fighter);
+  return live.length > 1 ? live[(i + 1) % live.length]!.id : fighter;
 }
 
 /** Players who may act now: several during a Combat reaction window. */

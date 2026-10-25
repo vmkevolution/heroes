@@ -85,7 +85,8 @@ export function AdventureScreen({
   const playerName = (id: string | null) => (id ? (state.players.find((p) => p.id === id)?.name ?? id) : a.neutrals);
   const heroName = (id: string) => {
     const h = state.heroes.find((x) => x.id === id);
-    if (!h) return id;
+    // Heroes of eliminated players are gone from the map: their id starts with the player id.
+    if (!h) return playerName(id.slice(0, id.indexOf("-")) || id);
     return `${playerName(h.owner)}${h.kind === "secondary" ? ` (${a.secondary})` : ""}`;
   };
 
@@ -822,6 +823,12 @@ function AdventureLog({
         return a.ev.victoryCondition(playerName(e.player));
       case "game-over":
         return a.ev.gameOver;
+      case "ai-card":
+        return t.ai.cardEv(
+          playerName(e.player),
+          e.card,
+          e.spell ? t.ai.spellEv(cardInfo(e.spell).name) : e.skill ? t.ai.skillEv(cardInfo(e.skill.includes(":") ? e.skill : `ability:${e.skill}`).name) : "",
+        );
       case "level-up":
         return t.cards.ev.levelUp(playerName(e.player), e.level);
       case "draw":
