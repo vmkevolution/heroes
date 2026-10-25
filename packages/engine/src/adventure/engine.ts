@@ -949,7 +949,8 @@ function setupSide(state: AdventureState, ctx: CombatContext, side: Side, picks:
     attacker: pending.attacker ?? [],
     defender,
     rng: { kind: "seeded", seed },
-    options: { neutralSide: ctx.foe.kind === "neutral" ? "defender" : null },
+    // No Attack or Defense cards yet (they come with the decks), so no reaction window.
+    options: { neutralSide: ctx.foe.kind === "neutral" ? "defender" : null, reactions: false },
   });
   state.phase = { type: "combat", context: ctx, combat };
   if (combat.phase.type === "over") finishCombat(state, ctx, combat);

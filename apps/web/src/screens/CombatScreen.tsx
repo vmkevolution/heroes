@@ -25,27 +25,50 @@ import type { CombatConfig } from "./SetupScreen.tsx";
 const SCREEN_ROWS = Array.from({ length: ROWS }, (_, i) => ROWS - 1 - i);
 
 export function CombatScreen({ initial, config }: { initial: CombatState; config: CombatConfig }) {
-  const { t } = useI18n();
   const [state, setState] = useState(initial);
   const [cards, setCards] = useState(config.cards);
+  // Units leave `state.units` when defeated, so names come from the starting line-up.
+  const names = useMemo(() => unitNames(initial), [initial]);
+  const act = (action: CombatAction) => {
+    setState(applyCombatAction(state, action));
+    if (action.type === "modify") {
+      setCards((c) => ({ ...c, [action.side]: { ...c[action.side], [action.stat]: c[action.side][action.stat] - 1 } }));
+    }
+  };
+  return <CombatView state={state} onAction={act} cards={cards} names={names} />;
+}
+
+export function unitNames(initial: CombatState): Map<string, string> {
+  const m = new Map<string, string>();
+  for (const u of initial.units) m.set(u.uid, unitName(u.unitId));
+  return m;
+}
+
+export interface CombatViewProps {
+  state: CombatState;
+  /** Applies an action; may throw IllegalAction, shown under the phase panel. */
+  onAction: (action: CombatAction) => void;
+  /** Attack and Defense cards left per side; null when no cards are in play. */
+  cards: CombatConfig["cards"] | null;
+  names: Map<string, string>;
+  /** Overrides the side labels (player names on the adventure map). */
+  sideNames?: Partial<Record<Side, string>>;
+  /** False when the attacker has no MP left to pay for another round. */
+  canContinue?: boolean;
+  /** Extra buttons shown under the phase panel (surrender…). */
+  extra?: React.ReactNode;
+}
+
+export function CombatView({ state, onAction, cards, names, sideNames, canContinue = true, extra }: CombatViewProps) {
+  const { t } = useI18n();
   const [inspect, setInspect] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
-
-  // Units leave `state.units` when defeated, so names come from the starting line-up.
-  const names = useMemo(() => {
-    const m = new Map<string, string>();
-    for (const u of initial.units) m.set(u.uid, unitName(u.unitId));
-    return m;
-  }, [initial]);
-  const sideLabel = (s: Side) => (s === "attacker" ? t.attacker : t.defender);
+  const sideLabel = (s: Side) => sideNames?.[s] ?? (s === "attacker" ? t.attacker : t.defender);
 
   const act = (action: CombatAction) => {
     try {
-      setState(applyCombatAction(state, action));
+      onAction(action);
       setError(null);
-      if (action.type === "modify") {
-        setCards((c) => ({ ...c, [action.side]: { ...c[action.side], [action.stat]: c[action.side][action.stat] - 1 } }));
-      }
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));
     }
@@ -113,7 +136,8 @@ export function CombatScreen({ initial, config }: { initial: CombatState; config
           </span>
         </div>
 
-        <PhasePanel state={state} cards={cards} act={act} names={names} sideLabel={sideLabel} />
+        <PhasePanel state={state} cards={cards} act={act} names={names} sideLabel={sideLabel} canContinue={canContinue} />
+        {extra}
         {error && <p className="error">{error}</p>}
 
         <InitiativeBar state={state} onHover={setInspect} />
@@ -199,9 +223,11 @@ function PhasePanel({
   act,
   names,
   sideLabel,
+  canContinue,
 }: {
+  canContinue: boolean;
   state: CombatState;
-  cards: CombatConfig["cards"];
+  cards: CombatConfig["cards"] | null;
   act: (a: CombatAction) => void;
   names: Map<string, string>;
   sideLabel: (s: Side) => string;
@@ -250,7 +276,7 @@ function PhasePanel({
         {(["attacker", "defender"] as const).map((side) => {
           if (side === state.options.neutralSide) return null;
           const stat = side === attacker.side ? "attack" : "defense";
-          const left = cards[side][stat];
+          const left = cards?.[side][stat] ?? 0;
           return (
             <div key={side} className={`react-row ${side}`}>
               <strong>{sideLabel(side)}</strong>
@@ -258,13 +284,13 @@ function PhasePanel({
                 <span className="muted">{t.passed}</span>
               ) : (
                 <>
-                  <button
+                  {cards && <button
                     className="btn"
                     disabled={left <= 0}
                     onClick={() => act({ type: "modify", side, stat, amount: 1, source: `${stat}-card` })}
                   >
                     {stat === "attack" ? t.playAttack : t.playDefense} · {left} {t.cardsLeft}
-                  </button>
+                  </button>}
                   <button className="btn primary" onClick={() => act({ type: "pass", side })}>
                     {t.pass}
                   </button>
@@ -283,7 +309,7 @@ function PhasePanel({
         <h3>{t.roundEnd}</h3>
         <p className="muted">{t.roundEndHint}</p>
         <div className="buttons">
-          <button className="btn primary" onClick={() => act({ type: "continue" })}>
+          <button className="btn primary" disabled={!canContinue} onClick={() => act({ type: "continue" })}>
             {t.continueCombat}
           </button>
           <button className="btn" onClick={() => act({ type: "retreat" })}>

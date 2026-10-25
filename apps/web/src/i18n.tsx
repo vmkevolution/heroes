@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
+import { advEn, advFr } from "./i18n-adventure.ts";
 
 export type Lang = "fr" | "en";
 
@@ -52,7 +53,7 @@ const fr = {
   paralyzed: "Paralysée",
   retaliated: "A riposté",
   activated: "Déjà activée",
-  ruleRef: "Règles : livret The Rewrite 2.0.1, p. 40 à 45",
+  ruleRef: "Règles : livret communautaire The Rewrite 2.0.1",
   ev: {
     roundStart: (n: number) => `Début du round ${n}`,
     activate: (u: string) => `Activation : ${u}`,
@@ -69,6 +70,7 @@ const fr = {
   },
   statAttack: "Attaque",
   statDefense: "Défense",
+  adv: advFr,
 };
 
 const en: typeof fr = {
@@ -121,7 +123,7 @@ const en: typeof fr = {
   paralyzed: "Paralyzed",
   retaliated: "Has retaliated",
   activated: "Already activated",
-  ruleRef: "Rules: The Rewrite rule book 2.0.1, p. 40 to 45",
+  ruleRef: "Rules: community rule book The Rewrite 2.0.1",
   ev: {
     roundStart: (n) => `Round ${n} begins`,
     activate: (u) => `${u} activates`,
@@ -138,6 +140,7 @@ const en: typeof fr = {
   },
   statAttack: "Attack",
   statDefense: "Defense",
+  adv: advEn,
 };
 
 export type Messages = typeof fr;
