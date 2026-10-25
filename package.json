@@ -11,7 +11,8 @@
     "build": "npm run build -w @heroes/web",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json",
-    "import-wiki": "tsx packages/data/scripts/import-wiki.ts"
+    "import-wiki": "tsx packages/data/scripts/import-wiki.ts",
+    "import-mission-book": "tsx packages/data/scripts/import-mission-book.ts"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

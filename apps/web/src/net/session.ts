@@ -76,12 +76,13 @@ export function useSession(mode: SessionMode, notYourTurn: string): Session {
   if (!ref.current) {
     const record = mode.kind === "guest" ? null : mode.record;
     const state = record ? replay(record) : null;
+    const isAi = (id: string) => !!state && (state.ai.players.includes(id) || id in state.ai.heroes);
     ref.current = {
       state,
       record,
       seats: state
         ? Object.fromEntries(
-            state.players.map((p, i) => [p.id, state.ai.players.includes(p.id) || p.id in state.ai.heroes ? "ai" : i === 0 ? "host" : ""]),
+            state.players.map((p) => [p.id, isAi(p.id) ? "ai" : p.id === state.players.find((x) => !isAi(x.id))?.id ? "host" : ""]),
           )
         : {},
       names: mode.kind === "guest" ? {} : { host: mode.kind === "host" ? mode.name : "" },

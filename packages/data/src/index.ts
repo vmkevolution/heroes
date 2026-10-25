@@ -4,7 +4,9 @@ import type {
   AstrologersCard,
   Faction,
   HeroCard,
+  MapLayout,
   MapTile,
+  Scenario,
   SpellCard,
   StatisticCard,
   TownCard,
@@ -20,6 +22,8 @@ import artifactsJson from "./generated/artifacts.json" with { type: "json" };
 import statisticsJson from "./generated/statistics.json" with { type: "json" };
 import heroesJson from "./generated/heroes.json" with { type: "json" };
 import townsJson from "./generated/towns.json" with { type: "json" };
+import mapsJson from "./generated/maps.json" with { type: "json" };
+import scenariosJson from "./generated/scenarios.json" with { type: "json" };
 
 export * from "./schema.ts";
 
@@ -32,6 +36,21 @@ export const artifacts: readonly ArtifactCard[] = artifactsJson as ArtifactCard[
 export const statistics: readonly StatisticCard[] = statisticsJson as StatisticCard[];
 export const heroes: readonly HeroCard[] = heroesJson as HeroCard[];
 export const towns: readonly TownCard[] = townsJson as TownCard[];
+/** Fan Mission Book maps and Scenarios (CC BY-NC-SA 4.0). */
+export const maps: readonly MapLayout[] = mapsJson as MapLayout[];
+export const scenarios: readonly Scenario[] = scenariosJson as Scenario[];
+
+export function getMap(id: string): MapLayout {
+  const m = maps.find((x) => x.id === id);
+  if (!m) throw new Error(`unknown map "${id}"`);
+  return m;
+}
+
+export function getScenario(id: string): Scenario {
+  const s = scenarios.find((x) => x.id === id);
+  if (!s) throw new Error(`unknown Scenario "${id}"`);
+  return s;
+}
 
 const byId = new Map(units.map((u) => [u.id, u]));
 const tilesById = new Map(tiles.map((t) => [t.id, t]));

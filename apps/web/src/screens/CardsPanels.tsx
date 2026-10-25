@@ -22,6 +22,7 @@ import {
   type Side,
 } from "@heroes/engine";
 import { useI18n, type Messages } from "../i18n.tsx";
+import { TownScreen } from "./TownScreen.tsx";
 import { assetImage, cardArt, unitName } from "../cards.ts";
 
 const RESOURCES: Resource[] = ["gold", "buildingMaterials", "valuables"];
@@ -464,23 +465,18 @@ export function TownPanel({ state, player, act }: { state: AdventureState; playe
   const c = t.cards;
   const town = getTown(player.faction);
   const canBuild = buildable(player);
-  const [recruits, setRecruits] = useState<string[]>([]);
-  const [reinforce, setReinforce] = useState<number[]>([]);
   const [open, setOpen] = useState(false);
-  const spots = hireSpots(state, player.id);
-  const hasSecondary = state.heroes.some((h) => h.owner === player.id && h.kind === "secondary");
-  const recruitList = recruitable(player);
-  const reinforceList = player.army.map((_, i) => i).filter((i) => canReinforce(player, i));
-  const cost = (id: string, v: string) => getVariant(id, v).cost;
-  const total: Record<Resource, number> = { gold: 0, buildingMaterials: 0, valuables: 0 };
-  for (const id of recruits) for (const r of RESOURCES) total[r] += cost(id, "few")?.[r] ?? 0;
-  for (const i of reinforce) for (const r of RESOURCES) total[r] += cost(player.army[i]!.unitId, "pack")?.[r] ?? 0;
+  const [screen, setScreen] = useState(false);
   const tok = (used: boolean) => (used ? c.used : c.available);
   return (
     <div className="panel town">
       <h3 onClick={() => setOpen(!open)} className="clickable">
         {open ? "▾" : "▸"} {c.townOf(player.name)} <span className="muted small">· {town.name}</span>
       </h3>
+      <button className="btn small primary" onClick={() => setScreen(true)}>
+        🏰 {t.town.manage}
+      </button>
+      {screen && <TownScreen state={state} player={player} act={act} onClose={() => setScreen(false)} />}
       <p className="small">
         {c.tokens} : {c.tokenBuild} <em>{tok(player.town.used.build)}</em> · {c.tokenPopulation}{" "}
         <em>{tok(player.town.used.population)}</em> · {c.tokenSpellBook} <em>{tok(player.town.used.spellBook)}</em>
@@ -508,72 +504,94 @@ export function TownPanel({ state, player, act }: { state: AdventureState; playe
               );
             })}
           </ul>
-          {!player.town.used.population && (
-            <div className="recruit">
-              <h4>{c.recruitTitle}</h4>
-              {recruitList.length + reinforceList.length === 0 && <p className="muted small">{c.nothingToRecruit}</p>}
-              {recruitList.map((id) => (
-                <label key={id} className="chk">
-                  <input
-                    type="checkbox"
-                    checked={recruits.includes(id)}
-                    onChange={() => setRecruits(recruits.includes(id) ? recruits.filter((x) => x !== id) : [...recruits, id])}
-                  />
-                  {c.recruit} {unitName(id)} · {resText(cost(id, "few") ?? {})}
-                </label>
-              ))}
-              {reinforceList.map((i) => (
-                <label key={i} className="chk">
-                  <input
-                    type="checkbox"
-                    checked={reinforce.includes(i)}
-                    onChange={() => setReinforce(reinforce.includes(i) ? reinforce.filter((x) => x !== i) : [...reinforce, i])}
-                  />
-                  {c.reinforce} {unitName(player.army[i]!.unitId)} · {resText(cost(player.army[i]!.unitId, "pack") ?? {})}
-                </label>
-              ))}
-              {recruits.length + reinforce.length > 0 && (
-                <button
-                  className="btn primary small"
-                  disabled={!canAfford(player, total)}
-                  onClick={() => {
-                    act({ type: "recruit", recruit: recruits, reinforce });
-                    setRecruits([]);
-                    setReinforce([]);
-                  }}
-                >
-                  {c.recruitDo} · {resText(total)}
-                </button>
-              )}
-              {!hasSecondary && spots.length > 0 && (
-                <div className="buttons">
-                  {spots.map((h: Hex, i) => (
-                    <button
-                      key={i}
-                      className="btn small"
-                      disabled={player.resources.gold < HIRE_COST}
-                      onClick={() => act({ type: "hire-hero", at: h })}
-                    >
-                      {c.hire(HIRE_COST)}
-                      {spots.length > 1 ? ` #${i + 1}` : ""}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
-          {canUseSpellBook(state, player) && (
-            <button
-              className="btn small"
-              disabled={player.resources.gold < town.spellBookCost}
-              onClick={() => act({ type: "spell-book" })}
-            >
-              {c.spellBook(town.spellBookCost)}
-            </button>
-          )}
+          <TownActions state={state} player={player} act={act} />
         </>
       )}
     </div>
+  );
+}
+
+/** Recruiting, Reinforcing, hiring a Secondary Hero and the Spell Book: the Town's other actions. */
+export function TownActions({ state, player, act }: { state: AdventureState; player: Player; act: (a: AdventureAction) => void }) {
+  const { t } = useI18n();
+  const c = t.cards;
+  const town = getTown(player.faction);
+  const [recruits, setRecruits] = useState<string[]>([]);
+  const [reinforce, setReinforce] = useState<number[]>([]);
+  const spots = hireSpots(state, player.id);
+  const hasSecondary = state.heroes.some((h) => h.owner === player.id && h.kind === "secondary");
+  const recruitList = recruitable(player);
+  const reinforceList = player.army.map((_, i) => i).filter((i) => canReinforce(player, i));
+  const cost = (id: string, v: string) => getVariant(id, v).cost;
+  const total: Record<Resource, number> = { gold: 0, buildingMaterials: 0, valuables: 0 };
+  for (const id of recruits) for (const r of RESOURCES) total[r] += cost(id, "few")?.[r] ?? 0;
+  for (const i of reinforce) for (const r of RESOURCES) total[r] += cost(player.army[i]!.unitId, "pack")?.[r] ?? 0;
+  return (
+    <>
+          {!player.town.used.population && (
+        <div className="recruit">
+          <h4>{c.recruitTitle}</h4>
+          {recruitList.length + reinforceList.length === 0 && <p className="muted small">{c.nothingToRecruit}</p>}
+          {recruitList.map((id) => (
+            <label key={id} className="chk">
+              <input
+                type="checkbox"
+                checked={recruits.includes(id)}
+                onChange={() => setRecruits(recruits.includes(id) ? recruits.filter((x) => x !== id) : [...recruits, id])}
+              />
+              {c.recruit} {unitName(id)} · {resText(cost(id, "few") ?? {})}
+            </label>
+          ))}
+          {reinforceList.map((i) => (
+            <label key={i} className="chk">
+              <input
+                type="checkbox"
+                checked={reinforce.includes(i)}
+                onChange={() => setReinforce(reinforce.includes(i) ? reinforce.filter((x) => x !== i) : [...reinforce, i])}
+              />
+              {c.reinforce} {unitName(player.army[i]!.unitId)} · {resText(cost(player.army[i]!.unitId, "pack") ?? {})}
+            </label>
+          ))}
+          {recruits.length + reinforce.length > 0 && (
+            <button
+              className="btn primary small"
+              disabled={!canAfford(player, total)}
+              onClick={() => {
+                act({ type: "recruit", recruit: recruits, reinforce });
+                setRecruits([]);
+                setReinforce([]);
+              }}
+            >
+              {c.recruitDo} · {resText(total)}
+            </button>
+          )}
+          {!hasSecondary && spots.length > 0 && (
+            <div className="buttons">
+              {spots.map((h: Hex, i) => (
+                <button
+                  key={i}
+                  className="btn small"
+                  disabled={player.resources.gold < HIRE_COST}
+                  onClick={() => act({ type: "hire-hero", at: h })}
+                >
+                  {c.hire(HIRE_COST)}
+                  {spots.length > 1 ? ` #${i + 1}` : ""}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+      {canUseSpellBook(state, player) && (
+        <button
+          className="btn small"
+          disabled={player.resources.gold < town.spellBookCost}
+          onClick={() => act({ type: "spell-book" })}
+        >
+          {c.spellBook(town.spellBookCost)}
+        </button>
+      )}
+    </>
   );
 }
 

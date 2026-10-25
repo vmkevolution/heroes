@@ -291,6 +291,13 @@ function apply(state: AdventureState, action: AdventureAction): AdventureState {
       }
       return state;
     }
+    case "declare-victory": {
+      const p = getPlayer(state, action.player);
+      if (p.eliminated || state.victoryPending.includes(p.id)) throw new IllegalAction("already declared");
+      state.victoryPending.push(p.id);
+      log(state, { type: "victory-condition", player: p.id });
+      return state;
+    }
     case "revisit": {
       if (!canRevisit(state, action.heroId)) throw new IllegalAction("nothing to revisit here");
       const hero = getHero(state, action.heroId);
@@ -957,12 +964,15 @@ function flagField(state: AdventureState, hero: Hero, info: FieldInfo, m: FieldM
       if (first) gain(state, hero.owner, { gold: RANDOM_TOWN_GOLD });
       break;
     case "town": {
-      // Flagging an enemy Town takes a Faction Cube from its owner (p. 76); in the sandbox Clash it wins.
+      // Flagging an enemy Town takes a Faction Cube from its owner (p. 76); in the sandbox Clash (The Hunt) it wins.
       const owner = state.players.find((p) => p.faction === info.field.faction);
       if (owner && owner.id !== hero.owner) {
         getPlayer(state, hero.owner).factionCubes.push(owner.id);
-        state.victoryPending.push(hero.owner);
-        log(state, { type: "victory-condition", player: hero.owner });
+        // Mission Book Scenarios bring their own victory conditions, declared with "declare-victory".
+        if (!state.scenarioId || state.scenarioId === "the_hunt") {
+          state.victoryPending.push(hero.owner);
+          log(state, { type: "victory-condition", player: hero.owner });
+        }
       }
       break;
     }

@@ -30,6 +30,7 @@ import {
   type PlayerId,
   type Side,
 } from "@heroes/engine";
+import { ScenarioPanel } from "./ScenarioPanel.tsx";
 import { useI18n, type Messages } from "../i18n.tsx";
 import { cardImage, unitName } from "../cards.ts";
 import { CombatView } from "./CombatScreen.tsx";
@@ -42,7 +43,7 @@ const HEX_W = 140;
 const HEX_R = HEX_W / Math.sqrt(3);
 const TILE_W = 420;
 const TILE_H = 5 * HEX_R;
-const PLAYER_COLORS = ["#d64541", "#3b82d6", "#2fa36b", "#c7a12a"];
+const PLAYER_COLORS = ["#d64541", "#3b82d6", "#2fa36b", "#c7a12a", "#9b59b6", "#e67e22"];
 const RESOURCES: Resource[] = ["gold", "buildingMaterials", "valuables"];
 const RES_ICON: Record<Resource, string> = { gold: "🪙", buildingMaterials: "🪨", valuables: "💎" };
 
@@ -335,6 +336,12 @@ export function AdventureScreen({
             <ManualPanel player={me} act={act} />
           </>
         )}
+
+        <ScenarioPanel
+          state={state}
+          player={local(me.id) && !(me.id in state.ai.heroes) ? me.id : (state.players.find((p) => local(p.id))?.id ?? null)}
+          onAction={act}
+        />
 
         <AstrologersBox state={state} t={t} />
 

@@ -1,0 +1,486 @@
+# French translations for Homm package
+# Copyright (C) 2025 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Homm package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Homm 3BG-mission-book\n"
+"POT-Creation-Date: 2026-09-30 12:02+0000\n"
+"PO-Revision-Date: 2025-06-23 15:07+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. type: multicols*
+#: coops/sentinels.tex:5 coops/titans_stronghold.tex:5
+#: coops/emerald_island.tex:5 coops/wandering_dragons.tex:5
+#: coops/close_to_enemies.tex:5 coops/stand_united.tex:5
+#: coops/the_ambushed_accord.tex:5 clash/bloody_grail.tex:5
+#: clash/trial_by_combat.tex:5 clash/astral_run.tex:5 clash/chain_link.tex:5
+#: clash/force_of_will.tex:5 clash/the_fractured_kingdoms.tex:5
+#: clash/arcane_artillery.tex:5 clash/dragoncurse_castle.tex:5
+#: clash/the_hunt.tex:5 campaigns/castle_greek_gift.tex:6
+#: campaigns/castle_greek_gift.tex:86 campaigns/castle_greek_gift.tex:139
+#: campaigns/castle_sicilian_dragon.tex:5
+#: campaigns/castle_sicilian_dragon.tex:144
+#: campaigns/castle_two_knights_defense.tex:5
+#: campaigns/castle_two_knights_defense.tex:91
+#: campaigns/castle_two_knights_defense.tex:129
+#: campaigns/inferno_devilish_plan.tex:6
+#: campaigns/inferno_devilish_plan.tex:204
+#: campaigns/inferno_steadwicks_fall.tex:5
+#: campaigns/inferno_deal_with_the_devil.tex:5 sections/credits.tex:10
+#: sections/random_scenario.tex:5 sections/random_scenario.tex:275
+#: sections/introduction.tex:5
+#, no-wrap
+msgid ""
+"{2}\n"
+"\n"
+msgstr ""
+"{2}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:16 coops/titans_stronghold.tex:18
+#: coops/close_to_enemies.tex:16 coops/stand_united.tex:13
+#: clash/dragoncurse_castle.tex:17 campaigns/inferno_devilish_plan.tex:20
+#: campaigns/inferno_steadwicks_fall.tex:16
+#: campaigns/inferno_deal_with_the_devil.tex:20
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Scenario Length}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Durée du Scénario}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:20 coops/titans_stronghold.tex:22
+#: coops/emerald_island.tex:18 coops/close_to_enemies.tex:20
+#: coops/stand_united.tex:17 coops/the_ambushed_accord.tex:17
+#: clash/dragoncurse_castle.tex:21 campaigns/inferno_devilish_plan.tex:24
+#: campaigns/inferno_steadwicks_fall.tex:20
+#: campaigns/inferno_deal_with_the_devil.tex:24
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Player Setup}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation des Joueurs}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:42 coops/titans_stronghold.tex:44
+#: coops/emerald_island.tex:36 coops/close_to_enemies.tex:35
+#: coops/stand_united.tex:33 clash/astral_run.tex:30 clash/chain_link.tex:30
+#: clash/the_hunt.tex:35 campaigns/inferno_devilish_plan.tex:90
+#: campaigns/inferno_steadwicks_fall.tex:92
+#: campaigns/inferno_deal_with_the_devil.tex:52
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Map Setup}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation du Plateau}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:52 coops/titans_stronghold.tex:59
+#: coops/emerald_island.tex:45 coops/close_to_enemies.tex:68
+#: coops/stand_united.tex:52 campaigns/castle_greek_gift.tex:73
+#: campaigns/castle_sicilian_dragon.tex:81
+#: campaigns/castle_two_knights_defense.tex:77
+#: campaigns/inferno_devilish_plan.tex:123
+#: campaigns/inferno_steadwicks_fall.tex:133
+#: campaigns/inferno_deal_with_the_devil.tex:83
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Victory Conditions}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Conditions de Victoire}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:56 coops/titans_stronghold.tex:63
+#: coops/emerald_island.tex:49 coops/close_to_enemies.tex:74
+#: coops/stand_united.tex:56 campaigns/inferno_devilish_plan.tex:127
+#: campaigns/inferno_steadwicks_fall.tex:137
+#: campaigns/inferno_deal_with_the_devil.tex:87
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Defeat Conditions}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Conditions de Défaite}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:85 coops/emerald_island.tex:60
+#: coops/close_to_enemies.tex:110 coops/stand_united.tex:74
+#: clash/force_of_will.tex:74 clash/arcane_artillery.tex:79
+#: clash/the_hunt.tex:69 campaigns/inferno_devilish_plan.tex:176
+#: campaigns/inferno_steadwicks_fall.tex:194
+#: campaigns/inferno_deal_with_the_devil.tex:148
+#: sections/random_scenario.tex:298
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Additional Rules}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Règles Additionnelles}}\n"
+"\n"
+
+#. type: multicols
+#: coops/sentinels.tex:142 coops/stand_united.tex:87 clash/astral_run.tex:98
+#: clash/force_of_will.tex:46 clash/dragoncurse_castle.tex:85
+#: campaigns/castle_greek_gift.tex:121 campaigns/castle_greek_gift.tex:272
+#: campaigns/inferno_devilish_plan.tex:226 sections/credits.tex:30
+#: sections/random_scenario.tex:296
+#, no-wrap
+msgid ""
+"\\columnbreak\n"
+"\n"
+msgstr ""
+"\\columnbreak\n"
+"\n"
+
+#. type: multicols*
+#: coops/sentinels.tex:144 coops/titans_stronghold.tex:110
+#: coops/titans_stronghold.tex:116 coops/stand_united.tex:94
+#: clash/bloody_grail.tex:120 clash/bloody_grail.tex:126
+#: campaigns/inferno_devilish_plan.tex:206 sections/credits.tex:32
+#: sections/credits.tex:36 sections/random_scenario.tex:306
+#: sections/introduction.tex:95 sections/introduction.tex:101
+#, no-wrap
+msgid ""
+"\\vspace*{\\fill}\n"
+"\n"
+msgstr ""
+"\\vspace*{\\fill}\n"
+"\n"
+
+#. type: multicols*
+#: coops/titans_stronghold.tex:46 coops/emerald_island.tex:38
+#: coops/close_to_enemies.tex:37 coops/stand_united.tex:35
+#: clash/astral_run.tex:32
+#, no-wrap
+msgid ""
+"Take the following Map Tiles and arrange them as shown in the Scenario map layout ($P$ stands for the number of players):\n"
+"\n"
+msgstr ""
+"Prenez les tuiles suivantes et disposez-les comme indiqué sur le schéma du scénario ($J$ représente le nombre de joueurs):\n"
+"\n"
+
+#. type: multicols*
+#: coops/emerald_island.tex:32 coops/close_to_enemies.tex:33
+#: coops/stand_united.tex:31 clash/bloody_grail.tex:29 clash/astral_run.tex:28
+#: clash/chain_link.tex:28 clash/force_of_will.tex:31
+#: clash/the_fractured_kingdoms.tex:26 clash/arcane_artillery.tex:30
+#: clash/dragoncurse_castle.tex:34
+#, no-wrap
+msgid ""
+"\\textbf{Town Buildings:} \\svg{bronze} Dwelling\n"
+"\n"
+msgstr ""
+"\\textbf{Bâtiments de Départ:} Demeure \\svg{bronze}\n"
+"\n"
+
+#.  !TeX spellcheck = en_US
+#. type: Plain text
+#: coops/stand_united.tex:3
+msgid ""
+"\\addscenariosection{1}{Cooperative Scenario}{Stand United}{\\images/"
+"interference.png}"
+msgstr ""
+"\\addscenariosection{1}{Scénario Coopératif}{Fronts Unis}{\\images/"
+"interference.png}"
+
+#. type: multicols
+#: coops/stand_united.tex:7 clash/chain_link.tex:7 clash/arcane_artillery.tex:7
+#, no-wrap
+msgid ""
+"\\textbf{Author:} NeuroN\n"
+"\n"
+msgstr ""
+"\\textbf{Auteur :} NeuroN\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:9
+#, no-wrap
+msgid ""
+"\\textbf{Source:} \\href{https://discord.com/channels/740870068178649108/1332731339614453802/1332731339614453802}{Archon Studio Discord}\n"
+"\n"
+msgstr ""
+"\\textbf{Source:} \\href{https://discord.com/channels/740870068178649108/1332731339614453802/1332731339614453802}{Archon Studio Discord}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:11
+#, no-wrap
+msgid ""
+"\\textit{Evil Dragon Lords threaten the entire Enroth. Heroes, with their armies united, march against them in an epic final stand.}  % no-check-caps\n"
+"\n"
+msgstr ""
+"\\textit{Les Seigneurs Dragons Maléfiques menacent Enroth tout entier. Les Héros, unis avec leurs armées, marchent à leur rencontre pour un dernier combat épique.}  % no-check-caps\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:15
+#, no-wrap
+msgid ""
+"This Scenario is played over 9 Rounds.\n"
+"\n"
+msgstr ""
+"Ce Scénario se joue en 9 Manches.\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:19
+#, no-wrap
+msgid ""
+"\\textbf{Player Count:} 2--4\n"
+"\n"
+msgstr ""
+"\\textbf{Nombre de Joueurs :} 2 -- 4\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:21
+#, no-wrap
+msgid ""
+"\\textbf{Starting Resources:} 6 \\svg{gold}, 2 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+msgstr ""
+"\\textbf{Ressources de Départ :} 6 \\svg{gold}, 2 \\svg{building_materials}, 1 \\svg{valuables}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:23 clash/bloody_grail.tex:21 clash/astral_run.tex:19
+#: clash/chain_link.tex:19 clash/the_fractured_kingdoms.tex:19
+#: campaigns/castle_greek_gift.tex:28 campaigns/castle_sicilian_dragon.tex:26
+#: campaigns/castle_two_knights_defense.tex:25
+#: campaigns/inferno_devilish_plan.tex:32
+#: campaigns/inferno_deal_with_the_devil.tex:32
+#, no-wrap
+msgid ""
+"\\textbf{Starting Income:} 10 \\svg{gold}, 0 \\svg{building_materials}, 0 \\svg{valuables}\n"
+"\n"
+msgstr ""
+"\\textbf{Revenus de Départ :} 10 \\svg{gold}, 0 \\svg{building_materials}, 0 \\svg{valuables}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:29
+#, no-wrap
+msgid ""
+"\\textbf{Starting Units:}\n"
+"\\begin{itemize}\n"
+"  \\item A ``Few'' of the cheapest \\svg{bronze} Units\n"
+"  \\item A ``Few'' of the cheapest \\svg{silver} Units\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\textbf{Unités de Départ :}\n"
+"\\begin{itemize}\n"
+"  \\item «Quelques» unités \\svg{bronze} les moins chères\n"
+"  \\item «Quelques» unités \\svg{silver} les moins chères\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:42
+#, no-wrap
+msgid ""
+"\\begin{itemize}\n"
+"  \\item P × Starting (I) Map Tile\n"
+"  \\item P × Far (II--III) Map Tile\n"
+"  \\item P × Near (IV--V) Map Tile, all of which must contain an Obelisk\n"
+"  \\item 1 × Center (VI--VII) Map Tile which must contain a Dragon Utopia\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\begin{itemize}\n"
+"  \\item J × Tuile de Départ (I)\n"
+"  \\item J × Tuile Lointaine (II--III)\n"
+"  \\item J × Tuile Proche (IV--V), toute avec un Obélisque\n"
+"  \\item 1 × Tuile Centre (VI--VII) qui doit avoir des Terres Désolées\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:44
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{AI Enemy Setup}}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Préparation du Héros IA}}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:46
+#, no-wrap
+msgid ""
+"\\textbf{Enemy Deck:} 6 × Might Card, 4 × Magic Card, 4 × Skill Card\n"
+"\n"
+msgstr ""
+"\\textbf{Deck Ennemi:} 6 × Cartes Force, 4 × Cartes Magie, 4 × Cartes Capacité\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:48
+#, no-wrap
+msgid ""
+"\\textbf{Enemy Spells:} 1 × Fireball, 1 × Lightning Bolt, 1 × Weakness, 1 × Curse\n"
+"\n"
+msgstr ""
+"\\textbf{Sorts Ennemis:} 1 × Boule de Feu, 1 × Eclair, 1 × Faiblesse, 1 × Malédiction\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:50
+#, no-wrap
+msgid ""
+"\\textbf{Enemy Skill:} Sorcery\n"
+"\n"
+msgstr ""
+"\\textbf{Compétence Ennemi:} Sorcellerie\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:54
+#, no-wrap
+msgid ""
+"All players win the Scenario when each player has won a fight in the Dragon Utopia.\n"
+"\n"
+msgstr ""
+"Tous les joueurs gagnent quand chacun a gagné un combat dans les Terres Désolées.\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:58
+#, no-wrap
+msgid ""
+"If at least one player has failed to defeat the Dragon Utopia by the end of Round 9, the Scenario is lost.\n"
+"\n"
+msgstr ""
+"Si au moins un Joueur n'a pas gagné le combat dans les Terres Désolées à la fin de la Manche~9.\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:72
+#, no-wrap
+msgid ""
+"\\subsection*{\\MakeUppercase{Timed Events}}\n"
+"\\textbf{\\nth{4} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Roll a \\svg{resource} and resolve the result.\n"
+"\\end{itemize}\n"
+"\\textbf{\\nth{6} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Repeat the event of Round 4.\n"
+"\\end{itemize}\n"
+"\\textbf{\\nth{8} Round:}\n"
+"\\begin{itemize}\n"
+"  \\item Repeat the event of Round 4.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\subsection*{\\MakeUppercase{Évènements programmés}}\n"
+"\\textbf{Manche 4:}\n"
+"\\begin{itemize}\n"
+"  \\item Lancez un \\svg{resource} et résolvez le résultat.\n"
+"\\end{itemize}\n"
+"\\textbf{Manche 6:}\n"
+"\\begin{itemize}\n"
+"  \\item Répétez les évènements de la Manche 4.\n"
+"\\end{itemize}\n"
+"\\textbf{Manche 8:}\n"
+"\\begin{itemize}\n"
+"  \\item Répétez les évènements de la Manche 4.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:85
+#, no-wrap
+msgid ""
+"\\begin{itemize}\n"
+"  \\item Remove both Azure Dragons Cards from the \\svg{azure} Neutral Units Deck and set one of them aside for later use.\n"
+"  \\item Players cannot recruit Secondary Heroes.\n"
+"  \\item Level VII Combat cannot be skipped by Diplomacy or any other means.\n"
+"  \\item Players can use their Build Token to initiate trade with one other chosen player. The two players can freely exchange Resources and can exchange Artifacts or Spells from their hand as if their Heroes were adjacent.\n"
+"  \\item During the game, players assemble a shared army. Every player can field Units from the shared army during Combat (shared Units' \\svg{map} abilities can be activated each Round by only one player).  % no-check-caps\n"
+"  \\item Upon flagging an Obelisk, discard the top Card from each Neutral Units Deck except \\svg{azure}. You can recruit one of these Units. Units recruited this way go into the shared army.\n"
+"  \\item During Combat at the Dragon Utopia, one of the Neutral \\svg{azure} Units is always the Azure Dragon and the Neutral army uses the AI Deck. Reshuffle the AI Deck and AI Spell Deck at the end of Combat.\n"
+"  \\item After winning Combat at the Dragon Utopia, no Faction Cube is placed on the Dragon Utopia Field. The victorious player puts one of their surviving Faction Units into the shared army and can redistribute their remaining Resources among other players, after which that player gets removed from the game.\n"
+"\\end{itemize}\n"
+"\n"
+msgstr ""
+"\\begin{itemize}\n"
+"  \\item Retirez les Dragons Azures du Deck d'Unités Neutres \\svg{azure} et en mettre un de côté pour plus tard.\n"
+"  \\item Les Joueurs ne peuvent pas Recruter de Héros Secondaires.\n"
+"  \\item Le Combat Niveaux VII ne peut être évité par Diplomatie ou d'autres moyens.\n"
+"  \\item Un Joueur peut utiliser son Jeton Construction pour échanger avec un autre Joueur. Les deux Joueurs échangent librement des Ressources, des Sorts et Artefacts comme si leurs Héros étaient adjacents.\n"
+"  \\item Les Joueurs vont créer une armée partagée. Chaque Joueur peut jouer les Unités de l'armée partagée pendant les Combats (les capacités \\svg{map} des Unités partagées ne peuvent être activées à chaque Manche que par un Joueur).  % no-check-caps\n"
+"  \\item Lors de la Visite d'un Obélisque, défaussez la 1$^{ère}$ Carte des Decks d'Unités Neutres sauf \\svg{azure}. Vous pouvez Recruter une de ces Unités. Les Unités ainsi Recrutées vont dans l'armée partagée.\n"
+"  \\item Lors du Combat dans les Terres Désolées, un des Unités \\svg{azure} est toujours le Dragon Azure et l'Armée Neutre utilise le Deck IA. Remélangez le Deck IA et Sorts IA à la fin du Combat.\n"
+"  \\item Après victoire aux Terres Désolées, aucun Cube de Faction n'est placé sur la case. Le Joueur victorieux place une Unité de Faction survivante dans l'armée partagée et peut redistribuer ses Ressources restantes entre les autres Joueurs, puis ce Joueur est retiré du jeu.\n"
+"\\end{itemize}\n"
+"\n"
+
+#. type: multicols
+#: coops/stand_united.tex:92
+#, no-wrap
+msgid ""
+"\\begin{center}\n"
+"  \\includegraphics[width=0.7\\linewidth]{\\maps/stand_united_2p.png}\n"
+"  \\captionof{figure}{\\footnotesize\\textbf{2-PLAYER SCENARIO}}\n"
+"\\end{center}\n"
+"\n"
+msgstr ""
+"\\begin{center}\n"
+"  \\includegraphics[width=0.7\\linewidth]{\\maps/stand_united_2p.png}\n"
+"  \\captionof{figure}{\\footnotesize\\textbf{SCENARIO 2-JOUEURS}}\n"
+"\\end{center}\n"
+"\n"
+
+#. type: tikzpicture
+#: coops/stand_united.tex:104
+#, no-wrap
+msgid ""
+"[overlay]\n"
+"  \\node(bg)[anchor=center, opacity=0.15, xshift=9em, yshift=-33em] at (current page.center) {\n"
+"    \\includegraphics[width=0.5\\paperwidth, keepaspectratio]{\\art/cove_part.png}\n"
+"  };\n"
+"  \\centering\n"
+"  \\node at (13.5, 2.5) {\\includegraphics[scale=0.3]{\\maps/stand_united_3p.png}};\n"
+"  \\node at (13.5, -1.8) {\\footnotesize{\\textbf{\\MakeUppercase{3-PLAYER SCENARIO}}}};\n"
+"\n"
+msgstr ""
+"[overlay]\n"
+"  \\node(bg)[anchor=center, opacity=0.15, xshift=9em, yshift=-33em] at (current page.center) {\n"
+"    \\includegraphics[width=0.5\\paperwidth, keepaspectratio]{\\art/cove_part.png}\n"
+"  };\n"
+"  \\centering\n"
+"  \\node at (13.5, 3.0) {\\includegraphics[scale=0.3]{\\maps/stand_united_3p.png}};\n"
+"  \\node at (13.5, -1.2) {\\footnotesize{\\textbf{\\MakeUppercase{SCENARIO 3-JOUEURS}}}};\n"
+"\n"
+
+#. type: tikzpicture
+#: coops/stand_united.tex:107
+#, no-wrap
+msgid ""
+"  \\node at (5, -4) {\\includegraphics[scale=0.3]{\\maps/stand_united_4p.png}};\n"
+"  \\node at (5, -8.3) {\\footnotesize{\\textbf{\\MakeUppercase{4-PLAYER SCENARIO}}}};"
+msgstr ""
+"  \\node at (5, -4) {\\includegraphics[scale=0.3]{\\maps/stand_united_4p.png}};\n"
+"  \\node at (5, -8.3) {\\footnotesize{\\textbf{\\MakeUppercase{SCENARIO 4-JOUEURS}}}};"

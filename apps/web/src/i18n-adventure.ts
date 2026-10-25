@@ -72,7 +72,7 @@ export const advFr = {
   difficulty: "Difficulté",
   difficulties: { easy: "Facile", normal: "Normale", hard: "Difficile", impossible: "Impossible" } as Record<string, string>,
   sandboxNote:
-    "Escarmouche provisoire en attendant votre Mission Book : disposition de « The Hunt » (Mission Book communautaire), 14 rounds, ressources et unités de départ de ce scénario. Victoire en prenant la ville d'un adversaire.",
+    "Escarmouche libre : disposition de « The Hunt » (Mission Book communautaire), 14 rounds, ressources et unités de départ de ce scénario. Victoire en prenant la ville d'un adversaire.",
   start: "Commencer",
   duplicateFaction: "Chaque joueur doit prendre une faction différente.",
   neutrals: "Unités neutres",
@@ -212,7 +212,7 @@ export const advEn: typeof advFr = {
   difficulty: "Difficulty",
   difficulties: { easy: "Easy", normal: "Normal", hard: "Hard", impossible: "Impossible" },
   sandboxNote:
-    "Temporary skirmish until your Mission Book arrives: \"The Hunt\" layout (community Mission Book), 14 rounds, that scenario's starting resources and units. Win by taking an enemy town.",
+    "Free Clash: \"The Hunt\" layout (community Mission Book), 14 rounds, that scenario's starting resources and units. Win by taking an enemy town.",
   start: "Start",
   duplicateFaction: "Each player needs a different faction.",
   neutrals: "Neutral units",
