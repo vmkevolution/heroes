@@ -387,6 +387,8 @@ function describe(
       if (e.defeated) return t.ev.defeated(n(e.uid));
       if (e.flipped) return t.ev.flipped(n(e.uid));
       return null;
+    case "effect":
+      return t.ev.effect(sideLabel(e.side), e.source, n(e.effect.uid));
     case "retreat":
       return t.ev.retreat;
     case "over":

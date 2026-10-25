@@ -29,3 +29,22 @@ export {
   canReinforceAtSettlement,
   type FieldInfo,
 } from "./adventure/engine.ts";
+export * from "./adventure/cards.ts";
+export {
+  cardSide,
+  expertLimit,
+  handLimit,
+  isRemovable,
+  mainHero,
+  playerLevel,
+} from "./adventure/cardplay.ts";
+export {
+  buildable,
+  canAfford,
+  canReinforce,
+  canUseSpellBook,
+  HIRE_COST,
+  hireSpots,
+  recruitable,
+  TRADE_RATES,
+} from "./adventure/town.ts";

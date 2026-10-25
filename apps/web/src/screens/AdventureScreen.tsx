@@ -32,6 +32,9 @@ import {
 import { useI18n, type Messages } from "../i18n.tsx";
 import { cardImage, unitName } from "../cards.ts";
 import { CombatView } from "./CombatScreen.tsx";
+import { CardText, describeOp, HandPanel, ManualPanel, RefreshBox, SearchBox, TownPanel, TradePanel } from "./CardsPanels.tsx";
+import { cardInfo, cardSide } from "@heroes/engine";
+import { getHero as heroCard, getTown } from "@heroes/data";
 
 /** Hex geometry in screen pixels: tile pictures are 420 px wide, i.e. 3 Fields across. */
 const HEX_W = 140;
@@ -303,6 +306,15 @@ export function AdventureScreen({ initial }: { initial: AdventureState }) {
           </div>
         )}
 
+        {inTurn && (
+          <>
+            <TradePanel player={me} act={act} />
+            <HandPanel state={state} player={me} act={act} context={{ combat: null, side: null, unitNames: new Map() }} />
+            <TownPanel key={me.id} state={state} player={me} act={act} />
+            <ManualPanel player={me} act={act} />
+          </>
+        )}
+
         <AstrologersBox state={state} t={t} />
 
         <div className="panel field-info">
@@ -368,7 +380,7 @@ function PlayerBox({ state, player, color, t }: { state: AdventureState; player:
   return (
     <div className={`panel player-box ${player.eliminated ? "out" : ""}`} style={{ borderLeft: `4px solid ${color}` }}>
       <h3>
-        {player.name} <span className="muted">· {a.faction(player.faction)}</span>
+        {player.name} <span className="muted">· {a.faction(player.faction)} · {heroCard(player.hero).name}</span>
         {player.eliminated && <span className="error"> · {a.eliminated}</span>}
       </h3>
       <div className="res-row">
@@ -440,9 +452,27 @@ function PhaseBox({
     );
   }
   if (ph.type === "combat-setup") return <CombatSetupBox key={ph.side} state={state} act={act} playerName={playerName} />;
+  if (ph.type === "refresh") return <RefreshBox key={ph.player} state={state} act={act} />;
+  if (ph.type === "search") return <SearchBox state={state} act={act} />;
   if (ph.type !== "choice") return null;
   const c = ph.choice;
   const player = getPlayer(state, getHero(state, c.heroId).owner);
+  if (c.kind === "options") {
+    return (
+      <div className="panel phase choice">
+        <h3>
+          {player.name} · {t.cards.sources[c.source] ?? a.loc(c.source)}
+        </h3>
+        <div className="op-list">
+          {c.options.map((op, i) => (
+            <button key={i} className="btn op" onClick={() => act({ type: "choose", option: i })}>
+              {describeOp(op, player, t)}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
   const dieLabel = (f: string) =>
     ({ experience: a.dieExperience, artifact: a.dieArtifact, resource: a.dieResource, resource2: a.dieResource2 })[f] ?? f;
   return (
@@ -671,6 +701,19 @@ function CombatPanel({
                 {a.surrender} · {sideNames[activeSide!]}
               </button>
             )}
+            {(["attacker", "defender"] as const).map((side) => {
+              const owner = sidePlayer(state, ph.context, side);
+              if (!owner || cardSide(state, ph.context, owner) !== side) return null;
+              return (
+                <HandPanel
+                  key={side}
+                  state={state}
+                  player={getPlayer(state, owner)}
+                  act={act}
+                  context={{ combat, side, unitNames: names }}
+                />
+              );
+            })}
           </>
         }
       />
@@ -753,6 +796,32 @@ function AdventureLog({
         return a.ev.victoryCondition(playerName(e.player));
       case "game-over":
         return a.ev.gameOver;
+      case "level-up":
+        return t.cards.ev.levelUp(playerName(e.player), e.level);
+      case "draw":
+        return t.cards.ev.draw(playerName(e.player), e.n);
+      case "gain-card":
+        return t.cards.ev.gainCard(playerName(e.player), cardInfo(e.card).name);
+      case "remove-card":
+        return t.cards.ev.removeCard(playerName(e.player), cardInfo(e.card).name);
+      case "play-card":
+        return t.cards.ev.playCard(playerName(e.player), cardInfo(e.card).name, e.automated);
+      case "build": {
+        const p = state.players.find((x) => x.id === e.player);
+        const b = p ? getTown(p.faction).buildings.find((x) => x.slot === e.slot)?.name : e.slot;
+        return t.cards.ev.build(playerName(e.player), b ?? e.slot);
+      }
+      case "recruit":
+        return t.cards.ev.recruit(playerName(e.player), unitName(e.unitId), e.variant === "pack");
+      case "hire-hero":
+        return t.cards.ev.hire(playerName(e.player));
+      case "trade":
+        return t.cards.ev.trade(playerName(e.player), RES_ICON[e.sell], RES_ICON[e.buy], e.times);
+      case "building-effect": {
+        const p = state.players.find((x) => x.id === e.player);
+        const b = p ? getTown(p.faction).buildings.find((x) => x.slot === e.slot)?.name : e.slot;
+        return t.cards.ev.buildingEffect(playerName(e.player), b ?? e.slot);
+      }
     }
   };
   const lines = state.log

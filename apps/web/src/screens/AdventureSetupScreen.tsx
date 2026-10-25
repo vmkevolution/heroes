@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FACTIONS, type Faction } from "@heroes/data";
+import { FACTIONS, heroes, type Faction } from "@heroes/data";
+import { defaultHero } from "@heroes/engine";
 import { setupAdventure, type AdventureState, type Difficulty } from "@heroes/engine";
 import { useI18n } from "../i18n.tsx";
 
@@ -9,10 +10,10 @@ export function AdventureSetupScreen({ onStart }: { onStart: (state: AdventureSt
   const { t } = useI18n();
   const a = t.adv;
   const [count, setCount] = useState<2 | 3>(2);
-  const [players, setPlayers] = useState<{ name: string; faction: Faction }[]>([
-    { name: "Joueur 1", faction: "castle" },
-    { name: "Joueur 2", faction: "necropolis" },
-    { name: "Joueur 3", faction: "dungeon" },
+  const [players, setPlayers] = useState<{ name: string; faction: Faction; hero: string }[]>([
+    { name: "Joueur 1", faction: "castle", hero: defaultHero("castle").id },
+    { name: "Joueur 2", faction: "necropolis", hero: defaultHero("necropolis").id },
+    { name: "Joueur 3", faction: "dungeon", hero: defaultHero("dungeon").id },
   ]);
   const [difficulty, setDifficulty] = useState<Difficulty>("normal");
   const chosen = players.slice(0, count);
@@ -72,7 +73,11 @@ export function AdventureSetupScreen({ onStart }: { onStart: (state: AdventureSt
               <select
                 value={p.faction}
                 onChange={(e) =>
-                  setPlayers(players.map((x, j) => (j === i ? { ...x, faction: e.target.value as Faction } : x)))
+                  setPlayers(
+                    players.map((x, j) =>
+                      j === i ? { ...x, faction: e.target.value as Faction, hero: defaultHero(e.target.value as Faction).id } : x,
+                    ),
+                  )
                 }
               >
                 {FACTIONS.map((f) => (
@@ -80,6 +85,18 @@ export function AdventureSetupScreen({ onStart }: { onStart: (state: AdventureSt
                     {a.faction(f)}
                   </option>
                 ))}
+              </select>
+            </label>
+            <label>
+              {t.cards.heroPick}{" "}
+              <select value={p.hero} onChange={(e) => setPlayers(players.map((x, j) => (j === i ? { ...x, hero: e.target.value } : x)))}>
+                {heroes
+                  .filter((h) => h.faction === p.faction)
+                  .map((h) => (
+                    <option key={h.id} value={h.id}>
+                      {h.name} ({t.cards.heroType[h.type]}, {h.heroClass})
+                    </option>
+                  ))}
               </select>
             </label>
           </div>
